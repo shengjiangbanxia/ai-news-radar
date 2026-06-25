@@ -1,16 +1,25 @@
 {
-  "generated_at": "2026-06-25T18:32:49.461634Z",
+  "generated_at": "2026-06-25T20:56:55.009478Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
       "story_id": "story_0c55289d534f",
       "title": "点击这里进入 / Click here to enter",
-      "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0433-149b-a1ec-54ed3311d0a3&fp=-3",
-      "primary_url": "http://ai.hubtoday.app/?tr_uuid=20260626-0433-149b-a1ec-54ed3311d0a3&fp=-3",
+      "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0657-209f-98ee-f6daec4a5698&fp=-3",
+      "primary_url": "http://ai.hubtoday.app/?tr_uuid=20260626-0657-209f-98ee-f6daec4a5698&fp=-3",
       "source": "Page Fallback",
       "source_name": "AI HubToday",
       "sources": [
+        {
+          "id": "63e42d3209ac8098fffa325e2b71234d09eba025",
+          "title": "点击这里进入 / Click here to enter",
+          "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0657-209f-98ee-f6daec4a5698&fp=-3",
+          "source": "Page Fallback",
+          "source_name": "AI HubToday",
+          "site_id": "aihubtoday",
+          "published_at": null
+        },
         {
           "id": "f3527ce64a5adb2c70331c3bb679c4a971605b4e",
           "title": "点击这里进入 / Click here to enter",
@@ -87,15 +96,6 @@
           "id": "51ff40e1af25828bb334668eaf802c9703c0f8eb",
           "title": "点击这里进入 / Click here to enter",
           "url": "http://ai.hubtoday.app/?tr_uuid=20260625-0722-3764-a445-189f550fb2ce&fp=-3",
-          "source": "Page Fallback",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": null
-        },
-        {
-          "id": "0c930de829ceb124be01d292173e79a24f15a00f",
-          "title": "点击这里进入 / Click here to enter",
-          "url": "http://ai.hubtoday.app/?tr_uuid=20260625-0546-2406-9aa0-9e56620a01d9&fp=-3",
           "source": "Page Fallback",
           "source_name": "AI HubToday",
           "site_id": "aihubtoday",
@@ -108,6 +108,15 @@
       ],
       "items": [
         {
+          "id": "63e42d3209ac8098fffa325e2b71234d09eba025",
+          "title": "点击这里进入 / Click here to enter",
+          "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0657-209f-98ee-f6daec4a5698&fp=-3",
+          "source": "Page Fallback",
+          "source_name": "AI HubToday",
+          "site_id": "aihubtoday",
+          "published_at": null
+        },
+        {
           "id": "f3527ce64a5adb2c70331c3bb679c4a971605b4e",
           "title": "点击这里进入 / Click here to enter",
           "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0433-149b-a1ec-54ed3311d0a3&fp=-3",
@@ -183,15 +192,6 @@
           "id": "51ff40e1af25828bb334668eaf802c9703c0f8eb",
           "title": "点击这里进入 / Click here to enter",
           "url": "http://ai.hubtoday.app/?tr_uuid=20260625-0722-3764-a445-189f550fb2ce&fp=-3",
-          "source": "Page Fallback",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": null
-        },
-        {
-          "id": "0c930de829ceb124be01d292173e79a24f15a00f",
-          "title": "点击这里进入 / Click here to enter",
-          "url": "http://ai.hubtoday.app/?tr_uuid=20260625-0546-2406-9aa0-9e56620a01d9&fp=-3",
           "source": "Page Fallback",
           "source_name": "AI HubToday",
           "site_id": "aihubtoday",
@@ -216,32 +216,32 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-24T19:45:59.455392Z",
-      "latest_at": "2026-06-25T18:32:49.461634Z",
+      "earliest_at": "2026-06-24T21:22:14.159799Z",
+      "latest_at": "2026-06-25T20:56:55.009478Z",
       "primary_item": {
-        "id": "f3527ce64a5adb2c70331c3bb679c4a971605b4e",
+        "id": "63e42d3209ac8098fffa325e2b71234d09eba025",
         "title": "点击这里进入 / Click here to enter",
-        "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0433-149b-a1ec-54ed3311d0a3&fp=-3",
+        "url": "http://ai.hubtoday.app/?tr_uuid=20260626-0657-209f-98ee-f6daec4a5698&fp=-3",
         "source": "Page Fallback",
         "source_name": "AI HubToday"
       }
     },
     {
-      "story_id": "story_01de969be41c",
-      "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
-      "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
-      "primary_url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
+      "story_id": "story_c6eeafaa2096",
+      "title": "存储库问题的保存视图 - 项目中的公共预览和可调整行高 / Saved views for repository issues – Public Preview and adjustable row heights in projects",
+      "url": "https://github.blog/changelog/2026-06-25-saved-views-for-repository-issues-and-adjustable-row-heights-in-projects",
+      "primary_url": "https://github.blog/changelog/2026-06-25-saved-views-for-repository-issues-and-adjustable-row-heights-in-projects",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "3d22e39f449143dec262b60950247b36c74429c3",
-          "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
-          "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
+          "id": "72f6ceb3f689a36757f63b413500110865d86e1a",
+          "title": "存储库问题的保存视图 - 项目中的公共预览和可调整行高 / Saved views for repository issues – Public Preview and adjustable row heights in projects",
+          "url": "https://github.blog/changelog/2026-06-25-saved-views-for-repository-issues-and-adjustable-row-heights-in-projects",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T16:46:09Z"
+          "published_at": "2026-06-25T18:29:01Z"
         }
       ],
       "source_count": 1,
@@ -250,25 +250,25 @@
       ],
       "items": [
         {
-          "id": "3d22e39f449143dec262b60950247b36c74429c3",
-          "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
-          "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
+          "id": "72f6ceb3f689a36757f63b413500110865d86e1a",
+          "title": "存储库问题的保存视图 - 项目中的公共预览和可调整行高 / Saved views for repository issues – Public Preview and adjustable row heights in projects",
+          "url": "https://github.blog/changelog/2026-06-25-saved-views-for-repository-issues-and-adjustable-row-heights-in-projects",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T16:46:09Z"
+          "published_at": "2026-06-25T18:29:01Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8462,
-      "importance": 0.8462,
-      "importance_score": 0.8462,
+      "score": 0.8405,
+      "importance": 0.8405,
+      "importance_score": 0.8405,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9259,
+        "recency": 0.8973,
         "story_heat": 0.0
       },
       "category": "official",
@@ -277,12 +277,12 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-25T16:46:09Z",
-      "latest_at": "2026-06-25T16:46:09Z",
+      "earliest_at": "2026-06-25T18:29:01Z",
+      "latest_at": "2026-06-25T18:29:01Z",
       "primary_item": {
-        "id": "3d22e39f449143dec262b60950247b36c74429c3",
-        "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
-        "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
+        "id": "72f6ceb3f689a36757f63b413500110865d86e1a",
+        "title": "存储库问题的保存视图 - 项目中的公共预览和可调整行高 / Saved views for repository issues – Public Preview and adjustable row heights in projects",
+        "url": "https://github.blog/changelog/2026-06-25-saved-views-for-repository-issues-and-adjustable-row-heights-in-projects",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       }
@@ -322,14 +322,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8398,
-      "importance": 0.8398,
-      "importance_score": 0.8398,
+      "score": 0.8198,
+      "importance": 0.8198,
+      "importance_score": 0.8198,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8939,
+        "recency": 0.7938,
         "story_heat": 0.0
       },
       "category": "official",
@@ -349,21 +349,21 @@
       }
     },
     {
-      "story_id": "story_95af1288ca5c",
-      "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
-      "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
-      "primary_url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
+      "story_id": "story_43bc8b14a9a3",
+      "title": "更好地控制 GitHub 托管的运行器 / More control over your GitHub-hosted runners",
+      "url": "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
+      "primary_url": "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "655a83565bd0c4044b82a9a388e64fc66c2a39d8",
-          "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
-          "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
+          "id": "0e61ac1ebaa0afa1f5ff9d67844c5253e8f99072",
+          "title": "更好地控制 GitHub 托管的运行器 / More control over your GitHub-hosted runners",
+          "url": "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T16:02:09Z"
+          "published_at": "2026-06-25T18:16:46Z"
         }
       ],
       "source_count": 1,
@@ -372,25 +372,25 @@
       ],
       "items": [
         {
-          "id": "655a83565bd0c4044b82a9a388e64fc66c2a39d8",
-          "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
-          "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
+          "id": "0e61ac1ebaa0afa1f5ff9d67844c5253e8f99072",
+          "title": "更好地控制 GitHub 托管的运行器 / More control over your GitHub-hosted runners",
+          "url": "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T16:02:09Z"
+          "published_at": "2026-06-25T18:16:46Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8401,
-      "importance": 0.8401,
-      "importance_score": 0.8401,
+      "score": 0.8388,
+      "importance": 0.8388,
+      "importance_score": 0.8388,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8954,
+        "recency": 0.8888,
         "story_heat": 0.0
       },
       "category": "official",
@@ -399,14 +399,314 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-25T16:02:09Z",
-      "latest_at": "2026-06-25T16:02:09Z",
+      "earliest_at": "2026-06-25T18:16:46Z",
+      "latest_at": "2026-06-25T18:16:46Z",
       "primary_item": {
-        "id": "655a83565bd0c4044b82a9a388e64fc66c2a39d8",
-        "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
-        "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
+        "id": "0e61ac1ebaa0afa1f5ff9d67844c5253e8f99072",
+        "title": "更好地控制 GitHub 托管的运行器 / More control over your GitHub-hosted runners",
+        "url": "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
+      }
+    },
+    {
+      "story_id": "story_70b0c1b3ab8f",
+      "title": "Midjourney 预览 V8.2 并加速草稿模式",
+      "url": "https://aihot.virxact.com/items/cmqtvqfrt07aksl0et0cawoue",
+      "primary_url": "https://aihot.virxact.com/items/cmqtvqfrt07aksl0et0cawoue",
+      "source": "X：Midjourney (@midjourney)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "cde6f1dc39d34733ad243c05ff5660ebafab6978",
+          "title": "Midjourney 预览 V8.2 并加速草稿模式",
+          "url": "https://aihot.virxact.com/items/cmqtvqfrt07aksl0et0cawoue",
+          "source": "X：Midjourney (@midjourney)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T19:11:05Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Midjourney (@midjourney)"
+      ],
+      "items": [
+        {
+          "id": "cde6f1dc39d34733ad243c05ff5660ebafab6978",
+          "title": "Midjourney 预览 V8.2 并加速草稿模式",
+          "url": "https://aihot.virxact.com/items/cmqtvqfrt07aksl0et0cawoue",
+          "source": "X：Midjourney (@midjourney)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T19:11:05Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7973,
+      "importance": 0.7973,
+      "importance_score": 0.7973,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9265,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T19:11:05Z",
+      "latest_at": "2026-06-25T19:11:05Z",
+      "primary_item": {
+        "id": "cde6f1dc39d34733ad243c05ff5660ebafab6978",
+        "title": "Midjourney 预览 V8.2 并加速草稿模式",
+        "url": "https://aihot.virxact.com/items/cmqtvqfrt07aksl0et0cawoue",
+        "source": "X：Midjourney (@midjourney)",
+        "source_name": "AI HOT"
+      }
+    },
+    {
+      "story_id": "story_e673d987a164",
+      "title": "OpenAI 内部论文：Codex 已占 99.8% 内部输出 tokens，智能体正向全部门扩散",
+      "url": "https://aihot.virxact.com/items/cmqtw3tq007ensl0e5jarmydw",
+      "primary_url": "https://aihot.virxact.com/items/cmqtw3tq007ensl0e5jarmydw",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "27fea087d1b3b5f4727c09bc46e3e2a0f4e5d578",
+          "title": "OpenAI 内部论文：Codex 已占 99.8% 内部输出 tokens，智能体正向全部门扩散",
+          "url": "https://aihot.virxact.com/items/cmqtw3tq007ensl0e5jarmydw",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T19:04:32Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "27fea087d1b3b5f4727c09bc46e3e2a0f4e5d578",
+          "title": "OpenAI 内部论文：Codex 已占 99.8% 内部输出 tokens，智能体正向全部门扩散",
+          "url": "https://aihot.virxact.com/items/cmqtw3tq007ensl0e5jarmydw",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T19:04:32Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7964,
+      "importance": 0.7964,
+      "importance_score": 0.7964,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.922,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T19:04:32Z",
+      "latest_at": "2026-06-25T19:04:32Z",
+      "primary_item": {
+        "id": "27fea087d1b3b5f4727c09bc46e3e2a0f4e5d578",
+        "title": "OpenAI 内部论文：Codex 已占 99.8% 内部输出 tokens，智能体正向全部门扩散",
+        "url": "https://aihot.virxact.com/items/cmqtw3tq007ensl0e5jarmydw",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      }
+    },
+    {
+      "story_id": "story_1c05ce068369",
+      "title": "IBM 首度推出亚纳米级芯片技术",
+      "url": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
+      "primary_url": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "67e6cce2d827112abdd5fac8f89b2e7f14031dd6",
+          "title": "IBM 首度推出亚纳米级芯片技术",
+          "url": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:52:05Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "67e6cce2d827112abdd5fac8f89b2e7f14031dd6",
+          "title": "IBM 首度推出亚纳米级芯片技术",
+          "url": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:52:05Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7947,
+      "importance": 0.7947,
+      "importance_score": 0.7947,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9133,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T18:52:05Z",
+      "latest_at": "2026-06-25T18:52:05Z",
+      "primary_item": {
+        "id": "67e6cce2d827112abdd5fac8f89b2e7f14031dd6",
+        "title": "IBM 首度推出亚纳米级芯片技术",
+        "url": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      }
+    },
+    {
+      "story_id": "story_7622e6e62ca8",
+      "title": "Midjourney V8.1 草稿模式新增随机风格功能",
+      "url": "https://aihot.virxact.com/items/cmqtv6jlv0766sl0eixynhk6m",
+      "primary_url": "https://aihot.virxact.com/items/cmqtv6jlv0766sl0eixynhk6m",
+      "source": "Midjourney：Updates（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "444f1167b8b56ccf947229da2dc638d2b7dea123",
+          "title": "Midjourney V8.1 草稿模式新增随机风格功能",
+          "url": "https://aihot.virxact.com/items/cmqtv6jlv0766sl0eixynhk6m",
+          "source": "Midjourney：Updates（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:50:16Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Midjourney：Updates（RSS）"
+      ],
+      "items": [
+        {
+          "id": "444f1167b8b56ccf947229da2dc638d2b7dea123",
+          "title": "Midjourney V8.1 草稿模式新增随机风格功能",
+          "url": "https://aihot.virxact.com/items/cmqtv6jlv0766sl0eixynhk6m",
+          "source": "Midjourney：Updates（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:50:16Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7944,
+      "importance": 0.7944,
+      "importance_score": 0.7944,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.912,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T18:50:16Z",
+      "latest_at": "2026-06-25T18:50:16Z",
+      "primary_item": {
+        "id": "444f1167b8b56ccf947229da2dc638d2b7dea123",
+        "title": "Midjourney V8.1 草稿模式新增随机风格功能",
+        "url": "https://aihot.virxact.com/items/cmqtv6jlv0766sl0eixynhk6m",
+        "source": "Midjourney：Updates（RSS）",
+        "source_name": "AI HOT"
+      }
+    },
+    {
+      "story_id": "story_da71440e34d9",
+      "title": "Runway发布Agent 2.0",
+      "url": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
+      "primary_url": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
+      "source": "Runway：News（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "d39b92d530374eddc297d48bbdbde62c05577ba6",
+          "title": "Runway发布Agent 2.0",
+          "url": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
+          "source": "Runway：News（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:41:58Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Runway：News（网页）"
+      ],
+      "items": [
+        {
+          "id": "d39b92d530374eddc297d48bbdbde62c05577ba6",
+          "title": "Runway发布Agent 2.0",
+          "url": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
+          "source": "Runway：News（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:41:58Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7933,
+      "importance": 0.7933,
+      "importance_score": 0.7933,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9063,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T18:41:58Z",
+      "latest_at": "2026-06-25T18:41:58Z",
+      "primary_item": {
+        "id": "d39b92d530374eddc297d48bbdbde62c05577ba6",
+        "title": "Runway发布Agent 2.0",
+        "url": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
+        "source": "Runway：News（网页）",
+        "source_name": "AI HOT"
       }
     },
     {
@@ -444,14 +744,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7924,
-      "importance": 0.7924,
-      "importance_score": 0.7924,
+      "score": 0.7724,
+      "importance": 0.7724,
+      "importance_score": 0.7724,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.902,
+        "recency": 0.8019,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -504,14 +804,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7914,
-      "importance": 0.7914,
-      "importance_score": 0.7914,
+      "score": 0.7714,
+      "importance": 0.7714,
+      "importance_score": 0.7714,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.897,
+        "recency": 0.797,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -564,14 +864,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7908,
-      "importance": 0.7908,
-      "importance_score": 0.7908,
+      "score": 0.7708,
+      "importance": 0.7708,
+      "importance_score": 0.7708,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8942,
+        "recency": 0.7941,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -624,14 +924,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7908,
-      "importance": 0.7908,
-      "importance_score": 0.7908,
+      "score": 0.7708,
+      "importance": 0.7708,
+      "importance_score": 0.7708,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8939,
+        "recency": 0.7938,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -684,14 +984,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7908,
-      "importance": 0.7908,
-      "importance_score": 0.7908,
+      "score": 0.7708,
+      "importance": 0.7708,
+      "importance_score": 0.7708,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8939,
+        "recency": 0.7938,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -707,6 +1007,104 @@
         "url": "https://aihot.virxact.com/items/cmqtp7ycw05lbsl0ei7dpsv19",
         "source": "Google Blog：AI（RSS）",
         "source_name": "AI HOT"
+      }
+    },
+    {
+      "story_id": "story_91992ed9f82d",
+      "title": "法典 CLI 0.142.1 / Codex CLI 0.142.1",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e329806d2a8fe2fa8d5dc5cc9468d3c4f40ae990",
+          "title": "法典 CLI 0.142.1 / Codex CLI 0.142.1",
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-06-25T00:00:00Z"
+        },
+        {
+          "id": "e73b44a9f3f8de9b98166406b22d8635d858fd45",
+          "title": "法典 CLI 0.142.2 / Codex CLI 0.142.2",
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-06-25T00:00:00Z"
+        },
+        {
+          "id": "06bdf1d58aed83751fe9dcd3cce0d615c652331f",
+          "title": "Codex Remote 全面上市 / Codex Remote reaches general availability",
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-06-25T00:00:00Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "e329806d2a8fe2fa8d5dc5cc9468d3c4f40ae990",
+          "title": "法典 CLI 0.142.1 / Codex CLI 0.142.1",
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-06-25T00:00:00Z"
+        },
+        {
+          "id": "e73b44a9f3f8de9b98166406b22d8635d858fd45",
+          "title": "法典 CLI 0.142.2 / Codex CLI 0.142.2",
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-06-25T00:00:00Z"
+        },
+        {
+          "id": "06bdf1d58aed83751fe9dcd3cce0d615c652331f",
+          "title": "Codex Remote 全面上市 / Codex Remote reaches general availability",
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-06-25T00:00:00Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.7694,
+      "importance": 0.7694,
+      "importance_score": 0.7694,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "source_tier": 1.0,
+        "ai_relevance": 0.98,
+        "recency": 0.1271,
+        "story_heat": 0.5
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T00:00:00Z",
+      "latest_at": "2026-06-25T00:00:00Z",
+      "primary_item": {
+        "id": "e329806d2a8fe2fa8d5dc5cc9468d3c4f40ae990",
+        "title": "法典 CLI 0.142.1 / Codex CLI 0.142.1",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
       }
     },
     {
@@ -744,14 +1142,14 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7867,
-      "importance": 0.7867,
-      "importance_score": 0.7867,
+      "score": 0.7667,
+      "importance": 0.7667,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8735,
+        "recency": 0.7734,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -770,21 +1168,21 @@
       }
     },
     {
-      "story_id": "story_43a0ba32a32a",
-      "title": "Red Hat Enterprise Linux 运行程序镜像现已推出公共预览版 / Red Hat Enterprise Linux runner images are now in public preview",
-      "url": "https://github.blog/changelog/2026-06-25-red-hat-enterprise-linux-runner-images-are-now-in-public-preview",
-      "primary_url": "https://github.blog/changelog/2026-06-25-red-hat-enterprise-linux-runner-images-are-now-in-public-preview",
+      "story_id": "story_01de969be41c",
+      "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
+      "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
+      "primary_url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "d2b1f309932b20f690f0a2def2d6d2da325653a5",
-          "title": "Red Hat Enterprise Linux 运行程序镜像现已推出公共预览版 / Red Hat Enterprise Linux runner images are now in public preview",
-          "url": "https://github.blog/changelog/2026-06-25-red-hat-enterprise-linux-runner-images-are-now-in-public-preview",
+          "id": "3d22e39f449143dec262b60950247b36c74429c3",
+          "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
+          "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T15:40:04Z"
+          "published_at": "2026-06-25T16:46:09Z"
         }
       ],
       "source_count": 1,
@@ -793,25 +1191,25 @@
       ],
       "items": [
         {
-          "id": "d2b1f309932b20f690f0a2def2d6d2da325653a5",
-          "title": "Red Hat Enterprise Linux 运行程序镜像现已推出公共预览版 / Red Hat Enterprise Linux runner images are now in public preview",
-          "url": "https://github.blog/changelog/2026-06-25-red-hat-enterprise-linux-runner-images-are-now-in-public-preview",
+          "id": "3d22e39f449143dec262b60950247b36c74429c3",
+          "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
+          "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T15:40:04Z"
+          "published_at": "2026-06-25T16:46:09Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.837,
-      "importance": 0.837,
-      "importance_score": 0.837,
+      "score": 0.8262,
+      "importance": 0.8262,
+      "importance_score": 0.8262,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.88,
+        "recency": 0.8259,
         "story_heat": 0.0
       },
       "category": "official",
@@ -820,14 +1218,74 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-25T15:40:04Z",
-      "latest_at": "2026-06-25T15:40:04Z",
+      "earliest_at": "2026-06-25T16:46:09Z",
+      "latest_at": "2026-06-25T16:46:09Z",
       "primary_item": {
-        "id": "d2b1f309932b20f690f0a2def2d6d2da325653a5",
-        "title": "Red Hat Enterprise Linux 运行程序镜像现已推出公共预览版 / Red Hat Enterprise Linux runner images are now in public preview",
-        "url": "https://github.blog/changelog/2026-06-25-red-hat-enterprise-linux-runner-images-are-now-in-public-preview",
+        "id": "3d22e39f449143dec262b60950247b36c74429c3",
+        "title": "现在可以并行运行操作步骤 / Actions steps can now be run in parallel",
+        "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
+      }
+    },
+    {
+      "story_id": "story_49a9dbc42c6d",
+      "title": "赫库兰尼姆古卷首次被完整虚拟解读",
+      "url": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
+      "primary_url": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3a5baf2fd9f00c5142a6b5153f6cc55d7d35c5d9",
+          "title": "赫库兰尼姆古卷首次被完整虚拟解读",
+          "url": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:03:58Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "3a5baf2fd9f00c5142a6b5153f6cc55d7d35c5d9",
+          "title": "赫库兰尼姆古卷首次被完整虚拟解读",
+          "url": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-06-25T18:03:58Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.788,
+      "importance": 0.788,
+      "importance_score": 0.788,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8799,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-06-25T18:03:58Z",
+      "latest_at": "2026-06-25T18:03:58Z",
+      "primary_item": {
+        "id": "3a5baf2fd9f00c5142a6b5153f6cc55d7d35c5d9",
+        "title": "赫库兰尼姆古卷首次被完整虚拟解读",
+        "url": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
       }
     },
     {
@@ -865,20 +1323,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7512,
-      "importance": 0.7512,
-      "importance_score": 0.7512,
+      "score": 0.7312,
+      "importance": 0.7312,
+      "importance_score": 0.7312,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.6961,
+        "recency": 0.596,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-06-25T11:15:09.235532Z",
       "latest_at": "2026-06-25T11:15:09.235532Z",
@@ -891,200 +1348,21 @@
       }
     },
     {
-      "story_id": "story_2b6976f96bb5",
-      "title": "客服人员如何改变工作方式 / How agents are transforming work",
-      "url": "https://openai.com/index/how-agents-are-transforming-work",
-      "primary_url": "https://openai.com/index/how-agents-are-transforming-work",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "25f8b643aef3153af022603a8d1d4080dada1ce0",
-          "title": "客服人员如何改变工作方式 / How agents are transforming work",
-          "url": "https://openai.com/index/how-agents-are-transforming-work",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-06-25T02:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "25f8b643aef3153af022603a8d1d4080dada1ce0",
-          "title": "客服人员如何改变工作方式 / How agents are transforming work",
-          "url": "https://openai.com/index/how-agents-are-transforming-work",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-06-25T02:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7351,
-      "importance": 0.7351,
-      "importance_score": 0.7351,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.3105,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-06-25T02:00:00Z",
-      "latest_at": "2026-06-25T02:00:00Z",
-      "primary_item": {
-        "id": "25f8b643aef3153af022603a8d1d4080dada1ce0",
-        "title": "客服人员如何改变工作方式 / How agents are transforming work",
-        "url": "https://openai.com/index/how-agents-are-transforming-work",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      }
-    },
-    {
-      "story_id": "story_eb42793d6d72",
-      "title": "​近 400 家地方报纸起诉 OpenAI 和微软，指控侵犯版权",
-      "url": "https://www.aibase.com/news/29171",
-      "primary_url": "https://www.aibase.com/news/29171",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "b0b3ac2c0c8f5e0d8f88bf939abd896987b1ac08",
-          "title": "​近 400 家地方报纸起诉 OpenAI 和微软，指控侵犯版权",
-          "url": "https://www.aibase.com/news/29171",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "b0b3ac2c0c8f5e0d8f88bf939abd896987b1ac08",
-          "title": "​近 400 家地方报纸起诉 OpenAI 和微软，指控侵犯版权",
-          "url": "https://www.aibase.com/news/29171",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7512,
-      "importance": 0.7512,
-      "importance_score": 0.7512,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.6961,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-25T11:15:09.235532Z",
-      "latest_at": "2026-06-25T11:15:09.235532Z",
-      "primary_item": {
-        "id": "b0b3ac2c0c8f5e0d8f88bf939abd896987b1ac08",
-        "title": "​近 400 家地方报纸起诉 OpenAI 和微软，指控侵犯版权",
-        "url": "https://www.aibase.com/news/29171",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      }
-    },
-    {
-      "story_id": "story_bcd224063e7d",
-      "title": "Meta员工警告AI内容审核部署过快",
-      "url": "https://aihot.virxact.com/items/cmqtc9nw602azsl0e4dvg4t64",
-      "primary_url": "https://aihot.virxact.com/items/cmqtc9nw602azsl0e4dvg4t64",
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b0910c4940bdde14949171853b3179319543f0f5",
-          "title": "Meta员工警告AI内容审核部署过快",
-          "url": "https://aihot.virxact.com/items/cmqtc9nw602azsl0e4dvg4t64",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-06-25T10:07:19Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "The Decoder：AI News（RSS）"
-      ],
-      "items": [
-        {
-          "id": "b0910c4940bdde14949171853b3179319543f0f5",
-          "title": "Meta员工警告AI内容审核部署过快",
-          "url": "https://aihot.virxact.com/items/cmqtc9nw602azsl0e4dvg4t64",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-06-25T10:07:19Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7418,
-      "importance": 0.7418,
-      "importance_score": 0.7418,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.649,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-06-25T10:07:19Z",
-      "latest_at": "2026-06-25T10:07:19Z",
-      "primary_item": {
-        "id": "b0910c4940bdde14949171853b3179319543f0f5",
-        "title": "Meta员工警告AI内容审核部署过快",
-        "url": "https://aihot.virxact.com/items/cmqtc9nw602azsl0e4dvg4t64",
-        "source": "The Decoder：AI News（RSS）",
-        "source_name": "AI HOT"
-      }
-    },
-    {
-      "story_id": "story_6e4aaf40ce95",
-      "title": "成本中心现在支持企业团队 / Cost centers now support enterprise teams",
-      "url": "https://github.blog/changelog/2026-06-25-assign-enterprise-teams-to-cost-centers",
-      "primary_url": "https://github.blog/changelog/2026-06-25-assign-enterprise-teams-to-cost-centers",
+      "story_id": "story_95af1288ca5c",
+      "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
+      "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
+      "primary_url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "2a6c485cd1a19304bd59bfaec9fbe109f4fb32c3",
-          "title": "成本中心现在支持企业团队 / Cost centers now support enterprise teams",
-          "url": "https://github.blog/changelog/2026-06-25-assign-enterprise-teams-to-cost-centers",
+          "id": "655a83565bd0c4044b82a9a388e64fc66c2a39d8",
+          "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
+          "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T10:15:19Z"
+          "published_at": "2026-06-25T16:02:09Z"
         }
       ],
       "source_count": 1,
@@ -1093,25 +1371,25 @@
       ],
       "items": [
         {
-          "id": "2a6c485cd1a19304bd59bfaec9fbe109f4fb32c3",
-          "title": "成本中心现在支持企业团队 / Cost centers now support enterprise teams",
-          "url": "https://github.blog/changelog/2026-06-25-assign-enterprise-teams-to-cost-centers",
+          "id": "655a83565bd0c4044b82a9a388e64fc66c2a39d8",
+          "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
+          "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-06-25T10:15:19Z"
+          "published_at": "2026-06-25T16:02:09Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7919,
-      "importance": 0.7919,
-      "importance_score": 0.7919,
+      "score": 0.8201,
+      "importance": 0.8201,
+      "importance_score": 0.8201,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.6545,
+        "recency": 0.7953,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1120,273 +1398,14 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-06-25T10:15:19Z",
-      "latest_at": "2026-06-25T10:15:19Z",
+      "earliest_at": "2026-06-25T16:02:09Z",
+      "latest_at": "2026-06-25T16:02:09Z",
       "primary_item": {
-        "id": "2a6c485cd1a19304bd59bfaec9fbe109f4fb32c3",
-        "title": "成本中心现在支持企业团队 / Cost centers now support enterprise teams",
-        "url": "https://github.blog/changelog/2026-06-25-assign-enterprise-teams-to-cost-centers",
+        "id": "655a83565bd0c4044b82a9a388e64fc66c2a39d8",
+        "title": "npm 为高影响力帐户添加了预防性帐户保护 / npm adds preventive account protection for high-impact accounts",
+        "url": "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
-      }
-    },
-    {
-      "story_id": "story_60ea0916c4c0",
-      "title": "商汤科技挺进智能体赛道：全新“全模态”基座蓄势待发",
-      "url": "https://www.aibase.com/news/29169",
-      "primary_url": "https://www.aibase.com/news/29169",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "3dabe9aaeddd6a41ccadf293d94e090cb24a071e",
-          "title": "商汤科技挺进智能体赛道：全新“全模态”基座蓄势待发",
-          "url": "https://www.aibase.com/news/29169",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "3dabe9aaeddd6a41ccadf293d94e090cb24a071e",
-          "title": "商汤科技挺进智能体赛道：全新“全模态”基座蓄势待发",
-          "url": "https://www.aibase.com/news/29169",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7512,
-      "importance": 0.7512,
-      "importance_score": 0.7512,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.6961,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-25T11:15:09.235532Z",
-      "latest_at": "2026-06-25T11:15:09.235532Z",
-      "primary_item": {
-        "id": "3dabe9aaeddd6a41ccadf293d94e090cb24a071e",
-        "title": "商汤科技挺进智能体赛道：全新“全模态”基座蓄势待发",
-        "url": "https://www.aibase.com/news/29169",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      }
-    },
-    {
-      "story_id": "story_42dc429b5357",
-      "title": "商汤科技秘密研发多模态模型“U1Pro”:由林达华牵头，预计7月启动内测对标OpenAI",
-      "url": "https://www.aibase.com/news/29168",
-      "primary_url": "https://www.aibase.com/news/29168",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "74f777037bc461984520531eeb5ad391b60f5861",
-          "title": "商汤科技秘密研发多模态模型“U1Pro”:由林达华牵头，预计7月启动内测对标OpenAI",
-          "url": "https://www.aibase.com/news/29168",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "74f777037bc461984520531eeb5ad391b60f5861",
-          "title": "商汤科技秘密研发多模态模型“U1Pro”:由林达华牵头，预计7月启动内测对标OpenAI",
-          "url": "https://www.aibase.com/news/29168",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7512,
-      "importance": 0.7512,
-      "importance_score": 0.7512,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.6961,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-25T11:15:09.235532Z",
-      "latest_at": "2026-06-25T11:15:09.235532Z",
-      "primary_item": {
-        "id": "74f777037bc461984520531eeb5ad391b60f5861",
-        "title": "商汤科技秘密研发多模态模型“U1Pro”:由林达华牵头，预计7月启动内测对标OpenAI",
-        "url": "https://www.aibase.com/news/29168",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      }
-    },
-    {
-      "story_id": "story_dce6437588c3",
-      "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-      "url": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
-      "primary_url": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ba2f0cceaf6ea4147b220904a82347ad2041becb",
-          "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-          "url": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-06-24T19:08:32Z"
-        },
-        {
-          "id": "b692826a5c91077d2c89ba6e0a53553de44a2bec",
-          "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-          "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
-          "source": "www.nytimes.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-06-24T19:08:32.032000Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "www.nytimes.com"
-      ],
-      "items": [
-        {
-          "id": "ba2f0cceaf6ea4147b220904a82347ad2041becb",
-          "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-          "url": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-06-24T19:08:32Z"
-        },
-        {
-          "id": "b692826a5c91077d2c89ba6e0a53553de44a2bec",
-          "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-          "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
-          "source": "www.nytimes.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-06-24T19:08:32.032000Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.642,
-      "importance": 0.642,
-      "importance_score": 0.642,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.0248,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-06-24T19:08:32Z",
-      "latest_at": "2026-06-24T19:08:32.032000Z",
-      "primary_item": {
-        "id": "ba2f0cceaf6ea4147b220904a82347ad2041becb",
-        "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-        "url": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      }
-    },
-    {
-      "story_id": "story_9265e5815a7e",
-      "title": "志愿填报“参谋”到位：高考出分三日，大模型已助 500 万考生“定心”",
-      "url": "https://www.aibase.com/news/29170",
-      "primary_url": "https://www.aibase.com/news/29170",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "da350d2a88ac7ccde0c4b6a19f65d46cc47bb6fc",
-          "title": "志愿填报“参谋”到位：高考出分三日，大模型已助 500 万考生“定心”",
-          "url": "https://www.aibase.com/news/29170",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "da350d2a88ac7ccde0c4b6a19f65d46cc47bb6fc",
-          "title": "志愿填报“参谋”到位：高考出分三日，大模型已助 500 万考生“定心”",
-          "url": "https://www.aibase.com/news/29170",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-06-25T11:15:09.235532Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7512,
-      "importance": 0.7512,
-      "importance_score": 0.7512,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.6961,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-06-25T11:15:09.235532Z",
-      "latest_at": "2026-06-25T11:15:09.235532Z",
-      "primary_item": {
-        "id": "da350d2a88ac7ccde0c4b6a19f65d46cc47bb6fc",
-        "title": "志愿填报“参谋”到位：高考出分三日，大模型已助 500 万考生“定心”",
-        "url": "https://www.aibase.com/news/29170",
-        "source": "AIbase",
-        "source_name": "AIbase"
       }
     }
   ]
