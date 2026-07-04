@@ -1,70 +1,8 @@
 {
-  "generated_at": "2026-07-04T12:45:08.583878Z",
+  "generated_at": "2026-07-04T14:37:00.349129Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
-    {
-      "story_id": "story_1cc388fb9b67",
-      "title": "谷歌 DeepMind 和 A24 宣布建立首个研究合作伙伴关系 / Google DeepMind and A24 announce first-of-its-kind research partnership",
-      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership",
-      "primary_url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership",
-      "source": "Google DeepMind",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "8a09616a52ed445e32403a6c6fe07ddd62af2390",
-          "title": "谷歌 DeepMind 和 A24 宣布建立首个研究合作伙伴关系 / Google DeepMind and A24 announce first-of-its-kind research partnership",
-          "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-03T14:25:43Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google DeepMind"
-      ],
-      "items": [
-        {
-          "id": "8a09616a52ed445e32403a6c6fe07ddd62af2390",
-          "title": "谷歌 DeepMind 和 A24 宣布建立首个研究合作伙伴关系 / Google DeepMind and A24 announce first-of-its-kind research partnership",
-          "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-03T14:25:43Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7944,
-      "importance": 0.7944,
-      "importance_score": 0.7944,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.7244,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-03T14:25:43Z",
-      "latest_at": "2026-07-03T14:25:43Z",
-      "primary_item": {
-        "id": "8a09616a52ed445e32403a6c6fe07ddd62af2390",
-        "title": "谷歌 DeepMind 和 A24 宣布建立首个研究合作伙伴关系 / Google DeepMind and A24 announce first-of-its-kind research partnership",
-        "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership",
-        "source": "Google DeepMind",
-        "source_name": "Official AI Updates"
-      }
-    },
     {
       "story_id": "story_14db553be425",
       "title": "26000名学生研究显示AI隐藏学习成本需两年才显现",
@@ -119,15 +57,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7865,
-      "importance": 0.7865,
-      "importance_score": 0.7865,
+      "score": 0.7819,
+      "importance": 0.7819,
+      "importance_score": 0.7819,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9492,
+        "recency": 0.924,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -200,15 +138,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7856,
-      "importance": 0.7856,
-      "importance_score": 0.7856,
+      "score": 0.7818,
+      "importance": 0.7818,
+      "importance_score": 0.7818,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7776,
+        "recency": 0.7569,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -262,15 +200,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7546,
-      "importance": 0.7546,
-      "importance_score": 0.7546,
+      "score": 0.7503,
+      "importance": 0.7503,
+      "importance_score": 0.7503,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8943,
+        "recency": 0.8706,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -361,22 +299,21 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7482,
+      "importance": 0.7482,
+      "importance_score": 0.7482,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7339,
+        "recency": 0.7144,
         "story_heat": 0.5
       },
       "category": "multi_source",
       "reasons": [
         "multi_source",
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-07-03T15:19:52.792000Z",
       "latest_at": "2026-07-04T03:03:37.023000Z",
@@ -423,15 +360,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7462,
-      "importance": 0.7462,
-      "importance_score": 0.7462,
+      "score": 0.7418,
+      "importance": 0.7418,
+      "importance_score": 0.7418,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9143,
+        "recency": 0.89,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -483,15 +420,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7296,
-      "importance": 0.7296,
-      "importance_score": 0.7296,
+      "score": 0.7259,
+      "importance": 0.7259,
+      "importance_score": 0.7259,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7722,
+        "recency": 0.7517,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -597,15 +534,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.6055,
-      "importance": 0.6055,
-      "importance_score": 0.6055,
+      "score": 0.6019,
+      "importance": 0.6019,
+      "importance_score": 0.6019,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.4752,
         "source_tier": 0.54,
         "ai_relevance": 0.66,
-        "recency": 0.7621,
+        "recency": 0.7419,
         "story_heat": 0.75
       },
       "category": "multi_source",
@@ -695,15 +632,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5618,
-      "importance": 0.5618,
-      "importance_score": 0.5618,
+      "score": 0.5572,
+      "importance": 0.5572,
+      "importance_score": 0.5572,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9499,
+        "recency": 0.9247,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -718,6 +655,84 @@
         "url": "https://epoch.ai/data-insights/cve-severity-spike",
         "source": "epoch.ai",
         "source_name": "Buzzing"
+      }
+    },
+    {
+      "story_id": "story_96aeaf10e3fa",
+      "title": "机器人出口每 4 元产值有 1 元深圳造 深圳机器人全球卖爆",
+      "url": "https://finance.sina.com.cn/stock/t/2026-07-04/doc-inifscxt9942135.shtml",
+      "primary_url": "https://finance.sina.com.cn/stock/t/2026-07-04/doc-inifscxt9942135.shtml",
+      "source": "Readhub · AI",
+      "source_name": "TopHub",
+      "sources": [
+        {
+          "id": "ad54a5acd28031e513c75010c1182b97ed3639da",
+          "title": "机器人出口每 4 元产值有 1 元深圳造 深圳机器人全球卖爆",
+          "url": "https://finance.sina.com.cn/stock/t/2026-07-04/doc-inifscxt9942135.shtml",
+          "source": "Readhub · AI",
+          "source_name": "TopHub",
+          "site_id": "tophub",
+          "published_at": null
+        },
+        {
+          "id": "ff3628170a79464c46f6b829cfd2e52ec67ecad7",
+          "title": "机器人出口每 4 元产值有 1 元深圳造深圳机器人全球卖爆",
+          "url": "https://finance.sina.com.cn/stock/wbstock/2026-07-04/doc-inifrtiy0065228.shtml",
+          "source": "Readhub · AI",
+          "source_name": "TopHub",
+          "site_id": "tophub",
+          "published_at": null
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Readhub · AI"
+      ],
+      "items": [
+        {
+          "id": "ad54a5acd28031e513c75010c1182b97ed3639da",
+          "title": "机器人出口每 4 元产值有 1 元深圳造 深圳机器人全球卖爆",
+          "url": "https://finance.sina.com.cn/stock/t/2026-07-04/doc-inifscxt9942135.shtml",
+          "source": "Readhub · AI",
+          "source_name": "TopHub",
+          "site_id": "tophub",
+          "published_at": null
+        },
+        {
+          "id": "ff3628170a79464c46f6b829cfd2e52ec67ecad7",
+          "title": "机器人出口每 4 元产值有 1 元深圳造深圳机器人全球卖爆",
+          "url": "https://finance.sina.com.cn/stock/wbstock/2026-07-04/doc-inifrtiy0065228.shtml",
+          "source": "Readhub · AI",
+          "source_name": "TopHub",
+          "site_id": "tophub",
+          "published_at": null
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5458,
+      "importance": 0.5458,
+      "importance_score": 0.5458,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 1.0,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-04T11:26:53.689089Z",
+      "latest_at": "2026-07-04T14:37:00.349129Z",
+      "primary_item": {
+        "id": "ad54a5acd28031e513c75010c1182b97ed3639da",
+        "title": "机器人出口每 4 元产值有 1 元深圳造 深圳机器人全球卖爆",
+        "url": "https://finance.sina.com.cn/stock/t/2026-07-04/doc-inifscxt9942135.shtml",
+        "source": "Readhub · AI",
+        "source_name": "TopHub"
       }
     },
     {
@@ -792,15 +807,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5461,
-      "importance": 0.5461,
-      "importance_score": 0.5461,
+      "score": 0.542,
+      "importance": 0.542,
+      "importance_score": 0.542,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8627,
+        "recency": 0.8398,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -871,15 +886,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5424,
-      "importance": 0.5424,
-      "importance_score": 0.5424,
+      "score": 0.5377,
+      "importance": 0.5377,
+      "importance_score": 0.5377,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9813,
+        "recency": 0.9553,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -950,15 +965,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5388,
-      "importance": 0.5388,
-      "importance_score": 0.5388,
+      "score": 0.5342,
+      "importance": 0.5342,
+      "importance_score": 0.5342,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9609,
+        "recency": 0.9354,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1048,15 +1063,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5341,
-      "importance": 0.5341,
-      "importance_score": 0.5341,
+      "score": 0.5303,
+      "importance": 0.5303,
+      "importance_score": 0.5303,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7959,
+        "recency": 0.7748,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1071,85 +1086,6 @@
         "url": "https://news.ycombinator.com/item?id=48777144",
         "source": "hackernews",
         "source_name": "NewsNow"
-      }
-    },
-    {
-      "story_id": "story_ddc5ffe6c280",
-      "title": "OpenAI 拟向美国政府出让股份：AI 创造的财富应当由谁享有？",
-      "url": "https://www.huxiu.com/article/4872642.html?f=rss",
-      "primary_url": "https://www.huxiu.com/article/4872642.html?f=rss",
-      "source": "Readhub · AI",
-      "source_name": "TopHub",
-      "sources": [
-        {
-          "id": "b984d184b92304eb46955d4025cf1bd3e1e5b9e3",
-          "title": "OpenAI 拟向美国政府出让股份：AI 创造的财富应当由谁享有？",
-          "url": "https://www.huxiu.com/article/4872642.html?f=rss",
-          "source": "Readhub · AI",
-          "source_name": "TopHub",
-          "site_id": "tophub",
-          "published_at": null
-        },
-        {
-          "id": "1d707d2ab6b7c2067667020c3b1e94b423f7c93c",
-          "title": "OpenAI拟向美国政府出让股份：AI创造的财富应当由谁享有？",
-          "url": "https://www.huxiu.com/article/4872642.html?f=rss",
-          "source": "虎嗅 (Huxiu)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-07-04T06:44:56Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Readhub · AI",
-        "虎嗅 (Huxiu)"
-      ],
-      "items": [
-        {
-          "id": "b984d184b92304eb46955d4025cf1bd3e1e5b9e3",
-          "title": "OpenAI 拟向美国政府出让股份：AI 创造的财富应当由谁享有？",
-          "url": "https://www.huxiu.com/article/4872642.html?f=rss",
-          "source": "Readhub · AI",
-          "source_name": "TopHub",
-          "site_id": "tophub",
-          "published_at": null
-        },
-        {
-          "id": "1d707d2ab6b7c2067667020c3b1e94b423f7c93c",
-          "title": "OpenAI拟向美国政府出让股份：AI创造的财富应当由谁享有？",
-          "url": "https://www.huxiu.com/article/4872642.html?f=rss",
-          "source": "虎嗅 (Huxiu)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-07-04T06:44:56Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5323,
-      "importance": 0.5323,
-      "importance_score": 0.5323,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9251,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-07-04T06:44:56Z",
-      "latest_at": "2026-07-04T07:21:40.028543Z",
-      "primary_item": {
-        "id": "b984d184b92304eb46955d4025cf1bd3e1e5b9e3",
-        "title": "OpenAI 拟向美国政府出让股份：AI 创造的财富应当由谁享有？",
-        "url": "https://www.huxiu.com/article/4872642.html?f=rss",
-        "source": "Readhub · AI",
-        "source_name": "TopHub"
       }
     },
     {
@@ -1225,15 +1161,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5297,
-      "importance": 0.5297,
-      "importance_score": 0.5297,
+      "score": 0.526,
+      "importance": 0.526,
+      "importance_score": 0.526,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7716,
+        "recency": 0.7511,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1304,15 +1240,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5259,
-      "importance": 0.5259,
-      "importance_score": 0.5259,
+      "score": 0.5216,
+      "importance": 0.5216,
+      "importance_score": 0.5216,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8892,
+        "recency": 0.8656,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1383,15 +1319,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5248,
-      "importance": 0.5248,
-      "importance_score": 0.5248,
+      "score": 0.5206,
+      "importance": 0.5206,
+      "importance_score": 0.5206,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8835,
+        "recency": 0.86,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1406,104 +1342,6 @@
         "url": "https://www.36kr.com/p/3880629882679301",
         "source": "36氪 · 24小时热榜",
         "source_name": "TopHub"
-      }
-    },
-    {
-      "story_id": "story_9b40a0a6a0ae",
-      "title": "请停止这场关于人工智能的“自信秀”",
-      "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-      "primary_url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-      "source": "www.elenaverna.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "81fb5e4eca19f694b17c71171af8c357aa3517b6",
-          "title": "请停止这场关于人工智能的“自信秀”",
-          "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-          "source": "www.elenaverna.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-03T14:31:55.291000Z"
-        },
-        {
-          "id": "2378c5b3bd688fed54ed9cdc0bb462009a9729e1",
-          "title": "请停止AI信心剧场 / Please stop the AI confidence theater",
-          "url": "https://news.ycombinator.com/item?id=48774414",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-03T14:14:32.877000Z"
-        },
-        {
-          "id": "40c006bb51421ce3c3e4a53249370cc7ffd30687",
-          "title": "请停止这场关于人工智能的“自信秀” / Please stop the AI confidence theater",
-          "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-03T12:51:17Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "hackernews",
-        "www.elenaverna.com"
-      ],
-      "items": [
-        {
-          "id": "81fb5e4eca19f694b17c71171af8c357aa3517b6",
-          "title": "请停止这场关于人工智能的“自信秀”",
-          "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-          "source": "www.elenaverna.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-03T14:31:55.291000Z"
-        },
-        {
-          "id": "2378c5b3bd688fed54ed9cdc0bb462009a9729e1",
-          "title": "请停止AI信心剧场 / Please stop the AI confidence theater",
-          "url": "https://news.ycombinator.com/item?id=48774414",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-03T14:14:32.877000Z"
-        },
-        {
-          "id": "40c006bb51421ce3c3e4a53249370cc7ffd30687",
-          "title": "请停止这场关于人工智能的“自信秀” / Please stop the AI confidence theater",
-          "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-03T12:51:17Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.5214,
-      "importance": 0.5214,
-      "importance_score": 0.5214,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7255,
-        "story_heat": 0.5
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-07-03T12:51:17Z",
-      "latest_at": "2026-07-03T14:31:55.291000Z",
-      "primary_item": {
-        "id": "81fb5e4eca19f694b17c71171af8c357aa3517b6",
-        "title": "请停止这场关于人工智能的“自信秀”",
-        "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-        "source": "www.elenaverna.com",
-        "source_name": "Buzzing"
       }
     },
     {
@@ -1560,15 +1398,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5424,
-      "importance": 0.5424,
-      "importance_score": 0.5424,
+      "score": 0.5377,
+      "importance": 0.5377,
+      "importance_score": 0.5377,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9813,
+        "recency": 0.9553,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1639,15 +1477,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5079,
-      "importance": 0.5079,
-      "importance_score": 0.5079,
+      "score": 0.5042,
+      "importance": 0.5042,
+      "importance_score": 0.5042,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7896,
+        "recency": 0.7687,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1662,6 +1500,164 @@
         "url": "https://inpreparation.substack.com/p/opinion-i-was-not-allowed-to-type",
         "source": "inpreparation.substack.com",
         "source_name": "Buzzing"
+      }
+    },
+    {
+      "story_id": "story_f7fd9ce4f776",
+      "title": "担心人工智能会抢走你的工作？未来30天内请这样做。",
+      "url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+      "primary_url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+      "source": "www.businessinsider.com",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "6252ba767d0366878cb43434c625c1990ae4e6b8",
+          "title": "担心人工智能会抢走你的工作？未来30天内请这样做。",
+          "url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+          "source": "www.businessinsider.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-04T09:27:38.407000Z"
+        },
+        {
+          "id": "f22265f9812b93d6026b4a00d521e856d2e92ccb",
+          "title": "担心人工智能会抢走你的工作？未来30天内请这样做。 / If you're worried AI will take your job, here's what to do in the next 30 days, according to an executive coach",
+          "url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+          "source": "Business Insider",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-04T09:05:02Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Business Insider",
+        "www.businessinsider.com"
+      ],
+      "items": [
+        {
+          "id": "6252ba767d0366878cb43434c625c1990ae4e6b8",
+          "title": "担心人工智能会抢走你的工作？未来30天内请这样做。",
+          "url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+          "source": "www.businessinsider.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-04T09:27:38.407000Z"
+        },
+        {
+          "id": "f22265f9812b93d6026b4a00d521e856d2e92ccb",
+          "title": "担心人工智能会抢走你的工作？未来30天内请这样做。 / If you're worried AI will take your job, here's what to do in the next 30 days, according to an executive coach",
+          "url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+          "source": "Business Insider",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-04T09:05:02Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5329,
+      "importance": 0.5329,
+      "importance_score": 0.5329,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9282,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-04T09:05:02Z",
+      "latest_at": "2026-07-04T09:27:38.407000Z",
+      "primary_item": {
+        "id": "6252ba767d0366878cb43434c625c1990ae4e6b8",
+        "title": "担心人工智能会抢走你的工作？未来30天内请这样做。",
+        "url": "https://www.businessinsider.com/scared-ai-will-take-job-do-this-next-30-days-2026-7",
+        "source": "www.businessinsider.com",
+        "source_name": "Buzzing"
+      }
+    },
+    {
+      "story_id": "story_ac8d4855fa95",
+      "title": "2026年Unslop人工智能小说大赛结果 / 2026 Unslop AI-Written Fiction Contest Results",
+      "url": "https://news.ycombinator.com/item?id=48782890",
+      "primary_url": "https://news.ycombinator.com/item?id=48782890",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "3e53f24fce138d386cf78a1fca3dc07acb7bb65a",
+          "title": "2026年Unslop人工智能小说大赛结果 / 2026 Unslop AI-Written Fiction Contest Results",
+          "url": "https://news.ycombinator.com/item?id=48782890",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-04T07:22:23.658000Z"
+        },
+        {
+          "id": "2ba94d9ff80b4c00c8b51a3abbc68560800488a2",
+          "title": "2026年Unslop人工智能小说大赛结果 / 2026 Unslop AI-Written Fiction Contest Results",
+          "url": "https://www.hyperstitionai.com/unslop-results",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-04T05:37:25Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "3e53f24fce138d386cf78a1fca3dc07acb7bb65a",
+          "title": "2026年Unslop人工智能小说大赛结果 / 2026 Unslop AI-Written Fiction Contest Results",
+          "url": "https://news.ycombinator.com/item?id=48782890",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-04T07:22:23.658000Z"
+        },
+        {
+          "id": "2ba94d9ff80b4c00c8b51a3abbc68560800488a2",
+          "title": "2026年Unslop人工智能小说大赛结果 / 2026 Unslop AI-Written Fiction Contest Results",
+          "url": "https://www.hyperstitionai.com/unslop-results",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-04T05:37:25Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5279,
+      "importance": 0.5279,
+      "importance_score": 0.5279,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9007,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-04T05:37:25Z",
+      "latest_at": "2026-07-04T07:22:23.658000Z",
+      "primary_item": {
+        "id": "3e53f24fce138d386cf78a1fca3dc07acb7bb65a",
+        "title": "2026年Unslop人工智能小说大赛结果 / 2026 Unslop AI-Written Fiction Contest Results",
+        "url": "https://news.ycombinator.com/item?id=48782890",
+        "source": "hackernews",
+        "source_name": "NewsNow"
       }
     }
   ]
