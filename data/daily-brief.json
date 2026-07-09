@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T20:18:31.675460Z",
+  "generated_at": "2026-07-09T21:57:00.753213Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -30,20 +30,20 @@
           "published_at": "2026-07-09T10:00:00Z"
         },
         {
-          "id": "8f8ded8868c40b459798d2a2efb03f0901f59e92",
+          "id": "a6c727a47c1be60dbae0bc5ca8e3c447f647f7b0",
           "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体 / ChatGPT Work",
           "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-09T17:03:53Z"
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-09T21:46:30.429000Z"
         }
       ],
       "source_count": 3,
       "source_names": [
-        "Hacker News",
         "OpenAI News",
-        "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "openai.com"
       ],
       "items": [
         {
@@ -65,26 +65,26 @@
           "published_at": "2026-07-09T10:00:00Z"
         },
         {
-          "id": "8f8ded8868c40b459798d2a2efb03f0901f59e92",
+          "id": "a6c727a47c1be60dbae0bc5ca8e3c447f647f7b0",
           "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体 / ChatGPT Work",
           "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-09T17:03:53Z"
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-09T21:46:30.429000Z"
         }
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8851,
-      "importance": 0.8851,
-      "importance_score": 0.8851,
+      "score": 0.8815,
+      "importance": 0.8815,
+      "importance_score": 0.8815,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8617,
+        "recency": 0.8415,
         "story_heat": 0.5
       },
       "category": "official",
@@ -95,7 +95,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-07-09T10:00:00Z",
-      "latest_at": "2026-07-09T17:03:53Z",
+      "latest_at": "2026-07-09T21:46:30.429000Z",
       "primary_item": {
         "id": "c8aad6129e33dd74a8a176bfa3d478d9acf5ae0b",
         "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体 / ChatGPT is now a partner for your most ambitious work",
@@ -139,15 +139,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8588,
-      "importance": 0.8588,
-      "importance_score": 0.8588,
+      "score": 0.8548,
+      "importance": 0.8548,
+      "importance_score": 0.8548,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9491,
+        "recency": 0.9269,
         "story_heat": 0.0
       },
       "category": "official",
@@ -219,15 +219,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8492,
-      "importance": 0.8492,
-      "importance_score": 0.8492,
+      "score": 0.8461,
+      "importance": 0.8461,
+      "importance_score": 0.8461,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7458,
+        "recency": 0.7284,
         "story_heat": 0.25
       },
       "category": "official",
@@ -265,19 +265,19 @@
           "published_at": "2026-07-09T10:00:00Z"
         },
         {
-          "id": "8e135910cd23ba112c024edc7b03a38b3e8fbf88",
+          "id": "ce55aba3d3b663974c5c370cf085d983639730bf",
           "title": "GPT-5.6",
           "url": "https://openai.com/index/gpt-5-6",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-09T17:04:14Z"
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-09T21:46:30.443000Z"
         }
       ],
       "source_count": 2,
       "source_names": [
-        "Hacker News",
-        "OpenAI News"
+        "OpenAI News",
+        "openai.com"
       ],
       "items": [
         {
@@ -290,26 +290,26 @@
           "published_at": "2026-07-09T10:00:00Z"
         },
         {
-          "id": "8e135910cd23ba112c024edc7b03a38b3e8fbf88",
+          "id": "ce55aba3d3b663974c5c370cf085d983639730bf",
           "title": "GPT-5.6",
           "url": "https://openai.com/index/gpt-5-6",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-09T17:04:14Z"
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-09T21:46:30.443000Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8601,
-      "importance": 0.8601,
-      "importance_score": 0.8601,
+      "score": 0.8565,
+      "importance": 0.8565,
+      "importance_score": 0.8565,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8617,
+        "recency": 0.8415,
         "story_heat": 0.25
       },
       "category": "official",
@@ -320,7 +320,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-07-09T10:00:00Z",
-      "latest_at": "2026-07-09T17:04:14Z",
+      "latest_at": "2026-07-09T21:46:30.443000Z",
       "primary_item": {
         "id": "02f373000e22381d55ff111b92fdbff08351dc06",
         "title": "GPT-5.6：前沿智能，随您的雄心壮志而扩展 / GPT-5.6: Frontier intelligence that scales with your ambition",
@@ -364,15 +364,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8373,
-      "importance": 0.8373,
-      "importance_score": 0.8373,
+      "score": 0.8335,
+      "importance": 0.8335,
+      "importance_score": 0.8335,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9186,
+        "recency": 0.897,
         "story_heat": 0.0
       },
       "category": "official",
@@ -426,15 +426,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8062,
-      "importance": 0.8062,
-      "importance_score": 0.8062,
+      "score": 0.8031,
+      "importance": 0.8031,
+      "importance_score": 0.8031,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.7458,
+        "recency": 0.7284,
         "story_heat": 0.0
       },
       "category": "official",
@@ -450,68 +450,6 @@
         "title": "提出尖锐的问题 / Inviting hard questions",
         "url": "https://www.anthropic.com/news/hard-questions",
         "source": "Anthropic News",
-        "source_name": "Official AI Updates"
-      }
-    },
-    {
-      "story_id": "story_450af95c2f12",
-      "title": "使用 GitHub Agentic Workflows 自动化跨存储库文档 / Automating cross-repo documentation with GitHub Agentic Workflows",
-      "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
-      "primary_url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "32c25b9f66a1668de61662188c040d0bad2a73c6",
-          "title": "使用 GitHub Agentic Workflows 自动化跨存储库文档 / Automating cross-repo documentation with GitHub Agentic Workflows",
-          "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-08T21:11:56Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub AI & ML"
-      ],
-      "items": [
-        {
-          "id": "32c25b9f66a1668de61662188c040d0bad2a73c6",
-          "title": "使用 GitHub Agentic Workflows 自动化跨存储库文档 / Automating cross-repo documentation with GitHub Agentic Workflows",
-          "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-08T21:11:56Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7929,
-      "importance": 0.7929,
-      "importance_score": 0.7929,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.7163,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-08T21:11:56Z",
-      "latest_at": "2026-07-08T21:11:56Z",
-      "primary_item": {
-        "id": "32c25b9f66a1668de61662188c040d0bad2a73c6",
-        "title": "使用 GitHub Agentic Workflows 自动化跨存储库文档 / Automating cross-repo documentation with GitHub Agentic Workflows",
-        "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
-        "source": "GitHub AI & ML",
         "source_name": "Official AI Updates"
       }
     },
@@ -550,15 +488,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.85,
-      "importance": 0.85,
-      "importance_score": 0.85,
+      "score": 0.8462,
+      "importance": 0.8462,
+      "importance_score": 0.8462,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.8998,
+        "recency": 0.8788,
         "story_heat": 0.0
       },
       "category": "official",
@@ -631,15 +569,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7867,
-      "importance": 0.7867,
-      "importance_score": 0.7867,
+      "score": 0.7826,
+      "importance": 0.7826,
+      "importance_score": 0.7826,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9671,
+        "recency": 0.9444,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -712,15 +650,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7792,
-      "importance": 0.7792,
-      "importance_score": 0.7792,
+      "score": 0.7753,
+      "importance": 0.7753,
+      "importance_score": 0.7753,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9087,
+        "recency": 0.8874,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -774,15 +712,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8329,
-      "importance": 0.8329,
-      "importance_score": 0.8329,
+      "score": 0.8289,
+      "importance": 0.8289,
+      "importance_score": 0.8289,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9383,
+        "recency": 0.9163,
         "story_heat": 0.0
       },
       "category": "official",
@@ -836,15 +774,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7669,
-      "importance": 0.7669,
-      "importance_score": 0.7669,
+      "score": 0.7629,
+      "importance": 0.7629,
+      "importance_score": 0.7629,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.963,
+        "recency": 0.9405,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -916,15 +854,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7639,
-      "importance": 0.7639,
-      "importance_score": 0.7639,
+      "score": 0.7604,
+      "importance": 0.7604,
+      "importance_score": 0.7604,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8239,
+        "recency": 0.8046,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -997,15 +935,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7611,
-      "importance": 0.7611,
-      "importance_score": 0.7611,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8252,
+        "recency": 0.8059,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -1059,15 +997,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7597,
-      "importance": 0.7597,
-      "importance_score": 0.7597,
+      "score": 0.7556,
+      "importance": 0.7556,
+      "importance_score": 0.7556,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9559,
+        "recency": 0.9335,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1139,15 +1077,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.759,
-      "importance": 0.759,
-      "importance_score": 0.759,
+      "score": 0.7555,
+      "importance": 0.7555,
+      "importance_score": 0.7555,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8468,
+        "recency": 0.827,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -1163,6 +1101,67 @@
         "title": "NVIDIA 发布 Nemotron-Labs-3-Puzzle-75B-A9B：压缩混合 MoE 模型，服务器吞吐量提升 2.03 倍",
         "url": "https://www.marktechpost.com/2026/07/09/nvidia-releases-nemotron-labs-3-puzzle-75b-a9b-a-compressed-hybrid-moe-llm-delivering-2-03x-server-throughput-at-matched-user-throughput",
         "source": "MarkTechPost（RSS）",
+        "source_name": "AI HOT"
+      }
+    },
+    {
+      "story_id": "story_71bfd20a6f64",
+      "title": "ChatGPT Sites将创意变可发布网站",
+      "url": "https://x.com/OpenAIDevs/status/2075331020090687666",
+      "primary_url": "https://x.com/OpenAIDevs/status/2075331020090687666",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "99c26dd85bc29e0b1b3731cff1e1ccd3f82f0236",
+          "title": "ChatGPT Sites将创意变可发布网站",
+          "url": "https://x.com/OpenAIDevs/status/2075331020090687666",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-09T21:27:27Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：OpenAI Developers (@OpenAIDevs)"
+      ],
+      "items": [
+        {
+          "id": "99c26dd85bc29e0b1b3731cff1e1ccd3f82f0236",
+          "title": "ChatGPT Sites将创意变可发布网站",
+          "url": "https://x.com/OpenAIDevs/status/2075331020090687666",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-09T21:27:27Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7543,
+      "importance": 0.7543,
+      "importance_score": 0.7543,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.68,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9929,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-09T21:27:27Z",
+      "latest_at": "2026-07-09T21:27:27Z",
+      "primary_item": {
+        "id": "99c26dd85bc29e0b1b3731cff1e1ccd3f82f0236",
+        "title": "ChatGPT Sites将创意变可发布网站",
+        "url": "https://x.com/OpenAIDevs/status/2075331020090687666",
+        "source": "X：OpenAI Developers (@OpenAIDevs)",
         "source_name": "AI HOT"
       }
     },
@@ -1201,15 +1200,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7451,
+      "importance": 0.7451,
+      "importance_score": 0.7451,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9132,
+        "recency": 0.8918,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1261,15 +1260,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8351,
-      "importance": 0.8351,
-      "importance_score": 0.8351,
+      "score": 0.8315,
+      "importance": 0.8315,
+      "importance_score": 0.8315,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8617,
+        "recency": 0.8415,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1286,6 +1285,66 @@
         "url": "https://openai.com/index/bio-bug-bounty",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
+      }
+    },
+    {
+      "story_id": "story_9b70631fafb5",
+      "title": "Google 推出 LiteRT.js：高性能 Web AI 推理运行时",
+      "url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
+      "primary_url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
+      "source": "Google Developers Blog（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "df900ebd867ac37793171c4eb87e144bd628c816",
+          "title": "Google 推出 LiteRT.js：高性能 Web AI 推理运行时",
+          "url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
+          "source": "Google Developers Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-09T21:21:08.292000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google Developers Blog（RSS）"
+      ],
+      "items": [
+        {
+          "id": "df900ebd867ac37793171c4eb87e144bd628c816",
+          "title": "Google 推出 LiteRT.js：高性能 Web AI 推理运行时",
+          "url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
+          "source": "Google Developers Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-09T21:21:08.292000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7361,
+      "importance": 0.7361,
+      "importance_score": 0.7361,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.62,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9914,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-07-09T21:21:08.292000Z",
+      "latest_at": "2026-07-09T21:21:08.292000Z",
+      "primary_item": {
+        "id": "df900ebd867ac37793171c4eb87e144bd628c816",
+        "title": "Google 推出 LiteRT.js：高性能 Web AI 推理运行时",
+        "url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
+        "source": "Google Developers Blog（RSS）",
+        "source_name": "AI HOT"
       }
     },
     {
@@ -1342,15 +1401,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7613,
-      "importance": 0.7613,
-      "importance_score": 0.7613,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8263,
+        "recency": 0.807,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -1367,87 +1426,6 @@
         "url": "https://www.ithome.com/0/974/517.htm",
         "source": "IT之家（RSS）",
         "source_name": "AI HOT"
-      }
-    },
-    {
-      "story_id": "story_46adf5b60934",
-      "title": "全球首部AI女演员主演电影开机：没有身体没有童年，却能调取全人类记忆",
-      "url": "https://www.aibase.com/news/29495",
-      "primary_url": "https://www.aibase.com/news/29495",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "dc297613e701360b4fe901aca8c030e9ad05e0d7",
-          "title": "全球首部AI女演员主演电影开机：没有身体没有童年，却能调取全人类记忆",
-          "url": "https://www.aibase.com/news/29495",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-09T07:00:26.011092Z"
-        },
-        {
-          "id": "76149870b66d47624f92355d80f0530ed50fa2f6",
-          "title": "全球首部 AI 女演员主演电影开机：没有身体没有童年，却能调取全人类记忆",
-          "url": "https://www.aibase.com/zh/news/29495",
-          "source": "Readhub · AI",
-          "source_name": "TopHub",
-          "site_id": "tophub",
-          "published_at": null
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "AIbase",
-        "Readhub · AI"
-      ],
-      "items": [
-        {
-          "id": "dc297613e701360b4fe901aca8c030e9ad05e0d7",
-          "title": "全球首部AI女演员主演电影开机：没有身体没有童年，却能调取全人类记忆",
-          "url": "https://www.aibase.com/news/29495",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-09T07:00:26.011092Z"
-        },
-        {
-          "id": "76149870b66d47624f92355d80f0530ed50fa2f6",
-          "title": "全球首部 AI 女演员主演电影开机：没有身体没有童年，却能调取全人类记忆",
-          "url": "https://www.aibase.com/zh/news/29495",
-          "source": "Readhub · AI",
-          "source_name": "TopHub",
-          "site_id": "tophub",
-          "published_at": null
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7611,
-      "importance": 0.7611,
-      "importance_score": 0.7611,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8252,
-        "story_heat": 0.25
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-09T07:00:26.011092Z",
-      "latest_at": "2026-07-09T07:00:26.011092Z",
-      "primary_item": {
-        "id": "dc297613e701360b4fe901aca8c030e9ad05e0d7",
-        "title": "全球首部AI女演员主演电影开机：没有身体没有童年，却能调取全人类记忆",
-        "url": "https://www.aibase.com/news/29495",
-        "source": "AIbase",
-        "source_name": "AIbase"
       }
     }
   ]
