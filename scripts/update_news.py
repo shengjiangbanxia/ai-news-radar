@@ -39,6 +39,9 @@ except ModuleNotFoundError:
     feedparser = None
 
 UTC = timezone.utc
+TZINFOS = {"CET": 3600, "CEST": 7200, "EST": -18000, "EDT": -14400,
+           "PST": -28800, "PDT": -25200, "CST": -21600, "CDT": -18000,
+           "MST": -25200, "MDT": -21600, "BST": 3600, "JST": 32400}
 BROWSER_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -333,7 +336,7 @@ def parse_iso(dt_str: str | None) -> datetime | None:
     if not dt_str:
         return None
     try:
-        dt = dtparser.parse(dt_str)
+        dt = dtparser.parse(dt_str, tzinfos=TZINFOS)
     except Exception:
         return None
     if not dt.tzinfo:
@@ -583,7 +586,7 @@ def parse_date_any(value: Any, now: datetime) -> datetime | None:
             pass
 
     try:
-        dt = dtparser.parse(s, tzinfos={"UT": 0, "UTC": 0, "GMT": 0})
+        dt = dtparser.parse(s, tzinfos={"UT": 0, "UTC": 0, "GMT": 0, **TZINFOS})
         if not dt.tzinfo:
             dt = dt.replace(tzinfo=UTC)
         return dt.astimezone(UTC)
