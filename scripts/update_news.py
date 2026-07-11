@@ -4572,6 +4572,54 @@ def translate_to_zh_cn(session: requests.Session, text: str) -> str | None:
     return None
 
 
+ZH_CACHE_DS_PREFIX = "ds1|"
+
+
+def translate_to_zh_deepseek(text: str, timeout: int = 20) -> str | None:
+    s = (text or "").strip()
+    if not s:
+        return None
+    api_key = str(os.environ.get("DEEPSEEK_API_KEY") or "").strip()
+    if not api_key:
+        return None
+    base_url = str(os.environ.get("DEEPSEEK_API_BASE_URL") or "https://api.deepseek.com").strip().rstrip("/")
+    model = str(os.environ.get("DEEPSEEK_MODEL") or "deepseek-chat").strip()
+    system_prompt = (
+        "你是科技新闻编辑，把英文 AI/科技新闻标题翻译成地道的简体中文。"
+        "产品名、公司名、模型名、媒体名、人名一律保留英文原文不翻译"
+        "（如 Codex、Claude、OpenAI、Anthropic、Hugging Face、The Information）。"
+        "用自然的中文表达，说人话，避免翻译腔。"
+        "只返回译文本身，不加引号，不加解释，长度贴近原标题的信息量。"
+    )
+    try:
+        r = requests.post(
+            f"{base_url}/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "temperature": 0.2,
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": s},
+                ],
+            },
+            timeout=timeout,
+        )
+        if r.status_code != 200:
+            return None
+        payload = r.json()
+        choices = payload.get("choices") if isinstance(payload, dict) else None
+        if not isinstance(choices, list) or not choices:
+            return None
+        content = str(((choices[0] or {}).get("message") or {}).get("content") or "").strip()
+        content = content.strip("\"'“”「」").strip()
+        if content and content != s:
+            return content
+    except Exception:
+        return None
+    return None
+
+
 def repair_zh_title_translation(original: str, translated: str) -> str:
     """Repair recurring machine-translation errors in AI product/news titles."""
     source = str(original or "")
@@ -4588,6 +4636,38 @@ def repair_zh_title_translation(original: str, translated: str) -> str:
         result = result.replace("存储库", "代码仓库")
     if re.search(r"\bdesktop app\b", source, re.I):
         result = result.replace("桌面应用程序", "桌面应用")
+    # 模型架构 Transformer 被译成电影名；排除原文明显在谈电影/玩具的场景防误伤。
+    if re.search(r"\btransformers?\b", source, re.I) and not re.search(
+        r"\b(movie|film|trailer|hasbro|toy)\b", source, re.I
+    ):
+        result = result.replace("变形金刚", "Transformer")
+    # 公司名 Hugging Face 被直译；仅当原文出现该公司名时才替换。
+    if re.search(r"\bHugging\s*Face\b", source, re.I):
+        result = result.replace("拥抱脸", "Hugging Face").replace("抱抱脸", "Hugging Face")
+    # 公司名 OpenAI 偶尔被拆词直译；"开放人工智能"日常中文几乎不用，误伤面小。
+    if re.search(r"\bOpenAI\b", source, re.I):
+        result = result.replace("开放人工智能", "OpenAI")
+    # 公司名 Anthropic 被误译为哲学词；仅替换"人择"这类专有误译，不动泛指"人类"的句子。
+    if re.search(r"\bAnthropic\b", source, re.I):
+        result = result.replace("人择", "Anthropic").replace("人类学公司", "Anthropic")
+    # 媒体名 The Information 被译成普通名词；只替换书名号/报社式误译，避免动正文里的"信息"。
+    if re.search(r"\bThe Information\b", source):
+        result = result.replace("《信息》", "The Information").replace("信息报", "The Information")
+    # 模型名 Gemini 被译成星座；AI 信源里原文含 Gemini 基本都指模型。
+    if re.search(r"\bGemini\b", source):
+        result = result.replace("双子座", "Gemini")
+    # 模型名 Llama 被译成动物名；仅当原文点名 Llama 时替换。
+    if re.search(r"\bLlama\b", source, re.I):
+        result = result.replace("骆驼", "Llama").replace("羊驼", "Llama")
+    # 产品名 Copilot 被直译；仅当原文出现 Copilot 时替换，不影响航空语境。
+    if re.search(r"\bCopilot\b", source, re.I):
+        result = result.replace("副驾驶", "Copilot")
+    # 产品名 Cursor 被译成"光标"；仅当原文以大写 Cursor 出现（产品名写法）时替换。
+    if re.search(r"\bCursor\b", source):
+        result = result.replace("光标", "Cursor")
+    # 公司名 Perplexity 被译成"困惑"；大小写敏感匹配，避免误伤指标含义的 perplexity。
+    if re.search(r"\bPerplexity\b", source):
+        result = result.replace("困惑", "Perplexity")
     return result
 
 
@@ -4638,20 +4718,37 @@ def add_bilingual_fields(
 
         out["title_en"] = title
 
+        has_ds_key = bool(str(os.environ.get("DEEPSEEK_API_KEY") or "").strip())
+        cache_hit_key: str | None = None
         zh_title = zh_by_url.get(url)
         if not zh_title:
-            zh_title = cache.get(title)
+            ds_key = ZH_CACHE_DS_PREFIX + title
+            zh_title = cache.get(ds_key)
+            if zh_title:
+                cache_hit_key = ds_key
+            elif not has_ds_key:
+                # 谷歌时代的裸 key 旧缓存只在 DeepSeek 不可用时兜底命中；
+                # 有 key 时视为 miss，触发 DeepSeek 重译逐步替换旧翻译。
+                zh_title = cache.get(title)
+                if zh_title:
+                    cache_hit_key = title
         if not zh_title and allow_translate and translated_now < max_new_translations:
-            tr = translate_to_zh_cn(session, title)
+            tr = translate_to_zh_deepseek(title)
             if tr and has_cjk(tr):
                 zh_title = repair_zh_title_translation(title, tr)
-                cache[title] = zh_title
+                cache[ZH_CACHE_DS_PREFIX + title] = zh_title
                 translated_now += 1
+            else:
+                tr = translate_to_zh_cn(session, title)
+                if tr and has_cjk(tr):
+                    zh_title = repair_zh_title_translation(title, tr)
+                    cache[title] = zh_title
+                    translated_now += 1
 
         if zh_title:
             zh_title = repair_zh_title_translation(title, zh_title)
-            if cache.get(title) and cache.get(title) != zh_title:
-                cache[title] = zh_title
+            if cache_hit_key and cache.get(cache_hit_key) != zh_title:
+                cache[cache_hit_key] = zh_title
             out["title_zh"] = zh_title
             out["title_bilingual"] = f"{zh_title} / {title}"
         return out
