@@ -11,6 +11,7 @@ from scripts.update_news import (
     TITLE_ENHANCE_CACHE_PREFIX,
     add_title_enhancements,
     enhance_title_deepseek,
+    fetch_title_context,
     title_needs_enhance,
 )
 
@@ -72,6 +73,129 @@ class TestTitleNeedsEnhanceGate(unittest.TestCase):
         }
         self.assertFalse(title_needs_enhance(item))
 
+    def test_long_chinese_aibase_title_on_aggregate_tier_is_not_gated(self):
+        # Regression: rule 1 (English word-count <= 4) was counting
+        # space-separated tokens on CJK titles too, so a long, already
+        # self-explanatory Chinese title (1-2 "words" with no spaces)
+        # false-positived as needing enhancement.
+        zh_title = "Meta携手博通与台积电，自研AI芯片Iris将于9月正式量产"
+        item = {
+            "site_id": "aibase",
+            "source_tier": "aggregate",
+            "title": zh_title,
+            "title_original": zh_title,
+            "title_zh": zh_title,
+            "title_en": None,
+        }
+        self.assertFalse(title_needs_enhance(item))
+
+    def test_short_chinese_title_under_12_chars_can_still_gate(self):
+        # Sanity check for the new CJK floor: it only exempts titles that are
+        # already long enough to be self-explanatory (>=12 chars), not short
+        # cryptic Chinese titles on gated tiers.
+        item = {
+            "site_id": "hackernews",
+            "source_tier": "discussion",
+            "title": "新芯片发布",
+            "title_original": "新芯片发布",
+            "title_zh": "新芯片发布",
+            "title_en": None,
+        }
+        self.assertTrue(title_needs_enhance(item))
+
+
+class TestFetchTitleContextJinaFallback(unittest.TestCase):
+    """ProductHunt-style Cloudflare 403s should fall back to r.jina.ai."""
+
+    def make_blocked_response(self):
+        resp = MagicMock()
+        resp.raise_for_status.side_effect = Exception("403 Client Error: Forbidden")
+        return resp
+
+    def make_jina_response(self, markdown: str):
+        resp = MagicMock()
+        resp.raise_for_status.return_value = None
+        resp.iter_content.return_value = iter([markdown.encode("utf-8")])
+        return resp
+
+    def test_direct_403_falls_back_to_jina_success(self):
+        blocked = self.make_blocked_response()
+        jina_markdown = (
+            "Title: AI Visibility - Track your brand across AI answer engines\n"
+            "\n"
+            "URL Source: https://producthunt.com/posts/ai-visibility\n"
+            "\n"
+            "Markdown Content:\n"
+            "* [Best of the day](https://www.producthunt.com/best/day)\n"
+            "* [Best of the week](https://www.producthunt.com/best/week)\n"
+            "AI Visibility monitors how your brand is mentioned by ChatGPT, Grok and other assistants.\n"
+            "It scans millions of AI-generated answers daily for brand mentions.\n"
+        )
+        jina_resp = self.make_jina_response(jina_markdown)
+        session = MagicMock()
+        session.get.side_effect = [blocked, jina_resp]
+
+        context = fetch_title_context(session, "https://producthunt.com/posts/ai-visibility")
+
+        self.assertEqual(session.get.call_count, 2)
+        second_call_url = session.get.call_args_list[1].args[0]
+        self.assertEqual(second_call_url, "https://r.jina.ai/https://producthunt.com/posts/ai-visibility")
+        self.assertIn("Title: AI Visibility", context)
+        # Real prose survives the nav-link filter...
+        self.assertIn("AI Visibility monitors how your brand is mentioned", context)
+        # ...but link-spaghetti nav rows do not pollute the LLM prompt.
+        self.assertNotIn("Best of the day", context)
+        self.assertNotIn("producthunt.com/best", context)
+        self.assertLessEqual(len(context), 800)
+
+    def test_jina_nav_only_page_falls_back_to_title_line_only(self):
+        blocked = self.make_blocked_response()
+        jina_markdown = (
+            "Title: AI Visibility - Track your brand across AI answer engines\n"
+            "\n"
+            "URL Source: https://producthunt.com/posts/ai-visibility\n"
+            "\n"
+            "Markdown Content:\n"
+            "* [Best of the day](https://www.producthunt.com/best/day)\n"
+            "* [Best of the week](https://www.producthunt.com/best/week)\n"
+            "* [Categories](https://www.producthunt.com/categories)\n"
+        )
+        jina_resp = self.make_jina_response(jina_markdown)
+        session = MagicMock()
+        session.get.side_effect = [blocked, jina_resp]
+
+        context = fetch_title_context(session, "https://producthunt.com/posts/ai-visibility")
+
+        self.assertEqual(
+            context, "Title: AI Visibility - Track your brand across AI answer engines"
+        )
+        self.assertNotIn("Best of the day", context)
+
+    def test_direct_403_and_jina_failure_returns_empty(self):
+        blocked = self.make_blocked_response()
+        jina_blocked = MagicMock()
+        jina_blocked.raise_for_status.side_effect = Exception("timeout")
+        session = MagicMock()
+        session.get.side_effect = [blocked, jina_blocked]
+
+        context = fetch_title_context(session, "https://producthunt.com/posts/ai-visibility")
+
+        self.assertEqual(context, "")
+        self.assertEqual(session.get.call_count, 2)
+
+    def test_direct_success_does_not_call_jina(self):
+        ok_resp = MagicMock()
+        ok_resp.raise_for_status.return_value = None
+        html = b'<html><head><meta name="description" content="A perfectly good direct description."></head><body></body></html>'
+        ok_resp.iter_content.return_value = iter([html])
+        session = MagicMock()
+        session.get.side_effect = [ok_resp]
+
+        context = fetch_title_context(session, "https://example.com/a")
+
+        self.assertEqual(session.get.call_count, 1)
+        self.assertIn("A perfectly good direct description.", context)
+
 
 class TestEnhanceTitleDeepseekValidation(unittest.TestCase):
     def setUp(self):
@@ -110,6 +234,29 @@ class TestEnhanceTitleDeepseekValidation(unittest.TestCase):
             result = enhance_title_deepseek(self.title, self.context)
         self.assertIsNone(result)
         mock_post.assert_not_called()
+
+    def test_long_raw_length_but_valid_effective_length_accepted(self):
+        # Regression: raw len=51 (>40) previously rejected this excellent
+        # rewrite, because English entity names (Claude, ChatGPT, Cursor)
+        # count 1:1 with CJK chars under a raw-length cap even though they
+        # read as a single "word" each editorially.
+        good = "Second Brain for AI v2提供Claude、ChatGPT、Cursor免费持久记忆"
+        self.assertGreater(len(good), 40)
+        with patch.dict("os.environ", DS_ENV, clear=True), patch(
+            "scripts.update_news.requests.post",
+            return_value=deepseek_ok_response(good),
+        ):
+            result = enhance_title_deepseek("Second Brain for AI v2", self.context)
+        self.assertEqual(result, good)
+
+    def test_long_cjk_run_on_rejected_by_effective_length(self):
+        run_on = "测" * 60
+        with patch.dict("os.environ", DS_ENV, clear=True), patch(
+            "scripts.update_news.requests.post",
+            return_value=deepseek_ok_response(run_on),
+        ):
+            result = enhance_title_deepseek("新款设备", self.context)
+        self.assertIsNone(result)
 
 
 class TestAddTitleEnhancementsWiring(unittest.TestCase):

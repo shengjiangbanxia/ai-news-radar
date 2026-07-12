@@ -4771,13 +4771,21 @@ def title_needs_enhance(item: dict[str, Any]) -> bool:
     if site_id == "official_ai" or tier in _TITLE_ENHANCE_EXEMPT_TIERS:
         return False
 
+    zh_title = str(item.get("title_zh") or "").strip()
     en_title = str(item.get("title_en") or item.get("title_original") or "").strip()
-    if en_title and 1 <= len(en_title.split()) <= 4:
+    effective_title = zh_title or en_title
+
+    # A decent-length Chinese title is already self-explanatory; never gate it,
+    # regardless of tier. Guards against CJK titles false-positiving on the
+    # space-separated word-count rule below (CJK has no spaces).
+    if effective_title and has_cjk(effective_title) and len(effective_title) >= 12:
+        return False
+
+    # Word-count rule only makes sense for genuinely English titles.
+    if en_title and is_mostly_english(en_title) and 1 <= len(en_title.split()) <= 4:
         return True
 
     if tier in _TITLE_ENHANCE_GATED_TIERS:
-        zh_title = str(item.get("title_zh") or "").strip()
-        effective_title = zh_title or en_title
         if effective_title and len(effective_title) < 18:
             return True
         if en_title and _TITLE_ENHANCE_YEAR_SUFFIX_RE.search(en_title):
@@ -4786,10 +4794,129 @@ def title_needs_enhance(item: dict[str, Any]) -> bool:
     return False
 
 
+def _fetch_context_bytes(
+    session: requests.Session, url: str, headers: dict[str, str], timeout: int, limit: int = 512 * 1024
+) -> bytes:
+    """Stream up to `limit` bytes from `url`, closing the connection early.
+    Any failure (non-200, timeout, connection error) yields b""."""
+    resp = None
+    try:
+        resp = session.get(url, timeout=timeout, headers=headers, stream=True)
+        resp.raise_for_status()
+        chunks: list[bytes] = []
+        total = 0
+        for chunk in resp.iter_content(chunk_size=8192):
+            if not chunk:
+                continue
+            chunks.append(chunk)
+            total += len(chunk)
+            if total >= limit:
+                break
+        return b"".join(chunks)
+    except Exception:
+        return b""
+    finally:
+        if resp is not None:
+            try:
+                resp.close()
+            except Exception:
+                pass
+
+
+def _parse_html_page_context(raw: bytes) -> str:
+    if not raw:
+        return ""
+    soup = BeautifulSoup(raw, "html.parser")
+
+    parts: list[str] = []
+    for attrs in (
+        {"property": "og:description"},
+        {"name": "description"},
+        {"name": "twitter:description"},
+        {"property": "twitter:description"},
+    ):
+        tag = soup.find("meta", attrs=attrs)
+        if tag and tag.get("content"):
+            text = str(tag.get("content")).strip()
+            if text:
+                parts.append(text)
+
+    p_count = 0
+    for p in soup.find_all("p"):
+        if p_count >= 3:
+            break
+        if p.find_parent(["script", "style", "nav"]):
+            continue
+        text = p.get_text(" ", strip=True)
+        if text:
+            parts.append(text)
+            p_count += 1
+
+    return "\n".join(part for part in parts if part).strip()
+
+
+_JINA_MD_LINK_RE = re.compile(r"!?\[[^\]]*\]\([^)]*\)")
+_JINA_MD_BULLET_RE = re.compile(r"^[*\-+]\s+|^\d+\.\s+")
+
+
+def _jina_line_is_prose(line: str) -> bool:
+    """Heuristic to skip nav-menu markdown link spaghetti (e.g. ProductHunt's
+    "* [Best of the day](https://...)" sidebar rows) while keeping real body
+    text. Strips markdown link syntax and bullet/heading markup; a line is
+    treated as prose only if enough plain text remains."""
+    stripped = _JINA_MD_LINK_RE.sub("", line)
+    stripped = _JINA_MD_BULLET_RE.sub("", stripped)
+    stripped = re.sub(r"[#>*_`|]", " ", stripped)
+    stripped = re.sub(r"\s+", " ", stripped).strip()
+    return len(stripped) >= 20
+
+
+def _parse_jina_reader_context(raw: bytes) -> str:
+    """r.jina.ai renders a page to markdown; the first line is
+    "Title: <descriptive page title>" followed by "URL Source: ..." and
+    "Markdown Content: ..." section markers before the actual body text."""
+    if not raw:
+        return ""
+    try:
+        text = raw.decode("utf-8", errors="ignore")
+    except Exception:
+        return ""
+    lines = [ln.strip() for ln in text.splitlines()]
+
+    title_line = next((ln for ln in lines if ln.lower().startswith("title:")), "")
+
+    content_lines: list[str] = []
+    for ln in lines[:40]:
+        if len(content_lines) >= 3:
+            break
+        if not ln or ln.lower().startswith(("title:", "url source:", "markdown content:")):
+            continue
+        if not _jina_line_is_prose(ln):
+            continue
+        content_lines.append(ln)
+
+    if not content_lines:
+        # No real prose in the first 40 lines (nav-heavy page). The title
+        # alone is often informative enough — PH-style titles read as full
+        # descriptive sentences — so fall back to just that.
+        return title_line.strip()
+
+    parts = ([title_line] if title_line else []) + content_lines
+    return "\n".join(part for part in parts if part).strip()
+
+
 def fetch_title_context(session: requests.Session, url: str) -> str:
     """Micro-crawl the source page for enough context (meta descriptions +
     first paragraphs) to let the LLM rewrite a terse title informatively.
-    Any failure or empty extraction returns "" so callers can skip cleanly."""
+    Any failure or empty extraction returns "" so callers can skip cleanly.
+
+    Some sources (e.g. ProductHunt) sit behind Cloudflare and 403 a direct
+    crawl. When the direct fetch yields no usable context, fall back to a
+    single request through r.jina.ai — a free, keyless third-party reader
+    proxy (~20 rpm) that renders the page to markdown. This only fires on
+    direct-fetch failure and is gated by the same TITLE_ENHANCE_MAX_PER_RUN
+    cap as the LLM call, so it stays well under the reader's rate limit.
+    """
     u = str(url or "").strip()
     if not u:
         return ""
@@ -4800,66 +4927,42 @@ def fetch_title_context(session: requests.Session, url: str) -> str:
         ),
         "Accept": "text/html,application/xhtml+xml",
     }
-    resp = None
-    try:
-        resp = session.get(u, timeout=8, headers=headers, stream=True)
-        resp.raise_for_status()
-        limit = 512 * 1024
-        chunks: list[bytes] = []
-        total = 0
-        for chunk in resp.iter_content(chunk_size=8192):
-            if not chunk:
-                continue
-            chunks.append(chunk)
-            total += len(chunk)
-            if total >= limit:
-                break
-        raw = b"".join(chunks)
-        if not raw:
-            return ""
-        soup = BeautifulSoup(raw, "html.parser")
+    raw = _fetch_context_bytes(session, u, headers, timeout=8)
+    context = _parse_html_page_context(raw)
+    if context:
+        return context[:800]
 
-        parts: list[str] = []
-        for attrs in (
-            {"property": "og:description"},
-            {"name": "description"},
-            {"name": "twitter:description"},
-            {"property": "twitter:description"},
-        ):
-            tag = soup.find("meta", attrs=attrs)
-            if tag and tag.get("content"):
-                text = str(tag.get("content")).strip()
-                if text:
-                    parts.append(text)
+    jina_headers = {"Accept": "text/plain"}
+    jina_raw = _fetch_context_bytes(session, f"https://r.jina.ai/{u}", jina_headers, timeout=15)
+    jina_context = _parse_jina_reader_context(jina_raw)
+    return jina_context[:800]
 
-        p_count = 0
-        for p in soup.find_all("p"):
-            if p_count >= 3:
-                break
-            if p.find_parent(["script", "style", "nav"]):
-                continue
-            text = p.get_text(" ", strip=True)
-            if text:
-                parts.append(text)
-                p_count += 1
-
-        joined = "\n".join(part for part in parts if part).strip()
-        return joined[:800]
-    except Exception:
-        return ""
-    finally:
-        if resp is not None:
-            try:
-                resp.close()
-            except Exception:
-                pass
 
 
 def _title_enhance_entity_tokens(title: str) -> list[str]:
     return [tok for tok in _TITLE_ENHANCE_ENTITY_RE.findall(str(title or "")) if len(tok) >= 2]
 
 
-def enhance_title_deepseek(title: str, context: str, timeout: int = 20) -> str | None:
+_TITLE_ENHANCE_TOKEN_RE = re.compile(r"[A-Za-z0-9.+-]+")
+
+
+def _title_enhance_effective_length(text: str) -> tuple[int, int]:
+    """Length validation uses editorial "字" count, not raw chars: a title
+    that correctly keeps English entities verbatim (Claude, ChatGPT, Cursor)
+    blows past a raw-char cap even when it reads as a normal-length headline.
+    Returns (cjk_char_count, effective_length) where each CJK char counts 1,
+    each latin/alnum token (a run of [A-Za-z0-9.+-]+) counts as one "word"
+    worth 2 if it contains a letter (Claude -> 2, not 6) else 1 (bare digit
+    runs like a year); punctuation and spaces are free."""
+    s = str(text or "")
+    cjk_count = len(re.findall(r"[一-鿿]", s))
+    weight = 0
+    for token in _TITLE_ENHANCE_TOKEN_RE.findall(s):
+        weight += 2 if re.search(r"[A-Za-z]", token) else 1
+    return cjk_count, cjk_count + weight
+
+
+def enhance_title_deepseek(title: str, context: str, timeout: int = 45) -> str | None:
     """Rewrite a terse/jargon title into an informative Chinese one-liner,
     grounded in `context` (micro-crawled page text). Validates the candidate
     before returning so a non-None result can be trusted by callers."""
@@ -4874,7 +4977,7 @@ def enhance_title_deepseek(title: str, context: str, timeout: int = 20) -> str |
     model = str(os.environ.get("DEEPSEEK_MODEL") or "deepseek-chat").strip()
     system_prompt = (
         "你是科技新闻编辑，负责把语焉不详、看不出信息量的英文标题改写成一条完整的中文资讯标题。"
-        "输出一条中文资讯标题，不超过28个字。"
+        "输出一条中文资讯标题，不超过28个字（英文名称按一个词计）。"
         "原文中的关键实体（公司名、产品名、人名）必须原样保留英文，不要翻译或音译。"
         "不得编造原文和参考资料之外的数字或事实。"
         "使用新闻陈述语气，不要营销口号腔调。"
@@ -4910,7 +5013,8 @@ def enhance_title_deepseek(title: str, context: str, timeout: int = 20) -> str |
 
     if not content or not has_cjk(content):
         return None
-    if not (8 <= len(content) <= 40):
+    cjk_count, effective_len = _title_enhance_effective_length(content)
+    if cjk_count < 4 or not (8 <= effective_len <= 36):
         return None
 
     entities = _title_enhance_entity_tokens(title_s)
