@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T19:54:53.073006Z",
+  "generated_at": "2026-07-14T20:35:10.076413Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "id": "paper-police",
-      "name": "论文警察"
+      "name": "较真党"
     },
     {
       "id": "pragmatic",
@@ -17,10 +17,30 @@
   ],
   "items": [
     {
+      "story_id": "story_29a1e494fbc3",
+      "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "rank": 1,
+      "reviews": {
+        "cynic": {
+          "score": 35,
+          "review": "27B模型跑手机？量化到3-bit还能叫多模态？体验估计比PPT还卡。"
+        },
+        "paper-police": {
+          "score": 20,
+          "review": "只有宣称，无论文代码或第三方评测，真实性待考证。"
+        },
+        "pragmatic": {
+          "score": 92,
+          "review": "本地跑27B模型，离线推理和隐私敏感场景直接受益，找量化方案和Demo试试。"
+        }
+      }
+    },
+    {
       "story_id": "story_3c7e9dc57dbe",
       "title": "代码扫描显示AI对拉取请求进行安全检测 / Code scanning shows AI security detections on pull requests",
       "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
-      "rank": 1,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 75,
@@ -28,7 +48,7 @@
         },
         "paper-police": {
           "score": 25,
-          "review": "官方公告有链接，但无论文无代码无独立评测，证据不足。"
+          "review": "官方博客宣布新功能，无论文无代码无评测，无法独立验证。"
         },
         "pragmatic": {
           "score": 90,
@@ -40,39 +60,19 @@
       "story_id": "story_a37b7492af9e",
       "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
       "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 75,
           "review": "终于想起自己会写漏洞了？这功能该叫‘事后诸葛亮’。"
         },
         "paper-police": {
-          "score": 20,
-          "review": "官方公告宣布新功能，但无论文或评测数据，无法验证有效性。"
+          "score": 25,
+          "review": "官方公告有链接，但无技术细节与独立验证，不可复现。"
         },
         "pragmatic": {
           "score": 90,
           "review": "写代码时直接查安全漏洞，省去单独跑工具的时间，今天就能用。"
-        }
-      }
-    },
-    {
-      "story_id": "story_b39fa54bc8de",
-      "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译 / http://x.com/i/article/2067347903761485824",
-      "url": "https://x.com/googleaidevs/status/2077049898059354565",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 72,
-          "review": "70+语言？先测测延迟和方言准确度再吹不迟。"
-        },
-        "paper-police": {
-          "score": 20,
-          "review": "只有官方推文，无论文无代码无评测，证据不足。"
-        },
-        "pragmatic": {
-          "score": 90,
-          "review": "直接可用的语音翻译API，多语言应用立刻集成。"
         }
       }
     }

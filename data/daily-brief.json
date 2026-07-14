@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T19:43:12.451060Z",
+  "generated_at": "2026-07-14T20:25:17.963894Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -17,7 +17,7 @@
           "title_zh": "代码扫描显示AI对拉取请求进行安全检测",
           "title_en": "Code scanning shows AI security detections on pull requests",
           "title_original": "Code scanning shows AI security detections on pull requests",
-          "summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and…\nGitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and address potential issues in parts of the ",
+          "summary": null,
           "recommend_reason_zh": "GitHub code scanning推出AI安全检测，直接在pull requests上显示，覆盖CodeQL不支持的编程语言和框架，现处于public preview，需GitHub Copilot license并消耗AI credits。",
           "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
           "source": "GitHub Changelog",
@@ -37,7 +37,7 @@
           "title_zh": "代码扫描显示AI对拉取请求进行安全检测",
           "title_en": "Code scanning shows AI security detections on pull requests",
           "title_original": "Code scanning shows AI security detections on pull requests",
-          "summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and…\nGitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and address potential issues in parts of the ",
+          "summary": null,
           "recommend_reason_zh": "GitHub code scanning推出AI安全检测，直接在pull requests上显示，覆盖CodeQL不支持的编程语言和框架，现处于public preview，需GitHub Copilot license并消耗AI credits。",
           "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
           "source": "GitHub Changelog",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8427,
-      "importance": 0.8427,
-      "importance_score": 0.8427,
+      "score": 0.8409,
+      "importance": 0.8409,
+      "importance_score": 0.8409,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9927,
+        "recency": 0.9827,
         "story_heat": 0.0
       },
       "category": "official",
@@ -73,7 +73,7 @@
         "title_zh": "代码扫描显示AI对拉取请求进行安全检测",
         "title_en": "Code scanning shows AI security detections on pull requests",
         "title_original": "Code scanning shows AI security detections on pull requests",
-        "summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and…\nGitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and address potential issues in parts of the ",
+        "summary": null,
         "recommend_reason_zh": "GitHub code scanning推出AI安全检测，直接在pull requests上显示，覆盖CodeQL不支持的编程语言和框架，现处于public preview，需GitHub Copilot license并消耗AI credits。",
         "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
         "source": "GitHub Changelog",
@@ -85,7 +85,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8346,
-      "importance": 0.8346,
-      "importance_score": 0.8346,
+      "score": 0.8329,
+      "importance": 0.8329,
+      "importance_score": 0.8329,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9477,
+        "recency": 0.9381,
         "story_heat": 0.0
       },
       "category": "official",
@@ -170,7 +170,150 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
+      }
+    },
+    {
+      "story_id": "story_29a1e494fbc3",
+      "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "primary_url": "https://prismml.com/news/bonsai-27b",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "cf4a7f54fa86a332e7d7e5f9623df0d94e681b32",
+          "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "title_zh": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "title_en": null,
+          "title_original": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
+          "recommend_reason_zh": "Bonsai 27B推出1-bit变体仅3.9GB，首次让27B级多模态模型在iPhone 17 Pro上运行，保留90%全精度性能，支持262K上下文和代理循环。",
+          "url": "https://prismml.com/news/bonsai-27b",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T19:51:19.560000Z"
+        },
+        {
+          "id": "63510c526bb9f9d7a05ece0b22b7cb9ab8c3522b",
+          "title": "Bonsai 27B（1-bit LLM）：首款能在手机上运行的27B级模型 / Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_zh": "Bonsai 27B（1-bit LLM）：首款能在手机上运行的27B级模型",
+          "title_en": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_original": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48910545",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-14T19:43:38.810000Z"
+        },
+        {
+          "id": "4198570cfbeaec1c6e0cba89ffcc05d3bf6e8f46",
+          "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型 / Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_zh": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "title_en": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_original": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://prismml.com/news/bonsai-27b",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-14T17:50:48Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News",
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "cf4a7f54fa86a332e7d7e5f9623df0d94e681b32",
+          "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "title_zh": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "title_en": null,
+          "title_original": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
+          "recommend_reason_zh": "Bonsai 27B推出1-bit变体仅3.9GB，首次让27B级多模态模型在iPhone 17 Pro上运行，保留90%全精度性能，支持262K上下文和代理循环。",
+          "url": "https://prismml.com/news/bonsai-27b",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T19:51:19.560000Z"
+        },
+        {
+          "id": "63510c526bb9f9d7a05ece0b22b7cb9ab8c3522b",
+          "title": "Bonsai 27B（1-bit LLM）：首款能在手机上运行的27B级模型 / Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_zh": "Bonsai 27B（1-bit LLM）：首款能在手机上运行的27B级模型",
+          "title_en": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_original": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48910545",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-14T19:43:38.810000Z"
+        },
+        {
+          "id": "4198570cfbeaec1c6e0cba89ffcc05d3bf6e8f46",
+          "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型 / Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_zh": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+          "title_en": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "title_original": "Bonsai 27B (1-bit LLM): The First 27B-Class Model to Run on a Phone",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://prismml.com/news/bonsai-27b",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-14T17:50:48Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8281,
+      "importance": 0.8281,
+      "importance_score": 0.8281,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9919,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-14T17:50:48Z",
+      "latest_at": "2026-07-14T19:51:19.560000Z",
+      "primary_item": {
+        "id": "cf4a7f54fa86a332e7d7e5f9623df0d94e681b32",
+        "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+        "title_zh": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+        "title_en": null,
+        "title_original": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+        "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
+        "recommend_reason_zh": "Bonsai 27B推出1-bit变体仅3.9GB，首次让27B级多模态模型在iPhone 17 Pro上运行，保留90%全精度性能，支持262K上下文和代理循环。",
+        "url": "https://prismml.com/news/bonsai-27b",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 92,
+      "persona_review": "本地跑27B模型，离线推理和隐私敏感场景直接受益，找量化方案和Demo试试。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -218,15 +361,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8284,
-      "importance": 0.8284,
-      "importance_score": 0.8284,
+      "score": 0.8269,
+      "importance": 0.8269,
+      "importance_score": 0.8269,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.869,
+        "recency": 0.8603,
         "story_heat": 0.0
       },
       "category": "official",
@@ -255,7 +398,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -303,15 +446,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8214,
-      "importance": 0.8214,
-      "importance_score": 0.8214,
+      "score": 0.82,
+      "importance": 0.82,
+      "importance_score": 0.82,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.7522,
+        "recency": 0.7446,
         "story_heat": 0.0
       },
       "category": "official",
@@ -340,7 +483,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -388,15 +531,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8364,
-      "importance": 0.8364,
-      "importance_score": 0.8364,
+      "score": 0.8346,
+      "importance": 0.8346,
+      "importance_score": 0.8346,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9576,
+        "recency": 0.9479,
         "story_heat": 0.0
       },
       "category": "official",
@@ -425,7 +568,261 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
+      }
+    },
+    {
+      "story_id": "story_537b75be5a97",
+      "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "primary_url": "https://www.anthropic.com/news/claude-for-teachers",
+      "source": "Anthropic：Newsroom（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f55cac4450b28ebb4ef289394be64e434856b95d",
+          "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
+          "title_zh": "Anthropic 推出 Claude for Teachers",
+          "title_en": "Introducing Claude for Teachers",
+          "title_original": "Introducing Claude for Teachers",
+          "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
+          "recommend_reason_zh": "Anthropic推出Claude for Teachers，为美国K-12认证教师免费提供高级功能，连接50个州学术标准及OpenSciEd等课程资源，保护学生隐私并承诺不用于模型训练。",
+          "url": "https://www.anthropic.com/news/claude-for-teachers",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T15:11:11.440000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Anthropic：Newsroom（网页）"
+      ],
+      "items": [
+        {
+          "id": "f55cac4450b28ebb4ef289394be64e434856b95d",
+          "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
+          "title_zh": "Anthropic 推出 Claude for Teachers",
+          "title_en": "Introducing Claude for Teachers",
+          "title_original": "Introducing Claude for Teachers",
+          "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
+          "recommend_reason_zh": "Anthropic推出Claude for Teachers，为美国K-12认证教师免费提供高级功能，连接50个州学术标准及OpenSciEd等课程资源，保护学生隐私并承诺不用于模型训练。",
+          "url": "https://www.anthropic.com/news/claude-for-teachers",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T15:11:11.440000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7849,
+      "importance": 0.7849,
+      "importance_score": 0.7849,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9272,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-14T15:11:11.440000Z",
+      "latest_at": "2026-07-14T15:11:11.440000Z",
+      "primary_item": {
+        "id": "f55cac4450b28ebb4ef289394be64e434856b95d",
+        "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
+        "title_zh": "Anthropic 推出 Claude for Teachers",
+        "title_en": "Introducing Claude for Teachers",
+        "title_original": "Introducing Claude for Teachers",
+        "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
+        "recommend_reason_zh": "Anthropic推出Claude for Teachers，为美国K-12认证教师免费提供高级功能，连接50个州学术标准及OpenSciEd等课程资源，保护学生隐私并承诺不用于模型训练。",
+        "url": "https://www.anthropic.com/news/claude-for-teachers",
+        "source": "Anthropic：Newsroom（网页）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 30,
+      "persona_review": "面向教师的产品，非开发者工具，除非你在做教育应用否则不用管。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T20:34:49.770924Z"
+      }
+    },
+    {
+      "story_id": "story_ed0356b75e5a",
+      "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
+      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "primary_url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "fb33ef4dff15b9f96936d9e07015c01be9d3c058",
+          "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
+          "title_zh": "数据科学团队如何使用ChatGPT Work",
+          "title_en": "How data science teams use ChatGPT Work",
+          "title_original": "How data science teams use ChatGPT Work",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-14T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "fb33ef4dff15b9f96936d9e07015c01be9d3c058",
+          "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
+          "title_zh": "数据科学团队如何使用ChatGPT Work",
+          "title_en": "How data science teams use ChatGPT Work",
+          "title_original": "How data science teams use ChatGPT Work",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-14T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.814,
+      "importance": 0.814,
+      "importance_score": 0.814,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.7446,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-14T00:00:00Z",
+      "latest_at": "2026-07-14T00:00:00Z",
+      "primary_item": {
+        "id": "fb33ef4dff15b9f96936d9e07015c01be9d3c058",
+        "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
+        "title_zh": "数据科学团队如何使用ChatGPT Work",
+        "title_en": "How data science teams use ChatGPT Work",
+        "title_original": "How data science teams use ChatGPT Work",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 50,
+      "persona_review": "教程性质，非新工具或降价，不急着看。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T20:34:49.770924Z"
+      }
+    },
+    {
+      "story_id": "story_a37b7492af9e",
+      "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+      "primary_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
+          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+          "title_zh": "GitHub Copilot 应用现已支持安全审查",
+          "title_en": "Security reviews now available in the GitHub Copilot app",
+          "title_original": "Security reviews now available in the GitHub Copilot app",
+          "summary": null,
+          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
+          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-14T12:54:12Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
+          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+          "title_zh": "GitHub Copilot 应用现已支持安全审查",
+          "title_en": "Security reviews now available in the GitHub Copilot app",
+          "title_original": "Security reviews now available in the GitHub Copilot app",
+          "summary": null,
+          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
+          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-14T12:54:12Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8335,
+      "importance": 0.8335,
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8971,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-14T12:54:12Z",
+      "latest_at": "2026-07-14T12:54:12Z",
+      "primary_item": {
+        "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
+        "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+        "title_zh": "GitHub Copilot 应用现已支持安全审查",
+        "title_en": "Security reviews now available in the GitHub Copilot app",
+        "title_original": "Security reviews now available in the GitHub Copilot app",
+        "summary": null,
+        "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
+        "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 90,
+      "persona_review": "写代码时直接查安全漏洞，省去单独跑工具的时间，今天就能用。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -531,15 +928,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8038,
-      "importance": 0.8038,
-      "importance_score": 0.8038,
+      "score": 0.8021,
+      "importance": 0.8021,
+      "importance_score": 0.8021,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9567,
+        "recency": 0.9471,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -568,261 +965,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
-      }
-    },
-    {
-      "story_id": "story_537b75be5a97",
-      "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
-      "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "primary_url": "https://www.anthropic.com/news/claude-for-teachers",
-      "source": "Anthropic：Newsroom（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "f55cac4450b28ebb4ef289394be64e434856b95d",
-          "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
-          "title_zh": "Anthropic 推出 Claude for Teachers",
-          "title_en": "Introducing Claude for Teachers",
-          "title_original": "Introducing Claude for Teachers",
-          "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
-          "recommend_reason_zh": "Anthropic推出Claude for Teachers，为美国K-12认证教师免费提供高级功能，连接50个州学术标准及OpenSciEd等课程资源，保护学生隐私并承诺不用于模型训练。",
-          "url": "https://www.anthropic.com/news/claude-for-teachers",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T15:11:11.440000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Newsroom（网页）"
-      ],
-      "items": [
-        {
-          "id": "f55cac4450b28ebb4ef289394be64e434856b95d",
-          "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
-          "title_zh": "Anthropic 推出 Claude for Teachers",
-          "title_en": "Introducing Claude for Teachers",
-          "title_original": "Introducing Claude for Teachers",
-          "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
-          "recommend_reason_zh": "Anthropic推出Claude for Teachers，为美国K-12认证教师免费提供高级功能，连接50个州学术标准及OpenSciEd等课程资源，保护学生隐私并承诺不用于模型训练。",
-          "url": "https://www.anthropic.com/news/claude-for-teachers",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T15:11:11.440000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7866,
-      "importance": 0.7866,
-      "importance_score": 0.7866,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.9366,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-14T15:11:11.440000Z",
-      "latest_at": "2026-07-14T15:11:11.440000Z",
-      "primary_item": {
-        "id": "f55cac4450b28ebb4ef289394be64e434856b95d",
-        "title": "Anthropic 推出 Claude for Teachers / Introducing Claude for Teachers",
-        "title_zh": "Anthropic 推出 Claude for Teachers",
-        "title_en": "Introducing Claude for Teachers",
-        "title_original": "Introducing Claude for Teachers",
-        "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
-        "recommend_reason_zh": "Anthropic推出Claude for Teachers，为美国K-12认证教师免费提供高级功能，连接50个州学术标准及OpenSciEd等课程资源，保护学生隐私并承诺不用于模型训练。",
-        "url": "https://www.anthropic.com/news/claude-for-teachers",
-        "source": "Anthropic：Newsroom（网页）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 30,
-      "persona_review": "面向教师的产品，非开发者工具，除非你在做教育应用否则不用管。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
-      }
-    },
-    {
-      "story_id": "story_ed0356b75e5a",
-      "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "primary_url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "fb33ef4dff15b9f96936d9e07015c01be9d3c058",
-          "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
-          "title_zh": "数据科学团队如何使用ChatGPT Work",
-          "title_en": "How data science teams use ChatGPT Work",
-          "title_original": "How data science teams use ChatGPT Work",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-14T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "fb33ef4dff15b9f96936d9e07015c01be9d3c058",
-          "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
-          "title_zh": "数据科学团队如何使用ChatGPT Work",
-          "title_en": "How data science teams use ChatGPT Work",
-          "title_original": "How data science teams use ChatGPT Work",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-14T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8154,
-      "importance": 0.8154,
-      "importance_score": 0.8154,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.7522,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-14T00:00:00Z",
-      "latest_at": "2026-07-14T00:00:00Z",
-      "primary_item": {
-        "id": "fb33ef4dff15b9f96936d9e07015c01be9d3c058",
-        "title": "数据科学团队如何使用ChatGPT Work / How data science teams use ChatGPT Work",
-        "title_zh": "数据科学团队如何使用ChatGPT Work",
-        "title_en": "How data science teams use ChatGPT Work",
-        "title_original": "How data science teams use ChatGPT Work",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 50,
-      "persona_review": "教程性质，非新工具或降价，不急着看。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
-      }
-    },
-    {
-      "story_id": "story_a37b7492af9e",
-      "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-      "primary_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
-          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-          "title_zh": "GitHub Copilot 应用现已支持安全审查",
-          "title_en": "Security reviews now available in the GitHub Copilot app",
-          "title_original": "Security reviews now available in the GitHub Copilot app",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
-          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-14T12:54:12Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
-          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-          "title_zh": "GitHub Copilot 应用现已支持安全审查",
-          "title_en": "Security reviews now available in the GitHub Copilot app",
-          "title_original": "Security reviews now available in the GitHub Copilot app",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
-          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-14T12:54:12Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8351,
-      "importance": 0.8351,
-      "importance_score": 0.8351,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.9063,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-14T12:54:12Z",
-      "latest_at": "2026-07-14T12:54:12Z",
-      "primary_item": {
-        "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
-        "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-        "title_zh": "GitHub Copilot 应用现已支持安全审查",
-        "title_en": "Security reviews now available in the GitHub Copilot app",
-        "title_original": "Security reviews now available in the GitHub Copilot app",
-        "summary": null,
-        "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
-        "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 90,
-      "persona_review": "写代码时直接查安全漏洞，省去单独跑工具的时间，今天就能用。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -899,15 +1042,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7696,
-      "importance": 0.7696,
-      "importance_score": 0.7696,
+      "score": 0.7681,
+      "importance": 0.7681,
+      "importance_score": 0.7681,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8724,
+        "recency": 0.8637,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -936,7 +1079,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1013,15 +1156,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7687,
-      "importance": 0.7687,
-      "importance_score": 0.7687,
+      "score": 0.7672,
+      "importance": 0.7672,
+      "importance_score": 0.7672,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.817,
+        "recency": 0.8088,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -1050,7 +1193,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1098,15 +1241,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7586,
-      "importance": 0.7586,
-      "importance_score": 0.7586,
+      "score": 0.7568,
+      "importance": 0.7568,
+      "importance_score": 0.7568,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9834,
+        "recency": 0.9735,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1134,7 +1277,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1182,15 +1325,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8154,
-      "importance": 0.8154,
-      "importance_score": 0.8154,
+      "score": 0.814,
+      "importance": 0.814,
+      "importance_score": 0.814,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7522,
+        "recency": 0.7446,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1219,150 +1362,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
-      }
-    },
-    {
-      "story_id": "story_542c66aa9068",
-      "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-      "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-      "primary_url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c45a95aeb13d7ca5f7ec6c2dc85650e23a074963",
-          "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "title_zh": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "title_en": null,
-          "title_original": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "summary": "普林斯顿大学教授 Arvind Narayanan 在首尔 ICML 2026 上发表主旨演讲，提出三个核心论点：第一，\"AI 作为正常技术\"框架是思考 AI 影响的正确方式；第二，即使应认真对待递归自我改进，实验室中没有任何里程碑会突然让所有人失业；第三，未来工作将发生根本性变化，需要大量适应。他呼吁 AI 社区不应接受工作被取代，而应主动建立与 AI 互补的技能（如判断力、品味），并展望了人类与 AI 的\"共超智能\"愿景。",
-          "recommend_reason_zh": "普林斯顿教授Narayanan在ICML 2026主旨演讲中提出“AI as Normal Technology”框架，强调没有单一里程碑会让所有人失业，并呼吁人类主动适应AI驱动的未来工作变革，而非被动躺平。",
-          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T07:07:34.621000Z"
-        },
-        {
-          "id": "2983edb5657957aac635151bf899b03b88821541",
-          "title": "ICML 2026 keynote：AI能力增长后人类还能做什么",
-          "title_zh": "ICML 2026 keynote：AI能力增长后人类还能做什么",
-          "title_en": null,
-          "title_original": "那我们还能做些什么呢？",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-          "source": "www.normaltech.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-14T07:07:34.621000Z"
-        },
-        {
-          "id": "4d182d4efd2595125dfa2858396fa17a9b974b04",
-          "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平 / What will be left for us to work on?",
-          "title_zh": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "title_en": "What will be left for us to work on?",
-          "title_original": "What will be left for us to work on?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-14T01:44:40Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "www.normaltech.ai"
-      ],
-      "items": [
-        {
-          "id": "c45a95aeb13d7ca5f7ec6c2dc85650e23a074963",
-          "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "title_zh": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "title_en": null,
-          "title_original": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "summary": "普林斯顿大学教授 Arvind Narayanan 在首尔 ICML 2026 上发表主旨演讲，提出三个核心论点：第一，\"AI 作为正常技术\"框架是思考 AI 影响的正确方式；第二，即使应认真对待递归自我改进，实验室中没有任何里程碑会突然让所有人失业；第三，未来工作将发生根本性变化，需要大量适应。他呼吁 AI 社区不应接受工作被取代，而应主动建立与 AI 互补的技能（如判断力、品味），并展望了人类与 AI 的\"共超智能\"愿景。",
-          "recommend_reason_zh": "普林斯顿教授Narayanan在ICML 2026主旨演讲中提出“AI as Normal Technology”框架，强调没有单一里程碑会让所有人失业，并呼吁人类主动适应AI驱动的未来工作变革，而非被动躺平。",
-          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T07:07:34.621000Z"
-        },
-        {
-          "id": "2983edb5657957aac635151bf899b03b88821541",
-          "title": "ICML 2026 keynote：AI能力增长后人类还能做什么",
-          "title_zh": "ICML 2026 keynote：AI能力增长后人类还能做什么",
-          "title_en": null,
-          "title_original": "那我们还能做些什么呢？",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-          "source": "www.normaltech.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-14T07:07:34.621000Z"
-        },
-        {
-          "id": "4d182d4efd2595125dfa2858396fa17a9b974b04",
-          "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平 / What will be left for us to work on?",
-          "title_zh": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-          "title_en": "What will be left for us to work on?",
-          "title_original": "What will be left for us to work on?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-14T01:44:40Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7817,
-      "importance": 0.7817,
-      "importance_score": 0.7817,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8337,
-        "story_heat": 0.5
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-14T01:44:40Z",
-      "latest_at": "2026-07-14T07:07:34.621000Z",
-      "primary_item": {
-        "id": "c45a95aeb13d7ca5f7ec6c2dc85650e23a074963",
-        "title": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-        "title_zh": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-        "title_en": null,
-        "title_original": "普林斯顿教授 Narayanan 在 ICML 2026 发表主旨演讲：AI 作为正常技术，人类应主动适应而非躺平",
-        "summary": "普林斯顿大学教授 Arvind Narayanan 在首尔 ICML 2026 上发表主旨演讲，提出三个核心论点：第一，\"AI 作为正常技术\"框架是思考 AI 影响的正确方式；第二，即使应认真对待递归自我改进，实验室中没有任何里程碑会突然让所有人失业；第三，未来工作将发生根本性变化，需要大量适应。他呼吁 AI 社区不应接受工作被取代，而应主动建立与 AI 互补的技能（如判断力、品味），并展望了人类与 AI 的\"共超智能\"愿景。",
-        "recommend_reason_zh": "普林斯顿教授Narayanan在ICML 2026主旨演讲中提出“AI as Normal Technology”框架，强调没有单一里程碑会让所有人失业，并呼吁人类主动适应AI驱动的未来工作变革，而非被动躺平。",
-        "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 20,
-      "persona_review": "哲学式演讲，不涉及可上手工具或代码，看完不改变今天的工作方式。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1410,21 +1410,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7509,
-      "importance": 0.7509,
-      "importance_score": 0.7509,
+      "score": 0.7494,
+      "importance": 0.7494,
+      "importance_score": 0.7494,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8574,
+        "recency": 0.8488,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-07-14T09:04:00Z",
       "latest_at": "2026-07-14T09:04:00Z",
@@ -1446,7 +1445,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1494,21 +1493,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7488,
+      "importance": 0.7488,
+      "importance_score": 0.7488,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9381,
+        "recency": 0.9286,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-07-14T15:17:40Z",
       "latest_at": "2026-07-14T15:17:40Z",
@@ -1530,7 +1528,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1578,15 +1576,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7446,
-      "importance": 0.7446,
-      "importance_score": 0.7446,
+      "score": 0.7431,
+      "importance": 0.7431,
+      "importance_score": 0.7431,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8558,
+        "recency": 0.8472,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1613,7 +1611,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1690,15 +1688,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7696,
-      "importance": 0.7696,
-      "importance_score": 0.7696,
+      "score": 0.7681,
+      "importance": 0.7681,
+      "importance_score": 0.7681,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8724,
+        "recency": 0.8637,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -1727,7 +1725,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1775,15 +1773,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7303,
-      "importance": 0.7303,
-      "importance_score": 0.7303,
+      "score": 0.7289,
+      "importance": 0.7289,
+      "importance_score": 0.7289,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7592,
+        "recency": 0.7515,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1810,7 +1808,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     },
     {
@@ -1858,15 +1856,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7302,
-      "importance": 0.7302,
-      "importance_score": 0.7302,
+      "score": 0.7286,
+      "importance": 0.7286,
+      "importance_score": 0.7286,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8587,
+        "recency": 0.85,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1893,7 +1891,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T19:54:42.906479Z"
+        "scored_at": "2026-07-14T20:34:49.770924Z"
       }
     }
   ]

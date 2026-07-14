@@ -204,6 +204,36 @@
       "review": "官方公告有链接，但无论文无代码无独立评测，证据不足。",
       "title_hash": "8cad1994",
       "scored_at": "2026-07-14T19:54:53.072908Z"
+    },
+    "story_29a1e494fbc3|pragmatic|0a5c5b24": {
+      "score": 92,
+      "review": "本地跑27B模型，离线推理和隐私敏感场景直接受益，找量化方案和Demo试试。",
+      "title_hash": "89d540d6",
+      "scored_at": "2026-07-14T20:34:53.595197Z"
+    },
+    "story_29a1e494fbc3|cynic|f4237a62": {
+      "score": 35,
+      "review": "27B模型跑手机？量化到3-bit还能叫多模态？体验估计比PPT还卡。",
+      "title_hash": "89d540d6",
+      "scored_at": "2026-07-14T20:34:57.028903Z"
+    },
+    "story_29a1e494fbc3|paper-police|966065bf": {
+      "score": 20,
+      "review": "只有宣称，无论文代码或第三方评测，真实性待考证。",
+      "title_hash": "89d540d6",
+      "scored_at": "2026-07-14T20:34:59.938641Z"
+    },
+    "story_3c7e9dc57dbe|paper-police|966065bf": {
+      "score": 25,
+      "review": "官方博客宣布新功能，无论文无代码无评测，无法独立验证。",
+      "title_hash": "8cad1994",
+      "scored_at": "2026-07-14T20:35:02.407872Z"
+    },
+    "story_a37b7492af9e|paper-police|966065bf": {
+      "score": 25,
+      "review": "官方公告有链接，但无技术细节与独立验证，不可复现。",
+      "title_hash": "a9ac8004",
+      "scored_at": "2026-07-14T20:35:10.076372Z"
     }
   }
 }
