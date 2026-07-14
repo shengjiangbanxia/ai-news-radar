@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T17:48:15.104154Z",
+  "generated_at": "2026-07-14T19:54:53.073006Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,10 +17,30 @@
   ],
   "items": [
     {
+      "story_id": "story_3c7e9dc57dbe",
+      "title": "代码扫描显示AI对拉取请求进行安全检测 / Code scanning shows AI security detections on pull requests",
+      "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
+      "rank": 1,
+      "reviews": {
+        "cynic": {
+          "score": 75,
+          "review": "终于把AI检测结果塞进PR界面了，希望误报率别和之前一样感人。"
+        },
+        "paper-police": {
+          "score": 25,
+          "review": "官方公告有链接，但无论文无代码无独立评测，证据不足。"
+        },
+        "pragmatic": {
+          "score": 90,
+          "review": "PR 里直接嵌入 AI 安全检测结果，省去手动配置，今天就能用上。"
+        }
+      }
+    },
+    {
       "story_id": "story_a37b7492af9e",
       "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
       "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-      "rank": 1,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 75,
@@ -40,7 +60,7 @@
       "story_id": "story_b39fa54bc8de",
       "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译 / http://x.com/i/article/2067347903761485824",
       "url": "https://x.com/googleaidevs/status/2077049898059354565",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 72,
@@ -53,26 +73,6 @@
         "pragmatic": {
           "score": 90,
           "review": "直接可用的语音翻译API，多语言应用立刻集成。"
-        }
-      }
-    },
-    {
-      "story_id": "story_de135bbc6d10",
-      "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
-      "url": "https://mp.weixin.qq.com/s/Kq30ftirASryPrUtjK2xSw",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 77,
-          "review": "量化版有诚意，但“接近满血”的基准线是什么？希望公开对比曲线。"
-        },
-        "paper-police": {
-          "score": 30,
-          "review": "无论文无代码，仅官方公众号宣称性能，缺独立验证。"
-        },
-        "pragmatic": {
-          "score": 90,
-          "review": "1bit单卡可跑，4bit损失小，部署门槛骤降，今天就能试。"
         }
       }
     }

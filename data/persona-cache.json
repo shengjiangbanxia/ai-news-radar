@@ -180,6 +180,30 @@
       "review": "直接给提示词模板省自己调半天，抄来就用。",
       "title_hash": "cf4623de",
       "scored_at": "2026-07-14T17:48:07.407150Z"
+    },
+    "story_3c7e9dc57dbe|pragmatic|0a5c5b24": {
+      "score": 90,
+      "review": "PR 里直接嵌入 AI 安全检测结果，省去手动配置，今天就能用上。",
+      "title_hash": "8cad1994",
+      "scored_at": "2026-07-14T19:54:45.039282Z"
+    },
+    "story_682e97a04185|pragmatic|0a5c5b24": {
+      "score": 20,
+      "review": "诉讼不影响今天写代码，继续关注判决结果。",
+      "title_hash": "6522ef5b",
+      "scored_at": "2026-07-14T19:54:47.282878Z"
+    },
+    "story_3c7e9dc57dbe|cynic|f4237a62": {
+      "score": 75,
+      "review": "终于把AI检测结果塞进PR界面了，希望误报率别和之前一样感人。",
+      "title_hash": "8cad1994",
+      "scored_at": "2026-07-14T19:54:49.174702Z"
+    },
+    "story_3c7e9dc57dbe|paper-police|fcf542f6": {
+      "score": 25,
+      "review": "官方公告有链接，但无论文无代码无独立评测，证据不足。",
+      "title_hash": "8cad1994",
+      "scored_at": "2026-07-14T19:54:53.072908Z"
     }
   }
 }

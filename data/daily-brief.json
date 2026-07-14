@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-14T17:35:02.304677Z",
+  "generated_at": "2026-07-14T19:43:12.451060Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
-      "story_id": "story_f795a259360f",
-      "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
-      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
-      "primary_url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
+      "story_id": "story_3c7e9dc57dbe",
+      "title": "代码扫描显示AI对拉取请求进行安全检测 / Code scanning shows AI security detections on pull requests",
+      "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
+      "primary_url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "62bba51f6ed4432cafdd811a8f39a1032e7aaff7",
-          "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
-          "title_zh": "Dependabot版本更新引入默认包冷却期",
-          "title_en": "Dependabot version updates introduce default package cooldown",
-          "title_original": "Dependabot version updates introduce default package cooldown",
-          "summary": "Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the…\nDependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the default and requires no configuration.\nNew releases are a common entry point for supply chain attacks where a compromised or broken version can reach your de",
-          "recommend_reason_zh": "Dependabot版本更新默认加入三天冷却期，新版本发布后至少等待三天才开启PR，有效防范供应链攻击；该默认值适用于github.com所有生态，GHES 3.23中生效。",
-          "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
+          "id": "2d78f5ee5a76aaab8d2edea72b29b0a49b928af6",
+          "title": "代码扫描显示AI对拉取请求进行安全检测 / Code scanning shows AI security detections on pull requests",
+          "title_zh": "代码扫描显示AI对拉取请求进行安全检测",
+          "title_en": "Code scanning shows AI security detections on pull requests",
+          "title_original": "Code scanning shows AI security detections on pull requests",
+          "summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and…\nGitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and address potential issues in parts of the ",
+          "recommend_reason_zh": "GitHub code scanning推出AI安全检测，直接在pull requests上显示，覆盖CodeQL不支持的编程语言和框架，现处于public preview，需GitHub Copilot license并消耗AI credits。",
+          "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-07-14T16:42:59Z"
+          "published_at": "2026-07-14T19:12:48Z"
         }
       ],
       "source_count": 1,
@@ -32,31 +32,31 @@
       ],
       "items": [
         {
-          "id": "62bba51f6ed4432cafdd811a8f39a1032e7aaff7",
-          "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
-          "title_zh": "Dependabot版本更新引入默认包冷却期",
-          "title_en": "Dependabot version updates introduce default package cooldown",
-          "title_original": "Dependabot version updates introduce default package cooldown",
-          "summary": "Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the…\nDependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the default and requires no configuration.\nNew releases are a common entry point for supply chain attacks where a compromised or broken version can reach your de",
-          "recommend_reason_zh": "Dependabot版本更新默认加入三天冷却期，新版本发布后至少等待三天才开启PR，有效防范供应链攻击；该默认值适用于github.com所有生态，GHES 3.23中生效。",
-          "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
+          "id": "2d78f5ee5a76aaab8d2edea72b29b0a49b928af6",
+          "title": "代码扫描显示AI对拉取请求进行安全检测 / Code scanning shows AI security detections on pull requests",
+          "title_zh": "代码扫描显示AI对拉取请求进行安全检测",
+          "title_en": "Code scanning shows AI security detections on pull requests",
+          "title_original": "Code scanning shows AI security detections on pull requests",
+          "summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and…\nGitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and address potential issues in parts of the ",
+          "recommend_reason_zh": "GitHub code scanning推出AI安全检测，直接在pull requests上显示，覆盖CodeQL不支持的编程语言和框架，现处于public preview，需GitHub Copilot license并消耗AI credits。",
+          "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-07-14T16:42:59Z"
+          "published_at": "2026-07-14T19:12:48Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8418,
-      "importance": 0.8418,
-      "importance_score": 0.8418,
+      "score": 0.8427,
+      "importance": 0.8427,
+      "importance_score": 0.8427,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9875,
+        "recency": 0.9927,
         "story_heat": 0.0
       },
       "category": "official",
@@ -65,27 +65,27 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-07-14T16:42:59Z",
-      "latest_at": "2026-07-14T16:42:59Z",
+      "earliest_at": "2026-07-14T19:12:48Z",
+      "latest_at": "2026-07-14T19:12:48Z",
       "primary_item": {
-        "id": "62bba51f6ed4432cafdd811a8f39a1032e7aaff7",
-        "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
-        "title_zh": "Dependabot版本更新引入默认包冷却期",
-        "title_en": "Dependabot version updates introduce default package cooldown",
-        "title_original": "Dependabot version updates introduce default package cooldown",
-        "summary": "Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the…\nDependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the default and requires no configuration.\nNew releases are a common entry point for supply chain attacks where a compromised or broken version can reach your de",
-        "recommend_reason_zh": "Dependabot版本更新默认加入三天冷却期，新版本发布后至少等待三天才开启PR，有效防范供应链攻击；该默认值适用于github.com所有生态，GHES 3.23中生效。",
-        "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
+        "id": "2d78f5ee5a76aaab8d2edea72b29b0a49b928af6",
+        "title": "代码扫描显示AI对拉取请求进行安全检测 / Code scanning shows AI security detections on pull requests",
+        "title_zh": "代码扫描显示AI对拉取请求进行安全检测",
+        "title_en": "Code scanning shows AI security detections on pull requests",
+        "title_original": "Code scanning shows AI security detections on pull requests",
+        "summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and…\nGitHub code scanning now surfaces AI-powered security detections directly on pull requests, expanding vulnerability coverage to languages and frameworks not currently supported by CodeQL. These detections help teams identify and address potential issues in parts of the ",
+        "recommend_reason_zh": "GitHub code scanning推出AI安全检测，直接在pull requests上显示，覆盖CodeQL不支持的编程语言和框架，现处于public preview，需GitHub Copilot license并消耗AI credits。",
+        "url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 72,
-      "persona_review": "Dependabot自动更新会延迟，需要检查冷却期配置，避免错过关键补丁。",
+      "persona_score": 90,
+      "persona_review": "PR 里直接嵌入 AI 安全检测结果，省去手动配置，今天就能用上。",
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -102,7 +102,7 @@
           "title_zh": "庆祝视觉搜索创新25周年",
           "title_en": "Celebrating 25 years of visual search innovation",
           "title_original": "Celebrating 25 years of visual search innovation",
-          "summary": "Google Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nGoogle Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nGoogle Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nJul 14, 2026\nWe're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new wa",
+          "summary": null,
           "recommend_reason_zh": "Google Images 25周年：2001年因Jennifer Lopez绿色Versace裙推出，现新增动态沉浸式画廊与Nano Banana模型图像生成，可直接在AI Overviews中创建自定义视觉内容。",
           "url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary",
           "source": "Google AI Blog",
@@ -122,7 +122,7 @@
           "title_zh": "庆祝视觉搜索创新25周年",
           "title_en": "Celebrating 25 years of visual search innovation",
           "title_original": "Celebrating 25 years of visual search innovation",
-          "summary": "Google Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nGoogle Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nGoogle Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nJul 14, 2026\nWe're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new wa",
+          "summary": null,
           "recommend_reason_zh": "Google Images 25周年：2001年因Jennifer Lopez绿色Versace裙推出，现新增动态沉浸式画廊与Nano Banana模型图像生成，可直接在AI Overviews中创建自定义视觉内容。",
           "url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary",
           "source": "Google AI Blog",
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8399,
-      "importance": 0.8399,
-      "importance_score": 0.8399,
+      "score": 0.8346,
+      "importance": 0.8346,
+      "importance_score": 0.8346,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9774,
+        "recency": 0.9477,
         "story_heat": 0.0
       },
       "category": "official",
@@ -158,7 +158,7 @@
         "title_zh": "庆祝视觉搜索创新25周年",
         "title_en": "Celebrating 25 years of visual search innovation",
         "title_original": "Celebrating 25 years of visual search innovation",
-        "summary": "Google Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nGoogle Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nGoogle Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content.\nJul 14, 2026\nWe're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new wa",
+        "summary": null,
         "recommend_reason_zh": "Google Images 25周年：2001年因Jennifer Lopez绿色Versace裙推出，现新增动态沉浸式画廊与Nano Banana模型图像生成，可直接在AI Overviews中创建自定义视觉内容。",
         "url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary",
         "source": "Google AI Blog",
@@ -170,7 +170,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -187,7 +187,7 @@
           "title_zh": "Agent时代如何管理AI投资",
           "title_en": "How to manage AI investments in the agentic era",
           "title_original": "How to manage AI investments in the agentic era",
-          "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nLearn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nLearn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nJuly 14, 2026\nFive p",
+          "summary": null,
           "recommend_reason_zh": "从GPT-4到GPT-5.4，每百万token价格下降97%，但文章指出单纯看token价不够，应衡量“每美元有用工作量”，并教你用五步管理AI投资。",
           "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
           "source": "OpenAI News",
@@ -207,7 +207,7 @@
           "title_zh": "Agent时代如何管理AI投资",
           "title_en": "How to manage AI investments in the agentic era",
           "title_original": "How to manage AI investments in the agentic era",
-          "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nLearn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nLearn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nJuly 14, 2026\nFive p",
+          "summary": null,
           "recommend_reason_zh": "从GPT-4到GPT-5.4，每百万token价格下降97%，但文章指出单纯看token价不够，应衡量“每美元有用工作量”，并教你用五步管理AI投资。",
           "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
           "source": "OpenAI News",
@@ -218,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8333,
-      "importance": 0.8333,
-      "importance_score": 0.8333,
+      "score": 0.8284,
+      "importance": 0.8284,
+      "importance_score": 0.8284,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8963,
+        "recency": 0.869,
         "story_heat": 0.0
       },
       "category": "official",
@@ -243,7 +243,7 @@
         "title_zh": "Agent时代如何管理AI投资",
         "title_en": "How to manage AI investments in the agentic era",
         "title_original": "How to manage AI investments in the agentic era",
-        "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nLearn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nLearn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.\nJuly 14, 2026\nFive p",
+        "summary": null,
         "recommend_reason_zh": "从GPT-4到GPT-5.4，每百万token价格下降97%，但文章指出单纯看token价不够，应衡量“每美元有用工作量”，并教你用五步管理AI投资。",
         "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
         "source": "OpenAI News",
@@ -255,7 +255,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -303,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8256,
-      "importance": 0.8256,
-      "importance_score": 0.8256,
+      "score": 0.8214,
+      "importance": 0.8214,
+      "importance_score": 0.8214,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.7758,
+        "recency": 0.7522,
         "story_heat": 0.0
       },
       "category": "official",
@@ -340,30 +340,30 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
-      "story_id": "story_a37b7492af9e",
-      "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-      "primary_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+      "story_id": "story_f795a259360f",
+      "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
+      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
+      "primary_url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
-          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-          "title_zh": "GitHub Copilot 应用现已支持安全审查",
-          "title_en": "Security reviews now available in the GitHub Copilot app",
-          "title_original": "Security reviews now available in the GitHub Copilot app",
+          "id": "62bba51f6ed4432cafdd811a8f39a1032e7aaff7",
+          "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
+          "title_zh": "Dependabot版本更新引入默认包冷却期",
+          "title_en": "Dependabot version updates introduce default package cooldown",
+          "title_original": "Dependabot version updates introduce default package cooldown",
           "summary": null,
-          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
-          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+          "recommend_reason_zh": "Dependabot版本更新默认加入三天冷却期，新版本发布后至少等待三天才开启PR，有效防范供应链攻击；该默认值适用于github.com所有生态，GHES 3.23中生效。",
+          "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-07-14T12:54:12Z"
+          "published_at": "2026-07-14T16:42:59Z"
         }
       ],
       "source_count": 1,
@@ -372,31 +372,31 @@
       ],
       "items": [
         {
-          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
-          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-          "title_zh": "GitHub Copilot 应用现已支持安全审查",
-          "title_en": "Security reviews now available in the GitHub Copilot app",
-          "title_original": "Security reviews now available in the GitHub Copilot app",
+          "id": "62bba51f6ed4432cafdd811a8f39a1032e7aaff7",
+          "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
+          "title_zh": "Dependabot版本更新引入默认包冷却期",
+          "title_en": "Dependabot version updates introduce default package cooldown",
+          "title_original": "Dependabot version updates introduce default package cooldown",
           "summary": null,
-          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
-          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+          "recommend_reason_zh": "Dependabot版本更新默认加入三天冷却期，新版本发布后至少等待三天才开启PR，有效防范供应链攻击；该默认值适用于github.com所有生态，GHES 3.23中生效。",
+          "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-07-14T12:54:12Z"
+          "published_at": "2026-07-14T16:42:59Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8402,
-      "importance": 0.8402,
-      "importance_score": 0.8402,
+      "score": 0.8364,
+      "importance": 0.8364,
+      "importance_score": 0.8364,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.9346,
+        "ai_relevance": 0.87,
+        "recency": 0.9576,
         "story_heat": 0.0
       },
       "category": "official",
@@ -405,27 +405,27 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-07-14T12:54:12Z",
-      "latest_at": "2026-07-14T12:54:12Z",
+      "earliest_at": "2026-07-14T16:42:59Z",
+      "latest_at": "2026-07-14T16:42:59Z",
       "primary_item": {
-        "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
-        "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
-        "title_zh": "GitHub Copilot 应用现已支持安全审查",
-        "title_en": "Security reviews now available in the GitHub Copilot app",
-        "title_original": "Security reviews now available in the GitHub Copilot app",
+        "id": "62bba51f6ed4432cafdd811a8f39a1032e7aaff7",
+        "title": "Dependabot版本更新引入默认包冷却期 / Dependabot version updates introduce default package cooldown",
+        "title_zh": "Dependabot版本更新引入默认包冷却期",
+        "title_en": "Dependabot version updates introduce default package cooldown",
+        "title_original": "Dependabot version updates introduce default package cooldown",
         "summary": null,
-        "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
-        "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+        "recommend_reason_zh": "Dependabot版本更新默认加入三天冷却期，新版本发布后至少等待三天才开启PR，有效防范供应链攻击；该默认值适用于github.com所有生态，GHES 3.23中生效。",
+        "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 90,
-      "persona_review": "写代码时直接查安全漏洞，省去单独跑工具的时间，今天就能用。",
+      "persona_score": 72,
+      "persona_review": "Dependabot自动更新会延迟，需要检查冷却期配置，避免错过关键补丁。",
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -531,15 +531,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8092,
-      "importance": 0.8092,
-      "importance_score": 0.8092,
+      "score": 0.8038,
+      "importance": 0.8038,
+      "importance_score": 0.8038,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9867,
+        "recency": 0.9567,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -568,7 +568,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -616,15 +616,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7919,
-      "importance": 0.7919,
-      "importance_score": 0.7919,
+      "score": 0.7866,
+      "importance": 0.7866,
+      "importance_score": 0.7866,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.966,
+        "recency": 0.9366,
         "story_heat": 0.0
       },
       "category": "official",
@@ -652,7 +652,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -700,15 +700,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8196,
-      "importance": 0.8196,
-      "importance_score": 0.8196,
+      "score": 0.8154,
+      "importance": 0.8154,
+      "importance_score": 0.8154,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7758,
+        "recency": 0.7522,
         "story_heat": 0.0
       },
       "category": "official",
@@ -737,7 +737,92 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
+      }
+    },
+    {
+      "story_id": "story_a37b7492af9e",
+      "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+      "primary_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
+          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+          "title_zh": "GitHub Copilot 应用现已支持安全审查",
+          "title_en": "Security reviews now available in the GitHub Copilot app",
+          "title_original": "Security reviews now available in the GitHub Copilot app",
+          "summary": null,
+          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
+          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-14T12:54:12Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
+          "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+          "title_zh": "GitHub Copilot 应用现已支持安全审查",
+          "title_en": "Security reviews now available in the GitHub Copilot app",
+          "title_original": "Security reviews now available in the GitHub Copilot app",
+          "summary": null,
+          "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
+          "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-14T12:54:12Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8351,
+      "importance": 0.8351,
+      "importance_score": 0.8351,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9063,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-14T12:54:12Z",
+      "latest_at": "2026-07-14T12:54:12Z",
+      "primary_item": {
+        "id": "e0dea436d1aaee574751395304a5b58becfb7a90",
+        "title": "GitHub Copilot 应用现已支持安全审查 / Security reviews now available in the GitHub Copilot app",
+        "title_zh": "GitHub Copilot 应用现已支持安全审查",
+        "title_en": "Security reviews now available in the GitHub Copilot app",
+        "title_original": "Security reviews now available in the GitHub Copilot app",
+        "summary": null,
+        "recommend_reason_zh": "GitHub Copilot app 新增 /security-review 斜杠命令，可扫描注入、XSS、路径遍历等高危漏洞，无需离开编码环境。该公开预览版对 Copilot Free/Pro/Business/Enterprise 用户开放。",
+        "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 90,
+      "persona_review": "写代码时直接查安全漏洞，省去单独跑工具的时间，今天就能用。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -814,15 +899,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7746,
-      "importance": 0.7746,
-      "importance_score": 0.7746,
+      "score": 0.7696,
+      "importance": 0.7696,
+      "importance_score": 0.7696,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8998,
+        "recency": 0.8724,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -851,7 +936,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -928,15 +1013,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7733,
-      "importance": 0.7733,
-      "importance_score": 0.7733,
+      "score": 0.7687,
+      "importance": 0.7687,
+      "importance_score": 0.7687,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8426,
+        "recency": 0.817,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -965,7 +1050,91 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
+      }
+    },
+    {
+      "story_id": "story_682e97a04185",
+      "title": "Google 因 AI 训练再遭出版商集体诉讼 / Google faces another AI training lawsuit from major publishers",
+      "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
+      "primary_url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
+      "source": "TechCrunch：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "29280d50c21ea6130e6110d918142a03656a01b8",
+          "title": "Google 因 AI 训练再遭出版商集体诉讼 / Google faces another AI training lawsuit from major publishers",
+          "title_zh": "Google 因 AI 训练再遭出版商集体诉讼",
+          "title_en": "Google faces another AI training lawsuit from major publishers",
+          "title_original": "Google faces another AI training lawsuit from major publishers",
+          "summary": "包括 Hachette、Cengage、Elsevier 及作家 Scott Turow 在内的出版商与作者团体对 Google 提起集体诉讼，指控其未经授权使用受版权保护的作品训练 Gemini 模型，并故意移除或篡改版权信息以掩盖这一行为。原告称 Google 将原本仅用于 Google Books 搜索片段展示的书籍副本，以及 Google Play 商店上传的图书，非法用于 AI 训练。诉讼援引 Google 内部文件，其中指出此举可能带来\"100 亿至 1000 亿美元的潜在罚款\"。该案在纽约南区联邦地区法院提起。",
+          "recommend_reason_zh": "Hachette、Cengage、Elsevier等出版商联合作者起诉Google，指控其用Google Books和Play Store中的版权作品训练Gemini，并刻意删除版权信息，引用内部文件称可能面临“100亿美元罚款”。",
+          "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T18:33:31Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "TechCrunch：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "29280d50c21ea6130e6110d918142a03656a01b8",
+          "title": "Google 因 AI 训练再遭出版商集体诉讼 / Google faces another AI training lawsuit from major publishers",
+          "title_zh": "Google 因 AI 训练再遭出版商集体诉讼",
+          "title_en": "Google faces another AI training lawsuit from major publishers",
+          "title_original": "Google faces another AI training lawsuit from major publishers",
+          "summary": "包括 Hachette、Cengage、Elsevier 及作家 Scott Turow 在内的出版商与作者团体对 Google 提起集体诉讼，指控其未经授权使用受版权保护的作品训练 Gemini 模型，并故意移除或篡改版权信息以掩盖这一行为。原告称 Google 将原本仅用于 Google Books 搜索片段展示的书籍副本，以及 Google Play 商店上传的图书，非法用于 AI 训练。诉讼援引 Google 内部文件，其中指出此举可能带来\"100 亿至 1000 亿美元的潜在罚款\"。该案在纽约南区联邦地区法院提起。",
+          "recommend_reason_zh": "Hachette、Cengage、Elsevier等出版商联合作者起诉Google，指控其用Google Books和Play Store中的版权作品训练Gemini，并刻意删除版权信息，引用内部文件称可能面临“100亿美元罚款”。",
+          "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T18:33:31Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7586,
+      "importance": 0.7586,
+      "importance_score": 0.7586,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.7,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9834,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-14T18:33:31Z",
+      "latest_at": "2026-07-14T18:33:31Z",
+      "primary_item": {
+        "id": "29280d50c21ea6130e6110d918142a03656a01b8",
+        "title": "Google 因 AI 训练再遭出版商集体诉讼 / Google faces another AI training lawsuit from major publishers",
+        "title_zh": "Google 因 AI 训练再遭出版商集体诉讼",
+        "title_en": "Google faces another AI training lawsuit from major publishers",
+        "title_original": "Google faces another AI training lawsuit from major publishers",
+        "summary": "包括 Hachette、Cengage、Elsevier 及作家 Scott Turow 在内的出版商与作者团体对 Google 提起集体诉讼，指控其未经授权使用受版权保护的作品训练 Gemini 模型，并故意移除或篡改版权信息以掩盖这一行为。原告称 Google 将原本仅用于 Google Books 搜索片段展示的书籍副本，以及 Google Play 商店上传的图书，非法用于 AI 训练。诉讼援引 Google 内部文件，其中指出此举可能带来\"100 亿至 1000 亿美元的潜在罚款\"。该案在纽约南区联邦地区法院提起。",
+        "recommend_reason_zh": "Hachette、Cengage、Elsevier等出版商联合作者起诉Google，指控其用Google Books和Play Store中的版权作品训练Gemini，并刻意删除版权信息，引用内部文件称可能面临“100亿美元罚款”。",
+        "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
+        "source": "TechCrunch：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 20,
+      "persona_review": "诉讼不影响今天写代码，继续关注判决结果。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1013,15 +1182,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8196,
-      "importance": 0.8196,
-      "importance_score": 0.8196,
+      "score": 0.8154,
+      "importance": 0.8154,
+      "importance_score": 0.8154,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7758,
+        "recency": 0.7522,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1050,91 +1219,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
-      }
-    },
-    {
-      "story_id": "story_84dfcc5ee35e",
-      "title": "纽约州暂停所有新建大型数据中心项目 / New York State halts construction of all new data centers",
-      "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-      "primary_url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-      "source": "TechCrunch：AI（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "a32b1d644b136455a25a1266059f71b15538ff6b",
-          "title": "纽约州暂停所有新建大型数据中心项目 / New York State halts construction of all new data centers",
-          "title_zh": "纽约州暂停所有新建大型数据中心项目",
-          "title_en": "New York State halts construction of all new data centers",
-          "title_original": "New York State halts construction of all new data centers",
-          "summary": "纽约州成为全美首个暂停数据中心建设的州。州长Kathy Hochul签署行政令，暂时禁止州政府批准50兆瓦及以上大型数据中心的新建许可，可能影响十余个项目。Hochul表示数据中心不应带来更高的电费、水资源消耗或噪音污染，且不能豁免地方区划和审批。禁令将在州政府完成数据中心环境审查流程后解除，预计耗时约一年。Hochul还考虑要求数据中心为州电网提供资金支持，并阻止超大规模数据中心享受税收优惠。此举正值纽约州立法机构推进更严格措施之际，上月一项法案已推进暂停20兆瓦以上数据中心建设一年。",
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-          "source": "TechCrunch：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T15:17:59Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "TechCrunch：AI（RSS）"
-      ],
-      "items": [
-        {
-          "id": "a32b1d644b136455a25a1266059f71b15538ff6b",
-          "title": "纽约州暂停所有新建大型数据中心项目 / New York State halts construction of all new data centers",
-          "title_zh": "纽约州暂停所有新建大型数据中心项目",
-          "title_en": "New York State halts construction of all new data centers",
-          "title_original": "New York State halts construction of all new data centers",
-          "summary": "纽约州成为全美首个暂停数据中心建设的州。州长Kathy Hochul签署行政令，暂时禁止州政府批准50兆瓦及以上大型数据中心的新建许可，可能影响十余个项目。Hochul表示数据中心不应带来更高的电费、水资源消耗或噪音污染，且不能豁免地方区划和审批。禁令将在州政府完成数据中心环境审查流程后解除，预计耗时约一年。Hochul还考虑要求数据中心为州电网提供资金支持，并阻止超大规模数据中心享受税收优惠。此举正值纽约州立法机构推进更严格措施之际，上月一项法案已推进暂停20兆瓦以上数据中心建设一年。",
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-          "source": "TechCrunch：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T15:17:59Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9676,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-14T15:17:59Z",
-      "latest_at": "2026-07-14T15:17:59Z",
-      "primary_item": {
-        "id": "a32b1d644b136455a25a1266059f71b15538ff6b",
-        "title": "纽约州暂停所有新建大型数据中心项目 / New York State halts construction of all new data centers",
-        "title_zh": "纽约州暂停所有新建大型数据中心项目",
-        "title_en": "New York State halts construction of all new data centers",
-        "title_original": "New York State halts construction of all new data centers",
-        "summary": "纽约州成为全美首个暂停数据中心建设的州。州长Kathy Hochul签署行政令，暂时禁止州政府批准50兆瓦及以上大型数据中心的新建许可，可能影响十余个项目。Hochul表示数据中心不应带来更高的电费、水资源消耗或噪音污染，且不能豁免地方区划和审批。禁令将在州政府完成数据中心环境审查流程后解除，预计耗时约一年。Hochul还考虑要求数据中心为州电网提供资金支持，并阻止超大规模数据中心享受税收优惠。此举正值纽约州立法机构推进更严格措施之际，上月一项法案已推进暂停20兆瓦以上数据中心建设一年。",
-        "recommend_reason_zh": null,
-        "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-        "source": "TechCrunch：AI（RSS）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 52,
-      "persona_review": "长期算力供给可能收紧，但今天你的开发环境不会变，观望即可。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1240,15 +1325,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.7864,
-      "importance": 0.7864,
-      "importance_score": 0.7864,
+      "score": 0.7817,
+      "importance": 0.7817,
+      "importance_score": 0.7817,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8598,
+        "recency": 0.8337,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1277,7 +1362,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1325,15 +1410,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7558,
-      "importance": 0.7558,
-      "importance_score": 0.7558,
+      "score": 0.7509,
+      "importance": 0.7509,
+      "importance_score": 0.7509,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8843,
+        "recency": 0.8574,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1361,7 +1446,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1409,15 +1494,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7557,
-      "importance": 0.7557,
-      "importance_score": 0.7557,
+      "score": 0.7505,
+      "importance": 0.7505,
+      "importance_score": 0.7505,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9675,
+        "recency": 0.9381,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1445,7 +1530,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1493,15 +1578,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7495,
-      "importance": 0.7495,
-      "importance_score": 0.7495,
+      "score": 0.7446,
+      "importance": 0.7446,
+      "importance_score": 0.7446,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8826,
+        "recency": 0.8558,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1528,7 +1613,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1605,15 +1690,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7746,
-      "importance": 0.7746,
-      "importance_score": 0.7746,
+      "score": 0.7696,
+      "importance": 0.7696,
+      "importance_score": 0.7696,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8998,
+        "recency": 0.8724,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -1642,175 +1727,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
-      }
-    },
-    {
-      "story_id": "story_8ec6a1a77a23",
-      "title": "GitHub Code Quality 许可证估算公开预览 / GitHub Code Quality license estimate in public preview",
-      "url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview",
-      "primary_url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "ee0d846e9791a176dcacab04511e47cc2ae76710",
-          "title": "GitHub Code Quality 许可证估算公开预览 / GitHub Code Quality license estimate in public preview",
-          "title_zh": "GitHub Code Quality 许可证估算公开预览",
-          "title_en": "GitHub Code Quality license estimate in public preview",
-          "title_original": "GitHub Code Quality license estimate in public preview",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Code Quality公开预览可查看企业仓库的活跃提交者数，提前估算许可证成本，按每活跃提交者每月$10计费，2026年7月20日前免费。",
-          "url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-13T23:39:22Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "ee0d846e9791a176dcacab04511e47cc2ae76710",
-          "title": "GitHub Code Quality 许可证估算公开预览 / GitHub Code Quality license estimate in public preview",
-          "title_zh": "GitHub Code Quality 许可证估算公开预览",
-          "title_en": "GitHub Code Quality license estimate in public preview",
-          "title_original": "GitHub Code Quality license estimate in public preview",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Code Quality公开预览可查看企业仓库的活跃提交者数，提前估算许可证成本，按每活跃提交者每月$10计费，2026年7月20日前免费。",
-          "url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-13T23:39:22Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8029,
-      "importance": 0.8029,
-      "importance_score": 0.8029,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.7719,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-13T23:39:22Z",
-      "latest_at": "2026-07-13T23:39:22Z",
-      "primary_item": {
-        "id": "ee0d846e9791a176dcacab04511e47cc2ae76710",
-        "title": "GitHub Code Quality 许可证估算公开预览 / GitHub Code Quality license estimate in public preview",
-        "title_zh": "GitHub Code Quality 许可证估算公开预览",
-        "title_en": "GitHub Code Quality license estimate in public preview",
-        "title_original": "GitHub Code Quality license estimate in public preview",
-        "summary": null,
-        "recommend_reason_zh": "GitHub Code Quality公开预览可查看企业仓库的活跃提交者数，提前估算许可证成本，按每活跃提交者每月$10计费，2026年7月20日前免费。",
-        "url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 55,
-      "persona_review": "预览版，等正式发布再评估是否影响预算和合规。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
-      }
-    },
-    {
-      "story_id": "story_f81c4bc04acd",
-      "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
-      "url": "https://x.com/demishassabis/status/2076957440109625718",
-      "primary_url": "https://x.com/demishassabis/status/2076957440109625718",
-      "source": "X：Demis Hassabis (@demishassabis)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "fcf33a91034cba26e0f446e0c02b9ab1a910ecd0",
-          "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
-          "title_zh": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
-          "title_en": "http://x.com/i/article/2076946210397552640",
-          "title_original": "http://x.com/i/article/2076946210397552640",
-          "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
-          "recommend_reason_zh": "由于提供的正文只有登录提示和链接，没有可引用的具体事实、数字或细节，无法生成符合要求的推荐语。请提供包含文章内容的原文。",
-          "url": "https://x.com/demishassabis/status/2076957440109625718",
-          "source": "X：Demis Hassabis (@demishassabis)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T09:10:16Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Demis Hassabis (@demishassabis)"
-      ],
-      "items": [
-        {
-          "id": "fcf33a91034cba26e0f446e0c02b9ab1a910ecd0",
-          "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
-          "title_zh": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
-          "title_en": "http://x.com/i/article/2076946210397552640",
-          "title_original": "http://x.com/i/article/2076946210397552640",
-          "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
-          "recommend_reason_zh": "由于提供的正文只有登录提示和链接，没有可引用的具体事实、数字或细节，无法生成符合要求的推荐语。请提供包含文章内容的原文。",
-          "url": "https://x.com/demishassabis/status/2076957440109625718",
-          "source": "X：Demis Hassabis (@demishassabis)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-14T09:10:16Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.735,
-      "importance": 0.735,
-      "importance_score": 0.735,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.68,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8856,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-07-14T09:10:16Z",
-      "latest_at": "2026-07-14T09:10:16Z",
-      "primary_item": {
-        "id": "fcf33a91034cba26e0f446e0c02b9ab1a910ecd0",
-        "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
-        "title_zh": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
-        "title_en": "http://x.com/i/article/2076946210397552640",
-        "title_original": "http://x.com/i/article/2076946210397552640",
-        "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
-        "recommend_reason_zh": "由于提供的正文只有登录提示和链接，没有可引用的具体事实、数字或细节，无法生成符合要求的推荐语。请提供包含文章内容的原文。",
-        "url": "https://x.com/demishassabis/status/2076957440109625718",
-        "source": "X：Demis Hassabis (@demishassabis)",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 20,
-      "persona_review": "愿景不写代码，等有产品再看。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     },
     {
@@ -1858,15 +1775,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7345,
-      "importance": 0.7345,
-      "importance_score": 0.7345,
+      "score": 0.7303,
+      "importance": 0.7303,
+      "importance_score": 0.7303,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.783,
+        "recency": 0.7592,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1893,7 +1810,90 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-14T17:47:57.323790Z"
+        "scored_at": "2026-07-14T19:54:42.906479Z"
+      }
+    },
+    {
+      "story_id": "story_f81c4bc04acd",
+      "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
+      "url": "https://x.com/demishassabis/status/2076957440109625718",
+      "primary_url": "https://x.com/demishassabis/status/2076957440109625718",
+      "source": "X：Demis Hassabis (@demishassabis)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "fcf33a91034cba26e0f446e0c02b9ab1a910ecd0",
+          "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
+          "title_zh": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
+          "title_en": "http://x.com/i/article/2076946210397552640",
+          "title_original": "http://x.com/i/article/2076946210397552640",
+          "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
+          "recommend_reason_zh": "由于提供的正文只有登录提示和链接，没有可引用的具体事实、数字或细节，无法生成符合要求的推荐语。请提供包含文章内容的原文。",
+          "url": "https://x.com/demishassabis/status/2076957440109625718",
+          "source": "X：Demis Hassabis (@demishassabis)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T09:10:16Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Demis Hassabis (@demishassabis)"
+      ],
+      "items": [
+        {
+          "id": "fcf33a91034cba26e0f446e0c02b9ab1a910ecd0",
+          "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
+          "title_zh": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
+          "title_en": "http://x.com/i/article/2076946210397552640",
+          "title_original": "http://x.com/i/article/2076946210397552640",
+          "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
+          "recommend_reason_zh": "由于提供的正文只有登录提示和链接，没有可引用的具体事实、数字或细节，无法生成符合要求的推荐语。请提供包含文章内容的原文。",
+          "url": "https://x.com/demishassabis/status/2076957440109625718",
+          "source": "X：Demis Hassabis (@demishassabis)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-07-14T09:10:16Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7302,
+      "importance": 0.7302,
+      "importance_score": 0.7302,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.68,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8587,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-07-14T09:10:16Z",
+      "latest_at": "2026-07-14T09:10:16Z",
+      "primary_item": {
+        "id": "fcf33a91034cba26e0f446e0c02b9ab1a910ecd0",
+        "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍 / http://x.com/i/article/2076946210397552640",
+        "title_zh": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
+        "title_en": "http://x.com/i/article/2076946210397552640",
+        "title_original": "http://x.com/i/article/2076946210397552640",
+        "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
+        "recommend_reason_zh": "由于提供的正文只有登录提示和链接，没有可引用的具体事实、数字或细节，无法生成符合要求的推荐语。请提供包含文章内容的原文。",
+        "url": "https://x.com/demishassabis/status/2076957440109625718",
+        "source": "X：Demis Hassabis (@demishassabis)",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 20,
+      "persona_review": "愿景不写代码，等有产品再看。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-07-14T19:54:42.906479Z"
       }
     }
   ]
