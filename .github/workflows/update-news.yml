@@ -9,7 +9,7 @@ on:
         default: false
         type: boolean
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "17 * * * *"
 
 concurrency:
   group: update-ai-news-${{ github.ref }}
@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   update:
-    timeout-minutes: 15
+    timeout-minutes: 40
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -92,12 +92,28 @@ jobs:
           TIKHUB_RUN_UTC_MINUTE_MAX: ${{ vars.TIKHUB_RUN_UTC_MINUTE_MAX }}
           TIKHUB_FORCE_RUN: ${{ inputs.force_tikhub && '1' || '' }}
           RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 10 }}
+          # DeepSeek: powers title enhancement + zh translation fallback in
+          # update_news.py itself (persona scoring gets its own copy of these
+          # in the step below). All reads in update_news.py use
+          # `os.environ.get(...) or default`, so leaving the optional vars
+          # unset/empty is safe.
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+          TITLE_ENHANCE_MAX_PER_RUN: ${{ vars.TITLE_ENHANCE_MAX_PER_RUN }}
         run: |
           if [ -f feeds/follow.opml ]; then
             python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-10}"
           else
             python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
           fi
+
+      - name: Persona scoring
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+        run: python scripts/persona_score.py --data-dir data
 
       - name: Commit and push changes
         env:

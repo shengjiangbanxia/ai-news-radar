@@ -29,9 +29,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 try:
-    from scripts.ai_relevance import add_ai_relevance_fields, score_ai_relevance
+    from scripts.ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
 except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
-    from ai_relevance import add_ai_relevance_fields, score_ai_relevance
+    from ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
 
 try:
     import feedparser
@@ -121,6 +121,11 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
 CURATED_AI_MEDIA_MAX_AGE_DAYS = 30
+# Per-fetch item cap for wide discussion-tier aggregators (buzzing/iris).
+# They dominate raw volume with very low AI keep rates (see
+# reports/source-quality/v0.8-audit.md); cap them at the fetch layer so a
+# single round cannot flood the archive. Override via env for experiments.
+DISCUSSION_FETCH_CAP = int(os.environ.get("DISCUSSION_FETCH_CAP", "50"))
 CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
     {
         "title": "The Decoder AI News",
@@ -681,6 +686,72 @@ def block_text(block_data: dict[str, Any]) -> str:
     return "".join(str(v) for k, v in sorted(initial.items(), key=lambda kv: key_int(kv[0]))).strip()
 
 
+def block_text_runs(block_data: dict[str, Any]) -> list[dict[str, Any]]:
+    """Return text runs with optional link info from a Feishu block.
+
+    Each run is ``{"text": str, "link": str | None}``.
+
+    Feishu wiki blocks store linked document mentions as ``inline-component``
+    entries in ``text.apool.numToAttrib``.  The mention JSON payload carries
+    the real article title (``data.title``) and URL (``data.raw_url``), while
+    the block's visible ``initialAttributedTexts.text`` holds a summary with
+    ``《 》`` as a placeholder for the mention.
+    """
+    text_obj = block_data.get("text", {}) if isinstance(block_data, dict) else {}
+    if not isinstance(text_obj, dict):
+        return []
+
+    initial = text_obj.get("initialAttributedTexts", {})
+    text_map = initial.get("text", {})
+    if not isinstance(text_map, dict):
+        return []
+
+    def key_int(k: Any) -> int:
+        try:
+            return int(k)
+        except Exception:
+            return 0
+
+    full_text = "".join(
+        str(v) for _, v in sorted(text_map.items(), key=lambda kv: key_int(kv[0]))
+    ).strip()
+
+    # Look for inline-component mention_doc in apool
+    apool = text_obj.get("apool", {})
+    num_to_attrib = apool.get("numToAttrib", {}) if isinstance(apool, dict) else {}
+
+    mention_title: str | None = None
+    mention_url: str | None = None
+
+    for _k, v in num_to_attrib.items():
+        if not isinstance(v, list) or len(v) < 2 or v[0] != "inline-component":
+            continue
+        try:
+            comp = json.loads(v[1]) if isinstance(v[1], str) else v[1]
+        except (json.JSONDecodeError, TypeError):
+            continue
+        if not isinstance(comp, dict) or comp.get("type") != "mention_doc":
+            continue
+        data = comp.get("data", {})
+        t = str(data.get("title") or "").strip()
+        u = str(data.get("raw_url") or "").strip()
+        if t:
+            mention_title = t
+            mention_url = u or None
+            break
+
+    runs: list[dict[str, Any]] = []
+    if mention_title:
+        runs.append({"text": mention_title, "link": mention_url})
+        summary = full_text.replace("《 》", "").replace("《》", "").strip()
+        if summary:
+            runs.append({"text": summary, "link": None})
+    elif full_text:
+        runs.append({"text": full_text, "link": None})
+
+    return runs
+
+
 def clean_update_title(text: str) -> str:
     text = text.replace("《 》", "").replace("《》", "")
     return re.sub(r"\s+", " ", text).strip()
@@ -790,14 +861,35 @@ def extract_waytoagi_recent_updates_from_block_map(
         day = nearest_heading_date(bid)
         if not day:
             continue
-        title = clean_update_title(block_text(bd))
+
+        runs = block_text_runs(bd)
+        linked_run = next((r for r in runs if r.get("link")), None)
+        if linked_run:
+            title = clean_update_title(linked_run["text"])
+            summary_parts = [
+                clean_update_title(r["text"])
+                for r in runs
+                if r is not linked_run and clean_update_title(r["text"])
+            ]
+            summary = " ".join(summary_parts) if summary_parts else title
+            item_url = linked_run["link"] or page_url
+        else:
+            title = clean_update_title(block_text(bd))
+            summary = title
+            item_url = page_url
+
         if not title:
             continue
         key = (day.isoformat(), title)
         if key in seen:
             continue
         seen.add(key)
-        updates.append({"date": day.isoformat(), "title": title, "url": page_url})
+        updates.append({
+            "date": day.isoformat(),
+            "title": title,
+            "summary": summary,
+            "url": item_url,
+        })
 
     return updates
 
@@ -882,7 +974,7 @@ def waytoagi_updates_to_raw_items(payload: dict[str, Any], now: datetime) -> lis
                 # visible latest-date entries as fresh community signals for
                 # the 24h board while the 7d payload keeps exact date context.
                 published_at=now,
-                meta={"summary": title},
+                meta={"summary": update.get("summary") or title},
             )
         )
     return out
@@ -1036,6 +1128,8 @@ def fetch_buzzing(session: requests.Session, now: datetime) -> list[RawItem]:
 
     out: list[RawItem] = []
     for it in items:
+        if len(out) >= DISCUSSION_FETCH_CAP:
+            break
         title = (it.get("title") or "").strip()
         url = (it.get("url") or "").strip()
         if not title or not url:
@@ -1084,11 +1178,15 @@ def fetch_iris(session: requests.Session, now: datetime) -> list[RawItem]:
 
     out: list[RawItem] = []
     for feed_name, feed_url in feeds:
+        if len(out) >= DISCUSSION_FETCH_CAP:
+            break
         try:
             if feedparser is not None:
                 parsed = feedparser.parse(feed_url)
                 source_name = str(feed_name or getattr(parsed, "feed", {}).get("title") or "Iris Feed")
                 for entry in parsed.entries:
+                    if len(out) >= DISCUSSION_FETCH_CAP:
+                        break
                     title = str(entry.get("title", "")).strip()
                     url = str(entry.get("link", "")).strip()
                     if not title or not url:
@@ -1116,6 +1214,8 @@ def fetch_iris(session: requests.Session, now: datetime) -> list[RawItem]:
             entries = parse_feed_entries_via_xml(feed_resp.content)
             source_name = str(feed_name or "Iris Feed")
             for entry in entries:
+                if len(out) >= DISCUSSION_FETCH_CAP:
+                    break
                 out.append(
                     RawItem(
                         site_id=site_id,
@@ -1219,67 +1319,6 @@ def fetch_bestblogs(session: requests.Session, now: datetime) -> list[RawItem]:
                 meta={},
             )
         )
-
-    return out
-
-
-def fetch_tophub(session: requests.Session, now: datetime) -> list[RawItem]:
-    site_id = "tophub"
-    site_name = "TopHub"
-
-    r = session.get("https://tophub.today/", timeout=30)
-    r.raise_for_status()
-    html = r.content.decode("utf-8", errors="replace")
-    if "�" in html:
-        for enc in ("gb18030", "utf-8"):
-            try:
-                candidate = r.content.decode(enc, errors="replace")
-                if candidate.count("�") < html.count("�"):
-                    html = candidate
-            except Exception:
-                continue
-    soup = BeautifulSoup(html, "html.parser")
-
-    out: list[RawItem] = []
-    for block in soup.select(".cc-cd"):
-        source_name_tag = block.select_one(".cc-cd-lb span")
-        board_tag = block.select_one(".cc-cd-sb-st")
-        source_name = source_name_tag.get_text(" ", strip=True) if source_name_tag else "TopHub"
-        board_name = board_tag.get_text(" ", strip=True) if board_tag else ""
-        source_name = maybe_fix_mojibake(source_name)
-        board_name = maybe_fix_mojibake(board_name)
-        source = f"{source_name} · {board_name}" if board_name else source_name
-
-        for a in block.select(".cc-cd-cb-l a"):
-            href = a.get("href", "").strip()
-            row = a.select_one(".cc-cd-cb-ll")
-            title_tag = row.select_one(".t") if row else None
-            metric_tag = row.select_one(".e") if row else None
-
-            title = (
-                title_tag.get_text(" ", strip=True)
-                if title_tag
-                else a.get_text(" ", strip=True)
-            )
-            title = maybe_fix_mojibake(title)
-            if not title or not href:
-                continue
-
-            full_url = href if href.startswith("http") else urljoin("https://tophub.today", href)
-            row_text = row.get_text(" ", strip=True) if row else title
-            published = parse_relative_time_zh(row_text, now)
-
-            out.append(
-                RawItem(
-                    site_id=site_id,
-                    site_name=site_name,
-                    source=source,
-                    title=title,
-                    url=full_url,
-                    published_at=published,
-                    meta={"metric": metric_tag.get_text(" ", strip=True) if metric_tag else ""},
-                )
-            )
 
     return out
 
@@ -2295,7 +2334,6 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         ("buzzing", "Buzzing", fetch_buzzing),
         ("iris", "Info Flow", fetch_iris),
         ("bestblogs", "BestBlogs", fetch_bestblogs),
-        ("tophub", "TopHub", fetch_tophub),
         ("zeli", "Zeli", fetch_zeli),
         ("hackernews", "Hacker News", fetch_hacker_news_algolia),
         ("aihubtoday", "AI HubToday", fetch_ai_hubtoday),
@@ -2755,7 +2793,6 @@ SOURCE_TIER_BY_SITE: dict[str, tuple[str, str, int]] = {
     "techurls": ("discussion", "热议参考", 5),
     "buzzing": ("discussion", "热议参考", 5),
     "iris": ("discussion", "热议参考", 5),
-    "tophub": ("discussion", "热议参考", 5),
     "zeli": ("discussion", "热议参考", 5),
     "hackernews": ("discussion", "热议参考", 5),
     "newsnow": ("discussion", "热议参考", 5),
@@ -2773,6 +2810,56 @@ SOURCE_TIER_IMPORTANCE = {
     "discussion": 0.32,
     "other": 0.25,
 }
+
+# ---------------------------------------------------------------------------
+# aihot first-party source override
+# ---------------------------------------------------------------------------
+# Items from aihot that originate from official company channels (not individual
+# analysts/bloggers) should be promoted to the "official" tier.  The strings
+# below are exact ``source`` field values as returned by the aihot public API.
+AIHOT_FIRST_PARTY_SOURCE_NAMES: frozenset[str] = frozenset({
+    # --- OpenAI ---
+    "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+    "X：OpenAI Developers (@OpenAIDevs)",
+    "X：ChatGPT (@ChatGPTapp)",
+    # --- Anthropic ---
+    "Anthropic：Newsroom（网页）",
+    "Claude Code：GitHub Releases（RSS）",
+    "X：Claude Devs (@ClaudeDevs)",
+    # --- Google ---
+    "Google Developers Blog（RSS）",
+    "Google Research：Blog（网页）",
+    "X：Google DeepMind (@GoogleDeepMind)",
+    "X：NotebookLM (@NotebookLM)",
+    # --- Meta ---
+    "X：AI at Meta (@AIatMeta)",
+    # --- Mistral ---
+    "Mistral AI：News（网页）",
+    # --- Hugging Face ---
+    "Hugging Face：Blog（RSS）",
+    "HuggingFace Daily Papers（社区热门论文）",
+    # --- Perplexity ---
+    "X：Perplexity (@perplexity_ai)",
+    # --- Runway ---
+    "X：Runway (@runwayml)",
+    # --- Alibaba / Qwen ---
+    "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+    # --- ByteDance / Kling ---
+    "X：可灵 Kling AI (@Kling_ai)",
+})
+
+
+def source_tier_for_record(site_id: str, source: str) -> tuple[str, str, int] | None:
+    """Return ``("official", "官方一手源", 0)`` when an aihot item comes from a
+    known first-party company channel, otherwise ``None`` (caller falls through
+    to the global ``SOURCE_TIER_BY_SITE`` lookup)."""
+    if site_id != "aihot":
+        return None
+    src = source.strip()
+    if src in AIHOT_FIRST_PARTY_SOURCE_NAMES:
+        return ("official", "官方一手源", 0)
+    return None
+
 
 TITLE_STOPWORDS = {
     "a",
@@ -2840,7 +2927,16 @@ def source_tier_for_site(site_id: str) -> dict[str, Any]:
 
 def add_source_tier_fields(record: dict[str, Any]) -> dict[str, Any]:
     out = dict(record)
-    out.update(source_tier_for_site(str(out.get("site_id") or "")))
+    site_id = str(out.get("site_id") or "")
+    # For aihot items, check if the source is a known first-party channel first
+    override = source_tier_for_record(site_id, str(out.get("source") or ""))
+    if override is not None:
+        tier, label, rank = override
+        out["source_tier"] = tier
+        out["source_tier_label"] = label
+        out["source_tier_rank"] = rank
+    else:
+        out.update(source_tier_for_site(site_id))
     return out
 
 
@@ -2931,37 +3027,6 @@ COMMERCE_NOISE_KEYWORDS = [
 EN_SIGNAL_RE = re.compile(
     r"(?i)(?<![a-z0-9])(ai|aigc|llm|gpt|openai|anthropic|deepseek|gemini|claude|robot|robotics|embodied|autonomous|machine learning|artificial intelligence|transformer|diffusion|agent)(?![a-z0-9])"
 )
-
-TOPHUB_ALLOW_KEYWORDS = [
-    "readhub · ai",
-    "hacker news",
-    "github",
-    "product hunt",
-    "v2ex",
-    "少数派",
-    "infoq",
-    "36氪",
-    "机器之心",
-    "量子位",
-    "科技",
-    "人工智能",
-    "机器人",
-    "具身",
-    "开源",
-]
-
-TOPHUB_BLOCK_KEYWORDS = [
-    "热销总榜",
-    "淘宝",
-    "天猫",
-    "京东",
-    "拼多多",
-    "抖音",
-    "快手",
-    "微博",
-    "小红书",
-]
-
 
 MEANINGFUL_EN_SIGNAL_RE = re.compile(
     r"(?i)(?<![a-z0-9])(ai|aigc|llm|gpt|openai|anthropic|deepseek|gemini|claude|robot|robotics|embodied|autonomous|machine learning|artificial intelligence|transformer|diffusion)(?![a-z0-9])"
@@ -3502,7 +3567,7 @@ def fetch_socialdata_search(
     query: str,
     now: datetime,
     max_results: int,
-    search_type: str = "Latest",
+    search_type: str = "Top",
     base_url: str = SOCIALDATA_API_BASE_DEFAULT,
 ) -> tuple[list[RawItem], dict[str, Any]]:
     """Fetch public X search results through SocialData; no writes and no private data."""
@@ -3510,7 +3575,9 @@ def fetch_socialdata_search(
     if len(query) > SOCIALDATA_MAX_QUERY_CHARS:
         raise ValueError("socialdata_query_too_long")
     capped_max_results = max(1, min(int(max_results or SOCIALDATA_DEFAULT_MAX_RESULTS), 100))
-    effective_search_type = search_type if search_type in {"Latest", "Top"} else "Latest"
+    # 默认 Top:Latest 返回的是 API 调用瞬间刚发出的推文,一批的原帖时间挤在同一分钟,
+    # 时间轴上表现为同分钟刷屏;Top 按热度返回时间窗内的推文,原帖时间自然散布。
+    effective_search_type = search_type if search_type in {"Latest", "Top"} else "Top"
     out: list[RawItem] = []
     raw_tweet_count = 0
     response_top_level_keys: list[str] = []
@@ -3772,7 +3839,7 @@ def maybe_fetch_socialdata_updates(
 
     query = str(os.environ.get("SOCIALDATA_QUERY") or SOCIALDATA_DEFAULT_QUERY).strip()
     base_url = str(os.environ.get("SOCIALDATA_API_BASE_URL") or SOCIALDATA_API_BASE_DEFAULT).strip()
-    search_type = str(os.environ.get("SOCIALDATA_SEARCH_TYPE") or "Latest").strip() or "Latest"
+    search_type = str(os.environ.get("SOCIALDATA_SEARCH_TYPE") or "Top").strip() or "Top"
     list_id = str(os.environ.get("SOCIALDATA_LIST_ID") or SOCIALDATA_LIST_ID_DEFAULT).strip()
     list_enabled = bool(list_id) and str(os.environ.get("SOCIALDATA_LIST_ENABLED", "1")).strip().lower() in {
         "1",
@@ -4534,7 +4601,10 @@ def load_title_zh_cache(path: Path) -> dict[str, str]:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
         if isinstance(data, dict):
-            return {str(k): str(v) for k, v in data.items() if str(k).strip() and str(v).strip()}
+            # Note: keep empty-string values (e.g. title-enhance negative-cache
+            # entries under TITLE_ENHANCE_CACHE_PREFIX) so they survive reload
+            # instead of being retried every run.
+            return {str(k): str(v) for k, v in data.items() if str(k).strip()}
     except Exception:
         pass
     return {}
@@ -4572,6 +4642,112 @@ def translate_to_zh_cn(session: requests.Session, text: str) -> str | None:
     return None
 
 
+ZH_CACHE_DS_PREFIX = "ds1|"
+
+TRANSLATION_GLOSSARY_FILENAME = "translation-glossary.txt"
+
+# 进程级词表缓存：None 表示尚未加载，加载后为 (protected_terms, repairs)。
+_GLOSSARY_CACHE: tuple[list[str], list[tuple[str, str, str | None]]] | None = None
+
+
+def load_translation_glossary(
+    path: str | Path = TRANSLATION_GLOSSARY_FILENAME,
+) -> tuple[list[str], list[tuple[str, str, str | None]]]:
+    """解析根目录翻译词表，返回 (protected_terms, repairs)。
+
+    词表格式（fork 用户直接编辑 translation-glossary.txt）：
+    - 普通行 = 保护术语（翻译时保留原文）
+    - ``bad => good [@guard]`` = 修正规则；guard 表示只有英文原标题
+      包含该关键词（大小写不敏感）才执行替换，可省略。
+    文件缺失或解析异常时静默返回空表，fork 删掉文件也不影响管线。
+    """
+    protected_terms: list[str] = []
+    repairs: list[tuple[str, str, str | None]] = []
+    try:
+        p = Path(path)
+        if not p.is_absolute():
+            p = Path(__file__).resolve().parent.parent / p
+        for raw_line in p.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "=>" in line:
+                bad, _, rest = line.partition("=>")
+                bad = bad.strip()
+                rest = rest.strip()
+                guard: str | None = None
+                if "@" in rest:
+                    good_part, _, guard_part = rest.rpartition("@")
+                    good = good_part.strip()
+                    guard = guard_part.strip() or None
+                else:
+                    good = rest
+                if bad and good:
+                    repairs.append((bad, good, guard))
+            else:
+                protected_terms.append(line)
+    except Exception:
+        return [], []
+    return protected_terms, repairs
+
+
+def _get_translation_glossary() -> tuple[list[str], list[tuple[str, str, str | None]]]:
+    global _GLOSSARY_CACHE
+    if _GLOSSARY_CACHE is None:
+        _GLOSSARY_CACHE = load_translation_glossary()
+    return _GLOSSARY_CACHE
+
+
+def translate_to_zh_deepseek(text: str, timeout: int = 20) -> str | None:
+    s = (text or "").strip()
+    if not s:
+        return None
+    api_key = str(os.environ.get("DEEPSEEK_API_KEY") or "").strip()
+    if not api_key:
+        return None
+    base_url = str(os.environ.get("DEEPSEEK_API_BASE_URL") or "https://api.deepseek.com").strip().rstrip("/")
+    model = str(os.environ.get("DEEPSEEK_MODEL") or "deepseek-v4-flash").strip()
+    protected_terms, _ = _get_translation_glossary()
+    if protected_terms:
+        term_list = "、".join(protected_terms)
+    else:
+        term_list = "Codex、Claude、OpenAI、Anthropic、Hugging Face、The Information"
+    system_prompt = (
+        "你是科技新闻编辑，把英文 AI/科技新闻标题翻译成地道的简体中文。"
+        "产品名、公司名、模型名、媒体名、人名一律保留英文原文不翻译"
+        f"（如 {term_list}）。"
+        "用自然的中文表达，说人话，避免翻译腔。"
+        "只返回译文本身，不加引号，不加解释，长度贴近原标题的信息量。"
+    )
+    try:
+        r = requests.post(
+            f"{base_url}/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "temperature": 0.2,
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": s},
+                ],
+            },
+            timeout=timeout,
+        )
+        if r.status_code != 200:
+            return None
+        payload = r.json()
+        choices = payload.get("choices") if isinstance(payload, dict) else None
+        if not isinstance(choices, list) or not choices:
+            return None
+        content = str(((choices[0] or {}).get("message") or {}).get("content") or "").strip()
+        content = content.strip("\"'“”「」").strip()
+        if content and content != s:
+            return content
+    except Exception:
+        return None
+    return None
+
+
 def repair_zh_title_translation(original: str, translated: str) -> str:
     """Repair recurring machine-translation errors in AI product/news titles."""
     source = str(original or "")
@@ -4588,7 +4764,112 @@ def repair_zh_title_translation(original: str, translated: str) -> str:
         result = result.replace("存储库", "代码仓库")
     if re.search(r"\bdesktop app\b", source, re.I):
         result = result.replace("桌面应用程序", "桌面应用")
+    # 模型架构 Transformer 被译成电影名；排除原文明显在谈电影/玩具的场景防误伤。
+    if re.search(r"\btransformers?\b", source, re.I) and not re.search(
+        r"\b(movie|film|trailer|hasbro|toy)\b", source, re.I
+    ):
+        result = result.replace("变形金刚", "Transformer")
+    # 公司名 Hugging Face 被直译；仅当原文出现该公司名时才替换。
+    if re.search(r"\bHugging\s*Face\b", source, re.I):
+        result = result.replace("拥抱脸", "Hugging Face").replace("抱抱脸", "Hugging Face")
+    # 公司名 OpenAI 偶尔被拆词直译；"开放人工智能"日常中文几乎不用，误伤面小。
+    if re.search(r"\bOpenAI\b", source, re.I):
+        result = result.replace("开放人工智能", "OpenAI")
+    # 公司名 Anthropic 被误译为哲学词；仅替换"人择"这类专有误译，不动泛指"人类"的句子。
+    if re.search(r"\bAnthropic\b", source, re.I):
+        result = result.replace("人择", "Anthropic").replace("人类学公司", "Anthropic")
+    # 媒体名 The Information 被译成普通名词；只替换书名号/报社式误译，避免动正文里的"信息"。
+    if re.search(r"\bThe Information\b", source):
+        result = result.replace("《信息》", "The Information").replace("信息报", "The Information")
+    # 模型名 Gemini 被译成星座；AI 信源里原文含 Gemini 基本都指模型。
+    if re.search(r"\bGemini\b", source):
+        result = result.replace("双子座", "Gemini")
+    # 模型名 Llama 被译成动物名；仅当原文点名 Llama 时替换。
+    if re.search(r"\bLlama\b", source, re.I):
+        result = result.replace("骆驼", "Llama").replace("羊驼", "Llama")
+    # 产品名 Copilot 被直译；仅当原文出现 Copilot 时替换，不影响航空语境。
+    if re.search(r"\bCopilot\b", source, re.I):
+        result = result.replace("副驾驶", "Copilot")
+    # 产品名 Cursor 被译成"光标"；仅当原文以大写 Cursor 出现（产品名写法）时替换。
+    if re.search(r"\bCursor\b", source):
+        result = result.replace("光标", "Cursor")
+    # 公司名 Perplexity 被译成"困惑"；大小写敏感匹配，避免误伤指标含义的 perplexity。
+    if re.search(r"\bPerplexity\b", source):
+        result = result.replace("困惑", "Perplexity")
+    # 词表修正规则（translation-glossary.txt）：guard 语义与上面硬编码规则一致——
+    # 只有英文原标题包含 guard 关键词才替换，防误伤。
+    _, glossary_repairs = _get_translation_glossary()
+    for bad, good, guard in glossary_repairs:
+        if bad not in result:
+            continue
+        if guard and not re.search(re.escape(guard), source, re.I):
+            continue
+        result = result.replace(bad, good)
+        # 替换目标为纯 ASCII 术语时，清理机翻残留的紧贴书名号，如《Fable 5》→ Fable 5。
+        if good.isascii():
+            result = re.sub(r"《(" + re.escape(good) + r"[^《》]*)》", r"\1", result)
     return result
+
+
+ZH_TRANSLATION_REFUSAL_MARKERS = [
+    "抱歉",
+    "我无法处理",
+    "我无法翻译",
+    "我无法提供",
+    "sorry",
+    "cannot",
+    "i can't",
+    "无法处理",
+    "请提供",
+    "请直接提供",
+]
+_ZH_REFUSAL_LEADING_STRIP_RE = re.compile(r'^[\s"\'“”‘’「」『』(（,，.。:：]+')
+
+
+def _looks_like_translation_refusal(text: str) -> bool:
+    """A real refusal ("抱歉，我无法处理链接内容。请直接提供英文标题文本。")
+    leads with its refusal phrase. A genuine headline translation can also
+    contain "抱歉"/"我无法" as ordinary vocabulary anywhere mid-sentence (e.g.
+    "OpenAI 老板...深感抱歉", "我无法想象没有他的生活") — matching those as a
+    substring anywhere in the text produces false positives, seen on 22 real
+    cached translations. Requiring the marker to lead the (punctuation-
+    stripped) text scopes this to actual refusal-style openings only."""
+    lowered = _ZH_REFUSAL_LEADING_STRIP_RE.sub("", text.lower())
+    return any(lowered.startswith(marker.lower()) for marker in ZH_TRANSLATION_REFUSAL_MARKERS)
+
+
+def is_valid_zh_translation(original: str, translated: str, *, strict: bool = True) -> bool:
+    """Validate a raw MT/LLM translation candidate before it's cached and
+    shown as an item's headline. Rejects two recurring failure modes seen
+    with SocialData X titles that collapse to a bare t.co link after
+    `compact_public_snippet` truncation:
+    - LLM refusal sentences (e.g. DeepSeek replying "抱歉，我无法处理链接内容。
+      请直接提供英文标题文本。" instead of translating a link-only "title").
+    - Degenerate/too-short outputs (e.g. a full headline translated down to
+      a single fragment like "前体" / "Precursor").
+    Reuses the length/CJK-count sanity checks from `enhance_title_deepseek()`'s
+    validator; skips its stricter entity-echo check since that's tuned for
+    title rewrites, not plain translation.
+
+    `strict=False` (used to re-validate existing cache entries) only checks
+    refusal phrases plus the `cjk_count >= 4` degenerate floor, skipping the
+    `8 <= effective_len <= 36` band: that upper/lower band is tuned for
+    freshly-generated `enhance_title_deepseek()`-style rewrites, but short
+    yet complete plain translations of already-terse titles (e.g. a 7-char
+    cached translation of a 5-word title) are legitimate and get corrected
+    for glossary mismatches by `repair_zh_title_translation()`, not rejected.
+    """
+    text = str(translated or "").strip()
+    if not text or not has_cjk(text):
+        return False
+    if _looks_like_translation_refusal(text):
+        return False
+    cjk_count, effective_len = _title_enhance_effective_length(text)
+    if cjk_count < 4:
+        return False
+    if strict and not (8 <= effective_len <= 36):
+        return False
+    return True
 
 
 def add_bilingual_fields(
@@ -4597,6 +4878,7 @@ def add_bilingual_fields(
     session: requests.Session,
     cache: dict[str, str],
     max_new_translations: int,
+    max_new_translations_all: int = 0,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, str]]:
     zh_by_url: dict[str, str] = {}
     for it in items_all:
@@ -4605,10 +4887,11 @@ def add_bilingual_fields(
         if title and url and has_cjk(title):
             zh_by_url[url] = title
 
-    translated_now = 0
+    translated_now_ai = 0
+    translated_now_all = 0
 
-    def enrich(item: dict[str, Any], allow_translate: bool) -> dict[str, Any]:
-        nonlocal translated_now
+    def enrich(item: dict[str, Any], allow_translate: bool, is_ai_pool: bool) -> dict[str, Any]:
+        nonlocal translated_now_ai, translated_now_all
         out = dict(item)
         title = str(out.get("title") or "").strip()
         url = normalize_url(str(out.get("url") or ""))
@@ -4638,27 +4921,584 @@ def add_bilingual_fields(
 
         out["title_en"] = title
 
+        has_ds_key = bool(str(os.environ.get("DEEPSEEK_API_KEY") or "").strip())
+        cache_hit_key: str | None = None
         zh_title = zh_by_url.get(url)
         if not zh_title:
-            zh_title = cache.get(title)
-        if not zh_title and allow_translate and translated_now < max_new_translations:
-            tr = translate_to_zh_cn(session, title)
-            if tr and has_cjk(tr):
-                zh_title = repair_zh_title_translation(title, tr)
-                cache[title] = zh_title
-                translated_now += 1
+            ds_key = ZH_CACHE_DS_PREFIX + title
+            cached_ds = cache.get(ds_key)
+            if cached_ds and is_valid_zh_translation(title, cached_ds, strict=False):
+                zh_title = cached_ds
+                cache_hit_key = ds_key
+            elif not has_ds_key:
+                # 谷歌时代的裸 key 旧缓存只在 DeepSeek 不可用时兜底命中；
+                # 有 key 时视为 miss，触发 DeepSeek 重译逐步替换旧翻译。
+                cached_google = cache.get(title)
+                if cached_google and is_valid_zh_translation(title, cached_google, strict=False):
+                    zh_title = cached_google
+                    cache_hit_key = title
+        if not zh_title and allow_translate:
+            budget = max_new_translations if is_ai_pool else max_new_translations_all
+            translated_now = translated_now_ai if is_ai_pool else translated_now_all
+            if translated_now < budget:
+                tr = translate_to_zh_deepseek(title)
+                if tr and is_valid_zh_translation(title, tr):
+                    zh_title = repair_zh_title_translation(title, tr)
+                    cache[ZH_CACHE_DS_PREFIX + title] = zh_title
+                    if is_ai_pool:
+                        translated_now_ai += 1
+                    else:
+                        translated_now_all += 1
+                else:
+                    tr = translate_to_zh_cn(session, title)
+                    if tr and is_valid_zh_translation(title, tr):
+                        zh_title = repair_zh_title_translation(title, tr)
+                        cache[title] = zh_title
+                        if is_ai_pool:
+                            translated_now_ai += 1
+                        else:
+                            translated_now_all += 1
 
         if zh_title:
             zh_title = repair_zh_title_translation(title, zh_title)
-            if cache.get(title) and cache.get(title) != zh_title:
-                cache[title] = zh_title
+            if cache_hit_key and cache.get(cache_hit_key) != zh_title:
+                cache[cache_hit_key] = zh_title
             out["title_zh"] = zh_title
             out["title_bilingual"] = f"{zh_title} / {title}"
         return out
 
-    ai_out = [enrich(it, allow_translate=True) for it in items_ai]
-    all_out = [enrich(it, allow_translate=False) for it in items_all]
+    ai_out = [enrich(it, allow_translate=True, is_ai_pool=True) for it in items_ai]
+    all_out = [
+        enrich(it, allow_translate=max_new_translations_all > 0, is_ai_pool=False) for it in items_all
+    ]
     return ai_out, all_out, cache
+
+
+TITLE_ENHANCE_CACHE_PREFIX = "te1|"
+
+RECOMMEND_REASON_CACHE_PREFIX = "re1|"
+
+_TITLE_ENHANCE_GATED_TIERS = {"discussion", "aggregate", "community"}
+_TITLE_ENHANCE_EXEMPT_TIERS = {"official", "curated"}
+
+_TITLE_ENHANCE_YEAR_SUFFIX_RE = re.compile(r"[(（]20\d{2}[)）]\s*$")
+
+_TITLE_ENHANCE_ENTITY_RE = re.compile(r"[A-Za-z][A-Za-z0-9]+")
+
+
+def title_needs_enhance(item: dict[str, Any]) -> bool:
+    """Gate for the micro-crawl + DeepSeek title-rewrite step: many source
+    titles are bare product/company names or jargon-heavy aggregator titles
+    that don't read as self-explanatory news headlines."""
+    site_id = str(item.get("site_id") or "").strip().lower()
+    tier = str(item.get("source_tier") or "").strip().lower()
+    if site_id == "official_ai" or tier in _TITLE_ENHANCE_EXEMPT_TIERS:
+        return False
+
+    zh_title = str(item.get("title_zh") or "").strip()
+    en_title = str(item.get("title_en") or item.get("title_original") or "").strip()
+    effective_title = zh_title or en_title
+
+    # Upstream-pre-translated cryptic titles ending in a parenthesized year
+    # (half-width "(2025)" or full-width "（2025）") are a strong "this is an
+    # aggregator/discussion repost, not a real headline" signal on their own.
+    # This must run BEFORE the CJK-length exemption below: those titles are
+    # often long CJK strings that would otherwise be waved through as
+    # already self-explanatory.
+    if (
+        tier in _TITLE_ENHANCE_GATED_TIERS
+        and effective_title
+        and _TITLE_ENHANCE_YEAR_SUFFIX_RE.search(effective_title)
+    ):
+        return True
+
+    # A decent-length Chinese title is already self-explanatory; never gate it,
+    # regardless of tier. Guards against CJK titles false-positiving on the
+    # space-separated word-count rule below (CJK has no spaces).
+    if effective_title and has_cjk(effective_title) and len(effective_title) >= 12:
+        return False
+
+    # Word-count rule only makes sense for genuinely English titles.
+    if en_title and is_mostly_english(en_title) and 1 <= len(en_title.split()) <= 4:
+        return True
+
+    if tier in _TITLE_ENHANCE_GATED_TIERS:
+        if effective_title and len(effective_title) < 18:
+            return True
+        if en_title and _TITLE_ENHANCE_YEAR_SUFFIX_RE.search(en_title):
+            return True
+
+    return False
+
+
+def _fetch_context_bytes(
+    session: requests.Session, url: str, headers: dict[str, str], timeout: int, limit: int = 512 * 1024
+) -> bytes:
+    """Stream up to `limit` bytes from `url`, closing the connection early.
+    Any failure (non-200, timeout, connection error) yields b""."""
+    resp = None
+    try:
+        resp = session.get(url, timeout=timeout, headers=headers, stream=True)
+        resp.raise_for_status()
+        chunks: list[bytes] = []
+        total = 0
+        for chunk in resp.iter_content(chunk_size=8192):
+            if not chunk:
+                continue
+            chunks.append(chunk)
+            total += len(chunk)
+            if total >= limit:
+                break
+        return b"".join(chunks)
+    except Exception:
+        return b""
+    finally:
+        if resp is not None:
+            try:
+                resp.close()
+            except Exception:
+                pass
+
+
+def _parse_html_page_context(raw: bytes, max_paragraphs: int = 3) -> str:
+    if not raw:
+        return ""
+    soup = BeautifulSoup(raw, "html.parser")
+
+    parts: list[str] = []
+    for attrs in (
+        {"property": "og:description"},
+        {"name": "description"},
+        {"name": "twitter:description"},
+        {"property": "twitter:description"},
+    ):
+        tag = soup.find("meta", attrs=attrs)
+        if tag and tag.get("content"):
+            text = str(tag.get("content")).strip()
+            if text:
+                parts.append(text)
+
+    p_count = 0
+    for p in soup.find_all("p"):
+        if p_count >= max_paragraphs:
+            break
+        if p.find_parent(["script", "style", "nav"]):
+            continue
+        text = p.get_text(" ", strip=True)
+        if text:
+            parts.append(text)
+            p_count += 1
+
+    return "\n".join(part for part in parts if part).strip()
+
+
+_JINA_MD_LINK_RE = re.compile(r"!?\[[^\]]*\]\([^)]*\)")
+_JINA_MD_BULLET_RE = re.compile(r"^[*\-+]\s+|^\d+\.\s+")
+
+
+def _jina_line_is_prose(line: str) -> bool:
+    """Heuristic to skip nav-menu markdown link spaghetti (e.g. ProductHunt's
+    "* [Best of the day](https://...)" sidebar rows) while keeping real body
+    text. Strips markdown link syntax and bullet/heading markup; a line is
+    treated as prose only if enough plain text remains."""
+    stripped = _JINA_MD_LINK_RE.sub("", line)
+    stripped = _JINA_MD_BULLET_RE.sub("", stripped)
+    stripped = re.sub(r"[#>*_`|]", " ", stripped)
+    stripped = re.sub(r"\s+", " ", stripped).strip()
+    return len(stripped) >= 20
+
+
+def _parse_jina_reader_context(raw: bytes, max_lines: int = 40, max_prose_lines: int = 3) -> str:
+    """r.jina.ai renders a page to markdown; the first line is
+    "Title: <descriptive page title>" followed by "URL Source: ..." and
+    "Markdown Content: ..." section markers before the actual body text."""
+    if not raw:
+        return ""
+    try:
+        text = raw.decode("utf-8", errors="ignore")
+    except Exception:
+        return ""
+    lines = [ln.strip() for ln in text.splitlines()]
+
+    title_line = next((ln for ln in lines if ln.lower().startswith("title:")), "")
+
+    content_lines: list[str] = []
+    for ln in lines[:max_lines]:
+        if len(content_lines) >= max_prose_lines:
+            break
+        if not ln or ln.lower().startswith(("title:", "url source:", "markdown content:")):
+            continue
+        if not _jina_line_is_prose(ln):
+            continue
+        content_lines.append(ln)
+
+    if not content_lines:
+        # No real prose in the first 40 lines (nav-heavy page). The title
+        # alone is often informative enough — PH-style titles read as full
+        # descriptive sentences — so fall back to just that.
+        return title_line.strip()
+
+    parts = ([title_line] if title_line else []) + content_lines
+    return "\n".join(part for part in parts if part).strip()
+
+
+def fetch_title_context(session: requests.Session, url: str) -> str:
+    """Micro-crawl the source page for enough context (meta descriptions +
+    first paragraphs) to let the LLM rewrite a terse title informatively.
+    Any failure or empty extraction returns "" so callers can skip cleanly.
+
+    Some sources (e.g. ProductHunt) sit behind Cloudflare and 403 a direct
+    crawl. When the direct fetch yields no usable context, fall back to a
+    single request through r.jina.ai — a free, keyless third-party reader
+    proxy (~20 rpm) that renders the page to markdown. This only fires on
+    direct-fetch failure and is gated by the same TITLE_ENHANCE_MAX_PER_RUN
+    cap as the LLM call, so it stays well under the reader's rate limit.
+    """
+    u = str(url or "").strip()
+    if not u:
+        return ""
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml",
+    }
+    raw = _fetch_context_bytes(session, u, headers, timeout=8)
+    context = _parse_html_page_context(raw)
+    if context:
+        return context[:800]
+
+    jina_headers = {"Accept": "text/plain"}
+    jina_raw = _fetch_context_bytes(session, f"https://r.jina.ai/{u}", jina_headers, timeout=15)
+    jina_context = _parse_jina_reader_context(jina_raw)
+    return jina_context[:800]
+
+
+FULL_TEXT_CONTEXT_CHAR_CAP = 3500
+
+
+def fetch_full_text_context(session: requests.Session, url: str) -> str:
+    """Micro-crawl the source page for real article body text (not just a
+    short snippet) so an LLM can write a genuine, fact-grounded "why this is
+    worth reading" reason. Shares the same fetch machinery as
+    `fetch_title_context()` (byte-stream cap, direct-fetch-then-jina-fallback
+    strategy) but with much higher paragraph/line extraction limits and a
+    larger char cap, since we want real body content rather than a
+    description-length snippet. Any failure or empty extraction returns ""
+    so callers can skip cleanly.
+    """
+    u = str(url or "").strip()
+    if not u:
+        return ""
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml",
+    }
+    raw = _fetch_context_bytes(session, u, headers, timeout=8)
+    context = _parse_html_page_context(raw, max_paragraphs=40)
+    if context:
+        return context[:FULL_TEXT_CONTEXT_CHAR_CAP]
+
+    jina_headers = {"Accept": "text/plain"}
+    jina_raw = _fetch_context_bytes(session, f"https://r.jina.ai/{u}", jina_headers, timeout=15)
+    jina_context = _parse_jina_reader_context(jina_raw, max_lines=400, max_prose_lines=60)
+    return jina_context[:FULL_TEXT_CONTEXT_CHAR_CAP]
+
+
+def _title_enhance_entity_tokens(title: str) -> list[str]:
+    return [tok for tok in _TITLE_ENHANCE_ENTITY_RE.findall(str(title or "")) if len(tok) >= 2]
+
+
+_TITLE_ENHANCE_TOKEN_RE = re.compile(r"[A-Za-z0-9.+-]+")
+
+
+def _title_enhance_effective_length(text: str) -> tuple[int, int]:
+    """Length validation uses editorial "字" count, not raw chars: a title
+    that correctly keeps English entities verbatim (Claude, ChatGPT, Cursor)
+    blows past a raw-char cap even when it reads as a normal-length headline.
+    Returns (cjk_char_count, effective_length) where each CJK char counts 1,
+    each latin/alnum token (a run of [A-Za-z0-9.+-]+) counts as one "word"
+    worth 2 if it contains a letter (Claude -> 2, not 6) else 1 (bare digit
+    runs like a year); punctuation and spaces are free."""
+    s = str(text or "")
+    cjk_count = len(re.findall(r"[一-鿿]", s))
+    weight = 0
+    for token in _TITLE_ENHANCE_TOKEN_RE.findall(s):
+        weight += 2 if re.search(r"[A-Za-z]", token) else 1
+    return cjk_count, cjk_count + weight
+
+
+def enhance_title_deepseek(title: str, context: str, timeout: int = 45) -> str | None:
+    """Rewrite a terse/jargon title into an informative Chinese one-liner,
+    grounded in `context` (micro-crawled page text). Validates the candidate
+    before returning so a non-None result can be trusted by callers."""
+    title_s = str(title or "").strip()
+    context_s = str(context or "").strip()
+    if not title_s:
+        return None
+    api_key = str(os.environ.get("DEEPSEEK_API_KEY") or "").strip()
+    if not api_key:
+        return None
+    base_url = str(os.environ.get("DEEPSEEK_API_BASE_URL") or "https://api.deepseek.com").strip().rstrip("/")
+    model = str(os.environ.get("DEEPSEEK_MODEL") or "deepseek-v4-flash").strip()
+    system_prompt = (
+        "你是科技新闻编辑，负责把语焉不详、看不出信息量的英文标题改写成一条完整的中文资讯标题。"
+        "输出一条中文资讯标题，不超过28个字（英文名称按一个词计）。"
+        "原文中的关键实体（公司名、产品名、人名）必须原样保留英文，不要翻译或音译。"
+        "不得编造原文和参考资料之外的数字或事实。"
+        "使用新闻陈述语气，不要营销口号腔调。"
+        "只输出标题本身，不加引号，不加任何解释。"
+    )
+    user_content = f"原标题：{title_s}"
+    if context_s:
+        user_content += f"\n\n参考网页内容：\n{context_s}"
+    try:
+        r = requests.post(
+            f"{base_url}/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "temperature": 0.3,
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_content},
+                ],
+            },
+            timeout=timeout,
+        )
+        if r.status_code != 200:
+            return None
+        payload = r.json()
+        choices = payload.get("choices") if isinstance(payload, dict) else None
+        if not isinstance(choices, list) or not choices:
+            return None
+        content = str(((choices[0] or {}).get("message") or {}).get("content") or "").strip()
+        content = content.strip("\"'“”「」").strip()
+    except Exception:
+        return None
+
+    if not content or not has_cjk(content):
+        return None
+    cjk_count, effective_len = _title_enhance_effective_length(content)
+    if cjk_count < 4 or not (8 <= effective_len <= 36):
+        return None
+
+    entities = _title_enhance_entity_tokens(title_s)
+    if entities:
+        lowered = content.lower()
+        if not any(tok.lower() in lowered for tok in entities):
+            return None
+
+    return content
+
+
+def add_title_enhancements(
+    items_ai: list[dict[str, Any]],
+    session: requests.Session,
+    cache: dict[str, str],
+    max_new_per_run: int | None = None,
+) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    """Micro-crawl + DeepSeek-rewrite gated items_ai entries into an
+    informative `title_enhanced_zh`. No-ops entirely without a DeepSeek key."""
+    if not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
+        return items_ai, cache
+
+    if max_new_per_run is None:
+        try:
+            max_new_per_run = int(os.environ.get("TITLE_ENHANCE_MAX_PER_RUN") or 30)
+        except Exception:
+            max_new_per_run = 30
+    max_new_per_run = max(0, max_new_per_run)
+
+    used = 0
+    out: list[dict[str, Any]] = []
+    for item in items_ai:
+        new_item = dict(item)
+        if not title_needs_enhance(new_item):
+            out.append(new_item)
+            continue
+
+        url = normalize_url(str(new_item.get("url") or ""))
+        title = str(
+            new_item.get("title_en") or new_item.get("title_original") or new_item.get("title") or ""
+        ).strip()
+        cache_key = TITLE_ENHANCE_CACHE_PREFIX + hashlib.sha1(f"{url}|{title}".encode("utf-8")).hexdigest()
+
+        if cache_key in cache:
+            cached = cache.get(cache_key) or ""
+            if cached:
+                new_item["title_enhanced_zh"] = cached
+            out.append(new_item)
+            continue
+
+        if used >= max_new_per_run:
+            out.append(new_item)
+            continue
+
+        used += 1
+        context = fetch_title_context(session, str(new_item.get("url") or ""))
+        if not context:
+            cache[cache_key] = ""
+            out.append(new_item)
+            continue
+
+        enhanced = enhance_title_deepseek(title, context)
+        if enhanced:
+            cache[cache_key] = enhanced
+            new_item["title_enhanced_zh"] = enhanced
+        else:
+            cache[cache_key] = ""
+        out.append(new_item)
+
+    return out, cache
+
+
+def generate_recommend_reason_deepseek(
+    title: str, full_text: str, session: requests.Session | None = None, timeout: int = 45
+) -> str | None:
+    """Given the real article title + full text, write one Chinese sentence
+    explaining concretely what this specific piece covers and why it's worth
+    reading. Unlike `enhance_title_deepseek()` this is prose, not a structured
+    title, so validation only does a basic sanity check (non-empty, has CJK,
+    reasonable length, not a verbatim echo of the title) rather than the
+    stricter entity/length rules used for title rewrites. `session` is
+    accepted for calling-convention parity with the rest of this module's
+    fetch helpers but is unused: the DeepSeek call itself is a one-off POST,
+    same as `enhance_title_deepseek()`. Returns None on any failure (network
+    error, empty text, validation failure)."""
+    title_s = str(title or "").strip()
+    text_s = str(full_text or "").strip()
+    if not title_s or not text_s:
+        return None
+    api_key = str(os.environ.get("DEEPSEEK_API_KEY") or "").strip()
+    if not api_key:
+        return None
+    base_url = str(os.environ.get("DEEPSEEK_API_BASE_URL") or "https://api.deepseek.com").strip().rstrip("/")
+    model = str(os.environ.get("DEEPSEEK_MODEL") or "deepseek-v4-flash").strip()
+    system_prompt = (
+        "你是科技新闻编辑，负责为一篇具体的文章写一句「为什么值得读」的中文推荐语。"
+        "输出一句中文，40到80个字之间。"
+        "必须引用原文中的具体事实、数字或细节，讲清楚这篇内容具体讲了什么，不能写空洞的营销话术。"
+        "不得编造原文之外的数字或事实。"
+        "原文中的关键实体（公司名、产品名、人名）保留英文原样，不要翻译或音译。"
+        "只输出这一句推荐语本身，不加引号，不加任何解释或前缀。"
+    )
+    user_content = f"标题：{title_s}\n\n正文：\n{text_s}"
+    try:
+        r = requests.post(
+            f"{base_url}/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "temperature": 0.3,
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_content},
+                ],
+            },
+            timeout=timeout,
+        )
+        if r.status_code != 200:
+            return None
+        payload = r.json()
+        choices = payload.get("choices") if isinstance(payload, dict) else None
+        if not isinstance(choices, list) or not choices:
+            return None
+        content = str(((choices[0] or {}).get("message") or {}).get("content") or "").strip()
+        content = content.strip("\"'“”「」").strip()
+    except Exception:
+        return None
+
+    if not content or not has_cjk(content):
+        return None
+    if len(content) < 10 or len(content) > 200:
+        return None
+    if content.strip() == title_s.strip():
+        return None
+
+    return content
+
+
+def _recommend_reason_summary_is_placeholder(summary: str, title: str) -> bool:
+    """Heuristic for "this item's summary field isn't real editorial content
+    and is worth backfilling with fetched full-text": empty, or just a copy
+    of the title (a common upstream fallback, see `waytoagi`'s
+    `summary = title` pattern above)."""
+    s = str(summary or "").strip()
+    if not s:
+        return True
+    return s == str(title or "").strip()
+
+
+def add_recommend_reasons(
+    items_ai: list[dict[str, Any]],
+    session: requests.Session,
+    cache: dict[str, str],
+    max_new_per_run: int | None = None,
+) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    """Full-text-fetch + DeepSeek-authored, per-item `recommend_reason_zh`
+    for the already AI-relevance-filtered `items_ai` set (same scope as
+    `add_title_enhancements()` — deliberately not expanded to the unfiltered
+    pool, to control fetch/LLM cost). No-ops entirely without a DeepSeek key.
+    Uses an independent per-run budget (`REASON_ENHANCE_MAX_PER_RUN`) from
+    title enhancement, since full-text fetch + reasoning is more expensive
+    per item; shares the same on-disk cache dict/file as title enhancement
+    (distinct `RECOMMEND_REASON_CACHE_PREFIX` key namespace) for consistency."""
+    if not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
+        return items_ai, cache
+
+    if max_new_per_run is None:
+        try:
+            max_new_per_run = int(os.environ.get("REASON_ENHANCE_MAX_PER_RUN") or 30)
+        except Exception:
+            max_new_per_run = 30
+    max_new_per_run = max(0, max_new_per_run)
+
+    used = 0
+    out: list[dict[str, Any]] = []
+    for item in items_ai:
+        new_item = dict(item)
+        url = normalize_url(str(new_item.get("url") or ""))
+        title = str(
+            new_item.get("title_en") or new_item.get("title_original") or new_item.get("title") or ""
+        ).strip()
+        cache_key = RECOMMEND_REASON_CACHE_PREFIX + hashlib.sha1(f"{url}|{title}".encode("utf-8")).hexdigest()
+
+        if cache_key in cache:
+            cached = cache.get(cache_key) or ""
+            if cached:
+                new_item["recommend_reason_zh"] = cached
+            out.append(new_item)
+            continue
+
+        if not title or used >= max_new_per_run:
+            out.append(new_item)
+            continue
+
+        used += 1
+        full_text = fetch_full_text_context(session, str(new_item.get("url") or ""))
+        if not full_text:
+            cache[cache_key] = ""
+            out.append(new_item)
+            continue
+
+        reason = generate_recommend_reason_deepseek(title, full_text)
+        if reason:
+            cache[cache_key] = reason
+            new_item["recommend_reason_zh"] = reason
+        else:
+            cache[cache_key] = ""
+
+        if _recommend_reason_summary_is_placeholder(str(new_item.get("summary") or ""), title):
+            new_item["summary"] = full_text[:500]
+
+        out.append(new_item)
+
+    return out, cache
 
 
 def dedupe_items_by_title_url(items: list[dict[str, Any]], random_pick: bool = True) -> list[dict[str, Any]]:
@@ -4888,7 +5728,13 @@ def editorial_score(record: dict[str, Any]) -> float:
 def story_id_for_item(item: dict[str, Any]) -> str:
     url = canonical_story_url(str(item.get("url") or ""))
     title = normalized_story_title(item)
-    basis = url or title or str(item.get("id") or "")
+    # Include the title alongside the URL so that distinct notes published under
+    # a shared generic URL (e.g. a wiki hub page) get distinct story ids instead
+    # of colliding into a single group.
+    if url and title:
+        basis = f"{url}\x1f{title}"
+    else:
+        basis = url or title or str(item.get("id") or "")
     return "story_" + hashlib.sha1(basis.encode("utf-8")).hexdigest()[:12]
 
 
@@ -4954,11 +5800,12 @@ def choose_primary_story_item(
 def story_item_link(item: dict[str, Any]) -> dict[str, Any]:
     return {
         "id": item.get("id"),
-        "title": item.get("title_bilingual") or item.get("title"),
-        "title_zh": item.get("title_zh"),
+        "title": item.get("title_enhanced_zh") or item.get("title_bilingual") or item.get("title"),
+        "title_zh": item.get("title_enhanced_zh") or item.get("title_zh"),
         "title_en": item.get("title_en"),
         "title_original": item.get("title_original"),
         "summary": item.get("summary"),
+        "recommend_reason_zh": item.get("recommend_reason_zh"),
         "url": item.get("url"),
         "source": item.get("source"),
         "source_name": item.get("site_name"),
@@ -4997,7 +5844,7 @@ def build_story_record(
     times = [ts for ts in (event_time(item) for item in sorted_items) if ts]
     source_refs = [story_item_link(item) for item in sorted_items]
     source_names = sorted({str(item.get("source") or item.get("site_name") or "") for item in sorted_items if item.get("source") or item.get("site_name")})
-    title = primary.get("title_bilingual") or primary.get("title")
+    title = primary.get("title_enhanced_zh") or primary.get("title_bilingual") or primary.get("title")
     url = primary.get("url")
     return {
         "story_id": story_id,
@@ -5024,10 +5871,11 @@ def build_story_record(
         "primary_item": {
             "id": primary.get("id"),
             "title": title,
-            "title_zh": primary.get("title_zh"),
+            "title_zh": primary.get("title_enhanced_zh") or primary.get("title_zh"),
             "title_en": primary.get("title_en"),
             "title_original": primary.get("title_original"),
             "summary": primary.get("summary"),
+            "recommend_reason_zh": primary.get("recommend_reason_zh"),
             "url": url,
             "source": primary.get("source"),
             "source_name": primary.get("site_name"),
@@ -5045,7 +5893,8 @@ def merge_story_items(
     groups: dict[str, list[dict[str, Any]]] = {}
     group_titles: dict[str, str] = {}
     group_times: dict[str, datetime | None] = {}
-    canonical_to_story: dict[str, str] = {}
+    group_site_ids: dict[str, str] = {}
+    canonical_to_story: dict[str, list[str]] = {}
     events: list[dict[str, Any]] = []
 
     ordered = sorted(items, key=lambda item: event_time(item) or datetime.min.replace(tzinfo=UTC))
@@ -5053,16 +5902,32 @@ def merge_story_items(
         item_id = str(item.get("id") or "")
         canonical_url = canonical_story_url(str(item.get("url") or ""))
         title = normalized_story_title(item)
+        item_site_id = str(item.get("site_id") or "")
         item_time = event_time(item)
         story_id: str | None = None
         reason = ""
         similarity = 0.0
 
-        if canonical_url and canonical_url in canonical_to_story:
-            story_id = canonical_to_story[canonical_url]
-            reason = "canonical_url"
-            similarity = 1.0
-        elif title_is_mergeable(title):
+        if canonical_url:
+            for candidate_id in canonical_to_story.get(canonical_url, []):
+                candidate_title = group_titles.get(candidate_id, "")
+                candidate_site_id = group_site_ids.get(candidate_id, "")
+                if (
+                    item_site_id
+                    and candidate_site_id == item_site_id
+                    and title != candidate_title
+                    and title_similarity(title, candidate_title) < title_threshold
+                ):
+                    # Same-site items sharing a generic/shared URL (e.g. a wiki hub
+                    # page) but with clearly different titles are distinct notes,
+                    # not repeated reports of one event - don't cluster them.
+                    continue
+                story_id = candidate_id
+                reason = "canonical_url"
+                similarity = 1.0
+                break
+
+        if story_id is None and title_is_mergeable(title):
             for candidate_id, candidate_title in group_titles.items():
                 candidate_time = group_times.get(candidate_id)
                 if item_time and candidate_time:
@@ -5081,8 +5946,9 @@ def merge_story_items(
             groups[story_id] = []
             group_titles[story_id] = title
             group_times[story_id] = item_time
+            group_site_ids[story_id] = item_site_id
             if canonical_url:
-                canonical_to_story[canonical_url] = story_id
+                canonical_to_story.setdefault(canonical_url, []).append(story_id)
         else:
             events.append(
                 {
@@ -5094,7 +5960,9 @@ def merge_story_items(
                 }
             )
             if canonical_url:
-                canonical_to_story[canonical_url] = story_id
+                bucket = canonical_to_story.setdefault(canonical_url, [])
+                if story_id not in bucket:
+                    bucket.append(story_id)
 
         groups.setdefault(story_id, []).append(item)
 
@@ -5276,6 +6144,12 @@ def main() -> int:
     parser.add_argument("--window-hours", type=int, default=24, help="24h window size")
     parser.add_argument("--archive-days", type=int, default=21, help="Keep archive for N days")
     parser.add_argument("--translate-max-new", type=int, default=80, help="Max new EN->ZH title translations per run")
+    parser.add_argument(
+        "--translate-max-new-broad",
+        type=int,
+        default=30,
+        help="Max new EN->ZH title translations per run for the broad all-items pool (independent from --translate-max-new)",
+    )
     parser.add_argument("--rss-opml", default="", help="Optional OPML file path to include RSS sources")
     parser.add_argument("--rss-max-feeds", type=int, default=0, help="Optional max OPML RSS feeds to fetch (0 means all)")
     args = parser.parse_args()
@@ -5287,6 +6161,7 @@ def main() -> int:
     archive_path = output_dir / "archive.json"
     latest_path = output_dir / "latest-24h.json"
     latest_all_path = output_dir / "latest-24h-all.json"
+    latest_all_raw_path = output_dir / "latest-24h-all-raw.json"
     status_path = output_dir / "source-status.json"
     daily_brief_path = output_dir / "daily-brief.json"
     stories_merged_path = output_dir / "stories-merged.json"
@@ -5487,7 +6362,7 @@ def main() -> int:
 
     # 24h view
     window_start = now - timedelta(hours=args.window_hours)
-    latest_items_all: list[dict[str, Any]] = []
+    latest_items_all_raw: list[dict[str, Any]] = []
     for record in archive.values():
         ts = event_time(record)
         if not ts:
@@ -5506,12 +6381,14 @@ def main() -> int:
                 continue
             normalized = add_ai_relevance_fields(normalized)
             normalized = add_source_tier_fields(normalized)
-            latest_items_all.append(normalized)
+            latest_items_all_raw.append(normalized)
 
-    latest_items_all = normalize_aihubtoday_records(latest_items_all)
+    latest_items_all_raw = normalize_aihubtoday_records(latest_items_all_raw)
 
-    latest_items_all.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
-    latest_items = [record for record in latest_items_all if record.get("ai_is_related", is_ai_related_record(record))]
+    latest_items_all_raw.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
+    # Broad-AI filter: keep items whose pre-computed ai_score clears the floor
+    latest_items_all = [record for record in latest_items_all_raw if record.get("ai_score", 0) >= AI_BROAD_RELEVANCE_FLOOR]
+    latest_items = [record for record in latest_items_all_raw if record.get("ai_is_related", is_ai_related_record(record))]
     title_cache = load_title_zh_cache(title_cache_path)
     latest_items, latest_items_all, title_cache = add_bilingual_fields(
         latest_items,
@@ -5519,6 +6396,7 @@ def main() -> int:
         session,
         title_cache,
         max_new_translations=max(0, args.translate_max_new),
+        max_new_translations_all=max(0, args.translate_max_new_broad),
     )
     creator_items_ai = build_creator_hot_items(archive, now, ai_only=True)
     creator_items_all = build_creator_hot_items(archive, now, ai_only=False)
@@ -5531,6 +6409,9 @@ def main() -> int:
     )
     latest_items_ai_dedup = suppress_near_duplicate_items(dedupe_items_by_title_url(latest_items, random_pick=False))
     latest_items_all_dedup = dedupe_items_by_title_url(latest_items_all, random_pick=True)
+    latest_items_all_raw_dedup = dedupe_items_by_title_url(latest_items_all_raw, random_pick=True)
+    latest_items_ai_dedup, title_cache = add_title_enhancements(latest_items_ai_dedup, session, title_cache)
+    latest_items_ai_dedup, title_cache = add_recommend_reasons(latest_items_ai_dedup, session, title_cache)
     stories, merge_events = merge_story_items(latest_items_ai_dedup, now=now, window_hours=args.window_hours)
     generated_at = iso(now)
     daily_brief_payload = build_daily_brief_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
@@ -5540,12 +6421,12 @@ def main() -> int:
     # site stats
     site_stat: dict[str, dict[str, Any]] = {}
     raw_count_by_site: dict[str, int] = {}
-    for record in latest_items_all:
+    for record in latest_items_all_raw:
         sid = record["site_id"]
         raw_count_by_site[sid] = raw_count_by_site.get(sid, 0) + 1
 
     site_name_by_id: dict[str, str] = {}
-    for record in latest_items_all:
+    for record in latest_items_all_raw:
         site_name_by_id[record["site_id"]] = record["site_name"]
     for s in statuses:
         sid = s["site_id"]
@@ -5578,7 +6459,7 @@ def main() -> int:
         "window_hours": args.window_hours,
         "total_items": len(latest_items_ai_dedup),
         "total_items_ai_raw": len(latest_items),
-        "total_items_raw": len(latest_items_all),
+        "total_items_raw": len(latest_items_all_raw),
         "total_items_all_mode": len(latest_items_all_dedup),
         "topic_filter": "ai_relevance_scoring_v0_4",
         "ai_relevance_threshold": 0.65,
@@ -5635,7 +6516,7 @@ def main() -> int:
         ],
         "empty_advanced_sources": empty_advanced_sources,
         "fetched_raw_items": len(raw_items),
-        "items_before_topic_filter": len(latest_items_all),
+        "items_before_topic_filter": len(latest_items_all_raw),
         "items_in_24h": len(latest_items_ai_dedup),
         "rss_opml": {
             "enabled": bool(args.rss_opml),
@@ -5669,8 +6550,21 @@ def main() -> int:
 
     latest_payload, latest_all_payload = build_latest_payloads(latest_payload)
 
+    # Developer-only raw payload (all records, no AI filtering)
+    latest_all_raw_payload = {
+        "generated_at": latest_all_payload.get("generated_at"),
+        "window_hours": latest_all_payload.get("window_hours"),
+        "topic_filter": latest_all_payload.get("topic_filter"),
+        "ai_relevance_threshold": latest_all_payload.get("ai_relevance_threshold"),
+        "total_items_raw": len(latest_items_all_raw),
+        "total_items_all_mode": len(latest_items_all_raw_dedup),
+        "items_all": latest_items_all_raw_dedup,
+        "items_all_raw": latest_items_all_raw,
+    }
+
     latest_path.write_text(json.dumps(sanitize_public_payload(latest_payload), ensure_ascii=False, indent=2), encoding="utf-8")
     latest_all_path.write_text(json.dumps(sanitize_public_payload(latest_all_payload), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    latest_all_raw_path.write_text(json.dumps(sanitize_public_payload(latest_all_raw_payload), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     daily_brief_path.write_text(
         json.dumps(sanitize_public_payload(daily_brief_payload), ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -5702,6 +6596,7 @@ def main() -> int:
 
     print(f"Wrote: {latest_path} ({len(latest_items)} items)")
     print(f"Wrote: {latest_all_path} ({len(latest_items_all_dedup)} all-mode items)")
+    print(f"Wrote: {latest_all_raw_path} ({len(latest_items_all_raw_dedup)} raw items, dev-only)")
     print(f"Wrote: {daily_brief_path} ({daily_brief_payload.get('total_items', 0)} brief items)")
     print(f"Wrote: {stories_merged_path} ({stories_merged_payload.get('total_stories', 0)} stories)")
     print(f"Wrote: {merge_log_path} ({len(merge_events)} merge events)")

@@ -1,6 +1,12 @@
 import unittest
 
-from scripts.ai_relevance import add_ai_relevance_fields, is_ai_related_record, score_ai_relevance
+from scripts.ai_relevance import (
+    AI_BROAD_RELEVANCE_FLOOR,
+    AI_RELEVANCE_THRESHOLD,
+    add_ai_relevance_fields,
+    is_ai_related_record,
+    score_ai_relevance,
+)
 
 
 class AiRelevanceScoringTests(unittest.TestCase):
@@ -132,6 +138,79 @@ class AiRelevanceScoringTests(unittest.TestCase):
         self.assertTrue(result["is_ai_related"])
         self.assertEqual(result["label"], "research_paper")
         self.assertLessEqual(result["score"], 0.76)
+
+    def test_zeli_non_ai_title_is_not_forced_through_allowlist(self):
+        # fetch_zeli() hardcodes source="Hacker News · 24h最热" for every scraped
+        # item regardless of topic, so zeli must not get a special-cased branch
+        # that force-passes every item on that fixed source string alone.
+        rec = {
+            "site_id": "zeli",
+            "site_name": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "title": "LAPD contract with Flock expires",
+            "url": "https://zeli.app/hacker-news/1",
+        }
+        result = score_ai_relevance(rec)
+        self.assertFalse(result["is_ai_related"])
+        self.assertLess(result["score"], AI_RELEVANCE_THRESHOLD)
+        self.assertLess(result["score"], AI_BROAD_RELEVANCE_FLOOR)
+        self.assertNotEqual(result["reason"], "zeli_24h_hot_allowlist")
+
+    def test_zeli_ai_relevant_title_still_passes(self):
+        rec = {
+            "site_id": "zeli",
+            "site_name": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "title": "Anthropic's Claude uploaded my home directory to a remote server",
+            "url": "https://zeli.app/hacker-news/2",
+        }
+        result = score_ai_relevance(rec)
+        self.assertTrue(result["is_ai_related"])
+        self.assertGreaterEqual(result["score"], AI_RELEVANCE_THRESHOLD)
+
+    def test_zeli_grok_title_is_recognized_as_ai_relevant(self):
+        # Real-world zeli item found post-fix: "Grok uploaded my user directory
+        # to xAI's servers" scored 0.0 before grok/xai were added as AI signal
+        # keywords, silently dropping genuinely AI-relevant content the same
+        # way the removed allowlist bug over-included irrelevant content.
+        rec = {
+            "site_id": "zeli",
+            "site_name": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "title": "Grok uploaded my user directory to xAI's servers",
+            "url": "https://zeli.app/hacker-news/3",
+        }
+        result = score_ai_relevance(rec)
+        self.assertTrue(result["is_ai_related"])
+        self.assertGreaterEqual(result["score"], AI_RELEVANCE_THRESHOLD)
+
+    def test_precursor_is_not_falsely_matched_as_cursor_signal(self):
+        # Real-world zeli/techurls/newsnow item found post-fix: Cloudflare's
+        # "Precursor" product announcement scored 0.65/AI-related because the
+        # old substring-based AI_KEYWORDS list matched "cursor" inside
+        # "precursor". "cursor" now requires word boundaries.
+        rec = {
+            "site_id": "zeli",
+            "site_name": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "title": "Precursor",
+            "url": "https://blog.cloudflare.com/introducing-precursor",
+        }
+        result = score_ai_relevance(rec)
+        self.assertFalse(result["is_ai_related"])
+        self.assertLess(result["score"], AI_RELEVANCE_THRESHOLD)
+
+    def test_real_cursor_mention_still_matches(self):
+        rec = {
+            "site_id": "zeli",
+            "site_name": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "title": "Cursor adds new agent mode for large codebases",
+            "url": "https://zeli.app/hacker-news/4",
+        }
+        result = score_ai_relevance(rec)
+        self.assertTrue(result["is_ai_related"])
+        self.assertIn("cursor", result["signals"])
 
     def test_adds_public_debug_fields(self):
         rec = {

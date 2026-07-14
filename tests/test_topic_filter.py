@@ -112,8 +112,8 @@ class TopicFilterTests(unittest.TestCase):
 
     def test_rejects_noise_topic(self):
         rec = {
-            "site_id": "tophub",
-            "site_name": "TopHub",
+            "site_id": "newsnow",
+            "site_name": "NewsNow",
             "source": "微博热搜",
             "title": "明星八卦今日热搜",
             "url": "https://example.com/noise",
@@ -122,15 +122,18 @@ class TopicFilterTests(unittest.TestCase):
 
     def test_rejects_commerce_noise(self):
         rec = {
-            "site_id": "tophub",
-            "site_name": "TopHub",
+            "site_id": "newsnow",
+            "site_name": "NewsNow",
             "source": "淘宝 ‧ 天猫 · 热销总榜",
             "title": "白象拌面任选加码 券后¥29.96",
             "url": "https://example.com/shop",
         }
         self.assertFalse(is_ai_related_record(rec))
 
-    def test_zeli_only_24h_hot(self):
+    def test_zeli_is_gated_by_content_not_the_fixed_source_string(self):
+        # fetch_zeli() hardcodes source="Hacker News · 24h最热" on every scraped
+        # item, so zeli must fall through the generic keyword/AI-signal scoring
+        # path like other community sources instead of a source-string allowlist.
         keep = {
             "site_id": "zeli",
             "site_name": "Zeli",
@@ -141,8 +144,8 @@ class TopicFilterTests(unittest.TestCase):
         drop = {
             "site_id": "zeli",
             "site_name": "Zeli",
-            "source": "HN New",
-            "title": "AI Agent for code search",
+            "source": "Hacker News · 24h最热",
+            "title": "LAPD contract with Flock expires",
             "url": "https://example.com/b",
         }
         self.assertTrue(is_ai_related_record(keep))
@@ -605,8 +608,8 @@ class TopicFilterTests(unittest.TestCase):
 
     def test_accepts_chinese_model_news_after_noise_tightening(self):
         rec = {
-            "site_id": "tophub",
-            "site_name": "TopHub",
+            "site_id": "newsnow",
+            "site_name": "NewsNow",
             "source": "机器之心",
             "title": "新一代推理模型刷新多模态数学基准",
             "url": "https://example.com/reasoning-model",
@@ -1162,7 +1165,7 @@ class TopicFilterTests(unittest.TestCase):
         url, kwargs = session.calls[0]
         self.assertEqual(url, "https://api.socialdata.tools/twitter/search")
         self.assertEqual(kwargs["headers"]["Authorization"], "Bearer test")
-        self.assertEqual(kwargs["params"]["type"], "Latest")
+        self.assertEqual(kwargs["params"]["type"], "Top")
 
     def test_socialdata_drops_tweets_older_than_recency_window(self):
         class FakeResponse:

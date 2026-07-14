@@ -61,3 +61,57 @@ def test_different_model_vendor_events_do_not_merge():
 
     assert len(stories) == 2
     assert events == []
+
+
+def test_same_site_shared_generic_url_with_different_titles_does_not_merge():
+    # WaytoAGI publishes distinct community notes under one shared Feishu wiki
+    # URL. Grouping purely by URL used to lump unrelated notes into one fat
+    # "multi-source" story - each distinct note must stay its own story.
+    shared_url = "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
+    items = [
+        make_item(
+            1,
+            title="如果你最近也在用 Codex、Claude Code 搭建网站，这套DESIGN.md工具方案能帮你摆脱千篇一律的廉价模板感",
+            url=shared_url,
+            site_id="waytoagi",
+            hours_ago=1,
+        ),
+        make_item(
+            2,
+            title="常年批量制作淘宝、亚马逊商品图的手工艺商家，这套子母二段式提示词体系可以帮你处理AI篡改产品造型的低效难题",
+            url=shared_url,
+            site_id="waytoagi",
+            hours_ago=2,
+        ),
+        make_item(
+            3,
+            title="AJ受邀参加了D20峰会 AI 云智能分论坛 Go! Vibe Designing，做了一场设计流程重组的分享",
+            url=shared_url,
+            site_id="waytoagi",
+            hours_ago=3,
+        ),
+    ]
+
+    stories, events = merge_story_items(items, NOW, 24)
+
+    assert len(stories) == 3
+    assert all(story["duplicate_count"] == 1 for story in stories)
+    assert events == []
+
+
+def test_same_site_shared_url_and_same_title_still_merges():
+    # The same WaytoAGI note reappearing across consecutive pipeline runs
+    # (identical URL and title) must still dedupe into a single story.
+    shared_url = "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
+    title = "如果你最近也在用 Codex、Claude Code 搭建网站，这套DESIGN.md工具方案能帮你摆脱千篇一律的廉价模板感"
+    items = [
+        make_item(1, title=title, url=shared_url, site_id="waytoagi", hours_ago=1),
+        make_item(2, title=title, url=shared_url, site_id="waytoagi", hours_ago=25),
+    ]
+
+    stories, events = merge_story_items(items, NOW, 24)
+
+    assert len(stories) == 1
+    assert stories[0]["duplicate_count"] == 2
+    assert events[0]["reason"] == "canonical_url"
+    assert events[0]["similarity"] == 1.0
