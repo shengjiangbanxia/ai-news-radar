@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   update:
-    timeout-minutes: 15
+    timeout-minutes: 40
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
