@@ -546,6 +546,54 @@
       "review": "只有官方推文声称功能，无论文无代码无评测，无法验证。",
       "title_hash": "186fbb54",
       "scored_at": "2026-07-16T00:20:26.351956Z"
+    },
+    "story_affed1a668e3|pragmatic|0a5c5b24": {
+      "score": 72,
+      "review": "小版本更新，升级看 changelog 再决定是否值得更新。",
+      "title_hash": "f8c444e8",
+      "scored_at": "2026-07-16T03:48:00.044776Z"
+    },
+    "story_6ecaedd1168a|pragmatic|0a5c5b24": {
+      "score": 92,
+      "review": "命令行画框图利器，克隆即用，省去截图烦恼。",
+      "title_hash": "23602459",
+      "scored_at": "2026-07-16T03:48:02.191136Z"
+    },
+    "story_684fc2044b87|pragmatic|0a5c5b24": {
+      "score": 50,
+      "review": "安全方法论，暂无工具可抄，等具体方案出来再关注。",
+      "title_hash": "61068ccc",
+      "scored_at": "2026-07-16T03:48:04.742876Z"
+    },
+    "story_b336a63f1703|pragmatic|0a5c5b24": {
+      "score": 50,
+      "review": "短剧创作者可试用，普通开发者观望即可。",
+      "title_hash": "a35f1d50",
+      "scored_at": "2026-07-16T03:48:07.926614Z"
+    },
+    "story_3eeca136967d|pragmatic|0a5c5b24": {
+      "score": 72,
+      "review": "若附代码可照搬，否则仅思路参考，需自行调试拼接。",
+      "title_hash": "a7e3da43",
+      "scored_at": "2026-07-16T03:48:13.933971Z"
+    },
+    "story_e09d3aa61f5a|pragmatic|0a5c5b24": {
+      "score": 72,
+      "review": "桌面端架构升级，金融模块快来了，用MiniMax Code的可以准备测试新特性。",
+      "title_hash": "e430bbe0",
+      "scored_at": "2026-07-16T03:48:16.839393Z"
+    },
+    "story_6ecaedd1168a|cynic|f4237a62": {
+      "score": 65,
+      "review": "附属工具当亮点，xAI 的 PR 团队该换个地方挖了。",
+      "title_hash": "23602459",
+      "scored_at": "2026-07-16T03:48:20.769080Z"
+    },
+    "story_6ecaedd1168a|paper-police|966065bf": {
+      "score": 25,
+      "review": "仅博客提及，无代码仓库或论文链接，无法验证。",
+      "title_hash": "23602459",
+      "scored_at": "2026-07-16T03:48:23.657651Z"
     }
   }
 }

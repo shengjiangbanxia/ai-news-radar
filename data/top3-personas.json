@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T00:20:26.352008Z",
+  "generated_at": "2026-07-16T03:48:23.657730Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,22 +37,22 @@
       }
     },
     {
-      "story_id": "story_183d53d9be78",
-      "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
-      "url": "https://mp.weixin.qq.com/s/hFp5rtV8-6KVRrgZoCj03A",
+      "story_id": "story_6ecaedd1168a",
+      "title": "xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具 / Mermaid to Unicode box art （grok-mermaid）",
+      "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid",
       "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 60,
-          "review": "第一？先看看对比了哪几家、测试条件是不是自家后院。"
+          "score": 65,
+          "review": "附属工具当亮点，xAI 的 PR 团队该换个地方挖了。"
         },
         "paper-police": {
-          "score": 30,
-          "review": "仅有官方宣称，无论文无代码，排名需第三方验证。"
+          "score": 25,
+          "review": "仅博客提及，无代码仓库或论文链接，无法验证。"
         },
         "pragmatic": {
-          "score": 90,
-          "review": "新模型登顶语音推理榜，实测可换。"
+          "score": 92,
+          "review": "命令行画框图利器，克隆即用，省去截图烦恼。"
         }
       }
     },
