@@ -2474,6 +2474,12 @@ def resolve_opml_bridge_source(feed_url: str, html_url: str = "") -> dict[str, s
     path = parsed.path.strip("/")
     parts = [p for p in path.split("/") if p]
 
+    if parsed.netloc == "www.trendforce.com" and path == "news":
+        return {
+            "bridge_type": "trendforce_news",
+            "url": "https://www.trendforce.com/news/",
+        }
+
     if parsed.netloc == "rsshub.app" and len(parts) >= 3 and parts[:2] == ["telegram", "channel"]:
         slug = parts[2]
         return {
@@ -2512,6 +2518,69 @@ def resolve_opml_bridge_source(feed_url: str, html_url: str = "") -> dict[str, s
         return {"bridge_type": "jike", "bridge_kind": "user", "bridge_slug": ident, "url": html}
 
     return None
+
+
+_TRENDFORCE_NEWS_PATH_RE = re.compile(r"/news/(20\d{2})/(\d{2})/(\d{2})/[^?#]+/?$")
+
+
+def _trendforce_date_from_url(url: str) -> datetime | None:
+    match = _TRENDFORCE_NEWS_PATH_RE.search(urlparse(url).path)
+    if not match:
+        return None
+    try:
+        # The listing exposes a calendar date but no time. Treat it as the end
+        # of that Shanghai day so yesterday's posts remain eligible for one
+        # complete daily-report cycle without being refreshed indefinitely.
+        local_end = datetime(
+            int(match.group(1)),
+            int(match.group(2)),
+            int(match.group(3)),
+            23,
+            59,
+            59,
+            tzinfo=SH_TZ,
+        )
+    except ValueError:
+        return None
+    return local_end.astimezone(UTC)
+
+
+def parse_trendforce_news_items(
+    content: str,
+    *,
+    source_name: str,
+    markdown: bool = False,
+) -> list[RawItem]:
+    candidates: list[tuple[str, str]] = []
+    if markdown:
+        for match in re.finditer(r"\[([^\]]+)\]\((https://www\.trendforce\.com/news/[^)]+)\)", content):
+            candidates.append((match.group(1), match.group(2)))
+    else:
+        soup = BeautifulSoup(content, "html.parser")
+        for anchor in soup.select("a[href*='/news/20']"):
+            candidates.append((anchor.get_text(" ", strip=True), urljoin("https://www.trendforce.com", anchor.get("href") or "")))
+
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for title, url in candidates:
+        title = re.sub(r"\s+", " ", title or "").strip()
+        url = url.strip()
+        published = _trendforce_date_from_url(url)
+        if not title or not published or url in seen:
+            continue
+        seen.add(url)
+        out.append(
+            RawItem(
+                site_id="opmlrss",
+                site_name="OPML RSS",
+                source=source_name,
+                title=title,
+                url=url,
+                published_at=published,
+                meta={"bridge_type": "trendforce_news", "feed_home": "https://www.trendforce.com/news/"},
+            )
+        )
+    return out
 
 
 def compact_title(text: str, limit: int = 96) -> str:
@@ -2663,17 +2732,29 @@ def fetch_opml_rss(
         local_items: list[RawItem] = []
 
         try:
-            resp = requests.get(
-                feed_url,
-                timeout=12,
-                headers={
-                    "User-Agent": BROWSER_UA,
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                },
-            )
-            resp.raise_for_status()
-
             bridge_type = str(feed.get("bridge_type") or "")
+            used_jina_fallback = False
+            try:
+                resp = requests.get(
+                    feed_url,
+                    timeout=12,
+                    headers={
+                        "User-Agent": BROWSER_UA,
+                        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                    },
+                )
+                resp.raise_for_status()
+            except Exception:
+                if bridge_type != "trendforce_news":
+                    raise
+                resp = requests.get(
+                    f"https://r.jina.ai/{feed_url}",
+                    timeout=20,
+                    headers={"User-Agent": BROWSER_UA, "Accept": "text/plain"},
+                )
+                resp.raise_for_status()
+                used_jina_fallback = True
+
             if bridge_type == "telegram":
                 local_items = parse_telegram_public_items(
                     resp.text,
@@ -2688,6 +2769,14 @@ def fetch_opml_rss(
                     source_name=feed_title,
                     source_url=feed_url,
                 )
+            elif bridge_type == "trendforce_news":
+                local_items = parse_trendforce_news_items(
+                    resp.text,
+                    source_name=feed_title,
+                    markdown=used_jina_fallback,
+                )
+                if not local_items:
+                    raise ValueError("No TrendForce News items parsed")
             elif feedparser is not None:
                 parsed = feedparser.parse(resp.content)
                 source_name = first_non_empty(
@@ -6398,6 +6487,12 @@ def main() -> int:
         }
         raw_items = [item for item in raw_items if item.site_id in personal_site_ids]
         statuses = [status for status in statuses if str(status.get("site_id") or "") in personal_site_ids]
+        active_personal_site_ids = {item.site_id for item in raw_items}
+        active_personal_site_ids.update(
+            str(status.get("site_id") or "")
+            for status in statuses
+            if str(status.get("site_id") or "")
+        )
         active_opml_sources = {item.source for item in raw_items if item.site_id == "opmlrss"}
         active_opml_sources.update(
             str(feed.get("feed_title") or "").strip()
@@ -6407,7 +6502,7 @@ def main() -> int:
         archive = {
             item_id: record
             for item_id, record in archive.items()
-            if str(record.get("site_id") or "") in personal_site_ids
+            if str(record.get("site_id") or "") in active_personal_site_ids
             and (
                 str(record.get("site_id") or "") != "opmlrss"
                 or str(record.get("source") or "") in active_opml_sources
@@ -6494,9 +6589,22 @@ def main() -> int:
     latest_items_all_raw = normalize_aihubtoday_records(latest_items_all_raw)
 
     latest_items_all_raw.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
-    # Broad-AI filter: keep items whose pre-computed ai_score clears the floor
-    latest_items_all = [record for record in latest_items_all_raw if record.get("ai_score", 0) >= AI_BROAD_RELEVANCE_FLOOR]
-    latest_items = [record for record in latest_items_all_raw if record.get("ai_is_related", is_ai_related_record(record))]
+    # A maintainer's explicit personal-only source list is already the filter.
+    # Keep every in-window record while retaining the normal dedupe, ranking,
+    # and story merge stages below. Public/combined mode still applies the AI
+    # relevance floors so broad feeds cannot drown the curated view.
+    if args.opml_only:
+        latest_items_all = list(latest_items_all_raw)
+        latest_items = list(latest_items_all_raw)
+    else:
+        latest_items_all = [
+            record for record in latest_items_all_raw if record.get("ai_score", 0) >= AI_BROAD_RELEVANCE_FLOOR
+        ]
+        latest_items = [
+            record
+            for record in latest_items_all_raw
+            if record.get("ai_is_related", is_ai_related_record(record))
+        ]
     title_cache = load_title_zh_cache(title_cache_path)
     latest_items, latest_items_all, title_cache = add_bilingual_fields(
         latest_items,
@@ -6569,7 +6677,7 @@ def main() -> int:
         "total_items_ai_raw": len(latest_items),
         "total_items_raw": len(latest_items_all_raw),
         "total_items_all_mode": len(latest_items_all_dedup),
-        "topic_filter": "ai_relevance_scoring_v0_4",
+        "topic_filter": "personal_sources_passthrough_v1" if args.opml_only else "ai_relevance_scoring_v0_4",
         "ai_relevance_threshold": 0.65,
         "archive_total": len(archive),
         "site_count": len(site_stat),
