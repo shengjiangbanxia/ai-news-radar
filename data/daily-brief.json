@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T10:41:39.493074Z",
+  "generated_at": "2026-07-18T12:05:53.349907Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8232,
-      "importance": 0.8232,
-      "importance_score": 0.8232,
+      "score": 0.8202,
+      "importance": 0.8202,
+      "importance_score": 0.8202,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8064,
+        "recency": 0.7902,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -131,15 +131,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8173,
-      "importance": 0.8173,
-      "importance_score": 0.8173,
+      "score": 0.8146,
+      "importance": 0.8146,
+      "importance_score": 0.8146,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.763,
+        "recency": 0.7477,
         "story_heat": 0.0
       },
       "category": "official",
@@ -166,7 +166,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -214,15 +214,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.822,
-      "importance": 0.822,
-      "importance_score": 0.822,
+      "score": 0.819,
+      "importance": 0.819,
+      "importance_score": 0.819,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8335,
+        "recency": 0.8168,
         "story_heat": 0.0
       },
       "category": "official",
@@ -249,7 +249,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -326,15 +326,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7624,
-      "importance": 0.7624,
-      "importance_score": 0.7624,
+      "score": 0.7596,
+      "importance": 0.7596,
+      "importance_score": 0.7596,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7823,
+        "recency": 0.7666,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -361,7 +361,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -409,15 +409,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.822,
-      "importance": 0.822,
-      "importance_score": 0.822,
+      "score": 0.819,
+      "importance": 0.819,
+      "importance_score": 0.819,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8336,
+        "recency": 0.8168,
         "story_heat": 0.0
       },
       "category": "official",
@@ -444,7 +444,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -492,15 +492,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7553,
-      "importance": 0.7553,
-      "importance_score": 0.7553,
+      "score": 0.7525,
+      "importance": 0.7525,
+      "importance_score": 0.7525,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7817,
+        "recency": 0.766,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -526,7 +526,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -574,15 +574,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7469,
-      "importance": 0.7469,
-      "importance_score": 0.7469,
+      "score": 0.7436,
+      "importance": 0.7436,
+      "importance_score": 0.7436,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9183,
+        "recency": 0.8998,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -607,7 +607,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -655,15 +655,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7441,
-      "importance": 0.7441,
-      "importance_score": 0.7441,
+      "score": 0.7414,
+      "importance": 0.7414,
+      "importance_score": 0.7414,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7697,
+        "recency": 0.7542,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -688,7 +688,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -736,15 +736,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7394,
-      "importance": 0.7394,
-      "importance_score": 0.7394,
+      "score": 0.7366,
+      "importance": 0.7366,
+      "importance_score": 0.7366,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7766,
+        "recency": 0.761,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -769,7 +769,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -817,15 +817,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7304,
-      "importance": 0.7304,
-      "importance_score": 0.7304,
+      "score": 0.7277,
+      "importance": 0.7277,
+      "importance_score": 0.7277,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7432,
+        "recency": 0.7283,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -850,7 +850,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -898,15 +898,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.82,
-      "importance": 0.82,
-      "importance_score": 0.82,
+      "score": 0.817,
+      "importance": 0.817,
+      "importance_score": 0.817,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8223,
+        "recency": 0.8058,
         "story_heat": 0.0
       },
       "category": "official",
@@ -933,7 +933,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -1096,15 +1096,15 @@
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.5888,
-      "importance": 0.5888,
-      "importance_score": 0.5888,
+      "score": 0.5858,
+      "importance": 0.5858,
+      "importance_score": 0.5858,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8223,
+        "recency": 0.8058,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -1129,7 +1129,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -1235,15 +1235,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5442,
-      "importance": 0.5442,
-      "importance_score": 0.5442,
+      "score": 0.5411,
+      "importance": 0.5411,
+      "importance_score": 0.5411,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8524,
+        "recency": 0.8353,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1268,7 +1268,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
+      }
+    },
+    {
+      "story_id": "story_1a64b2e84394",
+      "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+      "url": "https://news.ycombinator.com/item?id=48956949",
+      "primary_url": "https://news.ycombinator.com/item?id=48956949",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48956949",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-18T11:55:45.415000Z"
+        },
+        {
+          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-18T11:12:46Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48956949",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-18T11:55:45.415000Z"
+        },
+        {
+          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-18T11:12:46Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5454,
+      "importance": 0.5454,
+      "importance_score": 0.5454,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9976,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-18T11:12:46Z",
+      "latest_at": "2026-07-18T11:55:45.415000Z",
+      "primary_item": {
+        "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+        "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+        "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+        "title_en": "What AI did to stackoverflow in a graph",
+        "title_original": "What AI did to stackoverflow in a graph",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48956949",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -1345,15 +1455,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5043,
-      "importance": 0.5043,
-      "importance_score": 0.5043,
+      "score": 0.5016,
+      "importance": 0.5016,
+      "importance_score": 0.5016,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7696,
+        "recency": 0.7542,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1378,277 +1488,109 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
-      "story_id": "story_881787692b1c",
-      "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
-      "url": "https://news.ycombinator.com/item?id=48946303",
-      "primary_url": "https://news.ycombinator.com/item?id=48946303",
+      "story_id": "story_b3a9ac157817",
+      "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+      "url": "https://news.ycombinator.com/item?id=48956924",
+      "primary_url": "https://news.ycombinator.com/item?id=48956924",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "463790b8bd703e49d720fcc2c5b7ef47ee6de66e",
-          "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
-          "title_zh": "Apple向数十名OpenAI员工发出律师函",
-          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
-          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
+          "id": "ca4b86483c18d3920b69f56e1582688055547279",
+          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48946303",
+          "url": "https://news.ycombinator.com/item?id=48956924",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-17T14:04:37.470000Z"
+          "published_at": "2026-07-18T11:55:45.415000Z"
         },
         {
-          "id": "bde67ba37f283c001387fc45c73b6ff972793ca1",
-          "title": "苹果向OpenAI员工发出法律信函",
-          "title_zh": "苹果向OpenAI员工发出法律信函",
-          "title_en": null,
-          "title_original": "苹果向OpenAI员工发出法律信函",
+          "id": "d5cabbfa788aa3fa90f7b5a9bb0f17420fd1aa03",
+          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
-          "source": "www.ft.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-17T14:01:52.399000Z"
-        },
-        {
-          "id": "1b0ac55e8268b0d8bbddbc36c642eb425f18a25f",
-          "title": "苹果向OpenAI员工发出法律信函 / Apple targets dozens of OpenAI employees with legal letters",
-          "title_zh": "苹果向OpenAI员工发出法律信函",
-          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
-          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-17T12:02:39Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "hackernews",
-        "www.ft.com"
-      ],
-      "items": [
-        {
-          "id": "463790b8bd703e49d720fcc2c5b7ef47ee6de66e",
-          "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
-          "title_zh": "Apple向数十名OpenAI员工发出律师函",
-          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
-          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48946303",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-17T14:04:37.470000Z"
-        },
-        {
-          "id": "bde67ba37f283c001387fc45c73b6ff972793ca1",
-          "title": "苹果向OpenAI员工发出法律信函",
-          "title_zh": "苹果向OpenAI员工发出法律信函",
-          "title_en": null,
-          "title_original": "苹果向OpenAI员工发出法律信函",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
-          "source": "www.ft.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-17T14:01:52.399000Z"
-        },
-        {
-          "id": "1b0ac55e8268b0d8bbddbc36c642eb425f18a25f",
-          "title": "苹果向OpenAI员工发出法律信函 / Apple targets dozens of OpenAI employees with legal letters",
-          "title_zh": "苹果向OpenAI员工发出法律信函",
-          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
-          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-17T12:02:39Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.5245,
-      "importance": 0.5245,
-      "importance_score": 0.5245,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7425,
-        "story_heat": 0.5
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-07-17T12:02:39Z",
-      "latest_at": "2026-07-17T14:04:37.470000Z",
-      "primary_item": {
-        "id": "463790b8bd703e49d720fcc2c5b7ef47ee6de66e",
-        "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
-        "title_zh": "Apple向数十名OpenAI员工发出律师函",
-        "title_en": "Apple targets dozens of OpenAI employees with legal letters",
-        "title_original": "Apple targets dozens of OpenAI employees with legal letters",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48946303",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
-      }
-    },
-    {
-      "story_id": "story_4d31de4e89cf",
-      "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-      "url": "https://news.ycombinator.com/item?id=48946010",
-      "primary_url": "https://news.ycombinator.com/item?id=48946010",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "aeb88e4179e1924e51f2e823c032829b66cd7d09",
-          "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_zh": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖",
-          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48946010",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-17T14:04:37.470000Z"
-        },
-        {
-          "id": "0185b486c96c92620aea8fac7d1ee1ffd5209cb0",
-          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "title_en": null,
-          "title_original": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
-          "source": "www.kaggle.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-17T12:25:51.514000Z"
-        },
-        {
-          "id": "2326d028ae468c4727b16b5754e59c60cfb08022",
-          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-17T11:30:00Z"
+          "published_at": "2026-07-18T11:06:50Z"
         }
       ],
-      "source_count": 3,
+      "source_count": 2,
       "source_names": [
         "Hacker News",
-        "hackernews",
-        "www.kaggle.com"
+        "hackernews"
       ],
       "items": [
         {
-          "id": "aeb88e4179e1924e51f2e823c032829b66cd7d09",
-          "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_zh": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖",
-          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "id": "ca4b86483c18d3920b69f56e1582688055547279",
+          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48946010",
+          "url": "https://news.ycombinator.com/item?id=48956924",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-17T14:04:37.470000Z"
+          "published_at": "2026-07-18T11:55:45.415000Z"
         },
         {
-          "id": "0185b486c96c92620aea8fac7d1ee1ffd5209cb0",
-          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "title_en": null,
-          "title_original": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "id": "d5cabbfa788aa3fa90f7b5a9bb0f17420fd1aa03",
+          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
-          "source": "www.kaggle.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-07-17T12:25:51.514000Z"
-        },
-        {
-          "id": "2326d028ae468c4727b16b5754e59c60cfb08022",
-          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
-          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-17T11:30:00Z"
+          "published_at": "2026-07-18T11:06:50Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.5245,
-      "importance": 0.5245,
-      "importance_score": 0.5245,
-      "importance_label": "多源热议",
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5454,
+      "importance": 0.5454,
+      "importance_score": 0.5454,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7425,
-        "story_heat": 0.5
+        "recency": 0.9976,
+        "story_heat": 0.25
       },
-      "category": "multi_source",
+      "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-07-17T11:30:00Z",
-      "latest_at": "2026-07-17T14:04:37.470000Z",
+      "earliest_at": "2026-07-18T11:06:50Z",
+      "latest_at": "2026-07-18T11:55:45.415000Z",
       "primary_item": {
-        "id": "aeb88e4179e1924e51f2e823c032829b66cd7d09",
-        "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-        "title_zh": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖",
-        "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
-        "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+        "id": "ca4b86483c18d3920b69f56e1582688055547279",
+        "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+        "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+        "title_en": "Why do AI company logos look like buttholes?",
+        "title_original": "Why do AI company logos look like buttholes?",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48946010",
+        "url": "https://news.ycombinator.com/item?id=48956924",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1656,7 +1598,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -1733,15 +1675,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5159,
-      "importance": 0.5159,
-      "importance_score": 0.5159,
+      "score": 0.5129,
+      "importance": 0.5129,
+      "importance_score": 0.5129,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.834,
+        "recency": 0.8172,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1766,7 +1708,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -1843,15 +1785,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5022,
-      "importance": 0.5022,
-      "importance_score": 0.5022,
+      "score": 0.4994,
+      "importance": 0.4994,
+      "importance_score": 0.4994,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7576,
+        "recency": 0.7424,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1873,10 +1815,10 @@
         "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -1953,15 +1895,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5022,
-      "importance": 0.5022,
-      "importance_score": 0.5022,
+      "score": 0.4994,
+      "importance": 0.4994,
+      "importance_score": 0.4994,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7576,
+        "recency": 0.7424,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1983,10 +1925,10 @@
         "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     },
     {
@@ -2063,15 +2005,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5022,
-      "importance": 0.5022,
-      "importance_score": 0.5022,
+      "score": 0.4994,
+      "importance": 0.4994,
+      "importance_score": 0.4994,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7576,
+        "recency": 0.7424,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2093,10 +2035,10 @@
         "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T10:42:43.574738Z"
+        "scored_at": "2026-07-18T12:08:15.082951Z"
       }
     }
   ]
