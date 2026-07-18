@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T06:19:00.055664Z",
+  "generated_at": "2026-07-18T10:41:39.493074Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -18,7 +18,7 @@
           "title_en": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
           "title_original": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
           "summary": null,
-          "recommend_reason_zh": "在GitHub Mobile的PR评论中，点击Fix with Copilot即可一键启动Copilot cloud agent修复，无需手动编写提示，已在iOS和Android最新版上线。",
+          "recommend_reason_zh": null,
           "url": "https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
@@ -38,7 +38,7 @@
           "title_en": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
           "title_original": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
           "summary": null,
-          "recommend_reason_zh": "在GitHub Mobile的PR评论中，点击Fix with Copilot即可一键启动Copilot cloud agent修复，无需手动编写提示，已在iOS和Android最新版上线。",
+          "recommend_reason_zh": null,
           "url": "https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8326,
-      "importance": 0.8326,
-      "importance_score": 0.8326,
+      "score": 0.8232,
+      "importance": 0.8232,
+      "importance_score": 0.8232,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.8591,
+        "recency": 0.8064,
         "story_heat": 0.0
       },
       "category": "official",
@@ -74,18 +74,16 @@
         "title_en": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
         "title_original": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
         "summary": null,
-        "recommend_reason_zh": "在GitHub Mobile的PR评论中，点击Fix with Copilot即可一键启动Copilot cloud agent修复，无需手动编写提示，已在iOS和Android最新版上线。",
+        "recommend_reason_zh": null,
         "url": "https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 95,
-      "persona_review": "移动端直接修PR评论，省去开电脑，今天就能省时间。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -103,7 +101,7 @@
           "title_en": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
           "title_original": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
           "summary": null,
-          "recommend_reason_zh": "NVIDIA NeMo Automodel与Hugging Face Diffusers集成，支持FLUX.1-dev、Wan 2.1等模型的无转换分布式微调，兼容全参数与LoRA训练，性能可扩展至数百GPU。",
+          "recommend_reason_zh": null,
           "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
           "source": "Hugging Face Blog",
           "source_name": "Official AI Updates",
@@ -123,7 +121,7 @@
           "title_en": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
           "title_original": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
           "summary": null,
-          "recommend_reason_zh": "NVIDIA NeMo Automodel与Hugging Face Diffusers集成，支持FLUX.1-dev、Wan 2.1等模型的无转换分布式微调，兼容全参数与LoRA训练，性能可扩展至数百GPU。",
+          "recommend_reason_zh": null,
           "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
           "source": "Hugging Face Blog",
           "source_name": "Official AI Updates",
@@ -133,15 +131,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8263,
-      "importance": 0.8263,
-      "importance_score": 0.8263,
+      "score": 0.8173,
+      "importance": 0.8173,
+      "importance_score": 0.8173,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8128,
+        "recency": 0.763,
         "story_heat": 0.0
       },
       "category": "official",
@@ -159,103 +157,16 @@
         "title_en": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
         "title_original": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
         "summary": null,
-        "recommend_reason_zh": "NVIDIA NeMo Automodel与Hugging Face Diffusers集成，支持FLUX.1-dev、Wan 2.1等模型的无转换分布式微调，兼容全参数与LoRA训练，性能可扩展至数百GPU。",
+        "recommend_reason_zh": null,
         "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
         "source": "Hugging Face Blog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 90,
-      "persona_review": "直接结合NeMo和Diffusers，大规模微调视频/图像模型今天就能上。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_23f6bdd28b68",
-      "title": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值 / A scorecard for the AI age",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "primary_url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "731a7505b9e070229c9549f7cba6978cb43856a9",
-          "title": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值 / A scorecard for the AI age",
-          "title_zh": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值",
-          "title_en": "A scorecard for the AI age",
-          "title_original": "A scorecard for the AI age",
-          "summary": null,
-          "recommend_reason_zh": "OpenAI CFO Sarah Friar提出AI ROI衡量标准：Useful Intelligence per Dollar，通过有用工作量、单位任务成本、可靠性及计算回报四个维度评估AI价值。",
-          "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-17T10:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "731a7505b9e070229c9549f7cba6978cb43856a9",
-          "title": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值 / A scorecard for the AI age",
-          "title_zh": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值",
-          "title_en": "A scorecard for the AI age",
-          "title_original": "A scorecard for the AI age",
-          "summary": null,
-          "recommend_reason_zh": "OpenAI CFO Sarah Friar提出AI ROI衡量标准：Useful Intelligence per Dollar，通过有用工作量、单位任务成本、可靠性及计算回报四个维度评估AI价值。",
-          "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-17T10:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8062,
-      "importance": 0.8062,
-      "importance_score": 0.8062,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.7457,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-17T10:00:00Z",
-      "latest_at": "2026-07-17T10:00:00Z",
-      "primary_item": {
-        "id": "731a7505b9e070229c9549f7cba6978cb43856a9",
-        "title": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值 / A scorecard for the AI age",
-        "title_zh": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值",
-        "title_en": "A scorecard for the AI age",
-        "title_original": "A scorecard for the AI age",
-        "summary": null,
-        "recommend_reason_zh": "OpenAI CFO Sarah Friar提出AI ROI衡量标准：Useful Intelligence per Dollar，通过有用工作量、单位任务成本、可靠性及计算回报四个维度评估AI价值。",
-        "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 52,
-      "persona_review": "新度量概念有参考价值，但尚无落地工具，等具体实现再跟进。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -273,7 +184,7 @@
           "title_en": "GitHub Copilot app now available in the usage metrics API",
           "title_original": "GitHub Copilot app now available in the usage metrics API",
           "summary": null,
-          "recommend_reason_zh": "GitHub Copilot usage metrics API新增app使用数据，企业和组织管理员可通过1天和28天报告追踪app的活跃用户、会话量及token消耗等指标。",
+          "recommend_reason_zh": null,
           "url": "https://github.blog/changelog/2026-07-17-github-copilot-app-now-available-in-the-usage-metrics-api",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
@@ -293,7 +204,7 @@
           "title_en": "GitHub Copilot app now available in the usage metrics API",
           "title_original": "GitHub Copilot app now available in the usage metrics API",
           "summary": null,
-          "recommend_reason_zh": "GitHub Copilot usage metrics API新增app使用数据，企业和组织管理员可通过1天和28天报告追踪app的活跃用户、会话量及token消耗等指标。",
+          "recommend_reason_zh": null,
           "url": "https://github.blog/changelog/2026-07-17-github-copilot-app-now-available-in-the-usage-metrics-api",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
@@ -303,15 +214,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8318,
-      "importance": 0.8318,
-      "importance_score": 0.8318,
+      "score": 0.822,
+      "importance": 0.822,
+      "importance_score": 0.822,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8879,
+        "recency": 0.8335,
         "story_heat": 0.0
       },
       "category": "official",
@@ -329,103 +240,16 @@
         "title_en": "GitHub Copilot app now available in the usage metrics API",
         "title_original": "GitHub Copilot app now available in the usage metrics API",
         "summary": null,
-        "recommend_reason_zh": "GitHub Copilot usage metrics API新增app使用数据，企业和组织管理员可通过1天和28天报告追踪app的活跃用户、会话量及token消耗等指标。",
+        "recommend_reason_zh": null,
         "url": "https://github.blog/changelog/2026-07-17-github-copilot-app-now-available-in-the-usage-metrics-api",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 75,
-      "persona_review": "直接接入API监控Copilot用量，方便团队管理额度。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_39f96da3c40c",
-      "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
-      "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
-      "primary_url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e116cce8c0a97df5f7182b854381020539ea9a0c",
-          "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
-          "title_zh": "仓库级GitHub Copilot使用指标正式推出",
-          "title_en": "Repository-level GitHub Copilot usage metrics generally available",
-          "title_original": "Repository-level GitHub Copilot usage metrics generally available",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Copilot用量API新增两个端点，支持仓库级别的每日pull request活动报告，涵盖Copilot coding agent和Copilot code review，让企业精确追踪代码库中AI辅助的贡献分布。",
-          "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-17T22:05:18Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "e116cce8c0a97df5f7182b854381020539ea9a0c",
-          "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
-          "title_zh": "仓库级GitHub Copilot使用指标正式推出",
-          "title_en": "Repository-level GitHub Copilot usage metrics generally available",
-          "title_original": "Repository-level GitHub Copilot usage metrics generally available",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Copilot用量API新增两个端点，支持仓库级别的每日pull request活动报告，涵盖Copilot coding agent和Copilot code review，让企业精确追踪代码库中AI辅助的贡献分布。",
-          "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-17T22:05:18Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8318,
-      "importance": 0.8318,
-      "importance_score": 0.8318,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.888,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-17T22:05:18Z",
-      "latest_at": "2026-07-17T22:05:18Z",
-      "primary_item": {
-        "id": "e116cce8c0a97df5f7182b854381020539ea9a0c",
-        "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
-        "title_zh": "仓库级GitHub Copilot使用指标正式推出",
-        "title_en": "Repository-level GitHub Copilot usage metrics generally available",
-        "title_original": "Repository-level GitHub Copilot usage metrics generally available",
-        "summary": null,
-        "recommend_reason_zh": "GitHub Copilot用量API新增两个端点，支持仓库级别的每日pull request活动报告，涵盖Copilot coding agent和Copilot code review，让企业精确追踪代码库中AI辅助的贡献分布。",
-        "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 90,
-      "persona_review": "团队可查各仓库Copilot使用量，辅助成本分摊和采纳分析，今天就能开。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -443,7 +267,7 @@
           "title_en": "Apple's plot to crush OpenAI",
           "title_original": "Apple's plot to crush OpenAI",
           "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
-          "recommend_reason_zh": "本期Vergecast解读Apple起诉OpenAI的诉讼内容，分析其动机是担忧竞争还是借机打击，同时评测新Siri AI公测版表现，并讨论OnePlus退出欧美市场等本周科技热点。",
+          "recommend_reason_zh": null,
           "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
           "source": "The Verge：AI（RSS）",
           "source_name": "AI HOT",
@@ -457,7 +281,7 @@
           "title_en": "Apple’s plot to crush OpenAI",
           "title_original": "Apple’s plot to crush OpenAI",
           "summary": null,
-          "recommend_reason_zh": "The Vergecast解读Apple起诉OpenAI的诉讼细节，专家称部分指控只是行业惯例，同时评析Apple新Siri AI公测版表现及OnePlus退出美欧市场的影响。",
+          "recommend_reason_zh": null,
           "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
           "source": "The Verge",
           "source_name": "Curated Media",
@@ -478,7 +302,7 @@
           "title_en": "Apple's plot to crush OpenAI",
           "title_original": "Apple's plot to crush OpenAI",
           "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
-          "recommend_reason_zh": "本期Vergecast解读Apple起诉OpenAI的诉讼内容，分析其动机是担忧竞争还是借机打击，同时评测新Siri AI公测版表现，并讨论OnePlus退出欧美市场等本周科技热点。",
+          "recommend_reason_zh": null,
           "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
           "source": "The Verge：AI（RSS）",
           "source_name": "AI HOT",
@@ -492,7 +316,7 @@
           "title_en": "Apple’s plot to crush OpenAI",
           "title_original": "Apple’s plot to crush OpenAI",
           "summary": null,
-          "recommend_reason_zh": "The Vergecast解读Apple起诉OpenAI的诉讼细节，专家称部分指控只是行业惯例，同时评析Apple新Siri AI公测版表现及OnePlus退出美欧市场的影响。",
+          "recommend_reason_zh": null,
           "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
           "source": "The Verge",
           "source_name": "Curated Media",
@@ -502,15 +326,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7716,
-      "importance": 0.7716,
-      "importance_score": 0.7716,
+      "score": 0.7624,
+      "importance": 0.7624,
+      "importance_score": 0.7624,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8333,
+        "recency": 0.7823,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -528,18 +352,99 @@
         "title_en": "Apple's plot to crush OpenAI",
         "title_original": "Apple's plot to crush OpenAI",
         "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
-        "recommend_reason_zh": "本期Vergecast解读Apple起诉OpenAI的诉讼内容，分析其动机是担忧竞争还是借机打击，同时评测新Siri AI公测版表现，并讨论OnePlus退出欧美市场等本周科技热点。",
+        "recommend_reason_zh": null,
         "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
         "source": "The Verge：AI（RSS）",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 20,
-      "persona_review": "诉讼不关工具的事，等有实际影响再关注。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_39f96da3c40c",
+      "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
+      "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+      "primary_url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e116cce8c0a97df5f7182b854381020539ea9a0c",
+          "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
+          "title_zh": "仓库级GitHub Copilot使用指标正式推出",
+          "title_en": "Repository-level GitHub Copilot usage metrics generally available",
+          "title_original": "Repository-level GitHub Copilot usage metrics generally available",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-17T22:05:18Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "e116cce8c0a97df5f7182b854381020539ea9a0c",
+          "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
+          "title_zh": "仓库级GitHub Copilot使用指标正式推出",
+          "title_en": "Repository-level GitHub Copilot usage metrics generally available",
+          "title_original": "Repository-level GitHub Copilot usage metrics generally available",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-17T22:05:18Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.822,
+      "importance": 0.822,
+      "importance_score": 0.822,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8336,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-07-17T22:05:18Z",
+      "latest_at": "2026-07-17T22:05:18Z",
+      "primary_item": {
+        "id": "e116cce8c0a97df5f7182b854381020539ea9a0c",
+        "title": "仓库级GitHub Copilot使用指标正式推出 / Repository-level GitHub Copilot usage metrics generally available",
+        "title_zh": "仓库级GitHub Copilot使用指标正式推出",
+        "title_en": "Repository-level GitHub Copilot usage metrics generally available",
+        "title_original": "Repository-level GitHub Copilot usage metrics generally available",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -557,7 +462,7 @@
           "title_en": null,
           "title_original": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
           "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
-          "recommend_reason_zh": "月之暗面在GTC 2026披露Kimi K2.5，用MuonClip、线性注意力与Agent Swarm分别替换沿用了近十年的Adam优化器（2014）、注意力机制（2017）和残差连接（2015），且全部开源。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/dotey/status/2078172517085085951",
           "source": "X：宝玉 (@dotey)",
           "source_name": "AI HOT",
@@ -577,7 +482,7 @@
           "title_en": null,
           "title_original": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
           "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
-          "recommend_reason_zh": "月之暗面在GTC 2026披露Kimi K2.5，用MuonClip、线性注意力与Agent Swarm分别替换沿用了近十年的Adam优化器（2014）、注意力机制（2017）和残差连接（2015），且全部开源。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/dotey/status/2078172517085085951",
           "source": "X：宝玉 (@dotey)",
           "source_name": "AI HOT",
@@ -587,15 +492,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7645,
-      "importance": 0.7645,
-      "importance_score": 0.7645,
+      "score": 0.7553,
+      "importance": 0.7553,
+      "importance_score": 0.7553,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8327,
+        "recency": 0.7817,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -612,18 +517,16 @@
         "title_en": null,
         "title_original": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
         "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
-        "recommend_reason_zh": "月之暗面在GTC 2026披露Kimi K2.5，用MuonClip、线性注意力与Agent Swarm分别替换沿用了近十年的Adam优化器（2014）、注意力机制（2017）和残差连接（2015），且全部开源。",
+        "recommend_reason_zh": null,
         "url": "https://x.com/dotey/status/2078172517085085951",
         "source": "X：宝玉 (@dotey)",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 35,
-      "persona_review": "技术路线展示，无可用产品，等开放API或开源再关注。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -641,7 +544,7 @@
           "title_en": "Neil Rimer thinks the AI money is coming back out",
           "title_original": "Neil Rimer thinks the AI money is coming back out",
           "summary": "Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临\"某种形式的再分配\"，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。",
-          "recommend_reason_zh": "Neil Rimer，Index Ventures联合创始人，预测AI在硅谷创造的历史性财富将不得不自愿或非自愿地重新分配，揭示了科技投资圈的深层隐忧。",
+          "recommend_reason_zh": null,
           "url": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
           "source": "TechCrunch：AI（RSS）",
           "source_name": "AI HOT",
@@ -661,7 +564,7 @@
           "title_en": "Neil Rimer thinks the AI money is coming back out",
           "title_original": "Neil Rimer thinks the AI money is coming back out",
           "summary": "Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临\"某种形式的再分配\"，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。",
-          "recommend_reason_zh": "Neil Rimer，Index Ventures联合创始人，预测AI在硅谷创造的历史性财富将不得不自愿或非自愿地重新分配，揭示了科技投资圈的深层隐忧。",
+          "recommend_reason_zh": null,
           "url": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
           "source": "TechCrunch：AI（RSS）",
           "source_name": "AI HOT",
@@ -671,21 +574,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7577,
-      "importance": 0.7577,
-      "importance_score": 0.7577,
+      "score": 0.7469,
+      "importance": 0.7469,
+      "importance_score": 0.7469,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9782,
+        "recency": 0.9183,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-07-18T04:47:25Z",
       "latest_at": "2026-07-18T04:47:25Z",
@@ -696,18 +598,16 @@
         "title_en": "Neil Rimer thinks the AI money is coming back out",
         "title_original": "Neil Rimer thinks the AI money is coming back out",
         "summary": "Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临\"某种形式的再分配\"，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。",
-        "recommend_reason_zh": "Neil Rimer，Index Ventures联合创始人，预测AI在硅谷创造的历史性财富将不得不自愿或非自愿地重新分配，揭示了科技投资圈的深层隐忧。",
+        "recommend_reason_zh": null,
         "url": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
         "source": "TechCrunch：AI（RSS）",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 25,
-      "persona_review": "投资人画饼，对写代码没半点帮助，跳过。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -725,7 +625,7 @@
           "title_en": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
           "title_original": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
           "summary": "一年后，没有任何东西能接近 Sora 的完美视频深度克隆。它捕捉到了我和 Sam 的每一块面部肌肉运动以及我们走路的方式。\n\n如果你从这段关于我或 Sam 的视频中截取一帧，根本无法判断它是真是假。",
-          "recommend_reason_zh": "OpenAI的Sora发布一年后，其视频深度克隆已能完美捕捉使用者和Sam的每个面部肌肉运动及走路姿态，单帧截图真假难辨。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/gabriel1/status/2078156277247881438",
           "source": "X：Gabriel (@gabriel1)",
           "source_name": "AI HOT",
@@ -745,7 +645,7 @@
           "title_en": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
           "title_original": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
           "summary": "一年后，没有任何东西能接近 Sora 的完美视频深度克隆。它捕捉到了我和 Sam 的每一块面部肌肉运动以及我们走路的方式。\n\n如果你从这段关于我或 Sam 的视频中截取一帧，根本无法判断它是真是假。",
-          "recommend_reason_zh": "OpenAI的Sora发布一年后，其视频深度克隆已能完美捕捉使用者和Sam的每个面部肌肉运动及走路姿态，单帧截图真假难辨。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/gabriel1/status/2078156277247881438",
           "source": "X：Gabriel (@gabriel1)",
           "source_name": "AI HOT",
@@ -755,21 +655,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7532,
-      "importance": 0.7532,
-      "importance_score": 0.7532,
+      "score": 0.7441,
+      "importance": 0.7441,
+      "importance_score": 0.7441,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8199,
+        "recency": 0.7697,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-07-17T16:34:01Z",
       "latest_at": "2026-07-17T16:34:01Z",
@@ -780,18 +679,16 @@
         "title_en": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
         "title_original": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
         "summary": "一年后，没有任何东西能接近 Sora 的完美视频深度克隆。它捕捉到了我和 Sam 的每一块面部肌肉运动以及我们走路的方式。\n\n如果你从这段关于我或 Sam 的视频中截取一帧，根本无法判断它是真是假。",
-        "recommend_reason_zh": "OpenAI的Sora发布一年后，其视频深度克隆已能完美捕捉使用者和Sam的每个面部肌肉运动及走路姿态，单帧截图真假难辨。",
+        "recommend_reason_zh": null,
         "url": "https://x.com/gabriel1/status/2078156277247881438",
         "source": "X：Gabriel (@gabriel1)",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 45,
-      "persona_review": "效果虽好但没开放，等API或代码出来再激动。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -809,7 +706,7 @@
           "title_en": "The frontier has opened up： four frontier launches in eight days - Grok 4.5， GPT-5.6， Muse Spark 1.1…",
           "title_original": "The frontier has opened up： four frontier launches in eight days - Grok 4.5， GPT-5.6， Muse Spark 1.1…",
           "summary": "过去八天内，Grok 4.5、GPT-5.6、Muse Spark 1.1 与 Kimi K3 四款前沿模型相继发布，使 Artificial Analysis Intelligence Index 得分超 50 的实验室从 6 月初的 2 家增至 6 家。",
-          "recommend_reason_zh": "八天内四款前沿模型密集发布——Grok 4.5、GPT-5.6、Muse Spark 1.1和Kimi K3，指数得分超50的实验室从6月初的2家增至6家，AI竞赛白热化。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/ArtificialAnlys/status/2078165665278730490",
           "source": "X：Artificial Analysis (@ArtificialAnlys)",
           "source_name": "AI HOT",
@@ -829,7 +726,7 @@
           "title_en": "The frontier has opened up： four frontier launches in eight days - Grok 4.5， GPT-5.6， Muse Spark 1.1…",
           "title_original": "The frontier has opened up： four frontier launches in eight days - Grok 4.5， GPT-5.6， Muse Spark 1.1…",
           "summary": "过去八天内，Grok 4.5、GPT-5.6、Muse Spark 1.1 与 Kimi K3 四款前沿模型相继发布，使 Artificial Analysis Intelligence Index 得分超 50 的实验室从 6 月初的 2 家增至 6 家。",
-          "recommend_reason_zh": "八天内四款前沿模型密集发布——Grok 4.5、GPT-5.6、Muse Spark 1.1和Kimi K3，指数得分超50的实验室从6月初的2家增至6家，AI竞赛白热化。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/ArtificialAnlys/status/2078165665278730490",
           "source": "X：Artificial Analysis (@ArtificialAnlys)",
           "source_name": "AI HOT",
@@ -839,15 +736,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7485,
-      "importance": 0.7485,
-      "importance_score": 0.7485,
+      "score": 0.7394,
+      "importance": 0.7394,
+      "importance_score": 0.7394,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8273,
+        "recency": 0.7766,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -863,103 +760,16 @@
         "title_en": "The frontier has opened up： four frontier launches in eight days - Grok 4.5， GPT-5.6， Muse Spark 1.1…",
         "title_original": "The frontier has opened up： four frontier launches in eight days - Grok 4.5， GPT-5.6， Muse Spark 1.1…",
         "summary": "过去八天内，Grok 4.5、GPT-5.6、Muse Spark 1.1 与 Kimi K3 四款前沿模型相继发布，使 Artificial Analysis Intelligence Index 得分超 50 的实验室从 6 月初的 2 家增至 6 家。",
-        "recommend_reason_zh": "八天内四款前沿模型密集发布——Grok 4.5、GPT-5.6、Muse Spark 1.1和Kimi K3，指数得分超50的实验室从6月初的2家增至6家，AI竞赛白热化。",
+        "recommend_reason_zh": null,
         "url": "https://x.com/ArtificialAnlys/status/2078165665278730490",
         "source": "X：Artificial Analysis (@ArtificialAnlys)",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 50,
-      "persona_review": "模型发布多但细节少，等具体API或开箱体验再看。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_c13975dae097",
-      "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
-      "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
-      "primary_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "2c78ca1612bb57534e665ac69008bd3ce2bdea66",
-          "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
-          "title_zh": "Copilot代码审查：定制化与可配置性改进",
-          "title_en": "Copilot code review: Customization and configurability improvements",
-          "title_original": "Copilot code review: Customization and configurability improvements",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Copilot code review 现在从PR的head分支读取自定义指令，支持REVIEW.md等文件，并允许通过copilot-code-review.yml独立配置运行环境与防火墙，让管理员获得更细粒度的控制。",
-          "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-17T21:08:30Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "2c78ca1612bb57534e665ac69008bd3ce2bdea66",
-          "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
-          "title_zh": "Copilot代码审查：定制化与可配置性改进",
-          "title_en": "Copilot code review: Customization and configurability improvements",
-          "title_original": "Copilot code review: Customization and configurability improvements",
-          "summary": null,
-          "recommend_reason_zh": "GitHub Copilot code review 现在从PR的head分支读取自定义指令，支持REVIEW.md等文件，并允许通过copilot-code-review.yml独立配置运行环境与防火墙，让管理员获得更细粒度的控制。",
-          "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-07-17T21:08:30Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8297,
-      "importance": 0.8297,
-      "importance_score": 0.8297,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8759,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-07-17T21:08:30Z",
-      "latest_at": "2026-07-17T21:08:30Z",
-      "primary_item": {
-        "id": "2c78ca1612bb57534e665ac69008bd3ce2bdea66",
-        "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
-        "title_zh": "Copilot代码审查：定制化与可配置性改进",
-        "title_en": "Copilot code review: Customization and configurability improvements",
-        "title_original": "Copilot code review: Customization and configurability improvements",
-        "summary": null,
-        "recommend_reason_zh": "GitHub Copilot code review 现在从PR的head分支读取自定义指令，支持REVIEW.md等文件，并允许通过copilot-code-review.yml独立配置运行环境与防火墙，让管理员获得更细粒度的控制。",
-        "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 90,
-      "persona_review": "今天就能配置审查规则，适配自己团队风格，省去手动 review 重复劳动。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
@@ -977,7 +787,7 @@
           "title_en": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
           "title_original": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
           "summary": "美团LongCat推出LoHoSearch，一个基于762万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决BrowseComp等现有基准趋于饱和的问题。在11个前沿模型测试中，最佳得分仅34.74%，远低于当前模型在BrowseComp上约90%的成绩；上下文策略仅带来+6.8个百分点的提升。该基准包含544道问题、11个领域，采用树与图结构，已开源。",
-          "recommend_reason_zh": "BrowseComp在10个月内从30%准确率跃升至90%，搜索代理基准趋于饱和。新基准LoHoSearch基于762万实体维基知识图谱自动生成问题，挑战性更高。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/Meituan_LongCat/status/2078119654632124547",
           "source": "X：美团 LongCat (@Meituan_LongCat)",
           "source_name": "AI HOT",
@@ -997,7 +807,7 @@
           "title_en": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
           "title_original": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
           "summary": "美团LongCat推出LoHoSearch，一个基于762万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决BrowseComp等现有基准趋于饱和的问题。在11个前沿模型测试中，最佳得分仅34.74%，远低于当前模型在BrowseComp上约90%的成绩；上下文策略仅带来+6.8个百分点的提升。该基准包含544道问题、11个领域，采用树与图结构，已开源。",
-          "recommend_reason_zh": "BrowseComp在10个月内从30%准确率跃升至90%，搜索代理基准趋于饱和。新基准LoHoSearch基于762万实体维基知识图谱自动生成问题，挑战性更高。",
+          "recommend_reason_zh": null,
           "url": "https://x.com/Meituan_LongCat/status/2078119654632124547",
           "source": "X：美团 LongCat (@Meituan_LongCat)",
           "source_name": "AI HOT",
@@ -1007,15 +817,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7391,
-      "importance": 0.7391,
-      "importance_score": 0.7391,
+      "score": 0.7304,
+      "importance": 0.7304,
+      "importance_score": 0.7304,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7917,
+        "recency": 0.7432,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1031,682 +841,1262 @@
         "title_en": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
         "title_original": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
         "summary": "美团LongCat推出LoHoSearch，一个基于762万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决BrowseComp等现有基准趋于饱和的问题。在11个前沿模型测试中，最佳得分仅34.74%，远低于当前模型在BrowseComp上约90%的成绩；上下文策略仅带来+6.8个百分点的提升。该基准包含544道问题、11个领域，采用树与图结构，已开源。",
-        "recommend_reason_zh": "BrowseComp在10个月内从30%准确率跃升至90%，搜索代理基准趋于饱和。新基准LoHoSearch基于762万实体维基知识图谱自动生成问题，挑战性更高。",
+        "recommend_reason_zh": null,
         "url": "https://x.com/Meituan_LongCat/status/2078119654632124547",
         "source": "X：美团 LongCat (@Meituan_LongCat)",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 50,
-      "persona_review": "新基准发布，等开放评测接口再动，现有方案不用急改。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
-      "story_id": "story_268031546842",
-      "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-      "url": "https://schema-harness.github.io",
-      "primary_url": "https://schema-harness.github.io",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
+      "story_id": "story_c13975dae097",
+      "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
+      "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+      "primary_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "b424de1a6db424313a45a1899c4fa0e980d45480",
-          "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-          "title_zh": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-          "title_en": null,
-          "title_original": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-          "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-          "recommend_reason_zh": "Schema Harness 使用 Claude Opus 4.8 和 Fable 5 在 ARC-AGI-3 公开集上达到 99% RHAE，而此前最强模型 GPT-5.6 Sol 仅 13.33%，证明改变使用模型的方式比模型本身更重要。",
-          "url": "https://schema-harness.github.io",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T08:41:53.383000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
-      ],
-      "items": [
-        {
-          "id": "b424de1a6db424313a45a1899c4fa0e980d45480",
-          "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-          "title_zh": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-          "title_en": null,
-          "title_original": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-          "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-          "recommend_reason_zh": "Schema Harness 使用 Claude Opus 4.8 和 Fable 5 在 ARC-AGI-3 公开集上达到 99% RHAE，而此前最强模型 GPT-5.6 Sol 仅 13.33%，证明改变使用模型的方式比模型本身更重要。",
-          "url": "https://schema-harness.github.io",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T08:41:53.383000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7373,
-      "importance": 0.7373,
-      "importance_score": 0.7373,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7318,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-07-17T08:41:53.383000Z",
-      "latest_at": "2026-07-17T08:41:53.383000Z",
-      "primary_item": {
-        "id": "b424de1a6db424313a45a1899c4fa0e980d45480",
-        "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-        "title_zh": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-        "title_en": null,
-        "title_original": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-        "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-        "recommend_reason_zh": "Schema Harness 使用 Claude Opus 4.8 和 Fable 5 在 ARC-AGI-3 公开集上达到 99% RHAE，而此前最强模型 GPT-5.6 Sol 仅 13.33%，证明改变使用模型的方式比模型本身更重要。",
-        "url": "https://schema-harness.github.io",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 65,
-      "persona_review": "ARC-AGI新高，但工具未开源前先观望，不能直接抄。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_fead9a6937e2",
-      "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-      "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-      "primary_url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-      "source": "公众号：通义实验室（千问）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ac87694437bf8efd489ba6cc177c904ab5763e6c",
-          "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-          "title_zh": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-          "title_en": null,
-          "title_original": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-          "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
-          "recommend_reason_zh": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解，详解如何用开源硬件与AI工具实现低成本乡村科普教学，助力教育公平。",
-          "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-          "source": "公众号：通义实验室（千问）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T09:41:25Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：通义实验室（千问）"
-      ],
-      "items": [
-        {
-          "id": "ac87694437bf8efd489ba6cc177c904ab5763e6c",
-          "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-          "title_zh": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-          "title_en": null,
-          "title_original": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-          "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
-          "recommend_reason_zh": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解，详解如何用开源硬件与AI工具实现低成本乡村科普教学，助力教育公平。",
-          "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-          "source": "公众号：通义实验室（千问）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T09:41:25Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7272,
-      "importance": 0.7272,
-      "importance_score": 0.7272,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.74,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7424,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-07-17T09:41:25Z",
-      "latest_at": "2026-07-17T09:41:25Z",
-      "primary_item": {
-        "id": "ac87694437bf8efd489ba6cc177c904ab5763e6c",
-        "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-        "title_zh": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-        "title_en": null,
-        "title_original": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
-        "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
-        "recommend_reason_zh": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解，详解如何用开源硬件与AI工具实现低成本乡村科普教学，助力教育公平。",
-        "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-        "source": "公众号：通义实验室（千问）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 50,
-      "persona_review": "案例分享，偏教育场景，通用开发者不太需要特别关注。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_6a54ab2c9478",
-      "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-      "url": "https://www.ithome.com/0/978/277.htm",
-      "primary_url": "https://www.ithome.com/0/978/277.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "4cbba37163f0aa7a385f67b42c2e2382c3e8d069",
-          "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-          "title_zh": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-          "title_en": null,
-          "title_original": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-          "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
-          "recommend_reason_zh": "苹果向约40名跳槽至OpenAI的前员工发出律师函，指控其涉嫌窃取商业机密，诉讼提及两人离职后保留笔记本并多次访问内网下载数十份机密文件。",
-          "url": "https://www.ithome.com/0/978/277.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T11:10:01Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "4cbba37163f0aa7a385f67b42c2e2382c3e8d069",
-          "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-          "title_zh": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-          "title_en": null,
-          "title_original": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-          "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
-          "recommend_reason_zh": "苹果向约40名跳槽至OpenAI的前员工发出律师函，指控其涉嫌窃取商业机密，诉讼提及两人离职后保留笔记本并多次访问内网下载数十份机密文件。",
-          "url": "https://www.ithome.com/0/978/277.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T11:10:01Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7271,
-      "importance": 0.7271,
-      "importance_score": 0.7271,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.73,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7584,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-07-17T11:10:01Z",
-      "latest_at": "2026-07-17T11:10:01Z",
-      "primary_item": {
-        "id": "4cbba37163f0aa7a385f67b42c2e2382c3e8d069",
-        "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-        "title_zh": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-        "title_en": null,
-        "title_original": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-        "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
-        "recommend_reason_zh": "苹果向约40名跳槽至OpenAI的前员工发出律师函，指控其涉嫌窃取商业机密，诉讼提及两人离职后保留笔记本并多次访问内网下载数十份机密文件。",
-        "url": "https://www.ithome.com/0/978/277.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 20,
-      "persona_review": "法律纠纷不写代码，对实操无影响，直接忽略。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_36e3b8c457f1",
-      "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具 / LLM cliché highlighter",
-      "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-      "primary_url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-      "source": "Simon Willison 博客",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "a94bfc7f9839e6db9cb0dd7eb9bc2182787aa431",
-          "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具 / LLM cliché highlighter",
-          "title_zh": "LLM cliché highlighter：一款识别AI写作套话的检测工具",
-          "title_en": "LLM cliché highlighter",
-          "title_original": "LLM cliché highlighter",
-          "summary": "Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如\"no fluff， no filler， no jargon\"这类陈词滥调。该工具旨在帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。",
-          "recommend_reason_zh": "Simon Willison用Fable 5 vibe开发的这个应用，能检测LLM文本中十种常见陈词滥调模式（如“no X, no Y”句式），解决他被AI写作风格困扰的痛点。",
-          "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T12:11:11Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Simon Willison 博客"
-      ],
-      "items": [
-        {
-          "id": "a94bfc7f9839e6db9cb0dd7eb9bc2182787aa431",
-          "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具 / LLM cliché highlighter",
-          "title_zh": "LLM cliché highlighter：一款识别AI写作套话的检测工具",
-          "title_en": "LLM cliché highlighter",
-          "title_original": "LLM cliché highlighter",
-          "summary": "Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如\"no fluff， no filler， no jargon\"这类陈词滥调。该工具旨在帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。",
-          "recommend_reason_zh": "Simon Willison用Fable 5 vibe开发的这个应用，能检测LLM文本中十种常见陈词滥调模式（如“no X, no Y”句式），解决他被AI写作风格困扰的痛点。",
-          "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-07-17T12:11:11Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7261,
-      "importance": 0.7261,
-      "importance_score": 0.7261,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7697,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-07-17T12:11:11Z",
-      "latest_at": "2026-07-17T12:11:11Z",
-      "primary_item": {
-        "id": "a94bfc7f9839e6db9cb0dd7eb9bc2182787aa431",
-        "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具 / LLM cliché highlighter",
-        "title_zh": "LLM cliché highlighter：一款识别AI写作套话的检测工具",
-        "title_en": "LLM cliché highlighter",
-        "title_original": "LLM cliché highlighter",
-        "summary": "Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如\"no fluff， no filler， no jargon\"这类陈词滥调。该工具旨在帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。",
-        "recommend_reason_zh": "Simon Willison用Fable 5 vibe开发的这个应用，能检测LLM文本中十种常见陈词滥调模式（如“no X, no Y”句式），解决他被AI写作风格困扰的痛点。",
-        "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-        "source": "Simon Willison 博客",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 88,
-      "persona_review": "开源工具可直接检测AI套话，写内容审核或写作辅助时能用上。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
-      }
-    },
-    {
-      "story_id": "story_4cdf56f2cdfc",
-      "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-      "url": "https://www.aibase.com/news/29695",
-      "primary_url": "https://www.aibase.com/news/29695",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "f183207c181cd941ef7ce235d39392087e42d27e",
-          "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-          "title_zh": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-          "title_en": null,
-          "title_original": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
+          "id": "2c78ca1612bb57534e665ac69008bd3ce2bdea66",
+          "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
+          "title_zh": "Copilot代码审查：定制化与可配置性改进",
+          "title_en": "Copilot code review: Customization and configurability improvements",
+          "title_original": "Copilot code review: Customization and configurability improvements",
           "summary": null,
-          "recommend_reason_zh": "NVIDIA 开源 Nemotron3Embed 系列，8B-BF16 版以平均 NDCG@10 得分 78.46 登顶 RTEB 检索基准，支持 34 种语言和 32768 tokens 序列长度，1B 版本也提升 10.4%。",
-          "url": "https://www.aibase.com/news/29695",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-17T21:08:30Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "AIbase"
+        "GitHub Changelog"
       ],
       "items": [
         {
-          "id": "f183207c181cd941ef7ce235d39392087e42d27e",
-          "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-          "title_zh": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-          "title_en": null,
-          "title_original": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
+          "id": "2c78ca1612bb57534e665ac69008bd3ce2bdea66",
+          "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
+          "title_zh": "Copilot代码审查：定制化与可配置性改进",
+          "title_en": "Copilot code review: Customization and configurability improvements",
+          "title_original": "Copilot code review: Customization and configurability improvements",
           "summary": null,
-          "recommend_reason_zh": "NVIDIA 开源 Nemotron3Embed 系列，8B-BF16 版以平均 NDCG@10 得分 78.46 登顶 RTEB 检索基准，支持 34 种语言和 32768 tokens 序列长度，1B 版本也提升 10.4%。",
-          "url": "https://www.aibase.com/news/29695",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-07-17T21:08:30Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7206,
-      "importance": 0.7206,
-      "importance_score": 0.7206,
-      "importance_label": "行业动态",
+      "score": 0.82,
+      "importance": 0.82,
+      "importance_score": 0.82,
+      "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7389,
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8223,
         "story_heat": 0.0
       },
-      "category": "industry",
+      "category": "official",
       "reasons": [
-        "high_ai_relevance"
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-07-17T09:21:51.096110Z",
-      "latest_at": "2026-07-17T09:21:51.096110Z",
+      "earliest_at": "2026-07-17T21:08:30Z",
+      "latest_at": "2026-07-17T21:08:30Z",
       "primary_item": {
-        "id": "f183207c181cd941ef7ce235d39392087e42d27e",
-        "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-        "title_zh": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
-        "title_en": null,
-        "title_original": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本登顶 RTEB 检索基准",
+        "id": "2c78ca1612bb57534e665ac69008bd3ce2bdea66",
+        "title": "Copilot代码审查：定制化与可配置性改进 / Copilot code review: Customization and configurability improvements",
+        "title_zh": "Copilot代码审查：定制化与可配置性改进",
+        "title_en": "Copilot code review: Customization and configurability improvements",
+        "title_original": "Copilot code review: Customization and configurability improvements",
         "summary": null,
-        "recommend_reason_zh": "NVIDIA 开源 Nemotron3Embed 系列，8B-BF16 版以平均 NDCG@10 得分 78.46 登顶 RTEB 检索基准，支持 34 种语言和 32768 tokens 序列长度，1B 版本也提升 10.4%。",
-        "url": "https://www.aibase.com/news/29695",
-        "source": "AIbase",
-        "source_name": "AIbase"
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 90,
-      "persona_review": "直接能换用，检索任务性能更强。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
-      "story_id": "story_d959f7b562f8",
-      "title": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-      "url": "https://www.aibase.com/news/29689",
-      "primary_url": "https://www.aibase.com/news/29689",
-      "source": "AIbase",
-      "source_name": "AIbase",
+      "story_id": "story_c06be1aad3a1",
+      "title": "开源人工智能的现状 / The state of open source AI",
+      "url": "https://news.ycombinator.com/item?id=48947825",
+      "primary_url": "https://news.ycombinator.com/item?id=48947825",
+      "source": "hackernews",
+      "source_name": "NewsNow",
       "sources": [
         {
-          "id": "aa9b347178a67e78a1b42b60abe81fb4db47bc89",
-          "title": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-          "title_zh": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-          "title_en": null,
-          "title_original": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
+          "id": "e5fba765830ede14a8b11f27ae3dc11893bf57eb",
+          "title": "开源人工智能的现状 / The state of open source AI",
+          "title_zh": "开源人工智能的现状",
+          "title_en": "The state of open source AI",
+          "title_original": "The state of open source AI",
           "summary": null,
-          "recommend_reason_zh": "影视飓风（Film Wind）49元AI课程首日售出10万份，单日营收超490万元，16课时覆盖AI图像生成到电影级技巧，并与TapNow联合推出。",
-          "url": "https://www.aibase.com/news/29689",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947825",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T21:08:49.566000Z"
+        },
+        {
+          "id": "5e95fe87caeb35054f2b40c41434afe0c633959c",
+          "title": "Mozilla：开源人工智能的发展现状",
+          "title_zh": "Mozilla：开源人工智能的发展现状",
+          "title_en": null,
+          "title_original": "Mozilla：开源人工智能的发展现状",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://stateofopensource.ai",
+          "source": "stateofopensource.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T15:53:45.162000Z"
+        },
+        {
+          "id": "c40121cdcae877d7b4adec40d2a0f513a9ea0048",
+          "title": "Mozilla：开源AI的现状 / Mozilla: The state of open source AI",
+          "title_zh": "Mozilla：开源AI的现状",
+          "title_en": "Mozilla: The state of open source AI",
+          "title_original": "Mozilla: The state of open source AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947825",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "c63a38202d5e3b827e2934b3f130e12032d66135",
+          "title": "Mozilla：开源人工智能的发展现状 / Mozilla: The state of open source AI",
+          "title_zh": "Mozilla：开源人工智能的发展现状",
+          "title_en": "Mozilla: The state of open source AI",
+          "title_original": "Mozilla: The state of open source AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://stateofopensource.ai",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T14:31:10Z"
+        },
+        {
+          "id": "dd5fc0c942e2cffe2c04481d4dc49e58c70728c8",
+          "title": "Mozilla：开源人工智能的发展现状 / The state of open source AI",
+          "title_zh": "Mozilla：开源人工智能的发展现状",
+          "title_en": "The state of open source AI",
+          "title_original": "The state of open source AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://stateofopensource.ai",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-07-17T14:31:10Z"
         }
       ],
-      "source_count": 1,
+      "source_count": 5,
       "source_names": [
-        "AIbase"
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "stateofopensource.ai"
       ],
       "items": [
         {
-          "id": "aa9b347178a67e78a1b42b60abe81fb4db47bc89",
-          "title": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-          "title_zh": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-          "title_en": null,
-          "title_original": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
+          "id": "e5fba765830ede14a8b11f27ae3dc11893bf57eb",
+          "title": "开源人工智能的现状 / The state of open source AI",
+          "title_zh": "开源人工智能的现状",
+          "title_en": "The state of open source AI",
+          "title_original": "The state of open source AI",
           "summary": null,
-          "recommend_reason_zh": "影视飓风（Film Wind）49元AI课程首日售出10万份，单日营收超490万元，16课时覆盖AI图像生成到电影级技巧，并与TapNow联合推出。",
-          "url": "https://www.aibase.com/news/29689",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947825",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T21:08:49.566000Z"
+        },
+        {
+          "id": "5e95fe87caeb35054f2b40c41434afe0c633959c",
+          "title": "Mozilla：开源人工智能的发展现状",
+          "title_zh": "Mozilla：开源人工智能的发展现状",
+          "title_en": null,
+          "title_original": "Mozilla：开源人工智能的发展现状",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://stateofopensource.ai",
+          "source": "stateofopensource.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T15:53:45.162000Z"
+        },
+        {
+          "id": "c40121cdcae877d7b4adec40d2a0f513a9ea0048",
+          "title": "Mozilla：开源AI的现状 / Mozilla: The state of open source AI",
+          "title_zh": "Mozilla：开源AI的现状",
+          "title_en": "Mozilla: The state of open source AI",
+          "title_original": "Mozilla: The state of open source AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947825",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "c63a38202d5e3b827e2934b3f130e12032d66135",
+          "title": "Mozilla：开源人工智能的发展现状 / Mozilla: The state of open source AI",
+          "title_zh": "Mozilla：开源人工智能的发展现状",
+          "title_en": "Mozilla: The state of open source AI",
+          "title_original": "Mozilla: The state of open source AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://stateofopensource.ai",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T14:31:10Z"
+        },
+        {
+          "id": "dd5fc0c942e2cffe2c04481d4dc49e58c70728c8",
+          "title": "Mozilla：开源人工智能的发展现状 / The state of open source AI",
+          "title_zh": "Mozilla：开源人工智能的发展现状",
+          "title_en": "The state of open source AI",
+          "title_original": "The state of open source AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://stateofopensource.ai",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-07-17T14:31:10Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7206,
-      "importance": 0.7206,
-      "importance_score": 0.7206,
-      "importance_label": "行业动态",
+      "item_count": 5,
+      "duplicate_count": 5,
+      "score": 0.5888,
+      "importance": 0.5888,
+      "importance_score": 0.5888,
+      "importance_label": "多源热议",
       "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7389,
-        "story_heat": 0.0
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8223,
+        "story_heat": 1.0
       },
-      "category": "industry",
+      "category": "multi_source",
       "reasons": [
-        "high_ai_relevance"
+        "multi_source"
       ],
-      "earliest_at": "2026-07-17T09:21:51.096110Z",
-      "latest_at": "2026-07-17T09:21:51.096110Z",
+      "earliest_at": "2026-07-17T14:31:10Z",
+      "latest_at": "2026-07-17T21:08:49.566000Z",
       "primary_item": {
-        "id": "aa9b347178a67e78a1b42b60abe81fb4db47bc89",
-        "title": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-        "title_zh": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
-        "title_en": null,
-        "title_original": "影视飓风49元AI课程上线首日售出10万份，单日营收超490万元",
+        "id": "e5fba765830ede14a8b11f27ae3dc11893bf57eb",
+        "title": "开源人工智能的现状 / The state of open source AI",
+        "title_zh": "开源人工智能的现状",
+        "title_en": "The state of open source AI",
+        "title_original": "The state of open source AI",
         "summary": null,
-        "recommend_reason_zh": "影视飓风（Film Wind）49元AI课程首日售出10万份，单日营收超490万元，16课时覆盖AI图像生成到电影级技巧，并与TapNow联合推出。",
-        "url": "https://www.aibase.com/news/29689",
-        "source": "AIbase",
-        "source_name": "AIbase"
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48947825",
+        "source": "hackernews",
+        "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 25,
-      "persona_review": "卖课新闻而已，对写代码没帮助。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
-      "story_id": "story_0c4284448485",
-      "title": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
-      "url": "https://www.aibase.com/news/29694",
-      "primary_url": "https://www.aibase.com/news/29694",
-      "source": "AIbase",
-      "source_name": "AIbase",
+      "story_id": "story_3a562813155e",
+      "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+      "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+      "primary_url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+      "source": "localnewsmatters.org",
+      "source_name": "Buzzing",
       "sources": [
         {
-          "id": "41657b2e7b5b9e157c6a12ab8dcd78a49d08fd3d",
-          "title": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
-          "title_zh": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
+          "id": "3eeeb6bba44612f464785f9c60665907dfae2675",
+          "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+          "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
           "title_en": null,
-          "title_original": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
+          "title_original": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
           "summary": null,
-          "recommend_reason_zh": "得物App联合千觉机器人在WAIC 2026发布全球首款AI鉴别机器人，基于百亿级检验数据，准确率超99.9999%，覆盖鞋、包、表、服装、化妆品等品类。",
-          "url": "https://www.aibase.com/news/29694",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+          "source": "localnewsmatters.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T23:38:00.200000Z"
+        },
+        {
+          "id": "5825b8928eb109011b0ee4060fa73ee625d18081",
+          "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化 / Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+          "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+          "title_en": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+          "title_original": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T22:26:30Z"
+        },
+        {
+          "id": "eff662776bebd94d321a2d86dbe25597d23184a5",
+          "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化 / Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+          "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+          "title_en": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+          "title_original": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T22:26:30Z"
         }
       ],
-      "source_count": 1,
+      "source_count": 3,
       "source_names": [
-        "AIbase"
+        "Hacker News",
+        "Hacker News · 24h最热",
+        "localnewsmatters.org"
       ],
       "items": [
         {
-          "id": "41657b2e7b5b9e157c6a12ab8dcd78a49d08fd3d",
-          "title": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
-          "title_zh": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
+          "id": "3eeeb6bba44612f464785f9c60665907dfae2675",
+          "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+          "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
           "title_en": null,
-          "title_original": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
+          "title_original": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
           "summary": null,
-          "recommend_reason_zh": "得物App联合千觉机器人在WAIC 2026发布全球首款AI鉴别机器人，基于百亿级检验数据，准确率超99.9999%，覆盖鞋、包、表、服装、化妆品等品类。",
-          "url": "https://www.aibase.com/news/29694",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+          "source": "localnewsmatters.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T23:38:00.200000Z"
+        },
+        {
+          "id": "5825b8928eb109011b0ee4060fa73ee625d18081",
+          "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化 / Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+          "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+          "title_en": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+          "title_original": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T22:26:30Z"
+        },
+        {
+          "id": "eff662776bebd94d321a2d86dbe25597d23184a5",
+          "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化 / Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+          "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+          "title_en": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+          "title_original": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T22:26:30Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7206,
-      "importance": 0.7206,
-      "importance_score": 0.7206,
-      "importance_label": "行业动态",
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5442,
+      "importance": 0.5442,
+      "importance_score": 0.5442,
+      "importance_label": "多源热议",
       "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7389,
-        "story_heat": 0.0
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8524,
+        "story_heat": 0.5
       },
-      "category": "industry",
+      "category": "multi_source",
       "reasons": [
-        "high_ai_relevance"
+        "multi_source"
       ],
-      "earliest_at": "2026-07-17T09:21:51.096110Z",
-      "latest_at": "2026-07-17T09:21:51.096110Z",
+      "earliest_at": "2026-07-17T22:26:30Z",
+      "latest_at": "2026-07-17T23:38:00.200000Z",
       "primary_item": {
-        "id": "41657b2e7b5b9e157c6a12ab8dcd78a49d08fd3d",
-        "title": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
-        "title_zh": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
+        "id": "3eeeb6bba44612f464785f9c60665907dfae2675",
+        "title": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
+        "title_zh": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
         "title_en": null,
-        "title_original": "得物App联合千觉机器人发布AI鉴别机器人，亮相WAIC 2026",
+        "title_original": "凯泽医疗中心的护士们表示，人工智能和工作场所监控正在使他们的工作和护理质量恶化",
         "summary": null,
-        "recommend_reason_zh": "得物App联合千觉机器人在WAIC 2026发布全球首款AI鉴别机器人，基于百亿级检验数据，准确率超99.9999%，覆盖鞋、包、表、服装、化妆品等品类。",
-        "url": "https://www.aibase.com/news/29694",
-        "source": "AIbase",
-        "source_name": "AIbase"
+        "recommend_reason_zh": null,
+        "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
+        "source": "localnewsmatters.org",
+        "source_name": "Buzzing"
       },
       "persona_id": "pragmatic",
-      "persona_score": 55,
-      "persona_review": "垂直场景方案，非通用工具，有相关业务可以观望。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     },
     {
-      "story_id": "story_d95ae44b75d8",
-      "title": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-      "url": "https://www.aibase.com/news/29687",
-      "primary_url": "https://www.aibase.com/news/29687",
-      "source": "AIbase",
-      "source_name": "AIbase",
+      "story_id": "story_8037081f1773",
+      "title": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元 / Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+      "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+      "primary_url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
       "sources": [
         {
-          "id": "04e0ceed95325c153c6073931b867c8815cfb27d",
-          "title": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-          "title_zh": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-          "title_en": null,
-          "title_original": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
+          "id": "49976faca8943d55cd7337aa020050c79f59b960",
+          "title": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元 / Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+          "title_zh": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元",
+          "title_en": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+          "title_original": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
           "summary": null,
-          "recommend_reason_zh": "文远知行在2026 WAIC发布物理AI基础模型WIIT，提出“最小物理事实单元”概念，并开发事实提取、推理、验证和编排四大核心能力，推动AI从数据理解进化到真实世界认知。",
-          "url": "https://www.aibase.com/news/29687",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T16:33:48Z"
+        },
+        {
+          "id": "ca65045b88ab676eff3dbe92c6c82888c652f98a",
+          "title": "Meta正洽谈向Anthropic租赁算力，潜在交易额达100亿美元 / Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal",
+          "title_zh": "Meta正洽谈向Anthropic租赁算力，潜在交易额达100亿美元",
+          "title_en": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal",
+          "title_original": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+          "source": "New York Times",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T16:17:06Z"
         }
       ],
-      "source_count": 1,
+      "source_count": 2,
       "source_names": [
-        "AIbase"
+        "Hacker News · 24h最热",
+        "New York Times"
       ],
       "items": [
         {
-          "id": "04e0ceed95325c153c6073931b867c8815cfb27d",
-          "title": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-          "title_zh": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-          "title_en": null,
-          "title_original": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
+          "id": "49976faca8943d55cd7337aa020050c79f59b960",
+          "title": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元 / Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+          "title_zh": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元",
+          "title_en": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+          "title_original": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
           "summary": null,
-          "recommend_reason_zh": "文远知行在2026 WAIC发布物理AI基础模型WIIT，提出“最小物理事实单元”概念，并开发事实提取、推理、验证和编排四大核心能力，推动AI从数据理解进化到真实世界认知。",
-          "url": "https://www.aibase.com/news/29687",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-07-17T09:21:51.096110Z"
+          "recommend_reason_zh": null,
+          "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T16:33:48Z"
+        },
+        {
+          "id": "ca65045b88ab676eff3dbe92c6c82888c652f98a",
+          "title": "Meta正洽谈向Anthropic租赁算力，潜在交易额达100亿美元 / Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal",
+          "title_zh": "Meta正洽谈向Anthropic租赁算力，潜在交易额达100亿美元",
+          "title_en": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal",
+          "title_original": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+          "source": "New York Times",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T16:17:06Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7206,
-      "importance": 0.7206,
-      "importance_score": 0.7206,
-      "importance_label": "行业动态",
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5043,
+      "importance": 0.5043,
+      "importance_score": 0.5043,
+      "importance_label": "值得关注",
       "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7389,
-        "story_heat": 0.0
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.7696,
+        "story_heat": 0.25
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
-        "high_ai_relevance"
+        "multi_source"
       ],
-      "earliest_at": "2026-07-17T09:21:51.096110Z",
-      "latest_at": "2026-07-17T09:21:51.096110Z",
+      "earliest_at": "2026-07-17T16:17:06Z",
+      "latest_at": "2026-07-17T16:33:48Z",
       "primary_item": {
-        "id": "04e0ceed95325c153c6073931b867c8815cfb27d",
-        "title": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-        "title_zh": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
-        "title_en": null,
-        "title_original": "文远知行发布物理AI认知基础大模型WIIT，构建真实世界理解框架",
+        "id": "49976faca8943d55cd7337aa020050c79f59b960",
+        "title": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元 / Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+        "title_zh": "Meta正洽谈向Anthropic出租算力，潜在交易额达100亿美元",
+        "title_en": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
+        "title_original": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10B Deal",
         "summary": null,
-        "recommend_reason_zh": "文远知行在2026 WAIC发布物理AI基础模型WIIT，提出“最小物理事实单元”概念，并开发事实提取、推理、验证和编排四大核心能力，推动AI从数据理解进化到真实世界认知。",
-        "url": "https://www.aibase.com/news/29687",
-        "source": "AIbase",
-        "source_name": "AIbase"
+        "recommend_reason_zh": null,
+        "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
       },
       "persona_id": "pragmatic",
-      "persona_score": 50,
-      "persona_review": "新模型发布但未开放接口，等实测或开源后再评估价值。",
+      "persona_score": 1,
       "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-07-18T06:23:15.834844Z"
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_881787692b1c",
+      "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
+      "url": "https://news.ycombinator.com/item?id=48946303",
+      "primary_url": "https://news.ycombinator.com/item?id=48946303",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "463790b8bd703e49d720fcc2c5b7ef47ee6de66e",
+          "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
+          "title_zh": "Apple向数十名OpenAI员工发出律师函",
+          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
+          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48946303",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T14:04:37.470000Z"
+        },
+        {
+          "id": "bde67ba37f283c001387fc45c73b6ff972793ca1",
+          "title": "苹果向OpenAI员工发出法律信函",
+          "title_zh": "苹果向OpenAI员工发出法律信函",
+          "title_en": null,
+          "title_original": "苹果向OpenAI员工发出法律信函",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+          "source": "www.ft.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T14:01:52.399000Z"
+        },
+        {
+          "id": "1b0ac55e8268b0d8bbddbc36c642eb425f18a25f",
+          "title": "苹果向OpenAI员工发出法律信函 / Apple targets dozens of OpenAI employees with legal letters",
+          "title_zh": "苹果向OpenAI员工发出法律信函",
+          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
+          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T12:02:39Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews",
+        "www.ft.com"
+      ],
+      "items": [
+        {
+          "id": "463790b8bd703e49d720fcc2c5b7ef47ee6de66e",
+          "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
+          "title_zh": "Apple向数十名OpenAI员工发出律师函",
+          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
+          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48946303",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T14:04:37.470000Z"
+        },
+        {
+          "id": "bde67ba37f283c001387fc45c73b6ff972793ca1",
+          "title": "苹果向OpenAI员工发出法律信函",
+          "title_zh": "苹果向OpenAI员工发出法律信函",
+          "title_en": null,
+          "title_original": "苹果向OpenAI员工发出法律信函",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+          "source": "www.ft.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T14:01:52.399000Z"
+        },
+        {
+          "id": "1b0ac55e8268b0d8bbddbc36c642eb425f18a25f",
+          "title": "苹果向OpenAI员工发出法律信函 / Apple targets dozens of OpenAI employees with legal letters",
+          "title_zh": "苹果向OpenAI员工发出法律信函",
+          "title_en": "Apple targets dozens of OpenAI employees with legal letters",
+          "title_original": "Apple targets dozens of OpenAI employees with legal letters",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T12:02:39Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5245,
+      "importance": 0.5245,
+      "importance_score": 0.5245,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.7425,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-17T12:02:39Z",
+      "latest_at": "2026-07-17T14:04:37.470000Z",
+      "primary_item": {
+        "id": "463790b8bd703e49d720fcc2c5b7ef47ee6de66e",
+        "title": "Apple向数十名OpenAI员工发出律师函 / Apple targets dozens of OpenAI employees with legal letters",
+        "title_zh": "Apple向数十名OpenAI员工发出律师函",
+        "title_en": "Apple targets dozens of OpenAI employees with legal letters",
+        "title_original": "Apple targets dozens of OpenAI employees with legal letters",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48946303",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_4d31de4e89cf",
+      "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+      "url": "https://news.ycombinator.com/item?id=48946010",
+      "primary_url": "https://news.ycombinator.com/item?id=48946010",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "aeb88e4179e1924e51f2e823c032829b66cd7d09",
+          "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_zh": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖",
+          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48946010",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T14:04:37.470000Z"
+        },
+        {
+          "id": "0185b486c96c92620aea8fac7d1ee1ffd5209cb0",
+          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "title_en": null,
+          "title_original": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
+          "source": "www.kaggle.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T12:25:51.514000Z"
+        },
+        {
+          "id": "2326d028ae468c4727b16b5754e59c60cfb08022",
+          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T11:30:00Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News",
+        "hackernews",
+        "www.kaggle.com"
+      ],
+      "items": [
+        {
+          "id": "aeb88e4179e1924e51f2e823c032829b66cd7d09",
+          "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_zh": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖",
+          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48946010",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T14:04:37.470000Z"
+        },
+        {
+          "id": "0185b486c96c92620aea8fac7d1ee1ffd5209cb0",
+          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "title_en": null,
+          "title_original": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
+          "source": "www.kaggle.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-17T12:25:51.514000Z"
+        },
+        {
+          "id": "2326d028ae468c4727b16b5754e59c60cfb08022",
+          "title": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_zh": "一篇明显敷衍了事的AI论文刚刚赢得了2.5万美元的DeepMind Kaggle大奖",
+          "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T11:30:00Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5245,
+      "importance": 0.5245,
+      "importance_score": 0.5245,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.7425,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-17T11:30:00Z",
+      "latest_at": "2026-07-17T14:04:37.470000Z",
+      "primary_item": {
+        "id": "aeb88e4179e1924e51f2e823c032829b66cd7d09",
+        "title": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖 / Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+        "title_zh": "明目张胆的AI垃圾作品刚刚赢得了25000美元的DeepMind Kaggle大奖",
+        "title_en": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+        "title_original": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48946010",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_3da4c7482897",
+      "title": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。 / Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+      "url": "https://news.ycombinator.com/item?id=48952445",
+      "primary_url": "https://news.ycombinator.com/item?id=48952445",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "e414d3ab9d4910334a8e875a9429c2ff18da00dc",
+          "title": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。 / Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_zh": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。",
+          "title_en": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_original": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48952445",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T22:07:21.841000Z"
+        },
+        {
+          "id": "60afa9aac6c479b89f74d752d8ddb197b84ed200",
+          "title": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。 / Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_zh": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。",
+          "title_en": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_original": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://newrepublic.com/article/213004/everybody-weirded-ai-except-people-foist-us",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T21:24:07Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "e414d3ab9d4910334a8e875a9429c2ff18da00dc",
+          "title": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。 / Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_zh": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。",
+          "title_en": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_original": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48952445",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T22:07:21.841000Z"
+        },
+        {
+          "id": "60afa9aac6c479b89f74d752d8ddb197b84ed200",
+          "title": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。 / Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_zh": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。",
+          "title_en": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "title_original": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://newrepublic.com/article/213004/everybody-weirded-ai-except-people-foist-us",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T21:24:07Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5159,
+      "importance": 0.5159,
+      "importance_score": 0.5159,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.834,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-17T21:24:07Z",
+      "latest_at": "2026-07-17T22:07:21.841000Z",
+      "primary_item": {
+        "id": "e414d3ab9d4910334a8e875a9429c2ff18da00dc",
+        "title": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。 / Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+        "title_zh": "人人都觉得AI怪怪的——除了那些硬塞给我们的人。",
+        "title_en": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+        "title_original": "Everybody's Weirded Out by AI–Except the People Who Foist It on Us",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48952445",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_17ffaf56b0fe",
+      "title": "AI与密码学2：AI在OpenVM的ZkVM中的发现 / AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+      "url": "https://news.ycombinator.com/item?id=48947714",
+      "primary_url": "https://news.ycombinator.com/item?id=48947714",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "1e4656819f8c1084e94f30e6042f46d6c139331c",
+          "title": "AI与密码学2：AI在OpenVM的ZkVM中的发现 / AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_zh": "AI与密码学2：AI在OpenVM的ZkVM中的发现",
+          "title_en": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_original": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947714",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "213fe8e61a20db7a4e859a4adf8ff3e88c8b77eb",
+          "title": "AI与密码学2：AI在OpenVM的ZkVM中的发现 / AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_zh": "AI与密码学2：AI在OpenVM的ZkVM中的发现",
+          "title_en": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_original": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://blog.zksecurity.xyz/posts/openvm-bugs",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T14:21:35Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "1e4656819f8c1084e94f30e6042f46d6c139331c",
+          "title": "AI与密码学2：AI在OpenVM的ZkVM中的发现 / AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_zh": "AI与密码学2：AI在OpenVM的ZkVM中的发现",
+          "title_en": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_original": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947714",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "213fe8e61a20db7a4e859a4adf8ff3e88c8b77eb",
+          "title": "AI与密码学2：AI在OpenVM的ZkVM中的发现 / AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_zh": "AI与密码学2：AI在OpenVM的ZkVM中的发现",
+          "title_en": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "title_original": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://blog.zksecurity.xyz/posts/openvm-bugs",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T14:21:35Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5022,
+      "importance": 0.5022,
+      "importance_score": 0.5022,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.7576,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-17T14:21:35Z",
+      "latest_at": "2026-07-17T15:28:14.046000Z",
+      "primary_item": {
+        "id": "1e4656819f8c1084e94f30e6042f46d6c139331c",
+        "title": "AI与密码学2：AI在OpenVM的ZkVM中的发现 / AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+        "title_zh": "AI与密码学2：AI在OpenVM的ZkVM中的发现",
+        "title_en": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+        "title_original": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48947714",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_6cb927889c1d",
+      "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
+      "url": "https://news.ycombinator.com/item?id=48947776",
+      "primary_url": "https://news.ycombinator.com/item?id=48947776",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "00837cb65625720693140c00c98da92b13318611",
+          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
+          "title_zh": "Claude Code：一个反功能的剖析",
+          "title_en": "Claude Code: Anatomy of a Misfeature",
+          "title_original": "Claude Code: Anatomy of a Misfeature",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947776",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "5f891bce3f8a27e2e84485756020e01043429969",
+          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
+          "title_zh": "Claude Code：一个反功能的剖析",
+          "title_en": "Claude Code: Anatomy of a Misfeature",
+          "title_original": "Claude Code: Anatomy of a Misfeature",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T14:26:58Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "00837cb65625720693140c00c98da92b13318611",
+          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
+          "title_zh": "Claude Code：一个反功能的剖析",
+          "title_en": "Claude Code: Anatomy of a Misfeature",
+          "title_original": "Claude Code: Anatomy of a Misfeature",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947776",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "5f891bce3f8a27e2e84485756020e01043429969",
+          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
+          "title_zh": "Claude Code：一个反功能的剖析",
+          "title_en": "Claude Code: Anatomy of a Misfeature",
+          "title_original": "Claude Code: Anatomy of a Misfeature",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-07-17T14:26:58Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5022,
+      "importance": 0.5022,
+      "importance_score": 0.5022,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.7576,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-17T14:26:58Z",
+      "latest_at": "2026-07-17T15:28:14.046000Z",
+      "primary_item": {
+        "id": "00837cb65625720693140c00c98da92b13318611",
+        "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
+        "title_zh": "Claude Code：一个反功能的剖析",
+        "title_en": "Claude Code: Anatomy of a Misfeature",
+        "title_original": "Claude Code: Anatomy of a Misfeature",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48947776",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
+      }
+    },
+    {
+      "story_id": "story_11a16a5626cc",
+      "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
+      "url": "https://news.ycombinator.com/item?id=48947754",
+      "primary_url": "https://news.ycombinator.com/item?id=48947754",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "2a8587005713d48e30b1243b9268faa6e8d88fa7",
+          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
+          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
+          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
+          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947754",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "6c780dcdb5b994be273403d06936d64de1085097",
+          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
+          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
+          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
+          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://selbonds.now",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T14:25:20Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "2a8587005713d48e30b1243b9268faa6e8d88fa7",
+          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
+          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
+          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
+          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48947754",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-17T15:28:14.046000Z"
+        },
+        {
+          "id": "6c780dcdb5b994be273403d06936d64de1085097",
+          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
+          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
+          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
+          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://selbonds.now",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-17T14:25:20Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5022,
+      "importance": 0.5022,
+      "importance_score": 0.5022,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.7576,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-17T14:25:20Z",
+      "latest_at": "2026-07-17T15:28:14.046000Z",
+      "primary_item": {
+        "id": "2a8587005713d48e30b1243b9268faa6e8d88fa7",
+        "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
+        "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
+        "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
+        "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=48947754",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T10:42:43.574738Z"
       }
     }
   ]
