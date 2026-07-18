@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T13:21:14.237073Z",
+  "generated_at": "2026-07-18T13:37:09.861207Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8177,
-      "importance": 0.8177,
-      "importance_score": 0.8177,
+      "score": 0.8172,
+      "importance": 0.8172,
+      "importance_score": 0.8172,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.776,
+        "recency": 0.7731,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -131,15 +131,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8122,
-      "importance": 0.8122,
-      "importance_score": 0.8122,
+      "score": 0.8117,
+      "importance": 0.8117,
+      "importance_score": 0.8117,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7343,
+        "recency": 0.7315,
         "story_heat": 0.0
       },
       "category": "official",
@@ -166,7 +166,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -214,15 +214,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8164,
-      "importance": 0.8164,
-      "importance_score": 0.8164,
+      "score": 0.8158,
+      "importance": 0.8158,
+      "importance_score": 0.8158,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8021,
+        "recency": 0.7991,
         "story_heat": 0.0
       },
       "category": "official",
@@ -249,7 +249,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -326,15 +326,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7571,
-      "importance": 0.7571,
-      "importance_score": 0.7571,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7528,
+        "recency": 0.7499,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -361,7 +361,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -409,15 +409,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8164,
-      "importance": 0.8164,
-      "importance_score": 0.8164,
+      "score": 0.8158,
+      "importance": 0.8158,
+      "importance_score": 0.8158,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8022,
+        "recency": 0.7991,
         "story_heat": 0.0
       },
       "category": "official",
@@ -444,7 +444,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -492,21 +492,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.75,
-      "importance": 0.75,
-      "importance_score": 0.75,
+      "score": 0.7495,
+      "importance": 0.7495,
+      "importance_score": 0.7495,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7523,
+        "recency": 0.7494,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-07-17T17:38:33Z",
       "latest_at": "2026-07-17T17:38:33Z",
@@ -526,7 +525,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -574,15 +573,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7407,
-      "importance": 0.7407,
-      "importance_score": 0.7407,
+      "score": 0.7401,
+      "importance": 0.7401,
+      "importance_score": 0.7401,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8837,
+        "recency": 0.8803,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -607,7 +606,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -655,15 +654,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7389,
-      "importance": 0.7389,
-      "importance_score": 0.7389,
+      "score": 0.7384,
+      "importance": 0.7384,
+      "importance_score": 0.7384,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7407,
+        "recency": 0.7379,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -688,7 +687,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -736,15 +735,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7341,
-      "importance": 0.7341,
-      "importance_score": 0.7341,
+      "score": 0.7336,
+      "importance": 0.7336,
+      "importance_score": 0.7336,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7474,
+        "recency": 0.7445,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -769,7 +768,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -817,15 +816,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7253,
-      "importance": 0.7253,
-      "importance_score": 0.7253,
+      "score": 0.7248,
+      "importance": 0.7248,
+      "importance_score": 0.7248,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7152,
+        "recency": 0.7125,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -850,7 +849,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -898,15 +897,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8144,
-      "importance": 0.8144,
-      "importance_score": 0.8144,
+      "score": 0.8139,
+      "importance": 0.8139,
+      "importance_score": 0.8139,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.7913,
+        "recency": 0.7882,
         "story_heat": 0.0
       },
       "category": "official",
@@ -933,7 +932,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -1068,15 +1067,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.5927,
-      "importance": 0.5927,
-      "importance_score": 0.5927,
+      "score": 0.5921,
+      "importance": 0.5921,
+      "importance_score": 0.5921,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.983,
+        "recency": 0.9792,
         "story_heat": 0.75
       },
       "category": "multi_source",
@@ -1101,7 +1100,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -1264,15 +1263,15 @@
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.5832,
-      "importance": 0.5832,
-      "importance_score": 0.5832,
+      "score": 0.5827,
+      "importance": 0.5827,
+      "importance_score": 0.5827,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7913,
+        "recency": 0.7883,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -1297,7 +1296,146 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
+      }
+    },
+    {
+      "story_id": "story_1a64b2e84394",
+      "title": "图表展示：AI对Stack Overflow的影响",
+      "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+      "primary_url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+      "source": "data.stackexchange.com",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "b58dd9deab17e3e3d69669620128191a5e9d0ca3",
+          "title": "图表展示：AI对Stack Overflow的影响",
+          "title_zh": "图表展示：AI对Stack Overflow的影响",
+          "title_en": null,
+          "title_original": "图表展示：AI对Stack Overflow的影响",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "source": "data.stackexchange.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-18T13:29:15.879000Z"
+        },
+        {
+          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48956949",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-18T11:55:45.415000Z"
+        },
+        {
+          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
+          "title": "图表展示：AI对Stack Overflow的影响 / What AI did to stackoverflow in a graph",
+          "title_zh": "图表展示：AI对Stack Overflow的影响",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-18T11:12:46Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News",
+        "data.stackexchange.com",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "b58dd9deab17e3e3d69669620128191a5e9d0ca3",
+          "title": "图表展示：AI对Stack Overflow的影响",
+          "title_zh": "图表展示：AI对Stack Overflow的影响",
+          "title_en": null,
+          "title_original": "图表展示：AI对Stack Overflow的影响",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "source": "data.stackexchange.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-18T13:29:15.879000Z"
+        },
+        {
+          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48956949",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-18T11:55:45.415000Z"
+        },
+        {
+          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
+          "title": "图表展示：AI对Stack Overflow的影响 / What AI did to stackoverflow in a graph",
+          "title_zh": "图表展示：AI对Stack Overflow的影响",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-18T11:12:46Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5705,
+      "importance": 0.5705,
+      "importance_score": 0.5705,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9981,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-18T11:12:46Z",
+      "latest_at": "2026-07-18T13:29:15.879000Z",
+      "primary_item": {
+        "id": "b58dd9deab17e3e3d69669620128191a5e9d0ca3",
+        "title": "图表展示：AI对Stack Overflow的影响",
+        "title_zh": "图表展示：AI对Stack Overflow的影响",
+        "title_en": null,
+        "title_original": "图表展示：AI对Stack Overflow的影响",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+        "source": "data.stackexchange.com",
+        "source_name": "Buzzing"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -1403,15 +1541,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5384,
-      "importance": 0.5384,
-      "importance_score": 0.5384,
+      "score": 0.5379,
+      "importance": 0.5379,
+      "importance_score": 0.5379,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8203,
+        "recency": 0.8171,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1436,109 +1574,109 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
-      "story_id": "story_6e3ae8d4de00",
-      "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-      "url": "https://news.ycombinator.com/item?id=48956879",
-      "primary_url": "https://news.ycombinator.com/item?id=48956879",
+      "story_id": "story_641c7fe4ecc7",
+      "title": "GPT-5.6使用提示缩小了凸优化30年的差距 / GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+      "url": "https://news.ycombinator.com/item?id=48957779",
+      "primary_url": "https://news.ycombinator.com/item?id=48957779",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
-          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
-          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "id": "59cc559ce0a94dd4aa8dbc7d068f02fa8c4feb8a",
+          "title": "GPT-5.6使用提示缩小了凸优化30年的差距 / GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_zh": "GPT-5.6使用提示缩小了凸优化30年的差距",
+          "title_en": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_original": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956879",
+          "url": "https://news.ycombinator.com/item?id=48957779",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-18T12:55:55.722000Z"
+          "published_at": "2026-07-18T13:26:05.437000Z"
         },
         {
-          "id": "b22c145fc9885173ff91092ecd788bd36fe928ec",
-          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
-          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "id": "cc472846de4516c1a939404620afb978e4c3f00e",
+          "title": "GPT-5.6使用提示缩小了凸优化30年的差距 / GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_zh": "GPT-5.6使用提示缩小了凸优化30年的差距",
+          "title_en": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_original": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-18T11:00:29Z"
+          "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-07-18T13:00:52Z"
         }
       ],
       "source_count": 2,
       "source_names": [
-        "Hacker News",
+        "Hacker News (黑客新闻)",
         "hackernews"
       ],
       "items": [
         {
-          "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
-          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
-          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "id": "59cc559ce0a94dd4aa8dbc7d068f02fa8c4feb8a",
+          "title": "GPT-5.6使用提示缩小了凸优化30年的差距 / GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_zh": "GPT-5.6使用提示缩小了凸优化30年的差距",
+          "title_en": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_original": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956879",
+          "url": "https://news.ycombinator.com/item?id=48957779",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-18T12:55:55.722000Z"
+          "published_at": "2026-07-18T13:26:05.437000Z"
         },
         {
-          "id": "b22c145fc9885173ff91092ecd788bd36fe928ec",
-          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
-          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "id": "cc472846de4516c1a939404620afb978e4c3f00e",
+          "title": "GPT-5.6使用提示缩小了凸优化30年的差距 / GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_zh": "GPT-5.6使用提示缩小了凸优化30年的差距",
+          "title_en": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "title_original": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-18T11:00:29Z"
+          "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-07-18T13:00:52Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5447,
-      "importance": 0.5447,
-      "importance_score": 0.5447,
+      "score": 0.5453,
+      "importance": 0.5453,
+      "importance_score": 0.5453,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9939,
+        "recency": 0.9973,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-07-18T11:00:29Z",
-      "latest_at": "2026-07-18T12:55:55.722000Z",
+      "earliest_at": "2026-07-18T13:00:52Z",
+      "latest_at": "2026-07-18T13:26:05.437000Z",
       "primary_item": {
-        "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
-        "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-        "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
-        "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-        "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+        "id": "59cc559ce0a94dd4aa8dbc7d068f02fa8c4feb8a",
+        "title": "GPT-5.6使用提示缩小了凸优化30年的差距 / GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+        "title_zh": "GPT-5.6使用提示缩小了凸优化30年的差距",
+        "title_en": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+        "title_original": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48956879",
+        "url": "https://news.ycombinator.com/item?id=48957779",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1546,7 +1684,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -1623,15 +1761,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.4991,
-      "importance": 0.4991,
-      "importance_score": 0.4991,
+      "score": 0.4986,
+      "importance": 0.4986,
+      "importance_score": 0.4986,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7406,
+        "recency": 0.7378,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1656,44 +1794,44 @@
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
-      "story_id": "story_1a64b2e84394",
-      "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-      "url": "https://news.ycombinator.com/item?id=48956949",
-      "primary_url": "https://news.ycombinator.com/item?id=48956949",
+      "story_id": "story_6e3ae8d4de00",
+      "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+      "url": "https://news.ycombinator.com/item?id=48956879",
+      "primary_url": "https://news.ycombinator.com/item?id=48956879",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956949",
+          "url": "https://news.ycombinator.com/item?id=48956879",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-18T11:55:45.415000Z"
+          "published_at": "2026-07-18T12:55:55.722000Z"
         },
         {
-          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "b22c145fc9885173ff91092ecd788bd36fe928ec",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-18T11:12:46Z"
+          "published_at": "2026-07-18T11:00:29Z"
         }
       ],
       "source_count": 2,
@@ -1703,62 +1841,62 @@
       ],
       "items": [
         {
-          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956949",
+          "url": "https://news.ycombinator.com/item?id=48956879",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-18T11:55:45.415000Z"
+          "published_at": "2026-07-18T12:55:55.722000Z"
         },
         {
-          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "b22c145fc9885173ff91092ecd788bd36fe928ec",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-18T11:12:46Z"
+          "published_at": "2026-07-18T11:00:29Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5421,
-      "importance": 0.5421,
-      "importance_score": 0.5421,
+      "score": 0.544,
+      "importance": 0.544,
+      "importance_score": 0.544,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9796,
+        "recency": 0.9901,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-07-18T11:12:46Z",
-      "latest_at": "2026-07-18T11:55:45.415000Z",
+      "earliest_at": "2026-07-18T11:00:29Z",
+      "latest_at": "2026-07-18T12:55:55.722000Z",
       "primary_item": {
-        "id": "436929aef38fdbe392ac45926613e4cee1528bae",
-        "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-        "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-        "title_en": "What AI did to stackoverflow in a graph",
-        "title_original": "What AI did to stackoverflow in a graph",
+        "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
+        "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+        "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+        "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+        "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48956949",
+        "url": "https://news.ycombinator.com/item?id=48956879",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1766,7 +1904,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -1843,15 +1981,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5103,
-      "importance": 0.5103,
-      "importance_score": 0.5103,
+      "score": 0.5097,
+      "importance": 0.5097,
+      "importance_score": 0.5097,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8026,
+        "recency": 0.7995,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1876,7 +2014,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     },
     {
@@ -1953,15 +2091,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.497,
-      "importance": 0.497,
-      "importance_score": 0.497,
+      "score": 0.4965,
+      "importance": 0.4965,
+      "importance_score": 0.4965,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7291,
+        "recency": 0.7263,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1986,117 +2124,7 @@
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
-      }
-    },
-    {
-      "story_id": "story_6cb927889c1d",
-      "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
-      "url": "https://news.ycombinator.com/item?id=48947776",
-      "primary_url": "https://news.ycombinator.com/item?id=48947776",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "00837cb65625720693140c00c98da92b13318611",
-          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
-          "title_zh": "Claude Code：一个反功能的剖析",
-          "title_en": "Claude Code: Anatomy of a Misfeature",
-          "title_original": "Claude Code: Anatomy of a Misfeature",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48947776",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-17T15:28:14.046000Z"
-        },
-        {
-          "id": "5f891bce3f8a27e2e84485756020e01043429969",
-          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
-          "title_zh": "Claude Code：一个反功能的剖析",
-          "title_en": "Claude Code: Anatomy of a Misfeature",
-          "title_original": "Claude Code: Anatomy of a Misfeature",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-17T14:26:58Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "00837cb65625720693140c00c98da92b13318611",
-          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
-          "title_zh": "Claude Code：一个反功能的剖析",
-          "title_en": "Claude Code: Anatomy of a Misfeature",
-          "title_original": "Claude Code: Anatomy of a Misfeature",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48947776",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-17T15:28:14.046000Z"
-        },
-        {
-          "id": "5f891bce3f8a27e2e84485756020e01043429969",
-          "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
-          "title_zh": "Claude Code：一个反功能的剖析",
-          "title_en": "Claude Code: Anatomy of a Misfeature",
-          "title_original": "Claude Code: Anatomy of a Misfeature",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-07-17T14:26:58Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.497,
-      "importance": 0.497,
-      "importance_score": 0.497,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7291,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-07-17T14:26:58Z",
-      "latest_at": "2026-07-17T15:28:14.046000Z",
-      "primary_item": {
-        "id": "00837cb65625720693140c00c98da92b13318611",
-        "title": "Claude Code：一个反功能的剖析 / Claude Code: Anatomy of a Misfeature",
-        "title_zh": "Claude Code：一个反功能的剖析",
-        "title_en": "Claude Code: Anatomy of a Misfeature",
-        "title_original": "Claude Code: Anatomy of a Misfeature",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48947776",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 0,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-07-18T13:22:24.586022Z"
+        "scored_at": "2026-07-18T13:38:08.848426Z"
       }
     }
   ]

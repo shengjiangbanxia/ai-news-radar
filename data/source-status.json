@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-18T13:21:14.237073Z",
+  "generated_at": "2026-07-18T13:37:09.861207Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
       "item_count": 177,
-      "duration_ms": 7600,
+      "duration_ms": 2877,
       "error": null
     },
     {
@@ -14,7 +14,7 @@
       "site_name": "Curated Media",
       "ok": true,
       "item_count": 47,
-      "duration_ms": 3550,
+      "duration_ms": 4356,
       "error": null
     },
     {
@@ -22,7 +22,7 @@
       "site_name": "AI Breakfast",
       "ok": true,
       "item_count": 6,
-      "duration_ms": 267,
+      "duration_ms": 227,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "Follow Builders",
       "ok": true,
       "item_count": 31,
-      "duration_ms": 91,
+      "duration_ms": 30,
       "error": null
     },
     {
@@ -38,7 +38,7 @@
       "site_name": "TechURLs",
       "ok": true,
       "item_count": 405,
-      "duration_ms": 418,
+      "duration_ms": 505,
       "error": null
     },
     {
@@ -46,7 +46,7 @@
       "site_name": "Buzzing",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 349,
+      "duration_ms": 211,
       "error": null
     },
     {
@@ -54,7 +54,7 @@
       "site_name": "Info Flow",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 1892,
+      "duration_ms": 1662,
       "error": null
     },
     {
@@ -62,15 +62,15 @@
       "site_name": "BestBlogs",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 499,
+      "duration_ms": 752,
       "error": null
     },
     {
       "site_id": "zeli",
       "site_name": "Zeli",
       "ok": true,
-      "item_count": 72,
-      "duration_ms": 407,
+      "item_count": 71,
+      "duration_ms": 583,
       "error": null
     },
     {
@@ -78,7 +78,7 @@
       "site_name": "Hacker News",
       "ok": true,
       "item_count": 7,
-      "duration_ms": 5674,
+      "duration_ms": 5571,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "site_name": "AI HubToday",
       "ok": true,
       "item_count": 25,
-      "duration_ms": 236,
+      "duration_ms": 248,
       "error": null
     },
     {
@@ -94,7 +94,7 @@
       "site_name": "AIbase",
       "ok": true,
       "item_count": 20,
-      "duration_ms": 13372,
+      "duration_ms": 1077,
       "error": null
     },
     {
@@ -102,7 +102,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 101,
-      "duration_ms": 371,
+      "duration_ms": 3905,
       "error": null
     },
     {
@@ -110,7 +110,7 @@
       "site_name": "NewsNow",
       "ok": true,
       "item_count": 121,
-      "duration_ms": 1150,
+      "duration_ms": 1209,
       "error": null
     },
     {
@@ -118,7 +118,7 @@
       "site_name": "WaytoAGI",
       "ok": true,
       "item_count": 6,
-      "duration_ms": 4978,
+      "duration_ms": 5598,
       "error": null
     },
     {
@@ -126,12 +126,12 @@
       "site_name": "OPML RSS",
       "ok": true,
       "partial_failures": 0,
-      "item_count": 2208,
-      "duration_ms": 5874,
+      "item_count": 60,
+      "duration_ms": 1742,
       "error": null,
-      "feed_count": 10,
-      "effective_feed_count": 10,
-      "ok_feed_count": 10,
+      "feed_count": 2,
+      "effective_feed_count": 2,
+      "ok_feed_count": 2,
       "failed_feed_count": 0,
       "skipped_feed_count": 0,
       "replaced_feed_count": 0
@@ -141,164 +141,44 @@
   "failed_sites": [],
   "zero_item_sites": [],
   "empty_advanced_sources": [],
-  "fetched_raw_items": 3327,
-  "items_before_topic_filter": 955,
-  "items_in_24h": 199,
+  "fetched_raw_items": 1178,
+  "items_before_topic_filter": 956,
+  "items_in_24h": 202,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
-    "feed_total": 10,
-    "effective_feed_total": 10,
-    "ok_feeds": 10,
+    "feed_total": 2,
+    "effective_feed_total": 2,
+    "ok_feeds": 2,
     "failed_feeds": [],
     "zero_item_feeds": [],
     "skipped_feeds": [],
     "replaced_feeds": [],
     "feeds": [
       {
-        "site_id": "opmlrss:c39414c568",
+        "site_id": "opmlrss:a89851dd68",
         "site_name": "OPML RSS",
-        "feed_title": "Google AI Blog",
-        "feed_url": "https://blog.google/technology/ai/rss/",
-        "effective_feed_url": "https://blog.google/technology/ai/rss/",
-        "ok": true,
-        "item_count": 20,
-        "duration_ms": 236,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:0ea3c11e0b",
-        "site_name": "OPML RSS",
-        "feed_title": "Google DeepMind Blog",
-        "feed_url": "https://deepmind.google/blog/rss.xml",
-        "effective_feed_url": "https://deepmind.google/blog/rss.xml",
-        "ok": true,
-        "item_count": 100,
-        "duration_ms": 332,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:33e649875b",
-        "site_name": "OPML RSS",
-        "feed_title": "Hugging Face Blog",
-        "feed_url": "https://huggingface.co/blog/feed.xml",
-        "effective_feed_url": "https://huggingface.co/blog/feed.xml",
-        "ok": true,
-        "item_count": 829,
-        "duration_ms": 398,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:969629fda3",
-        "site_name": "OPML RSS",
-        "feed_title": "InfoQ CN",
-        "feed_url": "https://www.infoq.cn/feed",
-        "effective_feed_url": "https://www.infoq.cn/feed",
-        "ok": true,
-        "item_count": 20,
-        "duration_ms": 1443,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:a53c22ca17",
-        "site_name": "OPML RSS",
-        "feed_title": "Microsoft AI Blog",
-        "feed_url": "https://news.microsoft.com/source/topics/ai/feed/",
-        "effective_feed_url": "https://news.microsoft.com/source/topics/ai/feed/",
-        "ok": true,
-        "item_count": 10,
-        "duration_ms": 168,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:ebc5cd4677",
-        "site_name": "OPML RSS",
-        "feed_title": "NVIDIA Generative AI Blog",
-        "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
-        "effective_feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
-        "ok": true,
-        "item_count": 100,
-        "duration_ms": 650,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:3ae57466b5",
-        "site_name": "OPML RSS",
-        "feed_title": "OpenAI News",
-        "feed_url": "https://openai.com/news/rss.xml",
-        "effective_feed_url": "https://openai.com/news/rss.xml",
-        "ok": true,
-        "item_count": 1039,
-        "duration_ms": 1507,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:d1c587ecba",
-        "site_name": "OPML RSS",
-        "feed_title": "Simon Willison",
-        "feed_url": "https://simonwillison.net/atom/everything/",
-        "effective_feed_url": "https://simonwillison.net/atom/everything/",
-        "ok": true,
-        "item_count": 30,
-        "duration_ms": 459,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:965e5d5db4",
-        "site_name": "OPML RSS",
-        "feed_title": "Wired AI",
-        "feed_url": "https://www.wired.com/feed/tag/ai/latest/rss",
-        "effective_feed_url": "https://www.wired.com/feed/tag/ai/latest/rss",
-        "ok": true,
-        "item_count": 10,
-        "duration_ms": 214,
-        "error": null,
-        "skipped": false,
-        "skip_reason": null,
-        "replaced": false,
-        "bridge_type": null
-      },
-      {
-        "site_id": "opmlrss:d9ed8f749d",
-        "site_name": "OPML RSS",
-        "feed_title": "宝玉",
-        "feed_url": "https://baoyu.io/feed.xml",
-        "effective_feed_url": "https://baoyu.io/feed.xml",
+        "feed_title": "Tom's Hardware",
+        "feed_url": "https://www.tomshardware.com/feeds/all",
+        "effective_feed_url": "https://www.tomshardware.com/feeds/all",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 467,
+        "duration_ms": 537,
+        "error": null,
+        "skipped": false,
+        "skip_reason": null,
+        "replaced": false,
+        "bridge_type": null
+      },
+      {
+        "site_id": "opmlrss:31ecfd3f3b",
+        "site_name": "OPML RSS",
+        "feed_title": "TrendForce Semiconductors",
+        "feed_url": "https://www.trendforce.com/feed/Semiconductors.html",
+        "effective_feed_url": "https://www.trendforce.com/feed/Semiconductors.html",
+        "ok": true,
+        "item_count": 10,
+        "duration_ms": 1205,
         "error": null,
         "skipped": false,
         "skip_reason": null,
