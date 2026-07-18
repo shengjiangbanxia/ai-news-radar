@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T12:05:53.349907Z",
+  "generated_at": "2026-07-18T13:21:14.237073Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8202,
-      "importance": 0.8202,
-      "importance_score": 0.8202,
+      "score": 0.8177,
+      "importance": 0.8177,
+      "importance_score": 0.8177,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.7902,
+        "recency": 0.776,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -131,15 +131,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8146,
-      "importance": 0.8146,
-      "importance_score": 0.8146,
+      "score": 0.8122,
+      "importance": 0.8122,
+      "importance_score": 0.8122,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7477,
+        "recency": 0.7343,
         "story_heat": 0.0
       },
       "category": "official",
@@ -166,7 +166,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -214,15 +214,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.819,
-      "importance": 0.819,
-      "importance_score": 0.819,
+      "score": 0.8164,
+      "importance": 0.8164,
+      "importance_score": 0.8164,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8168,
+        "recency": 0.8021,
         "story_heat": 0.0
       },
       "category": "official",
@@ -249,7 +249,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -326,15 +326,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7596,
-      "importance": 0.7596,
-      "importance_score": 0.7596,
+      "score": 0.7571,
+      "importance": 0.7571,
+      "importance_score": 0.7571,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7666,
+        "recency": 0.7528,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -361,7 +361,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -409,15 +409,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.819,
-      "importance": 0.819,
-      "importance_score": 0.819,
+      "score": 0.8164,
+      "importance": 0.8164,
+      "importance_score": 0.8164,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8168,
+        "recency": 0.8022,
         "story_heat": 0.0
       },
       "category": "official",
@@ -444,7 +444,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -492,15 +492,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7525,
-      "importance": 0.7525,
-      "importance_score": 0.7525,
+      "score": 0.75,
+      "importance": 0.75,
+      "importance_score": 0.75,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.766,
+        "recency": 0.7523,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -526,7 +526,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -574,15 +574,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7436,
-      "importance": 0.7436,
-      "importance_score": 0.7436,
+      "score": 0.7407,
+      "importance": 0.7407,
+      "importance_score": 0.7407,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8998,
+        "recency": 0.8837,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -607,7 +607,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -655,15 +655,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7414,
-      "importance": 0.7414,
-      "importance_score": 0.7414,
+      "score": 0.7389,
+      "importance": 0.7389,
+      "importance_score": 0.7389,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7542,
+        "recency": 0.7407,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -688,7 +688,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -736,15 +736,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7366,
-      "importance": 0.7366,
-      "importance_score": 0.7366,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.761,
+        "recency": 0.7474,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -769,7 +769,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -817,15 +817,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7277,
-      "importance": 0.7277,
-      "importance_score": 0.7277,
+      "score": 0.7253,
+      "importance": 0.7253,
+      "importance_score": 0.7253,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7283,
+        "recency": 0.7152,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -850,7 +850,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -898,15 +898,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.817,
-      "importance": 0.817,
-      "importance_score": 0.817,
+      "score": 0.8144,
+      "importance": 0.8144,
+      "importance_score": 0.8144,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8058,
+        "recency": 0.7913,
         "story_heat": 0.0
       },
       "category": "official",
@@ -933,7 +933,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
+      }
+    },
+    {
+      "story_id": "story_b3a9ac157817",
+      "title": "为什么人工智能公司的标志看起来像肛门？",
+      "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+      "primary_url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+      "source": "velvetshark.com",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "afa6b3e0d92f9e76e44a36c2c65a104df83fc874",
+          "title": "为什么人工智能公司的标志看起来像肛门？",
+          "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+          "title_en": null,
+          "title_original": "为什么人工智能公司的标志看起来像肛门？",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "source": "velvetshark.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-18T12:09:54.152000Z"
+        },
+        {
+          "id": "ca4b86483c18d3920b69f56e1582688055547279",
+          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48956924",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-18T11:55:45.415000Z"
+        },
+        {
+          "id": "d5cabbfa788aa3fa90f7b5a9bb0f17420fd1aa03",
+          "title": "为什么人工智能公司的标志看起来像肛门？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-18T11:06:50Z"
+        },
+        {
+          "id": "eae0e898a12136e2de72dcc84d0b1d13ea4bd521",
+          "title": "为什么人工智能公司的标志看起来像肛门？ / Why do AI company logos look like buttholes? (2025)",
+          "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+          "title_en": "Why do AI company logos look like buttholes? (2025)",
+          "title_original": "Why do AI company logos look like buttholes? (2025)",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-07-18T11:06:50Z"
+        }
+      ],
+      "source_count": 4,
+      "source_names": [
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "velvetshark.com"
+      ],
+      "items": [
+        {
+          "id": "afa6b3e0d92f9e76e44a36c2c65a104df83fc874",
+          "title": "为什么人工智能公司的标志看起来像肛门？",
+          "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+          "title_en": null,
+          "title_original": "为什么人工智能公司的标志看起来像肛门？",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "source": "velvetshark.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-07-18T12:09:54.152000Z"
+        },
+        {
+          "id": "ca4b86483c18d3920b69f56e1582688055547279",
+          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=48956924",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-07-18T11:55:45.415000Z"
+        },
+        {
+          "id": "d5cabbfa788aa3fa90f7b5a9bb0f17420fd1aa03",
+          "title": "为什么人工智能公司的标志看起来像肛门？ / Why do AI company logos look like buttholes?",
+          "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+          "title_en": "Why do AI company logos look like buttholes?",
+          "title_original": "Why do AI company logos look like buttholes?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-07-18T11:06:50Z"
+        },
+        {
+          "id": "eae0e898a12136e2de72dcc84d0b1d13ea4bd521",
+          "title": "为什么人工智能公司的标志看起来像肛门？ / Why do AI company logos look like buttholes? (2025)",
+          "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+          "title_en": "Why do AI company logos look like buttholes? (2025)",
+          "title_original": "Why do AI company logos look like buttholes? (2025)",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-07-18T11:06:50Z"
+        }
+      ],
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.5927,
+      "importance": 0.5927,
+      "importance_score": 0.5927,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.983,
+        "story_heat": 0.75
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-07-18T11:06:50Z",
+      "latest_at": "2026-07-18T12:09:54.152000Z",
+      "primary_item": {
+        "id": "afa6b3e0d92f9e76e44a36c2c65a104df83fc874",
+        "title": "为什么人工智能公司的标志看起来像肛门？",
+        "title_zh": "为什么人工智能公司的标志看起来像肛门？",
+        "title_en": null,
+        "title_original": "为什么人工智能公司的标志看起来像肛门？",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+        "source": "velvetshark.com",
+        "source_name": "Buzzing"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -1001,7 +1169,7 @@
           "published_at": "2026-07-17T14:31:10Z"
         },
         {
-          "id": "dd5fc0c942e2cffe2c04481d4dc49e58c70728c8",
+          "id": "b47194ee0332f9490347528350fd805a286d25e0",
           "title": "Mozilla：开源人工智能的发展现状 / The state of open source AI",
           "title_zh": "Mozilla：开源人工智能的发展现状",
           "title_en": "The state of open source AI",
@@ -1009,16 +1177,16 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://stateofopensource.ai",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-07-17T14:31:10Z"
         }
       ],
       "source_count": 5,
       "source_names": [
         "Hacker News",
-        "Hacker News (黑客新闻)",
+        "Hacker News · 24h最热",
         "hackernews",
         "stateofopensource.ai"
       ],
@@ -1080,7 +1248,7 @@
           "published_at": "2026-07-17T14:31:10Z"
         },
         {
-          "id": "dd5fc0c942e2cffe2c04481d4dc49e58c70728c8",
+          "id": "b47194ee0332f9490347528350fd805a286d25e0",
           "title": "Mozilla：开源人工智能的发展现状 / The state of open source AI",
           "title_zh": "Mozilla：开源人工智能的发展现状",
           "title_en": "The state of open source AI",
@@ -1088,23 +1256,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://stateofopensource.ai",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-07-17T14:31:10Z"
         }
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.5858,
-      "importance": 0.5858,
-      "importance_score": 0.5858,
+      "score": 0.5832,
+      "importance": 0.5832,
+      "importance_score": 0.5832,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8058,
+        "recency": 0.7913,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -1129,7 +1297,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -1235,15 +1403,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5411,
-      "importance": 0.5411,
-      "importance_score": 0.5411,
+      "score": 0.5384,
+      "importance": 0.5384,
+      "importance_score": 0.5384,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8353,
+        "recency": 0.8203,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1268,44 +1436,44 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
-      "story_id": "story_1a64b2e84394",
-      "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-      "url": "https://news.ycombinator.com/item?id=48956949",
-      "primary_url": "https://news.ycombinator.com/item?id=48956949",
+      "story_id": "story_6e3ae8d4de00",
+      "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+      "url": "https://news.ycombinator.com/item?id=48956879",
+      "primary_url": "https://news.ycombinator.com/item?id=48956879",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956949",
+          "url": "https://news.ycombinator.com/item?id=48956879",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-18T11:55:45.415000Z"
+          "published_at": "2026-07-18T12:55:55.722000Z"
         },
         {
-          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "b22c145fc9885173ff91092ecd788bd36fe928ec",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-18T11:12:46Z"
+          "published_at": "2026-07-18T11:00:29Z"
         }
       ],
       "source_count": 2,
@@ -1315,62 +1483,62 @@
       ],
       "items": [
         {
-          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956949",
+          "url": "https://news.ycombinator.com/item?id=48956879",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-07-18T11:55:45.415000Z"
+          "published_at": "2026-07-18T12:55:55.722000Z"
         },
         {
-          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
-          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-          "title_en": "What AI did to stackoverflow in a graph",
-          "title_original": "What AI did to stackoverflow in a graph",
+          "id": "b22c145fc9885173ff91092ecd788bd36fe928ec",
+          "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+          "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-18T11:12:46Z"
+          "published_at": "2026-07-18T11:00:29Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5454,
-      "importance": 0.5454,
-      "importance_score": 0.5454,
+      "score": 0.5447,
+      "importance": 0.5447,
+      "importance_score": 0.5447,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9976,
+        "recency": 0.9939,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-07-18T11:12:46Z",
-      "latest_at": "2026-07-18T11:55:45.415000Z",
+      "earliest_at": "2026-07-18T11:00:29Z",
+      "latest_at": "2026-07-18T12:55:55.722000Z",
       "primary_item": {
-        "id": "436929aef38fdbe392ac45926613e4cee1528bae",
-        "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
-        "title_zh": "AI 在图表中对 stackoverflow 做了什么",
-        "title_en": "What AI did to stackoverflow in a graph",
-        "title_original": "What AI did to stackoverflow in a graph",
+        "id": "f99812edd3a8b43b060706dd971b7ead176f9e36",
+        "title": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？ / Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+        "title_zh": "Fable 5与 GPT-5.6 Sol 在 NP 难问题上的对比：/goal 有帮助吗？",
+        "title_en": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+        "title_original": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48956949",
+        "url": "https://news.ycombinator.com/item?id=48956879",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1378,7 +1546,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -1455,15 +1623,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5016,
-      "importance": 0.5016,
-      "importance_score": 0.5016,
+      "score": 0.4991,
+      "importance": 0.4991,
+      "importance_score": 0.4991,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7542,
+        "recency": 0.7406,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1485,47 +1653,47 @@
         "source_name": "Zeli"
       },
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
-      "story_id": "story_b3a9ac157817",
-      "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
-      "url": "https://news.ycombinator.com/item?id=48956924",
-      "primary_url": "https://news.ycombinator.com/item?id=48956924",
+      "story_id": "story_1a64b2e84394",
+      "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+      "url": "https://news.ycombinator.com/item?id=48956949",
+      "primary_url": "https://news.ycombinator.com/item?id=48956949",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "ca4b86483c18d3920b69f56e1582688055547279",
-          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
-          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
-          "title_en": "Why do AI company logos look like buttholes?",
-          "title_original": "Why do AI company logos look like buttholes?",
+          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956924",
+          "url": "https://news.ycombinator.com/item?id=48956949",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
           "published_at": "2026-07-18T11:55:45.415000Z"
         },
         {
-          "id": "d5cabbfa788aa3fa90f7b5a9bb0f17420fd1aa03",
-          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
-          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
-          "title_en": "Why do AI company logos look like buttholes?",
-          "title_original": "Why do AI company logos look like buttholes?",
+          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-18T11:06:50Z"
+          "published_at": "2026-07-18T11:12:46Z"
         }
       ],
       "source_count": 2,
@@ -1535,62 +1703,62 @@
       ],
       "items": [
         {
-          "id": "ca4b86483c18d3920b69f56e1582688055547279",
-          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
-          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
-          "title_en": "Why do AI company logos look like buttholes?",
-          "title_original": "Why do AI company logos look like buttholes?",
+          "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48956924",
+          "url": "https://news.ycombinator.com/item?id=48956949",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
           "published_at": "2026-07-18T11:55:45.415000Z"
         },
         {
-          "id": "d5cabbfa788aa3fa90f7b5a9bb0f17420fd1aa03",
-          "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
-          "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
-          "title_en": "Why do AI company logos look like buttholes?",
-          "title_original": "Why do AI company logos look like buttholes?",
+          "id": "0af8bfa31dc1a6fb0f8a836a4d612cbd6109afbb",
+          "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+          "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+          "title_en": "What AI did to stackoverflow in a graph",
+          "title_original": "What AI did to stackoverflow in a graph",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+          "url": "https://data.stackexchange.com/stackoverflow/query/1953768",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-07-18T11:06:50Z"
+          "published_at": "2026-07-18T11:12:46Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5454,
-      "importance": 0.5454,
-      "importance_score": 0.5454,
+      "score": 0.5421,
+      "importance": 0.5421,
+      "importance_score": 0.5421,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9976,
+        "recency": 0.9796,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-07-18T11:06:50Z",
+      "earliest_at": "2026-07-18T11:12:46Z",
       "latest_at": "2026-07-18T11:55:45.415000Z",
       "primary_item": {
-        "id": "ca4b86483c18d3920b69f56e1582688055547279",
-        "title": "为什么人工智能公司的标志看起来像屁眼？ / Why do AI company logos look like buttholes?",
-        "title_zh": "为什么人工智能公司的标志看起来像屁眼？",
-        "title_en": "Why do AI company logos look like buttholes?",
-        "title_original": "Why do AI company logos look like buttholes?",
+        "id": "436929aef38fdbe392ac45926613e4cee1528bae",
+        "title": "AI 在图表中对 stackoverflow 做了什么 / What AI did to stackoverflow in a graph",
+        "title_zh": "AI 在图表中对 stackoverflow 做了什么",
+        "title_en": "What AI did to stackoverflow in a graph",
+        "title_original": "What AI did to stackoverflow in a graph",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48956924",
+        "url": "https://news.ycombinator.com/item?id=48956949",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1598,7 +1766,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -1675,15 +1843,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5129,
-      "importance": 0.5129,
-      "importance_score": 0.5129,
+      "score": 0.5103,
+      "importance": 0.5103,
+      "importance_score": 0.5103,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8172,
+        "recency": 0.8026,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1708,7 +1876,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -1785,15 +1953,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.4994,
-      "importance": 0.4994,
-      "importance_score": 0.4994,
+      "score": 0.497,
+      "importance": 0.497,
+      "importance_score": 0.497,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7424,
+        "recency": 0.7291,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1818,7 +1986,7 @@
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     },
     {
@@ -1895,15 +2063,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.4994,
-      "importance": 0.4994,
-      "importance_score": 0.4994,
+      "score": 0.497,
+      "importance": 0.497,
+      "importance_score": 0.497,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7424,
+        "recency": 0.7291,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1928,117 +2096,7 @@
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
-      }
-    },
-    {
-      "story_id": "story_11a16a5626cc",
-      "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
-      "url": "https://news.ycombinator.com/item?id=48947754",
-      "primary_url": "https://news.ycombinator.com/item?id=48947754",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "2a8587005713d48e30b1243b9268faa6e8d88fa7",
-          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
-          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
-          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
-          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48947754",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-17T15:28:14.046000Z"
-        },
-        {
-          "id": "6c780dcdb5b994be273403d06936d64de1085097",
-          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
-          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
-          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
-          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://selbonds.now",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-17T14:25:20Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "2a8587005713d48e30b1243b9268faa6e8d88fa7",
-          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
-          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
-          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
-          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=48947754",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-07-17T15:28:14.046000Z"
-        },
-        {
-          "id": "6c780dcdb5b994be273403d06936d64de1085097",
-          "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
-          "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
-          "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
-          "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://selbonds.now",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-07-17T14:25:20Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.4994,
-      "importance": 0.4994,
-      "importance_score": 0.4994,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7424,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-07-17T14:25:20Z",
-      "latest_at": "2026-07-17T15:28:14.046000Z",
-      "primary_item": {
-        "id": "2a8587005713d48e30b1243b9268faa6e8d88fa7",
-        "title": "Show HN: 一个由AI代理发行债券的链上市场 / Show HN: On-chain bond market where the issuers are AI agents",
-        "title_zh": "Show HN: 一个由AI代理发行债券的链上市场",
-        "title_en": "Show HN: On-chain bond market where the issuers are AI agents",
-        "title_original": "Show HN: On-chain bond market where the issuers are AI agents",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=48947754",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 0,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-07-18T12:08:15.082951Z"
+        "scored_at": "2026-07-18T13:22:24.586022Z"
       }
     }
   ]
