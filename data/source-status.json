@@ -1,133 +1,14 @@
 {
-  "generated_at": "2026-07-18T13:51:35.684985Z",
+  "generated_at": "2026-07-18T13:55:07.077791Z",
+  "source_mode": "opml_only",
   "sites": [
-    {
-      "site_id": "official_ai",
-      "site_name": "Official AI Updates",
-      "ok": true,
-      "item_count": 177,
-      "duration_ms": 10444,
-      "error": null
-    },
-    {
-      "site_id": "curated_media",
-      "site_name": "Curated Media",
-      "ok": true,
-      "item_count": 33,
-      "duration_ms": 2766,
-      "error": null
-    },
-    {
-      "site_id": "aibreakfast",
-      "site_name": "AI Breakfast",
-      "ok": true,
-      "item_count": 6,
-      "duration_ms": 241,
-      "error": null
-    },
-    {
-      "site_id": "followbuilders",
-      "site_name": "Follow Builders",
-      "ok": true,
-      "item_count": 31,
-      "duration_ms": 144,
-      "error": null
-    },
-    {
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "ok": true,
-      "item_count": 405,
-      "duration_ms": 474,
-      "error": null
-    },
-    {
-      "site_id": "buzzing",
-      "site_name": "Buzzing",
-      "ok": true,
-      "item_count": 50,
-      "duration_ms": 299,
-      "error": null
-    },
-    {
-      "site_id": "iris",
-      "site_name": "Info Flow",
-      "ok": true,
-      "item_count": 50,
-      "duration_ms": 1847,
-      "error": null
-    },
-    {
-      "site_id": "bestblogs",
-      "site_name": "BestBlogs",
-      "ok": true,
-      "item_count": 1,
-      "duration_ms": 815,
-      "error": null
-    },
-    {
-      "site_id": "zeli",
-      "site_name": "Zeli",
-      "ok": true,
-      "item_count": 70,
-      "duration_ms": 556,
-      "error": null
-    },
-    {
-      "site_id": "hackernews",
-      "site_name": "Hacker News",
-      "ok": true,
-      "item_count": 7,
-      "duration_ms": 5197,
-      "error": null
-    },
-    {
-      "site_id": "aihubtoday",
-      "site_name": "AI HubToday",
-      "ok": true,
-      "item_count": 25,
-      "duration_ms": 325,
-      "error": null
-    },
-    {
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "ok": true,
-      "item_count": 20,
-      "duration_ms": 1176,
-      "error": null
-    },
-    {
-      "site_id": "aihot",
-      "site_name": "AI HOT",
-      "ok": true,
-      "item_count": 101,
-      "duration_ms": 475,
-      "error": null
-    },
-    {
-      "site_id": "newsnow",
-      "site_name": "NewsNow",
-      "ok": true,
-      "item_count": 121,
-      "duration_ms": 1586,
-      "error": null
-    },
-    {
-      "site_id": "waytoagi",
-      "site_name": "WaytoAGI",
-      "ok": true,
-      "item_count": 6,
-      "duration_ms": 5457,
-      "error": null
-    },
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
       "ok": true,
       "partial_failures": 0,
       "item_count": 60,
-      "duration_ms": 1277,
+      "duration_ms": 1364,
       "error": null,
       "feed_count": 2,
       "effective_feed_count": 2,
@@ -137,13 +18,13 @@
       "replaced_feed_count": 0
     }
   ],
-  "successful_sites": 16,
+  "successful_sites": 1,
   "failed_sites": [],
   "zero_item_sites": [],
   "empty_advanced_sources": [],
-  "fetched_raw_items": 1163,
-  "items_before_topic_filter": 948,
-  "items_in_24h": 200,
+  "fetched_raw_items": 60,
+  "items_before_topic_filter": 11,
+  "items_in_24h": 3,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -163,7 +44,7 @@
         "effective_feed_url": "https://www.tomshardware.com/feeds/all",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 437,
+        "duration_ms": 548,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -178,7 +59,7 @@
         "effective_feed_url": "https://www.trendforce.com/feed/Semiconductors.html",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 840,
+        "duration_ms": 816,
         "error": null,
         "skipped": false,
         "skip_reason": null,
