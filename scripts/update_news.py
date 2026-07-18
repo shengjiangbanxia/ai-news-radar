@@ -324,6 +324,7 @@ PUBLIC_RAW_META_FIELDS: tuple[str, ...] = (
     "creator_metrics",
     "search_surface",
     "summary",
+    "summary_zh",
 )
 
 
@@ -464,12 +465,19 @@ def parse_feed_entries_via_xml(feed_xml: bytes) -> list[dict[str, Any]]:
                 or node.findtext("updated")
                 or node.findtext("{*}updated")
             )
+            summary = (
+                node.findtext("description")
+                or node.findtext("{*}description")
+                or node.findtext("summary")
+                or node.findtext("{*}summary")
+                or ""
+            ).strip()
             if title and link:
                 key = (title, link)
                 if key in seen:
                     continue
                 seen.add(key)
-                out.append({"title": title, "link": link, "published": published})
+                out.append({"title": title, "link": link, "published": published, "summary": summary})
     return out
 
 
@@ -2551,18 +2559,28 @@ def parse_trendforce_news_items(
     source_name: str,
     markdown: bool = False,
 ) -> list[RawItem]:
-    candidates: list[tuple[str, str]] = []
+    candidates: list[tuple[str, str, str]] = []
     if markdown:
-        for match in re.finditer(r"\[([^\]]+)\]\((https://www\.trendforce\.com/news/[^)]+)\)", content):
-            candidates.append((match.group(1), match.group(2)))
+        article_re = re.compile(
+            r"^[ \t]*##\s+\[([^\]]+)\]\((https://www\.trendforce\.com/news/20\d{2}/\d{2}/\d{2}/[^)]+)\)[ \t]*$"
+            r"(.*?)^[ \t]*\[[^\]]*View More[^\]]*\]\(\2\)",
+            re.MULTILINE | re.DOTALL,
+        )
+        for match in article_re.finditer(content):
+            body = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", match.group(3))
+            body = re.sub(r"^\s*(?:News|20\d{2}-\d{2}-\d{2})\s*$", "", body, flags=re.MULTILINE)
+            candidates.append((match.group(1), match.group(2), re.sub(r"\s+", " ", body).strip()))
+        if not candidates:
+            for match in re.finditer(r"\[([^\]]+)\]\((https://www\.trendforce\.com/news/[^)]+)\)", content):
+                candidates.append((match.group(1), match.group(2), ""))
     else:
         soup = BeautifulSoup(content, "html.parser")
         for anchor in soup.select("a[href*='/news/20']"):
-            candidates.append((anchor.get_text(" ", strip=True), urljoin("https://www.trendforce.com", anchor.get("href") or "")))
+            candidates.append((anchor.get_text(" ", strip=True), urljoin("https://www.trendforce.com", anchor.get("href") or ""), ""))
 
     out: list[RawItem] = []
     seen: set[str] = set()
-    for title, url in candidates:
+    for title, url, summary in candidates:
         title = re.sub(r"\s+", " ", title or "").strip()
         url = url.strip()
         published = _trendforce_date_from_url(url)
@@ -2577,7 +2595,11 @@ def parse_trendforce_news_items(
                 title=title,
                 url=url,
                 published_at=published,
-                meta={"bridge_type": "trendforce_news", "feed_home": "https://www.trendforce.com/news/"},
+                meta={
+                    "bridge_type": "trendforce_news",
+                    "feed_home": "https://www.trendforce.com/news/",
+                    "summary": summary,
+                },
             )
         )
     return out
@@ -2786,7 +2808,7 @@ def fetch_opml_rss(
                 )
                 entries = parsed.entries
                 cn_feed = ".cn/" in feed_url or feed_url.endswith(".cn") or has_cjk(str(feed_title or ""))
-                pending: list[tuple[str, str, datetime]] = []
+                pending: list[tuple[str, str, datetime, str]] = []
                 for entry in entries:
                     title = str(entry.get("title", "")).strip()
                     link = str(entry.get("link", "")).strip()
@@ -2799,13 +2821,13 @@ def fetch_opml_rss(
                     )
                     if not published:
                         continue
-                    pending.append((title, link, published))
+                    pending.append((title, link, published, str(entry.get("summary") or entry.get("description") or "")))
                 corrected_times = correct_feed_published_batch(
-                    [p for _, _, p in pending],
+                    [p for _, _, p, _ in pending],
                     now,
-                    assume_cst_mislabel=cn_feed or any(has_cjk(t) for t, _, _ in pending),
+                    assume_cst_mislabel=cn_feed or any(has_cjk(t) for t, _, _, _ in pending),
                 )
-                for (title, link, _), published in zip(pending, corrected_times):
+                for (title, link, _, summary), published in zip(pending, corrected_times):
                     local_items.append(
                         RawItem(
                             site_id="opmlrss",
@@ -2817,6 +2839,7 @@ def fetch_opml_rss(
                             meta={
                                 "feed_url": feed_url,
                                 "feed_home": feed.get("html_url") or "",
+                                "summary": summary,
                             },
                         )
                     )
@@ -2848,6 +2871,7 @@ def fetch_opml_rss(
                             meta={
                                 "feed_url": feed_url,
                                 "feed_home": feed.get("html_url") or "",
+                                "summary": entry.get("summary") or "",
                             },
                         )
                     )
@@ -5051,6 +5075,38 @@ def add_bilingual_fields(
 
     translated_now_ai = 0
     translated_now_all = 0
+    translated_summaries_ai = 0
+    translated_summaries_all = 0
+
+    def clean_summary(value: Any) -> str:
+        text = BeautifulSoup(str(value or ""), "html.parser").get_text(" ", strip=True)
+        return re.sub(r"\s+", " ", text).strip()
+
+    def translate_summary(out: dict[str, Any], allow_translate: bool, is_ai_pool: bool) -> None:
+        nonlocal translated_summaries_ai, translated_summaries_all
+        summary = clean_summary(out.get("summary"))
+        if not summary:
+            return
+        out["summary"] = summary
+        if has_cjk(summary):
+            out["summary_zh"] = summary
+            return
+        if not is_mostly_english(summary):
+            return
+        cache_key = "summary_zh|" + summary
+        translated = str(cache.get(cache_key) or "").strip()
+        budget = max_new_translations if is_ai_pool else max_new_translations_all
+        translated_now = translated_summaries_ai if is_ai_pool else translated_summaries_all
+        if not translated and allow_translate and translated_now < budget:
+            translated = clean_summary(translate_to_zh_deepseek(summary) or translate_to_zh_cn(session, summary))
+            if translated and has_cjk(translated):
+                cache[cache_key] = translated
+                if is_ai_pool:
+                    translated_summaries_ai += 1
+                else:
+                    translated_summaries_all += 1
+        if translated and has_cjk(translated):
+            out["summary_zh"] = translated
 
     def enrich(item: dict[str, Any], allow_translate: bool, is_ai_pool: bool) -> dict[str, Any]:
         nonlocal translated_now_ai, translated_now_all
@@ -5065,6 +5121,7 @@ def add_bilingual_fields(
         out["title_en"] = None
         out["title_zh"] = None
         out["title_bilingual"] = title
+        translate_summary(out, allow_translate, is_ai_pool)
 
         if provided_en:
             zh_title = provided_zh if has_cjk(provided_zh) else (title if has_cjk(title) else "")
@@ -5967,6 +6024,7 @@ def story_item_link(item: dict[str, Any]) -> dict[str, Any]:
         "title_en": item.get("title_en"),
         "title_original": item.get("title_original"),
         "summary": item.get("summary"),
+        "summary_zh": item.get("summary_zh"),
         "recommend_reason_zh": item.get("recommend_reason_zh"),
         "url": item.get("url"),
         "source": item.get("source"),
@@ -6041,6 +6099,7 @@ def build_story_record(
             "title_en": primary.get("title_en"),
             "title_original": primary.get("title_original"),
             "summary": primary.get("summary"),
+            "summary_zh": primary.get("summary_zh"),
             "recommend_reason_zh": primary.get("recommend_reason_zh"),
             "url": url,
             "source": primary.get("source"),

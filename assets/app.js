@@ -540,7 +540,7 @@ function itemOriginalTitleText(item) {
 }
 
 function itemSummaryText(item, maxLength = 180) {
-  const text = String(item?.summary || "").replace(/\s+/g, " ").trim();
+  const text = String(item?.summary_zh || item?.summary || "").replace(/\s+/g, " ").trim();
   if (!text) return "";
   return text.length > maxLength ? `${text.slice(0, maxLength - 1).trim()}…` : text;
 }
