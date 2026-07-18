@@ -67,6 +67,11 @@ jobs:
           # optional and only needs setting to 0 to force it off.
           X_API_ENABLED: ${{ secrets.X_API_ENABLED || vars.X_API_ENABLED }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_API_QUERY: ${{ vars.X_API_QUERY }}
+          X_API_MAX_RESULTS: ${{ vars.X_API_MAX_RESULTS }}
+          X_API_DAILY_POST_LIMIT: ${{ vars.X_API_DAILY_POST_LIMIT }}
+          X_API_RUN_UTC_HOUR: ${{ vars.X_API_RUN_UTC_HOUR }}
+          X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX }}
           SOCIALDATA_ENABLED: ${{ secrets.SOCIALDATA_ENABLED || vars.SOCIALDATA_ENABLED }}
           SOCIALDATA_API_KEY: ${{ secrets.SOCIALDATA_API_KEY }}
           SOCIALDATA_QUERY: ${{ vars.SOCIALDATA_QUERY }}
