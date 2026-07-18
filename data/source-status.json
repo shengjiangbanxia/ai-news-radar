@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T15:20:21.740197Z",
+  "generated_at": "2026-07-18T16:13:56.900140Z",
   "source_mode": "opml_only",
   "sites": [
     {
@@ -18,7 +18,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 59,
-      "duration_ms": 1110,
+      "duration_ms": 1106,
       "error": null,
       "feed_count": 2,
       "effective_feed_count": 2,
@@ -33,8 +33,8 @@
   "zero_item_sites": [],
   "empty_advanced_sources": [],
   "fetched_raw_items": 59,
-  "items_before_topic_filter": 13,
-  "items_in_24h": 13,
+  "items_before_topic_filter": 7,
+  "items_in_24h": 7,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -54,7 +54,7 @@
         "effective_feed_url": "https://www.tomshardware.com/feeds/all",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 363,
+        "duration_ms": 324,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -69,7 +69,7 @@
         "effective_feed_url": "https://www.trendforce.com/news/",
         "ok": true,
         "item_count": 9,
-        "duration_ms": 747,
+        "duration_ms": 782,
         "error": null,
         "skipped": false,
         "skip_reason": null,
