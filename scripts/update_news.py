@@ -6229,6 +6229,11 @@ def main() -> int:
     )
     parser.add_argument("--rss-opml", default="", help="Optional OPML file path to include RSS sources")
     parser.add_argument("--rss-max-feeds", type=int, default=0, help="Optional max OPML RSS feeds to fetch (0 means all)")
+    parser.add_argument(
+        "--opml-only",
+        action="store_true",
+        help="Exclude built-in public sources and publish only personal OPML/secret-backed sources",
+    )
     args = parser.parse_args()
 
     now = utc_now()
@@ -6252,7 +6257,7 @@ def main() -> int:
     paid_source_state = load_paid_source_state(paid_source_state_path)
 
     session = create_session()
-    raw_items, statuses = collect_all(session, now)
+    raw_items, statuses = ([], []) if args.opml_only else collect_all(session, now)
     rss_feed_statuses: list[dict[str, Any]] = []
     email_digest_payload, agentmail_status = maybe_fetch_agentmail_digest(
         session,
@@ -6382,6 +6387,32 @@ def main() -> int:
                     "failed_feed_count": 0,
                 }
             )
+
+    if args.opml_only:
+        personal_site_ids = {
+            "opmlrss",
+            "xapi",
+            "socialdata_x",
+            "tikhub_douyin",
+            "tikhub_xiaohongshu",
+        }
+        raw_items = [item for item in raw_items if item.site_id in personal_site_ids]
+        statuses = [status for status in statuses if str(status.get("site_id") or "") in personal_site_ids]
+        active_opml_sources = {item.source for item in raw_items if item.site_id == "opmlrss"}
+        active_opml_sources.update(
+            str(feed.get("feed_title") or "").strip()
+            for feed in rss_feed_statuses
+            if str(feed.get("feed_title") or "").strip()
+        )
+        archive = {
+            item_id: record
+            for item_id, record in archive.items()
+            if str(record.get("site_id") or "") in personal_site_ids
+            and (
+                str(record.get("site_id") or "") != "opmlrss"
+                or str(record.get("source") or "") in active_opml_sources
+            )
+        }
 
     seen_this_run: set[str] = set()
 
@@ -6580,6 +6611,7 @@ def main() -> int:
 
     status_payload = {
         "generated_at": generated_at,
+        "source_mode": "opml_only" if args.opml_only else "curated_plus_personal",
         "sites": statuses,
         "successful_sites": sum(1 for s in statuses if s["ok"]),
         "failed_sites": [s["site_id"] for s in statuses if not s["ok"]],
