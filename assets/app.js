@@ -354,7 +354,6 @@ function activeAdjustmentCount() {
     Boolean(state.query.trim()),
     state.activeSection !== "all",
     Boolean(state.siteFilter || state.authorFilter),
-    state.mode !== "selected",
     state.mode === "all" && !state.allDedup,
   ].filter(Boolean).length;
 }
@@ -363,7 +362,7 @@ function renderClearFiltersButton() {
   if (!clearFiltersBtnEl) return;
   const count = activeAdjustmentCount();
   clearFiltersBtnEl.hidden = count === 0;
-  clearFiltersBtnEl.textContent = count ? `清除 ${fmtNumber(count)} 项调整` : "清除筛选";
+  clearFiltersBtnEl.textContent = count ? `清除 ${fmtNumber(count)} 项筛选` : "清除筛选";
 }
 
 // 数据同源指示：非空 dataBaseUrl 生效时提示当前数据源 + 提供一键恢复本地相对路径的入口。
