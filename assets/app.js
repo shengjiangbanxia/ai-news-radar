@@ -140,16 +140,10 @@ const SOURCE_KINDS = {
 const AIHOT_SUB_LABELS = { x: "X", wechat: "公众号", hn: "HN", rss: "RSS" };
 const AIHOT_SUB_TONES = { x: "builders", wechat: "creator", hn: "aggregate", rss: "newsletter" };
 
-// 单层内容 tab：全部（默认，无过滤）+ 5 个主题栏目 + 社区 + 自媒体，互斥单值。
+// 单层内容 tab：全部（默认，无过滤）+ 5 个产业主题栏目，互斥单值。
 const SECTION_DEFS = [
-  { id: "all", label: "全部", short: "全部", description: "不筛选内容栏目，查看全部信号" },
-  { id: "models", label: "模型", short: "模型", description: "模型发布、能力升级、评测与开源权重" },
-  { id: "products", label: "产品", short: "产品", description: "AI 应用、Agent、生成工具和用户产品更新" },
-  { id: "devtools", label: "开发者", short: "开发者", description: "编程工具、API、开源项目、推理与工程实践" },
-  { id: "industry", label: "行业", short: "行业", description: "公司战略、融资收购、监管、芯片与产业变化" },
-  { id: "research", label: "论文", short: "论文", description: "论文、基准、方法、数据集与研究团队动态" },
-  { id: "community", label: "社区", short: "社区", description: "HN、中文技术社区与社群动态" },
-  { id: "creator", label: "自媒体", short: "自媒体", description: "抖音、小红书等自媒体创作者内容" },
+  { id: "all", label: "全部", short: "全部", description: "不筛选行业方向，查看全部信号" },
+  ...AIIndustryTaxonomy.CATEGORY_DEFS,
 ];
 
 const SECTION_BY_ID = Object.fromEntries(SECTION_DEFS.map((section) => [section.id, section]));
@@ -839,17 +833,7 @@ function itemSourceGroup(item) {
 // 唯一分类入口：自媒体源 → 社区源 → 主题分类（AI_LABEL_SECTION_MAP/SECTION_FALLBACK_RULES）→ 兜底"全部"
 // 每条 item 只落一个 tag；无法归入任何具体栏目的条目只在"全部"里可见，不强行塞进"行业"。
 function itemSection(item) {
-  const group = itemSourceGroup(item);
-  if (group === "creator") return "creator";
-  if (group === "community") return "community";
-  const label = item.ai_label || "";
-  const mapped = AI_LABEL_SECTION_MAP[label];
-  if (mapped) return mapped;
-  const hay = itemHaystack(item);
-  for (const [sectionId, patterns] of SECTION_FALLBACK_RULES) {
-    if (matchesAny(hay, patterns)) return sectionId;
-  }
-  return "all";
+  return AIIndustryTaxonomy.classify(item);
 }
 
 function itemMatchesSection(item, sectionId = state.activeSection) {
@@ -1831,11 +1815,11 @@ function waytoagiViews(waytoagi) {
 }
 
 function renderWaytoagi(waytoagi) {
-  // 内容 tab 已收敛为单层：WaytoAGI 面板跟随「社区」tab 显示（合并了原来源形态 cn 分组）
+  // WaytoAGI 属于 AI 生态补充信息，跟随「AI与模型」栏目显示。
   if (waytoagiWrapEl) {
-    waytoagiWrapEl.hidden = state.activeSection !== "community";
+    waytoagiWrapEl.hidden = state.activeSection !== "ai_models";
   }
-  if (state.activeSection !== "community") return;
+  if (state.activeSection !== "ai_models") return;
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
@@ -2402,7 +2386,7 @@ async function init() {
     state.waytoagiData = waytoagiResult.value;
     renderWaytoagi(state.waytoagiData);
   } else {
-    if (waytoagiWrapEl) waytoagiWrapEl.hidden = state.activeSection !== "community";
+    if (waytoagiWrapEl) waytoagiWrapEl.hidden = state.activeSection !== "ai_models";
     waytoagiUpdatedAtEl.textContent = "加载失败";
     waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
   }
