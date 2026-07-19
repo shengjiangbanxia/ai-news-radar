@@ -22,6 +22,16 @@ def test_drone_mosquito_control_is_excluded_even_if_it_mentions_ai():
     assert result["reason"] == "excluded_topic"
 
 
+def test_real_english_autonomous_mosquito_drone_headline_is_excluded():
+    title = (
+        "Autonomous micro-drone achieves first air-to-air insect kill on the way "
+        "towards completely eradicating mosquitoes"
+    )
+    result = score_personal_interest({"title": title})
+    assert result["is_interesting"] is False
+    assert result["excluded_topics"] == ["mosquito_control"]
+
+
 def test_unrelated_general_news_is_excluded():
     result = score_personal_interest({"title": "Local tourism activity opens this weekend"})
     assert result["is_interesting"] is False

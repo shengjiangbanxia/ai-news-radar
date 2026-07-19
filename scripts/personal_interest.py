@@ -46,7 +46,10 @@ INTEREST_TERMS: dict[str, tuple[str, ...]] = {
 }
 
 EXCLUDED_TOPICS: dict[str, tuple[str, ...]] = {
-    "mosquito_control": ("无人机灭蚊", "灭蚊无人机", "灭蚊", "mosquito control", "mosquito-killing"),
+    "mosquito_control": (
+        "无人机灭蚊", "灭蚊无人机", "灭蚊", "mosquito", "mosquitoes",
+        "mosquito control", "mosquito-killing",
+    ),
 }
 
 _WORD_TERMS = {
