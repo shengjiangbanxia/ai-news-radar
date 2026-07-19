@@ -26,7 +26,7 @@ const state = {
   storiesMerged: null,
   storiesDataUrl: "data/stories-merged.json",
   activeSection: "hot",
-  boleView: "timeline",
+  boleView: "hot",
   boleExpanded: false,
   listSort: "latest",
   sourceTypeFilter: "",
@@ -242,7 +242,7 @@ function fmtDate(iso) {
 function setStats() {
   statsEl.innerHTML = "";
   const items = safeItems(state.itemsAi);
-  const curatedCount = briefStories().length || Math.min(20, mergedStories().filter((story) => storyScore(story) >= 75).length);
+  const hotCount = hotStories(mergedStories()).length;
   const status = state.sourceStatus;
   const totalSites = Array.isArray(status?.sites) ? status.sites.length : 0;
   const okSites = Number(status?.successful_sites || 0);
@@ -254,7 +254,7 @@ function setStats() {
   ];
   statsEl.setAttribute(
     "aria-label",
-    `过去 24 小时：AI、PC 与 Server 产业信号 ${fmtNumber(items.length)} 条，精选 ${fmtNumber(curatedCount)} 条，源状态 ${totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源正常` : "加载中"}`,
+    `过去 24 小时：AI、PC 与 Server 产业信号 ${fmtNumber(items.length)} 条，当前热点 ${fmtNumber(hotCount)} 条，源状态 ${totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源正常` : "加载中"}`,
   );
 
   const prefix = document.createElement("div");
@@ -1287,6 +1287,12 @@ function storyPrimaryEnText(story) {
 
 function storySourceCount(story) {
   const sources = Array.isArray(story && story.sources) ? story.sources : [];
+  const independentSources = new Set(sources.map((source) => {
+    const site = String(source?.site_id || "").trim().toLowerCase();
+    const publisher = String(source?.source || source?.source_name || "").trim().toLowerCase();
+    return `${site}:${publisher}`;
+  }).filter((key) => key !== ":"));
+  if (independentSources.size) return independentSources.size;
   const explicit = Number(story && story.duplicate_count);
   if (Number.isFinite(explicit) && explicit > 0) return explicit;
   return Math.max(1, sources.length);
@@ -1446,12 +1452,6 @@ function buildStoryCard(story, rank) {
   rankEl.className = "story-rank";
   rankEl.textContent = `#${rank}`;
   meta.appendChild(rankEl);
-  if (story.importance_label) {
-    const imp = document.createElement("span");
-    imp.className = `story-importance ${storyImportanceTone(story.importance_label)}`;
-    imp.textContent = story.importance_label;
-    meta.appendChild(imp);
-  }
   const sourceCount = storySourceCount(story);
   const countEl = document.createElement("span");
   countEl.className = "story-count";
@@ -1527,7 +1527,7 @@ function storyHotScore(story) {
 }
 
 function storySortScore(story) {
-  return state.boleView === "hot" ? storyHotScore(story) : storyScore(story);
+  return storyHotScore(story);
 }
 
 function hotStories(stories) {
@@ -1538,9 +1538,9 @@ function hotStories(stories) {
       if (byHotScore !== 0) return byHotScore;
       const byHotRaw = storyHotness(b) - storyHotness(a);
       if (byHotRaw !== 0) return byHotRaw;
-      const byEditorial = storyScore(b) - storyScore(a);
-      if (byEditorial !== 0) return byEditorial;
-      return storyTimeMs(b, "latest_at") - storyTimeMs(a, "latest_at");
+      const byLatest = storyTimeMs(b, "latest_at") - storyTimeMs(a, "latest_at");
+      if (byLatest !== 0) return byLatest;
+      return storyStableKey(a).localeCompare(storyStableKey(b));
     });
 }
 
@@ -1914,38 +1914,22 @@ function renderBolePicks() {
   const section = SECTION_BY_ID[state.activeSection] || SECTION_BY_ID.hot;
   const filtered = getFilteredItems();
   const storyPools = currentStoryPools(filtered);
-  const availableStoryPool = storyPools.brief.length
-    ? [...storyPools.brief, ...storyPools.followup]
-    : storyPools.merged;
+  const availableStoryPool = storyPools.merged;
   const usesStories = availableStoryPool.length > 0;
   const candidateCounts = storyCandidateCounts(availableStoryPool);
-  const hotAvailable = usesStories && candidateCounts.hot >= 2;
-  if (usesStories && !hotAvailable && state.boleView === "hot") {
-    state.boleView = "timeline";
-  }
-  const defaultLimit = state.boleView === "hot" ? BOLE_HOT_LIMIT : BOLE_TIMELINE_LIMIT;
-  const rows = usesStories
-    ? storyRowsForPool(availableStoryPool)
-    : rankedFallbackRows(filtered).slice(0, defaultLimit);
+  state.boleView = "hot";
+  const rows = usesStories ? storyRowsForPool(availableStoryPool) : [];
   const top = rows.slice(0, 3);
   const remainingCount = Math.max(0, rows.length - top.length);
-  if (topStoriesTitleEl) topStoriesTitleEl.textContent = state.activeSection === "hot" ? "最新产业信号" : `${section.label}最新信号`;
-  const storyMeta = usesStories
-    ? `展示池：热点 ${fmtNumber(candidateCounts.hot)}/${fmtNumber(candidateCounts.hotTotal)} · 时间线 ${fmtNumber(candidateCounts.timeline)}/${fmtNumber(candidateCounts.timelineTotal)}`
-    : `展示池：${fmtNumber(rows.length)} 条`;
+  if (topStoriesTitleEl) topStoriesTitleEl.textContent = state.activeSection === "hot" ? "当前热点" : `${section.label}当前热点`;
+  const storyMeta = `判断标准：至少 2 个独立来源报道 · 按来源数与发布时间衰减排序 · 当前 ${fmtNumber(candidateCounts.hotTotal)} 条`;
   bolePicksMetaEl.textContent = storyMeta;
-  if (boleViewToggleEl) {
-    boleViewToggleEl.hidden = usesStories ? !hotAvailable : true;
-    if (boleHotBtnEl) boleHotBtnEl.classList.toggle("active", state.boleView === "hot");
-    if (boleTimelineBtnEl) boleTimelineBtnEl.classList.toggle("active", state.boleView === "timeline");
-    if (boleHotBtnEl) boleHotBtnEl.textContent = `当前热点 ${fmtNumber(candidateCounts.hot)}`;
-    if (boleTimelineBtnEl) boleTimelineBtnEl.textContent = `时间线 ${fmtNumber(candidateCounts.timeline)}`;
-  }
+  if (boleViewToggleEl) boleViewToggleEl.hidden = true;
 
   if (!top.length) {
     const empty = document.createElement("div");
     empty.className = "bole-empty";
-    empty.textContent = "当前栏目和筛选条件下没有可展示的 Top 3。";
+    empty.textContent = "暂无当前热点：热点要求同一事件至少由 2 个独立来源报道。";
     bolePicksListEl.appendChild(empty);
   } else {
     top.forEach((row, index) => {
@@ -2048,15 +2032,16 @@ function rowSourceCount(row) {
   const item = row.item || {};
   const refs = itemSourceRefs(item, row);
   const storyCount = row.story ? storySourceCount(row.story) : 0;
-  return Math.max(1, refs.length, Number(row.sourceCount || 0), Number(row.mergedCount || 0), storyCount);
+  if (storyCount) return storyCount;
+  return Math.max(1, refs.length, Number(row.sourceCount || 0));
 }
 
 function signalSummaryText(row) {
   const item = row.item || {};
   const story = row.story || {};
-  const label = story.importance_label || labelText(item);
+  const label = labelText(item);
   const sourceCount = rowSourceCount(row);
-  const multi = row.sourceCount > 1 || row.mergedCount > 1;
+  const multi = sourceCount >= 2;
   if (multi && label) return `${label}信号，已被 ${fmtNumber(sourceCount)} 个来源验证，适合优先判断是否继续深挖。`;
   const reason = reasonText(item);
   if (reason && !reason.startsWith("来源与标题")) return reason.replace(/^命中方向：/, "核心方向：");

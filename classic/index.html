@@ -175,18 +175,14 @@
         </details>
       </section>
 
-      <section class="bole-picks-wrap" aria-label="今日 Top 3" id="bolePicksWrap">
+      <section class="bole-picks-wrap" aria-label="当前热点" id="bolePicksWrap">
         <div class="bole-picks-head">
           <div>
-            <p class="section-eyebrow">TODAY'S SIGNALS</p>
-            <h2 id="topStoriesTitle">最新产业信号</h2>
+            <p class="section-eyebrow">CURRENT HOT TOPICS</p>
+            <h2 id="topStoriesTitle">当前热点</h2>
           </div>
           <div class="bole-head-tools">
-            <div class="bole-view-toggle" id="boleViewToggle" hidden>
-              <button id="boleHotBtn" class="mode-btn" type="button">当前热点</button>
-              <button id="boleTimelineBtn" class="mode-btn" type="button">时间线</button>
-            </div>
-            <span id="bolePicksMeta">按多源验证与时间整理</span>
+            <span id="bolePicksMeta">判断标准：至少 2 个独立来源报道，按来源数与发布时间衰减排序</span>
           </div>
         </div>
         <div id="bolePicksList" class="bole-board"></div>
@@ -238,6 +234,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
     <script src="./classic/assets/motion.js?v=ui-adjustment-0620a" defer></script>
-    <script src="./classic/assets/app.js?v=server-label-0719c" defer></script>
+    <script src="./classic/assets/app.js?v=hot-topics-0719d" defer></script>
   </body>
 </html>
