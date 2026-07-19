@@ -961,7 +961,7 @@ function matchesAny(text, patterns) {
 }
 
 function itemSections(item) {
-  return new Set([AIIndustryTaxonomy.classify(item)]);
+  return new Set(AIIndustryTaxonomy.classifyAll(item));
 }
 
 function itemMatchesSection(item, sectionId) {
@@ -969,7 +969,7 @@ function itemMatchesSection(item, sectionId) {
 }
 
 function sectionBadgeLabel(sectionId) {
-  return SECTION_BY_ID[sectionId]?.short || "栏目";
+  return SECTION_BY_ID[sectionId]?.short || (sectionId === "unclassified" ? "待归类" : "栏目");
 }
 
 function reasonText(item) {

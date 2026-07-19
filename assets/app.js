@@ -837,11 +837,11 @@ function itemSection(item) {
 }
 
 function itemMatchesSection(item, sectionId = state.activeSection) {
-  return !sectionId || sectionId === "all" || itemSection(item) === sectionId;
+  return !sectionId || sectionId === "all" || AIIndustryTaxonomy.classifyAll(item).includes(sectionId);
 }
 
 function sectionBadgeLabel(sectionId) {
-  return SECTION_BY_ID[sectionId]?.short || "栏目";
+  return SECTION_BY_ID[sectionId]?.short || (sectionId === "unclassified" ? "待归类" : "栏目");
 }
 
 // ---- 故事级辅助：按 primary_item（无则第一个 source）判定 ----

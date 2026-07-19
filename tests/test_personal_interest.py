@@ -53,3 +53,11 @@ def test_domain_taxonomy_covers_topics_beyond_the_example_terms(title, category)
     result = score_personal_interest({"title": title})
     assert result["is_interesting"] is True
     assert category in result["categories"]
+
+
+def test_keyword_substrings_do_not_create_false_server_matches():
+    result = score_personal_interest({
+        "title": "Security engineer ports password cracker hashcat to Gameboy Advance"
+    })
+    assert result["is_interesting"] is False
+    assert "rack" not in result["signals"]

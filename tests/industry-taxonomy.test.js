@@ -24,3 +24,15 @@ for (const [title, expected] of cases) {
 }
 
 console.log(`industry taxonomy: ${cases.length} cases passed`);
+
+assert.deepEqual(
+  taxonomy.classifyAll({ title: "Kimi cuts AI networking switch bandwidth with new attention architecture" }),
+  ["server_datacenter", "ai_models"]
+);
+assert.equal(
+  taxonomy.classify({ title: "Nvidia CEO leather jacket raises $1 million at charity auction" }),
+  "unclassified"
+);
+assert.equal(taxonomy.classify({ title: "A pleasant weekend update" }), "unclassified");
+
+console.log("industry taxonomy: core and ambiguity cases passed");

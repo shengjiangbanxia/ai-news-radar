@@ -56,7 +56,7 @@ CONTEXT_ONLY_TERMS = {"agent", "inference", "training", "reasoning", "robotics",
 
 
 def _term_matches(text: str, term: str) -> bool:
-    if term in _WORD_TERMS:
+    if term.isascii():
         return re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", text, re.I) is not None
     return term.lower() in text
 

@@ -19,7 +19,7 @@
     pc_client: [
       [6, /\b(?:notebook|laptop|desktop|workstation|ai pc|copilot\+ pc|personal computer)\b|笔记本|台式机|工作站|个人电脑/i],
       [5, /\b(?:ryzen|core ultra|snapdragon x|macbook|chromebook|client gpu)\b/i],
-      [4, /\b(?:cpu|npu|ssd|motherboard|webcam|headset|keyboard|touchpad|thunderbolt|usb-c|gameboy|handheld)\b|处理器|固态硬盘|掌机|主板|摄像头|耳机|键盘|触控板/i],
+      [4, /\b(?:cpu|npu|ssd|motherboard|webcam|headset|keyboard|touchpad|thunderbolt|usb-c)\b|处理器|固态硬盘|主板|摄像头|耳机|键盘|触控板/i],
       [3, /\b(?:rtx\s?\d{3,4}|radeon|geforce|ssd review|display|audio|monitor)\b|显卡|显示器|音频|评测/i],
     ],
     server_datacenter: [
@@ -46,6 +46,17 @@
   };
 
   const TIE_ORDER = ["silicon_supply", "server_datacenter", "pc_client", "ai_models", "company_market"];
+  const DOMAIN_ORDER = ["silicon_supply", "server_datacenter", "pc_client", "ai_models"];
+  const MIN_SCORES = {
+    ai_models: 4,
+    pc_client: 3,
+    server_datacenter: 4,
+    silicon_supply: 4,
+    company_market: 7,
+  };
+  const NON_INDUSTRY_PATTERNS = [
+    /\b(?:charity auction|celebrity|fashion|trademark leather jacket|red carpet)\b|慈善拍卖|明星|时尚|红毯/i,
+  ];
 
   function textFor(item) {
     return [
@@ -58,10 +69,14 @@
     ].filter(Boolean).join(" ").toLowerCase();
   }
 
-  function classify(item) {
+  function analyze(item) {
     if (item?.industry_category && CATEGORY_DEFS.some((category) => category.id === item.industry_category)) {
-      return item.industry_category;
+      const related = Array.isArray(item.industry_categories)
+        ? item.industry_categories.filter((category) => CATEGORY_DEFS.some((definition) => definition.id === category))
+        : [item.industry_category];
+      return { primary: item.industry_category, related: Array.from(new Set(related)), scores: {}, confidence: "explicit" };
     }
+
     const text = textFor(item);
     const scores = Object.fromEntries(CATEGORY_DEFS.map((category) => [category.id, 0]));
     Object.entries(RULES).forEach(([category, rules]) => {
@@ -69,12 +84,34 @@
         if (pattern.test(text)) scores[category] += weight;
       });
     });
-    const bestScore = Math.max(...Object.values(scores));
-    if (bestScore <= 0) return "company_market";
-    return TIE_ORDER.find((category) => scores[category] === bestScore) || "company_market";
+
+    const eligibleDomains = DOMAIN_ORDER.filter((category) => scores[category] >= MIN_SCORES[category]);
+    const companyEligible = scores.company_market >= MIN_SCORES.company_market;
+    const nonIndustry = NON_INDUSTRY_PATTERNS.some((pattern) => pattern.test(text));
+    const pool = eligibleDomains.length ? eligibleDomains : (companyEligible && !nonIndustry ? ["company_market"] : []);
+    if (!pool.length) return { primary: "unclassified", related: [], scores, confidence: "low" };
+
+    const bestScore = Math.max(...pool.map((category) => scores[category]));
+    const primary = TIE_ORDER.find((category) => pool.includes(category) && scores[category] === bestScore) || pool[0];
+    const related = [...eligibleDomains];
+    if (companyEligible && !nonIndustry) related.push("company_market");
+    return {
+      primary,
+      related: Array.from(new Set([primary, ...related])),
+      scores,
+      confidence: bestScore >= 8 ? "high" : "medium",
+    };
   }
 
-  const api = { CATEGORY_DEFS, RULES, classify, textFor };
+  function classify(item) {
+    return analyze(item).primary;
+  }
+
+  function classifyAll(item) {
+    return analyze(item).related;
+  }
+
+  const api = { CATEGORY_DEFS, RULES, MIN_SCORES, analyze, classify, classifyAll, textFor };
   root.AIIndustryTaxonomy = api;
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis);
