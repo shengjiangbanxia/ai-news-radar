@@ -2737,6 +2737,42 @@ summary:focus-visible {
 }
 
 /* Motion layer */
+.industry-events-wrap {
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(217, 72, 37, 0.07), var(--surface));
+}
+.industry-events-head, .industry-event-card, .industry-event-row { display: flex; justify-content: space-between; gap: 14px; }
+.industry-events-head { align-items: flex-end; margin-bottom: 12px; }
+.industry-events-head h2 { margin: 2px 0 0; }
+.industry-events-head > span { color: var(--muted); font-size: 12px; }
+.industry-event-card { align-items: center; padding: 14px; border: 1px solid rgba(217, 72, 37, 0.25); border-radius: var(--radius); background: var(--surface); }
+.industry-event-countdown { min-width: 72px; color: var(--accent); text-align: center; }
+.industry-event-countdown strong { display: block; font-size: 24px; }
+.industry-event-countdown span { font-size: 12px; }
+.industry-event-body { min-width: 0; flex: 1; }
+.industry-event-body h3 { margin: 0 0 5px; font-size: 17px; }
+.industry-event-body p { margin: 3px 0; color: var(--muted); font-size: 13px; }
+.industry-event-link { color: var(--accent); font-size: 13px; white-space: nowrap; }
+.industry-events-calendar { margin-top: 10px; }
+.industry-events-calendar > summary { color: var(--muted); cursor: pointer; font-size: 13px; }
+.industry-event-row { align-items: center; padding: 10px 2px; border-bottom: 1px solid var(--line); }
+.industry-event-row:last-child { border-bottom: 0; }
+.industry-event-row-main { min-width: 0; flex: 1; }
+.industry-event-row-main strong { display: block; }
+.industry-event-row-main span { color: var(--muted); font-size: 12px; }
+.industry-event-row-days { color: var(--accent); font-weight: 700; white-space: nowrap; }
+@media (max-width: 640px) {
+  .industry-events-wrap { padding: 14px; }
+  .industry-events-head, .industry-event-card { align-items: flex-start; }
+  .industry-event-card { flex-wrap: wrap; }
+  .industry-event-countdown { min-width: 58px; text-align: left; }
+  .industry-event-link { margin-left: 72px; }
+}
+
+/* Motion layer */
 .story-row,
 .bole-row,
 .news-card,

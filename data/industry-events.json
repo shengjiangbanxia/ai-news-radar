@@ -1,0 +1,616 @@
+{
+  "generated_at": "2026-07-19T10:40:28+08:00",
+  "as_of": "2026-07-19",
+  "timezone": "Asia/Shanghai",
+  "lookahead_days": 180,
+  "milestones": [
+    90,
+    30,
+    14,
+    7,
+    1,
+    0
+  ],
+  "event_count": 18,
+  "confirmed_upcoming_count": 9,
+  "alerts": [
+    {
+      "id": "amd-advancing-ai",
+      "name": "AMD Advancing AI",
+      "category": "厂商大会",
+      "aliases": [
+        "Advancing AI"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "GPU"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-07-22",
+      "end_date": "2026-07-23",
+      "location": "San Francisco, USA",
+      "format": "hybrid",
+      "source_url": "https://www.amd.com/en/corporate/events.html",
+      "source_title": "AMD Events and Conferences",
+      "note": "官方活动页列出 7 月 22–23 日；7 月 23 日为旗舰发布与直播主日程。",
+      "days_remaining": 3,
+      "reminder_band": "seven_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "hot-chips",
+      "name": "Hot Chips",
+      "category": "行业峰会",
+      "aliases": [
+        "Hot Chips Symposium"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "芯片"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-25",
+      "location": "Stanford, Palo Alto, USA",
+      "format": "hybrid",
+      "source_url": "https://www.hotchips.org/",
+      "source_title": "Hot Chips 2026",
+      "days_remaining": 35,
+      "reminder_band": "ninety_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "snapdragon-summit",
+      "name": "Snapdragon Summit",
+      "category": "厂商大会",
+      "aliases": [
+        "Qualcomm Snapdragon Summit"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "终端",
+        "芯片"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-09-22",
+      "end_date": "2026-09-24",
+      "location": "Maui, Hawaii, USA",
+      "format": "in-person",
+      "source_url": "https://www.qualcomm.com/snapdragon/news/the-new-snapdragon-insiders-access-program-is-here--now-availabl",
+      "source_title": "Snapdragon Insiders Access Program 2026",
+      "days_remaining": 65,
+      "reminder_band": "ninety_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "ocp-global-summit",
+      "name": "OCP Global Summit",
+      "category": "行业峰会",
+      "aliases": [
+        "Open Compute Project Global Summit"
+      ],
+      "scope": [
+        "AI",
+        "服务器",
+        "数据中心"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-15",
+      "location": "San Jose, USA",
+      "format": "in-person",
+      "source_url": "https://www.opencompute.org/summit/global-summit",
+      "source_title": "2026 OCP Global Summit",
+      "days_remaining": 85,
+      "reminder_band": "ninety_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    }
+  ],
+  "changes": [],
+  "events": [
+    {
+      "id": "amd-advancing-ai",
+      "name": "AMD Advancing AI",
+      "category": "厂商大会",
+      "aliases": [
+        "Advancing AI"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "GPU"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-07-22",
+      "end_date": "2026-07-23",
+      "location": "San Francisco, USA",
+      "format": "hybrid",
+      "source_url": "https://www.amd.com/en/corporate/events.html",
+      "source_title": "AMD Events and Conferences",
+      "note": "官方活动页列出 7 月 22–23 日；7 月 23 日为旗舰发布与直播主日程。",
+      "days_remaining": 3,
+      "reminder_band": "seven_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "hot-chips",
+      "name": "Hot Chips",
+      "category": "行业峰会",
+      "aliases": [
+        "Hot Chips Symposium"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "芯片"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-25",
+      "location": "Stanford, Palo Alto, USA",
+      "format": "hybrid",
+      "source_url": "https://www.hotchips.org/",
+      "source_title": "Hot Chips 2026",
+      "days_remaining": 35,
+      "reminder_band": "ninety_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "snapdragon-summit",
+      "name": "Snapdragon Summit",
+      "category": "厂商大会",
+      "aliases": [
+        "Qualcomm Snapdragon Summit"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "终端",
+        "芯片"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-09-22",
+      "end_date": "2026-09-24",
+      "location": "Maui, Hawaii, USA",
+      "format": "in-person",
+      "source_url": "https://www.qualcomm.com/snapdragon/news/the-new-snapdragon-insiders-access-program-is-here--now-availabl",
+      "source_title": "Snapdragon Insiders Access Program 2026",
+      "days_remaining": 65,
+      "reminder_band": "ninety_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "ocp-global-summit",
+      "name": "OCP Global Summit",
+      "category": "行业峰会",
+      "aliases": [
+        "Open Compute Project Global Summit"
+      ],
+      "scope": [
+        "AI",
+        "服务器",
+        "数据中心"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-15",
+      "location": "San Jose, USA",
+      "format": "in-person",
+      "source_url": "https://www.opencompute.org/summit/global-summit",
+      "source_title": "2026 OCP Global Summit",
+      "days_remaining": 85,
+      "reminder_band": "ninety_days",
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "microsoft-ignite",
+      "name": "Microsoft Ignite",
+      "category": "厂商大会",
+      "aliases": [
+        "MS Ignite"
+      ],
+      "scope": [
+        "AI",
+        "服务器",
+        "云",
+        "软件"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "confirmed",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-20",
+      "location": "San Francisco, USA",
+      "format": "hybrid",
+      "source_url": "https://ignite.microsoft.com/",
+      "source_title": "Microsoft Ignite 2026",
+      "days_remaining": 121,
+      "reminder_band": null,
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "ces",
+      "name": "CES",
+      "category": "行业峰会",
+      "aliases": [
+        "Consumer Electronics Show"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "终端"
+      ],
+      "priority": "core",
+      "cycle": 2027,
+      "status": "confirmed",
+      "start_date": "2027-01-06",
+      "end_date": "2027-01-09",
+      "location": "Las Vegas, USA",
+      "format": "in-person",
+      "source_url": "https://www.ces.tech/about-ces/about-ces/",
+      "source_title": "CES Future Show Dates",
+      "days_remaining": 171,
+      "reminder_band": null,
+      "within_lookahead": true,
+      "has_material_change": false
+    },
+    {
+      "id": "mwc",
+      "name": "MWC Barcelona",
+      "category": "行业峰会",
+      "aliases": [
+        "Mobile World Congress",
+        "MWC Barcelona"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "连接",
+        "终端"
+      ],
+      "priority": "core",
+      "cycle": 2027,
+      "status": "confirmed",
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-04",
+      "location": "Barcelona, Spain",
+      "format": "in-person",
+      "source_url": "https://www.mwcbarcelona.com/about/",
+      "source_title": "MWC Barcelona 2027 event details",
+      "days_remaining": 225,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "nvidia-gtc",
+      "name": "NVIDIA GTC",
+      "category": "厂商大会",
+      "aliases": [
+        "GTC",
+        "GPU Technology Conference"
+      ],
+      "scope": [
+        "AI",
+        "服务器",
+        "GPU"
+      ],
+      "priority": "core",
+      "cycle": 2027,
+      "status": "confirmed",
+      "start_date": "2027-03-14",
+      "end_date": "2027-03-18",
+      "location": "San Jose, USA",
+      "format": "hybrid",
+      "source_url": "https://www.nvidia.com/gtc/faq/",
+      "source_title": "GTC 2027 Conference FAQs",
+      "days_remaining": 238,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "computex",
+      "name": "Computex",
+      "category": "行业峰会",
+      "aliases": [
+        "COMPUTEX Taipei"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "供应链"
+      ],
+      "priority": "core",
+      "cycle": 2027,
+      "status": "confirmed",
+      "start_date": "2027-06-01",
+      "end_date": "2027-06-04",
+      "location": "Taipei, Taiwan",
+      "format": "in-person",
+      "source_url": "https://www.computextaipei.com.tw/en/news/A9462967BB2D7702/info.html",
+      "source_title": "COMPUTEX 2026 concludes and confirms 2027 dates",
+      "days_remaining": 317,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "amd-financial-analyst-day",
+      "name": "AMD Financial Analyst Day",
+      "category": "厂商大会",
+      "aliases": [
+        "AMD FAD",
+        "Financial Analyst Day"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "战略"
+      ],
+      "priority": "extended",
+      "cycle": 2026,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://ir.amd.com/news-events/financial-analyst-day",
+      "source_title": "AMD Financial Analyst Day",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "apple-wwdc",
+      "name": "Apple WWDC",
+      "category": "厂商大会",
+      "aliases": [
+        "WWDC",
+        "Worldwide Developers Conference"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "终端",
+        "软件"
+      ],
+      "priority": "core",
+      "cycle": 2027,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://developer.apple.com/wwdc/",
+      "source_title": "Apple Developer WWDC",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "arm-devsummit",
+      "name": "Arm DevSummit",
+      "category": "厂商大会",
+      "aliases": [
+        "Arm Dev Summit",
+        "Arm Developer Summit"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "芯片"
+      ],
+      "priority": "extended",
+      "cycle": 2026,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://developer.arm.com/developer",
+      "source_title": "Arm Developer",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "google-io",
+      "name": "Google I/O",
+      "category": "厂商大会",
+      "aliases": [
+        "Google IO"
+      ],
+      "scope": [
+        "AI",
+        "软件",
+        "终端"
+      ],
+      "priority": "extended",
+      "cycle": 2027,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://io.google/",
+      "source_title": "Google I/O",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "intel-innovation",
+      "name": "Intel Innovation",
+      "category": "厂商大会",
+      "aliases": [
+        "Intel Innovation Event"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "服务器",
+        "芯片"
+      ],
+      "priority": "core",
+      "cycle": 2026,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://www.intel.com/content/www/us/en/events/overview.html",
+      "source_title": "Intel Events",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "intel-symposium",
+      "name": "Intel Symposium",
+      "category": "厂商大会",
+      "aliases": [
+        "Intel Technology Symposium",
+        "Intel Client Ecosystem Symposium"
+      ],
+      "scope": [
+        "PC",
+        "芯片",
+        "硬件生态"
+      ],
+      "priority": "extended",
+      "cycle": 2026,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": "invitation-only",
+      "source_url": "https://www.intel.com/content/www/us/en/support/articles/000096384/programs.html",
+      "source_title": "Intel Client Ecosystem Symposium access",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "microsoft-build",
+      "name": "Microsoft Build",
+      "category": "厂商大会",
+      "aliases": [
+        "Build",
+        "MS Build"
+      ],
+      "scope": [
+        "AI",
+        "软件",
+        "云"
+      ],
+      "priority": "extended",
+      "cycle": 2027,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://build.microsoft.com/",
+      "source_title": "Microsoft Build",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "waic",
+      "name": "WAIC（世界人工智能大会）",
+      "category": "行业峰会",
+      "aliases": [
+        "World Artificial Intelligence Conference",
+        "世界人工智能大会",
+        "WAIC"
+      ],
+      "scope": [
+        "AI",
+        "产业"
+      ],
+      "priority": "extended",
+      "cycle": 2026,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": "Shanghai, China",
+      "format": null,
+      "source_url": "https://www.worldaic.com.cn/",
+      "source_title": "世界人工智能大会",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    },
+    {
+      "id": "winhec",
+      "name": "WinHEC",
+      "category": "行业峰会",
+      "aliases": [
+        "Windows Hardware Engineering Community"
+      ],
+      "scope": [
+        "PC",
+        "Windows",
+        "硬件生态"
+      ],
+      "priority": "extended",
+      "cycle": 2027,
+      "status": "unannounced",
+      "start_date": null,
+      "end_date": null,
+      "location": null,
+      "format": null,
+      "source_url": "https://learn.microsoft.com/windows-hardware/",
+      "source_title": "Windows Hardware Developer",
+      "days_remaining": null,
+      "reminder_band": null,
+      "within_lookahead": false,
+      "has_material_change": false
+    }
+  ]
+}

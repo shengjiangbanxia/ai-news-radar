@@ -23,6 +23,7 @@ const state = {
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
+  industryEvents: null,
   generatedAt: null,
   dailyBrief: null,
   top3Personas: null,
@@ -95,6 +96,10 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const sourceHealthEl = document.getElementById("sourceHealth");
 const sourceHealthDetailsEl = document.getElementById("sourceHealthDetails");
 const sourceStatusTableEl = document.getElementById("sourceStatusTable");
+const industryEventsWrapEl = document.getElementById("industryEventsWrap");
+const industryEventsMetaEl = document.getElementById("industryEventsMeta");
+const industryEventAlertEl = document.getElementById("industryEventAlert");
+const industryEventsListEl = document.getElementById("industryEventsList");
 const clearFiltersBtnEl = document.getElementById("clearFiltersBtn");
 const dataSourceIndicatorEl = document.getElementById("dataSourceIndicator");
 const dataSourceIndicatorTextEl = document.getElementById("dataSourceIndicatorText");
@@ -2137,6 +2142,98 @@ async function loadNewsData() {
   return res.json();
 }
 
+function industryEventDateLabel(event) {
+  if (!event?.start_date) return "日期待官方公布";
+  const format = (value) => new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric", month: "short", day: "numeric", timeZone: "UTC",
+  }).format(new Date(`${value}T00:00:00Z`));
+  const start = format(event.start_date);
+  return event.end_date && event.end_date !== event.start_date ? `${start} – ${format(event.end_date)}` : start;
+}
+
+function industryEventCountdown(event) {
+  const days = Number(event?.days_remaining);
+  if (!Number.isFinite(days)) return { value: "待定", label: "等待官宣" };
+  if (days === 0) return { value: "今天", label: "正式开幕" };
+  return { value: String(days), label: "天后" };
+}
+
+function renderIndustryEvents(payload) {
+  if (!industryEventsWrapEl || !industryEventAlertEl || !industryEventsListEl) return;
+  const events = Array.isArray(payload?.events) ? payload.events : [];
+  const upcoming = events.filter((event) => event.status === "confirmed" && Number.isFinite(Number(event.days_remaining)) && Number(event.days_remaining) >= 0);
+  if (!upcoming.length) {
+    industryEventsWrapEl.hidden = true;
+    return;
+  }
+  industryEventsWrapEl.hidden = false;
+  const lead = (Array.isArray(payload.alerts) && payload.alerts.length ? payload.alerts : upcoming)[0];
+  const countdown = industryEventCountdown(lead);
+  industryEventsMetaEl.textContent = `未来 ${payload.lookahead_days || 180} 天 · ${upcoming.filter((event) => event.within_lookahead).length} 场已确认`;
+
+  industryEventAlertEl.innerHTML = "";
+  const card = document.createElement("article");
+  card.className = "industry-event-card";
+  const count = document.createElement("div");
+  count.className = "industry-event-countdown";
+  const countValue = document.createElement("strong");
+  countValue.textContent = countdown.value;
+  const countLabel = document.createElement("span");
+  countLabel.textContent = countdown.label;
+  count.append(countValue, countLabel);
+  const body = document.createElement("div");
+  body.className = "industry-event-body";
+  const title = document.createElement("h3");
+  title.textContent = lead.name;
+  const date = document.createElement("p");
+  date.textContent = `${industryEventDateLabel(lead)} · ${lead.location || "地点待定"}`;
+  const scope = document.createElement("p");
+  scope.textContent = Array.isArray(lead.scope) ? lead.scope.join(" · ") : lead.category || "";
+  body.append(title, date, scope);
+  if (lead.note) {
+    const note = document.createElement("p");
+    note.textContent = lead.note;
+    body.appendChild(note);
+  }
+  const link = document.createElement("a");
+  link.className = "industry-event-link";
+  link.href = lead.source_url || "#";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = "官方信息 →";
+  card.append(count, body, link);
+  industryEventAlertEl.appendChild(card);
+
+  industryEventsListEl.innerHTML = "";
+  events.filter((event) => event.status !== "completed" && (event.priority === "core" || event.status === "confirmed")).forEach((event) => {
+    const row = document.createElement("div");
+    row.className = "industry-event-row";
+    const main = document.createElement("div");
+    main.className = "industry-event-row-main";
+    const name = document.createElement("strong");
+    name.textContent = event.name;
+    const detail = document.createElement("span");
+    detail.textContent = `${industryEventDateLabel(event)} · ${event.location || "地点待定"}`;
+    main.append(name, detail);
+    const days = document.createElement(event.source_url ? "a" : "span");
+    days.className = "industry-event-row-days";
+    days.textContent = event.status === "unannounced" ? "未公布" : industryEventCountdown(event).value + (Number(event.days_remaining) === 0 ? "" : " 天");
+    if (event.source_url) {
+      days.href = event.source_url;
+      days.target = "_blank";
+      days.rel = "noopener noreferrer";
+    }
+    row.append(main, days);
+    industryEventsListEl.appendChild(row);
+  });
+}
+
+async function loadIndustryEventsData() {
+  const res = await fetch(`${dataUrl("data/industry-events.json")}?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`加载 industry-events.json 失败: ${res.status}`);
+  return res.json();
+}
+
 async function loadAllModeData() {
   if (state.allDataLoaded) return;
   if (!state.allDataPromise) {
@@ -2191,14 +2288,20 @@ async function loadStoriesData() {
 }
 
 async function init() {
-  const [newsResult, waytoagiResult, statusResult, briefResult, storiesResult, personasResult] = await Promise.allSettled([
+  const [newsResult, waytoagiResult, statusResult, briefResult, storiesResult, personasResult, eventsResult] = await Promise.allSettled([
     loadNewsData(),
     loadWaytoagiData(),
     loadSourceStatusData(),
     loadDailyBriefData(),
     loadStoriesData(),
     loadTop3PersonasData(),
+    loadIndustryEventsData(),
   ]);
+
+  if (eventsResult.status === "fulfilled") {
+    state.industryEvents = eventsResult.value;
+    renderIndustryEvents(state.industryEvents);
+  }
 
   if (briefResult.status === "fulfilled") {
     state.dailyBrief = briefResult.value;
