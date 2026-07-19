@@ -254,7 +254,7 @@ function setStats() {
   ];
   statsEl.setAttribute(
     "aria-label",
-    `过去 24 小时：AI、PC 与服务器产业信号 ${fmtNumber(items.length)} 条，精选 ${fmtNumber(curatedCount)} 条，源状态 ${totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源正常` : "加载中"}`,
+    `过去 24 小时：AI、PC 与 Server 产业信号 ${fmtNumber(items.length)} 条，精选 ${fmtNumber(curatedCount)} 条，源状态 ${totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源正常` : "加载中"}`,
   );
 
   const prefix = document.createElement("div");
@@ -447,7 +447,7 @@ function renderCoverageStrip(errorMessage = "") {
   const cards = [
     ["源健康", totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}` : "加载中", failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : (errorMessage || "内置源正常"), failedSites.length ? "warn" : "ok"],
     ["今日覆盖池", `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
-    ["Industry 相关", `${fmtNumber(safeItems(state.itemsAi).length)} 条`, "AI、PC 与服务器产业信号", "signal"],
+    ["Industry 相关", `${fmtNumber(safeItems(state.itemsAi).length)} 条`, "AI、PC 与 Server 产业信号", "signal"],
     ["官方/日报源池", `${fmtNumber(officialCount + newsletterCount)} 条`, "官方节点 + AI Breakfast", "official"],
     ["精选媒体源池", `${fmtNumber(curatedMediaCount)} 条`, "The Decoder / TC / Verge / MTP 等", "signal"],
     ["Builders/X源池", `${fmtNumber(buildersCount)} 条`, "Follow Builders公开feed", "builders"],
@@ -898,7 +898,7 @@ function personalIndustryCategories(item) {
   const labels = {
     ai: "AI",
     pc: "PC",
-    server_industry: "服务器",
+    server_industry: "Server",
   };
   return (Array.isArray(item?.personal_interest_categories) ? item.personal_interest_categories : [])
     .map((category) => labels[category] || category)
@@ -2200,7 +2200,7 @@ function feedSummaryText(item) {
   if (signals.length) return `相关线索：${signals.join(" / ")}。`;
   const reason = reasonText(item);
   if (reason && !reason.startsWith("来源与标题")) return reason.replace(/^命中方向：/, "相关线索：");
-  return `${labelText(item)} · 属于 AI、PC 或服务器产业关注范围。`;
+  return `${labelText(item)} · 属于 AI、PC 或 Server 产业关注范围。`;
 }
 
 function renderItemNode(item, context = {}) {

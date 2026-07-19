@@ -673,7 +673,7 @@ function personalIndustryCategories(item) {
   const labels = {
     ai: "AI",
     pc: "PC",
-    server_industry: "服务器",
+    server_industry: "Server",
   };
   return (Array.isArray(item?.personal_interest_categories) ? item.personal_interest_categories : [])
     .map((category) => labels[category] || category)
