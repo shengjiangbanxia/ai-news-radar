@@ -239,13 +239,28 @@ function fmtDate(iso) {
   }).format(d);
 }
 
+function sourceHealthCounts(status) {
+  const sites = Array.isArray(status?.sites) ? status.sites : [];
+  return sites.reduce((counts, site) => {
+    if (site?.site_id === "opmlrss") {
+      const totalFeeds = Number(site.effective_feed_count ?? site.feed_count ?? 0);
+      const okFeeds = Number(site.ok_feed_count ?? (site.ok ? totalFeeds : 0));
+      counts.total += Math.max(0, totalFeeds);
+      counts.ok += Math.max(0, Math.min(totalFeeds, okFeeds));
+    } else {
+      counts.total += 1;
+      if (site?.ok) counts.ok += 1;
+    }
+    return counts;
+  }, { ok: 0, total: 0 });
+}
+
 function setStats() {
   statsEl.innerHTML = "";
   const items = safeItems(state.itemsAi);
   const hotCount = hotStories(mergedStories()).length;
   const status = state.sourceStatus;
-  const totalSites = Array.isArray(status?.sites) ? status.sites.length : 0;
-  const okSites = Number(status?.successful_sites || 0);
+  const { ok: okSites, total: totalSites } = sourceHealthCounts(status);
   const health = totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}正常` : "加载中";
   const cards = [
     ["产业相关", `${fmtNumber(items.length)}条`],
@@ -288,8 +303,7 @@ function renderSourceStatusPill(errorMessage = "") {
     if (errorMessage) sourceStatusPillEl.classList.add("bad");
     return;
   }
-  const totalSites = Array.isArray(status.sites) ? status.sites.length : 0;
-  const okSites = Number(status.successful_sites || 0);
+  const { ok: okSites, total: totalSites } = sourceHealthCounts(status);
   const failed = failedSourceCount(status);
   sourceStatusPillEl.textContent = failed
     ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源正常 · 失败 ${fmtNumber(failed)}`
