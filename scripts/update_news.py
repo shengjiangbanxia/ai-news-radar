@@ -2490,6 +2490,12 @@ def resolve_opml_bridge_source(feed_url: str, html_url: str = "") -> dict[str, s
             "url": "https://www.trendforce.com/news/",
         }
 
+    if parsed.netloc in {"theinformation.com", "www.theinformation.com"} and path == "articles":
+        return {
+            "bridge_type": "theinformation_articles",
+            "url": "https://www.theinformation.com/articles",
+        }
+
     if parsed.netloc == "rsshub.app" and len(parts) >= 3 and parts[:2] == ["telegram", "channel"]:
         slug = parts[2]
         return {
@@ -2600,6 +2606,88 @@ def parse_trendforce_news_items(
                 meta={
                     "bridge_type": "trendforce_news",
                     "feed_home": "https://www.trendforce.com/news/",
+                    "summary": summary,
+                },
+            )
+        )
+    return out
+
+
+_THEINFORMATION_TIME_RE = re.compile(
+    r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+20\d{2}\s+"
+    r"\d{1,2}:\d{2}(?:am|pm)\s+(?:PDT|PST)\b",
+    re.I,
+)
+
+
+def parse_theinformation_articles_items(
+    content: str,
+    *,
+    now: datetime,
+    source_name: str,
+    markdown: bool = False,
+) -> list[RawItem]:
+    candidates: list[tuple[str, str, str, str]] = []
+    if markdown:
+        heading_re = re.compile(
+            r"^[ \t]*#{2,4}\s+\[([^\]]+)\]\((https://www\.theinformation\.com/[^)]+)\)[ \t]*$",
+            re.MULTILINE,
+        )
+        matches = list(heading_re.finditer(content))
+        for index, match in enumerate(matches):
+            title, url = match.group(1).strip(), match.group(2).strip()
+            if url.rstrip("/") == "https://www.theinformation.com/articles":
+                continue
+            end = matches[index + 1].start() if index + 1 < len(matches) else len(content)
+            block = content[match.end():end]
+            time_match = _THEINFORMATION_TIME_RE.search(block)
+            if not time_match:
+                continue
+            linked_texts = [
+                re.sub(r"\s+", " ", text).strip()
+                for text, linked_url in re.findall(r"\[([^\]]+)\]\((https://www\.theinformation\.com/[^)]+)\)", block)
+                if linked_url.rstrip("/") == url.rstrip("/")
+            ]
+            summary = max((text for text in linked_texts if text and text != title), key=len, default="")
+            candidates.append((title, url, time_match.group(0), summary))
+    else:
+        soup = BeautifulSoup(content, "html.parser")
+        for heading in soup.select("h2, h3, h4"):
+            anchor = heading.find("a", href=True)
+            if anchor is None:
+                continue
+            url = urljoin("https://www.theinformation.com", str(anchor.get("href") or ""))
+            if host_of_url(url) not in {"theinformation.com", "www.theinformation.com"}:
+                continue
+            title = re.sub(r"\s+", " ", anchor.get_text(" ", strip=True)).strip()
+            container = heading.find_parent(["article", "li"]) or heading.parent
+            block_text = container.get_text(" ", strip=True) if container else ""
+            time_match = _THEINFORMATION_TIME_RE.search(block_text)
+            if not title or not time_match:
+                continue
+            summaries = [p.get_text(" ", strip=True) for p in container.select("p")] if container else []
+            summary = max((re.sub(r"\s+", " ", s).strip() for s in summaries), key=len, default="")
+            candidates.append((title, url, time_match.group(0), summary))
+
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for title, url, published_label, summary in candidates:
+        published = parse_date_any(published_label, now)
+        url = normalize_url(url)
+        if not published or not title or not url or url in seen:
+            continue
+        seen.add(url)
+        out.append(
+            RawItem(
+                site_id="opmlrss",
+                site_name="OPML RSS",
+                source=source_name,
+                title=title,
+                url=url,
+                published_at=published,
+                meta={
+                    "bridge_type": "theinformation_articles",
+                    "feed_home": "https://www.theinformation.com/articles",
                     "summary": summary,
                 },
             )
@@ -2769,7 +2857,7 @@ def fetch_opml_rss(
                 )
                 resp.raise_for_status()
             except Exception:
-                if bridge_type != "trendforce_news":
+                if bridge_type not in {"trendforce_news", "theinformation_articles"}:
                     raise
                 resp = requests.get(
                     f"https://r.jina.ai/{feed_url}",
@@ -2801,6 +2889,15 @@ def fetch_opml_rss(
                 )
                 if not local_items:
                     raise ValueError("No TrendForce News items parsed")
+            elif bridge_type == "theinformation_articles":
+                local_items = parse_theinformation_articles_items(
+                    resp.text,
+                    now=now,
+                    source_name=feed_title,
+                    markdown=used_jina_fallback,
+                )
+                if not local_items:
+                    raise ValueError("No The Information articles parsed")
             elif feedparser is not None:
                 parsed = feedparser.parse(resp.content)
                 source_name = first_non_empty(

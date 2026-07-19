@@ -241,10 +241,23 @@ function fmtRelativeTime(ms) {
 }
 
 function failedSourceCount(status = state.sourceStatus) {
-  const failedSites = Array.isArray(status?.failed_sites) ? status.failed_sites.length : 0;
+  const sites = Array.isArray(status?.sites) ? status.sites : [];
+  const failedSites = sites.filter((site) => site?.site_id !== "opmlrss" && !site?.ok).length;
   const rss = status?.rss_opml || {};
   const failedFeeds = Array.isArray(rss.failed_feeds) ? rss.failed_feeds.length : 0;
   return failedSites + failedFeeds;
+}
+
+function sourceHealthCounts(status = state.sourceStatus) {
+  const sites = Array.isArray(status?.sites) ? status.sites : [];
+  const standalone = sites.filter((site) => site?.site_id !== "opmlrss");
+  const rss = status?.rss_opml || {};
+  const rssTotal = Number(rss.effective_feed_total ?? rss.feed_total ?? 0);
+  const rssOk = Number(rss.ok_feeds ?? 0);
+  return {
+    total: standalone.length + rssTotal,
+    ok: standalone.filter((site) => site?.ok).length + rssOk,
+  };
 }
 
 function renderSourceStatusPill(errorMessage = "") {
@@ -256,8 +269,9 @@ function renderSourceStatusPill(errorMessage = "") {
     if (errorMessage) sourceStatusPillEl.classList.add("bad");
     return;
   }
-  const totalSites = Array.isArray(status.sites) ? status.sites.length : 0;
-  const okSites = Number(status.successful_sites || 0);
+  const counts = sourceHealthCounts(status);
+  const totalSites = counts.total;
+  const okSites = counts.ok;
   const failed = failedSourceCount(status);
   sourceStatusPillEl.textContent = failed
     ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源正常 · 失败 ${fmtNumber(failed)}`
