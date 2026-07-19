@@ -1949,7 +1949,7 @@ function renderSourceHealthSummaryNode(status, errorMessage = "") {
   const okSites = Number(status.successful_sites || 0);
   const failed = failedSourceCount(status);
   // 与 renderSourceStatusTable 同口径：pooled = 全网抓取入池（去话题过滤前），
-  // fetched = 原始抓取总量，aiRelevant = 24h AI 强相关合并池。
+  // fetched = 原始抓取总量，aiRelevant = 24h Industry 相关合并池。
   const pooled = Number(status.items_before_topic_filter || state.totalAllMode || state.itemsAll.length || 0);
   const fetched = Number(status.fetched_raw_items || state.totalRaw || pooled || 0);
   const aiRelevant = safeItems(state.itemsAi).length;
@@ -1957,7 +1957,7 @@ function renderSourceHealthSummaryNode(status, errorMessage = "") {
   const segments = [];
   if (fetched) segments.push(`今日采集 ${fmtNumber(fetched)} 条`);
   if (pooled) segments.push(`入池 ${fmtNumber(pooled)}`);
-  if (aiRelevant) segments.push(`AI 强相关 ${fmtNumber(aiRelevant)}`);
+  if (aiRelevant) segments.push(`Industry 相关 ${fmtNumber(aiRelevant)}`);
   segments.push(failed > 0
     ? `<span class="source-health-fail-bad">失败 ${fmtNumber(failed)}</span>`
     : `失败 ${fmtNumber(failed)}`);

@@ -4,31 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="../" />
-    <title>AI News Radar｜24 小时 AI 更新雷达</title>
+    <title>AI Industry News Radar｜24 小时产业更新雷达</title>
     <meta
       name="description"
-      content="自动整理过去 24 小时值得看的 AI、模型和开发者工具更新；伯乐Skill（Scout Skill）帮你从一堆信源里选出千里马。"
+      content="自动整理过去 24 小时值得看的 AI、PC、服务器与供应链产业更新。"
     />
     <link rel="canonical" href="https://news.learnprompt.pro/classic/" />
-    <meta property="og:title" content="AI News Radar｜24 小时 AI 更新雷达" />
+    <meta property="og:title" content="AI Industry News Radar｜24 小时产业更新雷达" />
     <meta
       property="og:description"
-      content="自动整理过去 24 小时值得看的 AI、模型和开发者工具更新；伯乐Skill（Scout Skill）帮你从一堆信源里选出千里马。"
+      content="自动整理过去 24 小时值得看的 AI、PC、服务器与供应链产业更新。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://news.learnprompt.pro/classic/" />
-    <meta property="og:site_name" content="AI News Radar" />
-    <meta name="application-name" content="AI News Radar" />
+    <meta property="og:site_name" content="AI Industry News Radar" />
+    <meta name="application-name" content="AI Industry News Radar" />
     <meta name="theme-color" content="#f6f6f2" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="AI News Radar" />
+    <meta name="apple-mobile-web-app-title" content="AI Industry News Radar" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="AI News Radar｜24 小时 AI 更新雷达" />
+    <meta name="twitter:title" content="AI Industry News Radar｜24 小时产业更新雷达" />
     <meta
       name="twitter:description"
-      content="自动整理过去 24 小时值得看的 AI、模型和开发者工具更新；伯乐Skill（Scout Skill）帮你从一堆信源里选出千里马。"
+      content="自动整理过去 24 小时值得看的 AI、PC、服务器与供应链产业更新。"
     />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
     <link rel="icon" href="./assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
@@ -43,9 +43,9 @@
       <header class="hero">
         <div class="hero-main">
           <div class="hero-headline">
-            <img class="hero-logo" src="./assets/logo.svg" alt="AI News Radar Logo" />
+            <img class="hero-logo" src="./assets/logo.svg" alt="AI Industry News Radar Logo" />
             <div>
-              <h1>AI News Radar</h1>
+              <h1>AI Industry News Radar</h1>
               <div class="hero-updated hero-view-row">
                 <span class="updated-label">更新时间</span>
                 <span class="updated" id="updatedAt">加载中...</span>
@@ -80,11 +80,11 @@
 
       <section class="primary-controls">
         <input id="searchInput" type="search" placeholder="搜索 AI 信号 / 来源" />
-        <div class="mode-hint" id="modeHint">AI强相关</div>
+        <div class="mode-hint" id="modeHint">Industry 相关</div>
       </section>
 
       <div class="sticky-summary-bar" aria-label="当前视图摘要">
-        <strong>AI News Radar</strong>
+        <strong>AI Industry News Radar</strong>
         <span id="stickySummaryText">正在整理 24 小时信号...</span>
       </div>
 
@@ -119,10 +119,9 @@
               <select id="sectionSelect"></select>
             </label>
             <label class="field">
-              <span>信号等级</span>
+              <span>信号类型</span>
               <select id="signalLevelSelect">
                 <option value="">全部信号</option>
-                <option value="high">高优先级</option>
                 <option value="curated">精选 / 官方</option>
                 <option value="multi">多源验证</option>
               </select>
@@ -134,9 +133,9 @@
               </select>
             </label>
             <div class="field">
-              <span>AI 相关度</span>
+              <span>关注范围</span>
               <div class="mode-switch">
-                <button id="modeAiBtn" class="mode-btn active" type="button">AI强相关</button>
+                <button id="modeAiBtn" class="mode-btn active" type="button">Industry 相关</button>
                 <button id="modeAllBtn" class="mode-btn" type="button">全量</button>
               </div>
             </div>
@@ -172,7 +171,7 @@
               <button id="boleHotBtn" class="mode-btn" type="button">当前热点</button>
               <button id="boleTimelineBtn" class="mode-btn" type="button">时间线</button>
             </div>
-            <span id="bolePicksMeta">按评分排序</span>
+            <span id="bolePicksMeta">按多源验证与时间整理</span>
           </div>
         </div>
         <div id="bolePicksList" class="bole-board"></div>
@@ -195,12 +194,10 @@
 
       <section class="list-wrap">
         <div class="list-head">
-          <h2 id="listTitle">全量 AI 情报源</h2>
+          <h2 id="listTitle">全量产业情报源</h2>
           <div class="list-head-tools">
             <div class="list-sort-tools" id="listSortTools" role="group" aria-label="全量列表排序">
-              <button class="list-sort-btn active" type="button" data-sort="priority" title="综合来源权重、AI相关度、新鲜度与信号强度">综合</button>
-              <button class="list-sort-btn" type="button" data-sort="latest" title="按发布时间或发现时间倒序">最新</button>
-              <button class="list-sort-btn" type="button" data-sort="ai" title="按高相关度信号倒序">高分</button>
+              <button class="list-sort-btn active" type="button" data-sort="latest" title="按发布时间或发现时间倒序">最新</button>
               <button class="list-sort-btn" type="button" data-sort="source" title="按来源聚合度整理">来源</button>
             </div>
             <span id="resultCount">0 条</span>
@@ -226,6 +223,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
     <script src="./classic/assets/motion.js?v=ui-adjustment-0620a" defer></script>
-    <script src="./classic/assets/app.js?v=ui-polish-0626a" defer></script>
+    <script src="./classic/assets/app.js?v=industry-0719a" defer></script>
   </body>
 </html>
