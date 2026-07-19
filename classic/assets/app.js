@@ -821,9 +821,9 @@ function itemLabelTone(item) {
   if (item.site_id === "official_ai") return "official";
   if (item.site_id === "aihot" || item.ai_label === "curated_hotlist") return "hot";
   if (section === "ai_models") return "models";
-  if (section === "pc_client") return "products";
-  if (section === "server_datacenter") return "devtools";
-  if (section === "silicon_supply" || section === "company_market") return "industry";
+  if (section === "pc" || section === "display") return "products";
+  if (section === "server" || section === "datacenter") return "devtools";
+  if (section === "semiconductor" || section === "memory") return "industry";
   return "default";
 }
 
@@ -832,14 +832,11 @@ function itemTagTone(label) {
   if (text.includes("多源")) return "strong";
   if (text.includes("官方")) return "official";
   if (text.includes("精选") || text.includes("热点")) return "hot";
-  if (text.includes("HN")) return "aggregate";
-  if (text.includes("模型")) return "models";
-  if (text.includes("开发")) return "devtools";
-  if (text.includes("研究")) return "research";
-  if (text.includes("自媒体")) return "creator";
-  if (text.includes("社区")) return "community";
-  if (text.includes("产品")) return "products";
-  if (text.includes("行业")) return "industry";
+  if (text.includes("AI模型")) return "models";
+  if (text.includes("Server") || text.includes("数据中心")) return "devtools";
+  if (text.includes("PC") || text.includes("显示") || text.includes("产品发布")) return "products";
+  if (text.includes("技术") || text.includes("评测")) return "research";
+  if (text.includes("半导体") || text.includes("存储") || text.includes("价格") || text.includes("供需") || text.includes("产能") || text.includes("财报") || text.includes("战略") || text.includes("政策")) return "industry";
   return "default";
 }
 
@@ -1888,11 +1885,14 @@ function pickTopHeadlineClusters(clusters, limit = 3) {
 }
 
 function itemTagLabels(item, row = null) {
-  const tags = [sectionBadgeLabel(AIIndustryTaxonomy.classify(item))];
+  const tags = [
+    sectionBadgeLabel(AIIndustryTaxonomy.classify(item)),
+    ...AIIndustryTaxonomy.eventLabels(item, 2),
+  ];
   if (row && (row.sourceCount > 1 || row.mergedCount > 1)) tags.push("多源验证");
   if (item.site_id === "official_ai") tags.push("官方");
   if (item.site_id === "aihot") tags.push("AI HOT");
-  return Array.from(new Set(tags)).slice(0, 3);
+  return Array.from(new Set(tags)).slice(0, 4);
 }
 
 function itemSourceRefs(item, row = null) {
@@ -1963,14 +1963,11 @@ function whyImportantText(row) {
 }
 
 function impactLabels(item) {
-  const sections = itemSections(item);
-  const labels = [];
-  if (sections.has("ai_models")) labels.push("AI 团队");
-  if (sections.has("pc_client")) labels.push("PC 产品 / 研发");
-  if (sections.has("server_datacenter")) labels.push("数据中心 / 基础设施");
-  if (sections.has("silicon_supply")) labels.push("供应链 / 采购");
-  if (sections.has("company_market")) labels.push("战略 / 投资");
-  return labels;
+  const ids = AIIndustryTaxonomy.classifyAll(item);
+  return AIIndustryTaxonomy.CATEGORY_DEFS
+    .filter((category) => ids.includes(category.id))
+    .map((category) => category.label)
+    .slice(0, 3);
 }
 
 function buildTopStoryCard(row, rank) {

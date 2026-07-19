@@ -420,10 +420,10 @@ function isHighPriorityItem(item) {
 function sectionTabCount(sectionId) {
   if (state.mode === "all") {
     const pool = mainListRawItemsBase();
-    return sectionId === "all" ? pool.length : pool.filter((item) => itemSection(item) === sectionId).length;
+    return sectionId === "all" ? pool.length : pool.filter((item) => AIIndustryTaxonomy.classifyAll(item).includes(sectionId)).length;
   }
   const pool = mainListStoriesBase();
-  return sectionId === "all" ? pool.length : pool.filter((story) => storySectionOf(story) === sectionId).length;
+  return sectionId === "all" ? pool.length : pool.filter((story) => storyMatchesSection(story, sectionId)).length;
 }
 
 function renderSectionTabs() {
@@ -596,14 +596,11 @@ function itemTagTone(label) {
   if (text.includes("多源")) return "strong";
   if (text.includes("官方")) return "official";
   if (text.includes("精选") || text.includes("热点")) return "hot";
-  if (text.includes("HN")) return "aggregate";
-  if (text.includes("模型")) return "models";
-  if (text.includes("开发")) return "devtools";
-  if (text.includes("研究")) return "research";
-  if (text.includes("自媒体")) return "creator";
-  if (text.includes("社区")) return "community";
-  if (text.includes("产品")) return "products";
-  if (text.includes("行业")) return "industry";
+  if (text.includes("AI模型")) return "models";
+  if (text.includes("Server") || text.includes("数据中心")) return "devtools";
+  if (text.includes("PC") || text.includes("显示") || text.includes("产品发布")) return "products";
+  if (text.includes("技术") || text.includes("评测")) return "research";
+  if (text.includes("半导体") || text.includes("存储") || text.includes("价格") || text.includes("供需") || text.includes("产能") || text.includes("财报") || text.includes("战略") || text.includes("政策")) return "industry";
   return "default";
 }
 
@@ -866,7 +863,8 @@ function storySectionOf(story) {
 }
 
 function storyMatchesSection(story, sectionId = state.activeSection) {
-  return !sectionId || sectionId === "all" || storySectionOf(story) === sectionId;
+  const rep = storyRepresentativeItem(story);
+  return !sectionId || sectionId === "all" || (rep && AIIndustryTaxonomy.classifyAll(rep).includes(sectionId));
 }
 
 function storyMatchesQuery(story, query = state.query.trim().toLowerCase()) {
@@ -1497,6 +1495,7 @@ function renderItemNode(row) {
   // 在下面的"查看原文"链接（margin-left: auto 靠右）之前。
   const sectionChip = itemTagChip(sectionBadgeLabel(itemSection(item)));
   metaRow.appendChild(sectionChip);
+  AIIndustryTaxonomy.eventLabels(item, 2).forEach((label) => metaRow.appendChild(itemTagChip(label)));
 
   const titleEl = node.querySelector(".title");
   const displayTitle = row.story ? storyPrimaryTitleText(row.story) : itemTitleText(item);
@@ -1815,7 +1814,7 @@ function waytoagiViews(waytoagi) {
 }
 
 function renderWaytoagi(waytoagi) {
-  // WaytoAGI 属于 AI 生态补充信息，跟随「AI与模型」栏目显示。
+  // WaytoAGI 属于 AI 生态补充信息，跟随「AI模型」栏目显示。
   if (waytoagiWrapEl) {
     waytoagiWrapEl.hidden = state.activeSection !== "ai_models";
   }
