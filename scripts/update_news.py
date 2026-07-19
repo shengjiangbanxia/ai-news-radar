@@ -30,8 +30,10 @@ from urllib3.util.retry import Retry
 
 try:
     from scripts.ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
+    from scripts.personal_interest import add_personal_interest_fields
 except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
     from ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
+    from personal_interest import add_personal_interest_fields
 
 try:
     import feedparser
@@ -5139,6 +5141,9 @@ def add_bilingual_fields(
             return out
 
         out["title_en"] = title
+        # X posts are short-form body text rather than conventional headlines;
+        # allow a complete Chinese translation to exceed the headline length band.
+        strict_translation = str(out.get("site_id") or "") not in {"xapi", "socialdata_x"}
 
         has_ds_key = bool(str(os.environ.get("DEEPSEEK_API_KEY") or "").strip())
         cache_hit_key: str | None = None
@@ -5161,7 +5166,7 @@ def add_bilingual_fields(
             translated_now = translated_now_ai if is_ai_pool else translated_now_all
             if translated_now < budget:
                 tr = translate_to_zh_deepseek(title)
-                if tr and is_valid_zh_translation(title, tr):
+                if tr and is_valid_zh_translation(title, tr, strict=strict_translation):
                     zh_title = repair_zh_title_translation(title, tr)
                     cache[ZH_CACHE_DS_PREFIX + title] = zh_title
                     if is_ai_pool:
@@ -5170,7 +5175,7 @@ def add_bilingual_fields(
                         translated_now_all += 1
                 else:
                     tr = translate_to_zh_cn(session, title)
-                    if tr and is_valid_zh_translation(title, tr):
+                    if tr and is_valid_zh_translation(title, tr, strict=strict_translation):
                         zh_title = repair_zh_title_translation(title, tr)
                         cache[title] = zh_title
                         if is_ai_pool:
@@ -6648,13 +6653,12 @@ def main() -> int:
     latest_items_all_raw = normalize_aihubtoday_records(latest_items_all_raw)
 
     latest_items_all_raw.sort(key=lambda x: event_time(x) or datetime.min.replace(tzinfo=UTC), reverse=True)
-    # A maintainer's explicit personal-only source list is already the filter.
-    # Keep every in-window record while retaining the normal dedupe, ranking,
-    # and story merge stages below. Public/combined mode still applies the AI
-    # relevance floors so broad feeds cannot drown the curated view.
+    # Personal-only mode applies the maintainer's AI/PC/server industry scope;
+    # public/combined mode retains the general AI relevance scorer.
     if args.opml_only:
-        latest_items_all = list(latest_items_all_raw)
-        latest_items = list(latest_items_all_raw)
+        latest_items_all_raw = [add_personal_interest_fields(record) for record in latest_items_all_raw]
+        latest_items_all = [record for record in latest_items_all_raw if record["personal_interest_match"]]
+        latest_items = list(latest_items_all)
     else:
         latest_items_all = [
             record for record in latest_items_all_raw if record.get("ai_score", 0) >= AI_BROAD_RELEVANCE_FLOOR
@@ -6736,7 +6740,7 @@ def main() -> int:
         "total_items_ai_raw": len(latest_items),
         "total_items_raw": len(latest_items_all_raw),
         "total_items_all_mode": len(latest_items_all_dedup),
-        "topic_filter": "personal_sources_passthrough_v1" if args.opml_only else "ai_relevance_scoring_v0_4",
+        "topic_filter": "personal_ai_pc_server_interest_v1" if args.opml_only else "ai_relevance_scoring_v0_4",
         "ai_relevance_threshold": 0.65,
         "archive_total": len(archive),
         "site_count": len(site_stat),

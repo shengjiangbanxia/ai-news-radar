@@ -449,5 +449,29 @@ class TestBroadPoolTranslationBudget(unittest.TestCase):
         self.assertEqual(items_ai[0]["title_zh"], DS_ZH)
 
 
+class TestXPostTranslation(unittest.TestCase):
+    def test_long_x_post_keeps_complete_chinese_translation(self):
+        title = (
+            "We published a detailed analysis of AI server memory bandwidth, "
+            "HBM supply, inference performance, and datacenter infrastructure."
+        )
+        translated = (
+            "我们发布了一份详细分析，涵盖 AI 服务器内存带宽、HBM 供应、"
+            "推理性能以及数据中心基础设施，并解释这些变化对产业链的影响。"
+        )
+        item = {
+            "site_id": "xapi",
+            "site_name": "X API",
+            "source": "@SemiAnalysis_",
+            "title": title,
+            "url": "https://x.com/SemiAnalysis_/status/1",
+        }
+        with patch.dict("os.environ", DS_ENV, clear=True), patch(
+            "scripts.update_news.requests.post", return_value=deepseek_ok_response(translated)
+        ):
+            items, _, _ = add_bilingual_fields([item], [], MagicMock(), {}, 10)
+        self.assertEqual(items[0]["title_zh"], translated)
+
+
 if __name__ == "__main__":
     unittest.main()

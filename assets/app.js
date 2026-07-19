@@ -34,6 +34,9 @@ const state = {
   xAuthorsExpanded: false,
 };
 
+// Keep importance scoring for ordering, but temporarily hide the reader-facing badge.
+const SCORE_BADGES_ENABLED = false;
+
 // DATA_BASE_URL 数据同源开关：优先级 ?data= 查询参数 > localStorage("dataBaseUrl") > "" (相对路径，原行为)
 // ?data= 命中时持久化到 localStorage，方便刷新/后续访问保持同一数据源。
 function resolveDataBaseUrl() {
@@ -1453,7 +1456,7 @@ function renderItemNode(row) {
 
   const scoreEl = node.querySelector(".score-badge");
   const displayScore = row.score;
-  if (displayScore > 0) {
+  if (SCORE_BADGES_ENABLED && displayScore > 0) {
     scoreEl.hidden = false;
     scoreEl.textContent = `${displayScore} 分`;
     scoreEl.className = `score-badge tone-${scoreTone(displayScore)}`;
