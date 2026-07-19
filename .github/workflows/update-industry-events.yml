@@ -3,7 +3,8 @@ name: Update Industry Events
 on:
   workflow_dispatch:
   schedule:
-    - cron: "23 1 * * *"
+    # GitHub cron uses UTC: 22:00 UTC = 06:00 Asia/Shanghai next day.
+    - cron: "0 22 * * *"
 
 concurrency:
   group: update-industry-events-${{ github.ref }}
