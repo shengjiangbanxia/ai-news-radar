@@ -2890,7 +2890,9 @@ function renderIndustryEvents(payload) {
   industryEventsWrapEl.hidden = false;
   const lead = (Array.isArray(payload.alerts) && payload.alerts.length ? payload.alerts : upcoming)[0];
   const countdown = industryEventCountdown(lead);
-  industryEventsMetaEl.textContent = `未来 ${payload.lookahead_days || 180} 天 · ${upcoming.filter((event) => event.within_lookahead).length} 场已确认`;
+  const sourceCheck = payload.source_check || {};
+  const verifiedText = Number(sourceCheck.checked) > 0 ? ` · 官方核验 ${sourceCheck.successful || 0}/${sourceCheck.checked}` : "";
+  industryEventsMetaEl.textContent = `未来 ${payload.lookahead_days || 180} 天 · ${upcoming.filter((event) => event.within_lookahead).length} 场已确认${verifiedText}`;
 
   industryEventAlertEl.innerHTML = "";
   const card = document.createElement("article");
