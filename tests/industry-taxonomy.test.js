@@ -9,12 +9,13 @@ const cases = [
   ["TSMC expands CoWoS advanced packaging", "semiconductor"],
   ["GDDR7 memory pricing delays RTX launch", "memory"],
   ["OLED display panel shipments increase", "display"],
-  ["Company announces acquisition and appoints a new CEO", "unclassified"],
+  ["Company announces acquisition and appoints a new CEO", "other"],
+  ["Nvidia CEO leather jacket charity auction", "other"],
 ];
 
 assert.deepEqual(
   taxonomy.CATEGORY_DEFS.map(({ id }) => id),
-  ["ai_models", "pc", "server", "datacenter", "semiconductor", "memory", "display"]
+  ["ai_models", "pc", "server", "datacenter", "semiconductor", "memory", "display", "other"]
 );
 
 for (const [title, expected] of cases) {
@@ -29,19 +30,14 @@ assert.deepEqual(
   taxonomy.classifyAll({ title: "GDDR7 pricing delays the RTX 5090 launch" }),
   ["memory", "pc"]
 );
-assert.deepEqual(
-  taxonomy.eventLabels({ title: "GDDR7 shortage pushes memory pricing higher" }),
-  ["价格变化", "供需变化"]
-);
-assert.deepEqual(
-  taxonomy.eventLabels({ title: "Regulators approve acquisition after antitrust review" }),
-  ["并购合作", "政策监管"]
-);
-assert.equal(taxonomy.classify({ title: "Nvidia CEO leather jacket charity auction" }), "unclassified");
-assert.deepEqual(taxonomy.eventLabels({ title: "Nvidia CEO leather jacket charity auction at a $1 million valuation" }), []);
+assert.deepEqual(taxonomy.classifyAll({ title: "General technology company update" }), ["other"]);
 assert.equal(
   taxonomy.classify({ title: "Ryzen CPU motherboard bundle", summary: "Includes 16GB DDR5 memory" }),
   "pc"
 );
+assert.deepEqual(
+  taxonomy.classifyAll({ title: "Ryzen CPU motherboard bundle", summary: "Includes 16GB DDR5 memory" }),
+  ["pc", "memory"]
+);
 
-console.log("industry taxonomy: domain and event cases passed");
+console.log("industry taxonomy: domain-only cases passed");

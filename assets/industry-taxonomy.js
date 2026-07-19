@@ -9,20 +9,7 @@
     { id: "semiconductor", label: "半导体", short: "半导体", description: "晶圆代工、制造设备、先进封装、制程" },
     { id: "memory", label: "存储", short: "存储", description: "HBM、DRAM、NAND、GDDR、SSD" },
     { id: "display", label: "显示", short: "显示", description: "面板、显示器、OLED、LCD、MicroLED" },
-  ];
-
-  const EVENT_DEFS = [
-    { id: "product_release", label: "产品发布" },
-    { id: "technology", label: "技术进展" },
-    { id: "review", label: "性能评测" },
-    { id: "pricing", label: "价格变化" },
-    { id: "supply_demand", label: "供需变化" },
-    { id: "capacity", label: "产能扩张" },
-    { id: "financial", label: "财报投资" },
-    { id: "ma_cooperation", label: "并购合作" },
-    { id: "strategy", label: "企业战略" },
-    { id: "policy", label: "政策监管" },
-    { id: "people", label: "人事组织" },
+    { id: "other", label: "其他", short: "其他", description: "暂时无法明确归入上述产业领域的内容" },
   ];
 
   const RULES = {
@@ -67,24 +54,7 @@
     ],
   };
 
-  const EVENT_RULES = {
-    product_release: /\b(?:launch|release|announce|unveil|debut|available|rollout)\b|发布|推出|上市|亮相|开售/i,
-    technology: /\b(?:architecture|technology|breakthrough|prototype|design|port(?:s|ed)?|reduce[sd]?|improve[sd]?)\b|架构|技术|突破|原型|设计|移植|降低|提升/i,
-    review: /\b(?:review|benchmark|test(?:ed|ing)?|performance|fps|latency|throughput)\b|评测|基准|性能|延迟|吞吐/i,
-    pricing: /\b(?:price|pricing|discount|cost|expensive|cheap|promo)\b|价格|降价|涨价|折扣|成本|促销/i,
-    supply_demand: /\b(?:supply|demand|shortage|inventory|shipment|backlog|tam)\b|供应|需求|短缺|库存|出货|积压|市场规模/i,
-    capacity: /\b(?:capacity|fab expansion|expand production|new fab)\b|产能|扩产|新建晶圆厂/i,
-    financial: /\b(?:earnings|revenue|profit|capex|funding|raised|investor|valuation|investment|cost surprise|multibillion[- ]dollar cost)\b|财报|营收|利润|资本开支|融资|投资者|估值|投资/i,
-    ma_cooperation: /\b(?:acquisition|acquire|merger|partnership|collaboration|joint venture)\b|收购|并购|合作|合资/i,
-    strategy: /\b(?:strategy|roadmap|agenda|commercialization|market entry|exit market)\b|战略|路线图|议程|商业化|进入市场|退出市场/i,
-    policy: /\b(?:regulation|policy|antitrust|tariff|sanction|white house|government|trump|president|federal)\b|监管|政策|反垄断|关税|制裁|白宫|政府/i,
-    people: /\b(?:resign|depart|left|joins|appointed|layoff|restructur)\b|离职|加入|任命|裁员|重组/i,
-  };
-
   const TIE_ORDER = ["memory", "display", "datacenter", "server", "pc", "ai_models", "semiconductor"];
-  const NON_INDUSTRY_PATTERNS = [
-    /\b(?:charity auction|celebrity|fashion|trademark leather jacket|red carpet)\b|慈善拍卖|明星|时尚|红毯/i,
-  ];
   const MIN_SCORES = {
     ai_models: 4,
     pc: 3,
@@ -106,17 +76,14 @@
     ].filter(Boolean).join(" ").toLowerCase();
   }
 
-  function eventTagsForText(text, domains = []) {
-    const technicalOnly = new Set(["product_release", "technology", "review"]);
-    return EVENT_DEFS
-      .filter((event) => (!technicalOnly.has(event.id) || domains.length > 0) && EVENT_RULES[event.id].test(text))
-      .map((event) => event.id);
-  }
-
   function analyze(item) {
     const text = textFor(item);
-    const titleText = [item?.title, item?.title_zh, item?.title_en, item?.title_original].filter(Boolean).join(" ").toLowerCase();
+    const titleText = [item?.title, item?.title_zh, item?.title_en, item?.title_original]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
     const scores = Object.fromEntries(CATEGORY_DEFS.map((category) => [category.id, 0]));
+
     Object.entries(RULES).forEach(([category, rules]) => {
       rules.forEach(([weight, pattern]) => {
         if (pattern.test(text)) scores[category] += weight;
@@ -127,18 +94,16 @@
     const explicit = Array.isArray(item?.industry_categories)
       ? item.industry_categories.filter((category) => CATEGORY_DEFS.some((definition) => definition.id === category))
       : [];
-    const related = explicit.length
-      ? explicit
-      : TIE_ORDER.filter((category) => scores[category] >= MIN_SCORES[category]);
-    const bestScore = related.length ? Math.max(...related.map((category) => scores[category])) : 0;
-    const primary = related.find((category) => scores[category] === bestScore) || related[0] || "unclassified";
+    const matched = TIE_ORDER.filter((category) => scores[category] >= MIN_SCORES[category]);
+    const related = explicit.length ? explicit : (matched.length ? matched : ["other"]);
+    const bestScore = Math.max(...related.map((category) => scores[category] || 0));
+    const primary = related.find((category) => scores[category] === bestScore) || related[0];
 
     return {
       primary,
-      related: Array.from(new Set(related)),
-      eventTags: NON_INDUSTRY_PATTERNS.some((pattern) => pattern.test(text)) ? [] : eventTagsForText(text, related),
+      related: Array.from(new Set([primary, ...related])),
       scores,
-      confidence: !related.length ? "low" : (bestScore >= 8 ? "high" : "medium"),
+      confidence: primary === "other" ? "low" : (bestScore >= 8 ? "high" : "medium"),
     };
   }
 
@@ -150,31 +115,7 @@
     return analyze(item).related;
   }
 
-  function classifyEvents(item) {
-    return analyze(item).eventTags;
-  }
-
-  function eventLabels(item, limit = 2) {
-    const ids = classifyEvents(item);
-    return EVENT_DEFS
-      .filter((event) => ids.includes(event.id))
-      .slice(0, limit)
-      .map((event) => event.label);
-  }
-
-  const api = {
-    CATEGORY_DEFS,
-    EVENT_DEFS,
-    RULES,
-    EVENT_RULES,
-    MIN_SCORES,
-    analyze,
-    classify,
-    classifyAll,
-    classifyEvents,
-    eventLabels,
-    textFor,
-  };
+  const api = { CATEGORY_DEFS, RULES, MIN_SCORES, analyze, classify, classifyAll, textFor };
   root.AIIndustryTaxonomy = api;
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis);

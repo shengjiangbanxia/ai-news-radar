@@ -966,7 +966,7 @@ function itemMatchesSection(item, sectionId) {
 }
 
 function sectionBadgeLabel(sectionId) {
-  return SECTION_BY_ID[sectionId]?.short || (sectionId === "unclassified" ? "待归类" : "栏目");
+  return SECTION_BY_ID[sectionId]?.short || "其他";
 }
 
 function reasonText(item) {
@@ -1885,14 +1885,12 @@ function pickTopHeadlineClusters(clusters, limit = 3) {
 }
 
 function itemTagLabels(item, row = null) {
-  const tags = [
-    sectionBadgeLabel(AIIndustryTaxonomy.classify(item)),
-    ...AIIndustryTaxonomy.eventLabels(item, 2),
-  ];
-  if (row && (row.sourceCount > 1 || row.mergedCount > 1)) tags.push("多源验证");
-  if (item.site_id === "official_ai") tags.push("官方");
-  if (item.site_id === "aihot") tags.push("AI HOT");
-  return Array.from(new Set(tags)).slice(0, 4);
+  const ids = AIIndustryTaxonomy.classifyAll(item);
+  return AIIndustryTaxonomy.CATEGORY_DEFS
+    .filter((category) => ids.includes(category.id))
+    .sort((a, b) => ids.indexOf(a.id) - ids.indexOf(b.id))
+    .map((category) => category.label)
+    .slice(0, 3);
 }
 
 function itemSourceRefs(item, row = null) {

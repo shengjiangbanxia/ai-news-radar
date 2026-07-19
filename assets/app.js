@@ -838,7 +838,7 @@ function itemMatchesSection(item, sectionId = state.activeSection) {
 }
 
 function sectionBadgeLabel(sectionId) {
-  return SECTION_BY_ID[sectionId]?.short || (sectionId === "unclassified" ? "待归类" : "栏目");
+  return SECTION_BY_ID[sectionId]?.short || "其他";
 }
 
 // ---- 故事级辅助：按 primary_item（无则第一个 source）判定 ----
@@ -1493,9 +1493,9 @@ function renderItemNode(row) {
 
   // 栏目 chip（行业/模型/产品...）是 meta-row 的最后一个 chip，appendChild 保证排在 score-badge 之后、
   // 在下面的"查看原文"链接（margin-left: auto 靠右）之前。
-  const sectionChip = itemTagChip(sectionBadgeLabel(itemSection(item)));
-  metaRow.appendChild(sectionChip);
-  AIIndustryTaxonomy.eventLabels(item, 2).forEach((label) => metaRow.appendChild(itemTagChip(label)));
+  AIIndustryTaxonomy.classifyAll(item)
+    .slice(0, 3)
+    .forEach((sectionId) => metaRow.appendChild(itemTagChip(sectionBadgeLabel(sectionId))));
 
   const titleEl = node.querySelector(".title");
   const displayTitle = row.story ? storyPrimaryTitleText(row.story) : itemTitleText(item);
