@@ -249,7 +249,7 @@ function setStats() {
   const health = totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}正常` : "加载中";
   const cards = [
     ["产业相关", `${fmtNumber(items.length)}条`],
-    ["精选", `${fmtNumber(curatedCount)}条`],
+    ["当前热点", `${fmtNumber(hotCount)}条`],
     ["源", health],
   ];
   statsEl.setAttribute(
