@@ -45,17 +45,14 @@ INTEREST_TERMS: dict[str, tuple[str, ...]] = {
     ),
 }
 
-EXCLUDED_TOPICS: dict[str, tuple[str, ...]] = {
-    "mosquito_control": (
-        "无人机灭蚊", "灭蚊无人机", "灭蚊", "mosquito", "mosquitoes",
-        "mosquito control", "mosquito-killing",
-    ),
-}
-
 _WORD_TERMS = {
     "ai", "pc", "npu", "gpu", "cpu", "soc", "llm", "gpt", "hbm", "amd",
     "arm", "rag", "cxl", "ssd",
 }
+
+# These words occur frequently outside the target industries. They can support
+# a match, but cannot establish AI relevance by themselves.
+CONTEXT_ONLY_TERMS = {"agent", "inference", "training", "reasoning", "robotics", "autonomous"}
 
 
 def _term_matches(text: str, term: str) -> bool:
@@ -69,22 +66,20 @@ def score_personal_interest(record: dict[str, Any]) -> dict[str, Any]:
         str(record.get(key) or "")
         for key in ("title", "summary", "source", "site_name")
     ).lower()
-    excluded = sorted(
-        {topic for topic, terms in EXCLUDED_TOPICS.items() if any(_term_matches(text, term) for term in terms)}
-    )
     categories: list[str] = []
     signals: list[str] = []
     for category, terms in INTEREST_TERMS.items():
         matched = sorted({term for term in terms if _term_matches(text, term)})
-        if matched:
+        qualifying = [term for term in matched if term not in CONTEXT_ONLY_TERMS]
+        if qualifying:
             categories.append(category)
             signals.extend(matched)
     return {
-        "is_interesting": bool(categories) and not excluded,
+        "is_interesting": bool(categories),
         "categories": categories,
         "signals": sorted(set(signals)),
-        "excluded_topics": excluded,
-        "reason": "excluded_topic" if excluded else ("matched_interest" if categories else "no_interest_signal"),
+        "excluded_topics": [],
+        "reason": "matched_interest" if categories else "no_interest_signal",
     }
 
 

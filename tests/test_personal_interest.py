@@ -16,20 +16,21 @@ def test_requested_interest_terms_are_included(term):
     assert term.lower() in result["signals"]
 
 
-def test_drone_mosquito_control_is_excluded_even_if_it_mentions_ai():
-    result = score_personal_interest({"title": "AI 无人机灭蚊方案进入试点"})
-    assert result["is_interesting"] is False
-    assert result["reason"] == "excluded_topic"
-
-
-def test_real_english_autonomous_mosquito_drone_headline_is_excluded():
+def test_broad_autonomous_application_without_industry_context_is_excluded():
     title = (
         "Autonomous micro-drone achieves first air-to-air insect kill on the way "
         "towards completely eradicating mosquitoes"
     )
     result = score_personal_interest({"title": title})
     assert result["is_interesting"] is False
-    assert result["excluded_topics"] == ["mosquito_control"]
+    assert result["reason"] == "no_interest_signal"
+    assert result["excluded_topics"] == []
+
+
+@pytest.mark.parametrize("title", ["Agent joins a travel agency", "Corporate training starts Monday"])
+def test_context_only_ai_words_do_not_pass_alone(title):
+    result = score_personal_interest({"title": title})
+    assert result["is_interesting"] is False
 
 
 def test_unrelated_general_news_is_excluded():
