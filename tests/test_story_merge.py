@@ -51,6 +51,23 @@ def test_similar_titles_within_window_merge():
     assert events[0]["similarity"] >= 0.86
 
 
+def test_personal_industry_fields_survive_story_projection():
+    item = make_item(1, title="HBM demand grows for AI servers", url="https://example.com/hbm")
+    item.update({
+        "personal_interest_match": True,
+        "personal_interest_categories": ["ai", "server_industry"],
+        "personal_interest_signals": ["ai", "hbm", "server"],
+        "personal_interest_reason": "matched_interest",
+    })
+
+    stories, _ = merge_story_items([item], NOW, 24)
+    primary = stories[0]["primary_item"]
+
+    assert primary["personal_interest_match"] is True
+    assert primary["personal_interest_categories"] == ["ai", "server_industry"]
+    assert primary["personal_interest_signals"] == ["ai", "hbm", "server"]
+
+
 def test_different_model_vendor_events_do_not_merge():
     items = [
         make_item(1, title="OpenAI launches GPT-5 coding model for agents", url="https://example.com/gpt5"),

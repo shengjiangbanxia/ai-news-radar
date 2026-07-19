@@ -6133,6 +6133,10 @@ def story_item_link(item: dict[str, Any]) -> dict[str, Any]:
         "source_name": item.get("site_name"),
         "site_id": item.get("site_id"),
         "published_at": item.get("published_at"),
+        "personal_interest_match": item.get("personal_interest_match"),
+        "personal_interest_categories": item.get("personal_interest_categories"),
+        "personal_interest_signals": item.get("personal_interest_signals"),
+        "personal_interest_reason": item.get("personal_interest_reason"),
     }
 
 
@@ -6194,19 +6198,7 @@ def build_story_record(
         "reasons": story_reasons(primary, score, len(sorted_items)),
         "earliest_at": iso(min(times)) if times else None,
         "latest_at": iso(max(times)) if times else None,
-        "primary_item": {
-            "id": primary.get("id"),
-            "title": title,
-            "title_zh": primary.get("title_enhanced_zh") or primary.get("title_zh"),
-            "title_en": primary.get("title_en"),
-            "title_original": primary.get("title_original"),
-            "summary": primary.get("summary"),
-            "summary_zh": primary.get("summary_zh"),
-            "recommend_reason_zh": primary.get("recommend_reason_zh"),
-            "url": url,
-            "source": primary.get("source"),
-            "source_name": primary.get("site_name"),
-        },
+        "primary_item": story_item_link(primary),
     }
 
 

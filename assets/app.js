@@ -669,7 +669,30 @@ function itemPriorityScore(item) {
   return Math.round((editorial * 0.3) + (source * 0.22) + (internal * 0.2) + (freshness * 0.18) + (signal * 0.1));
 }
 
+function personalIndustryCategories(item) {
+  const labels = {
+    ai: "AI",
+    pc: "PC",
+    server_industry: "服务器",
+  };
+  return (Array.isArray(item?.personal_interest_categories) ? item.personal_interest_categories : [])
+    .map((category) => labels[category] || category)
+    .filter(Boolean);
+}
+
+function personalIndustryReason(item) {
+  if (!item?.personal_interest_match) return "";
+  const categories = personalIndustryCategories(item);
+  const signals = (Array.isArray(item.personal_interest_signals) ? item.personal_interest_signals : [])
+    .filter(Boolean)
+    .slice(0, 4);
+  const scope = categories.length ? `关注范围：${categories.join(" / ")}` : "符合产业关注范围";
+  return signals.length ? `${scope} · 线索：${signals.join(" / ")}` : scope;
+}
+
 function labelText(item) {
+  const personal = personalIndustryCategories(item);
+  if (personal.length) return personal.join(" / ");
   const labels = {
     ai_general: "AI信号",
     model_release: "模型发布",
@@ -699,6 +722,8 @@ function itemHaystack(item) {
     item.site_id,
     item.ai_label,
     ...(Array.isArray(item.ai_signals) ? item.ai_signals : []),
+    ...(Array.isArray(item.personal_interest_categories) ? item.personal_interest_categories : []),
+    ...(Array.isArray(item.personal_interest_signals) ? item.personal_interest_signals : []),
   ].filter(Boolean).join(" ").toLowerCase();
 }
 
@@ -901,6 +926,8 @@ function reasonText(item) {
     if (Number(item.creator_freshness_bonus || 0) > 0) parts.push("24h 加分");
     return `一周互动：${parts.join(" · ")}`;
   }
+  const personalReason = personalIndustryReason(item);
+  if (personalReason) return personalReason;
   const recommendReason = String(item?.recommend_reason_zh || "").trim();
   if (recommendReason) return recommendReason;
   const signals = Array.isArray(item.ai_signals) ? item.ai_signals.filter(Boolean).slice(0, 3) : [];

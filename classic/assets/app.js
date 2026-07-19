@@ -713,7 +713,7 @@ function listTitleText() {
 function renderListSortTools() {
   if (!listSortToolsEl) return;
   const validSort = LIST_SORT_DEFS.some((item) => item.id === state.listSort);
-  if (!validSort) state.listSort = "priority";
+  if (!validSort) state.listSort = "latest";
   listSortToolsEl.querySelectorAll("[data-sort]").forEach((button) => {
     const active = button.dataset.sort === state.listSort;
     button.classList.toggle("active", active);
@@ -733,9 +733,6 @@ function sortItemsForList(items) {
   const sorted = [...items];
   if (state.listSort === "latest") {
     return sorted.sort((a, b) => timelineMs(b) - timelineMs(a) || itemPriorityScore(b) - itemPriorityScore(a));
-  }
-  if (state.listSort === "ai") {
-    return sorted.sort((a, b) => scorePercent(b) - scorePercent(a) || itemPriorityScore(b) - itemPriorityScore(a) || timelineMs(b) - timelineMs(a));
   }
   if (state.listSort === "source") {
     const counts = new Map();
@@ -897,7 +894,30 @@ function itemPriorityScore(item) {
   return Math.round((editorial * 0.3) + (source * 0.22) + (internal * 0.2) + (freshness * 0.18) + (signal * 0.1));
 }
 
+function personalIndustryCategories(item) {
+  const labels = {
+    ai: "AI",
+    pc: "PC",
+    server_industry: "服务器",
+  };
+  return (Array.isArray(item?.personal_interest_categories) ? item.personal_interest_categories : [])
+    .map((category) => labels[category] || category)
+    .filter(Boolean);
+}
+
+function personalIndustryReason(item) {
+  if (!item?.personal_interest_match) return "";
+  const categories = personalIndustryCategories(item);
+  const signals = (Array.isArray(item.personal_interest_signals) ? item.personal_interest_signals : [])
+    .filter(Boolean)
+    .slice(0, 4);
+  const scope = categories.length ? `关注范围：${categories.join(" / ")}` : "符合产业关注范围";
+  return signals.length ? `${scope} · 线索：${signals.join(" / ")}` : scope;
+}
+
 function labelText(item) {
+  const personal = personalIndustryCategories(item);
+  if (personal.length) return personal.join(" / ");
   const labels = {
     ai_general: "AI信号",
     model_release: "模型发布",
@@ -927,6 +947,8 @@ function itemHaystack(item) {
     item.site_id,
     item.ai_label,
     ...(Array.isArray(item.ai_signals) ? item.ai_signals : []),
+    ...(Array.isArray(item.personal_interest_categories) ? item.personal_interest_categories : []),
+    ...(Array.isArray(item.personal_interest_signals) ? item.personal_interest_signals : []),
   ].filter(Boolean).join(" ").toLowerCase();
 }
 
@@ -1053,6 +1075,8 @@ function reasonText(item) {
     if (Number(item.creator_freshness_bonus || 0) > 0) parts.push("24h 加分");
     return `一周互动：${parts.join(" · ")}`;
   }
+  const personalReason = personalIndustryReason(item);
+  if (personalReason) return personalReason;
   const signals = Array.isArray(item.ai_signals) ? item.ai_signals.filter(Boolean).slice(0, 3) : [];
   if (signals.length) return `命中方向：${signals.join(" / ")}`;
   if (item.ai_relevance_reason) return String(item.ai_relevance_reason).replaceAll("_", " ");
@@ -1905,7 +1929,7 @@ function renderBolePicks() {
     : rankedFallbackRows(filtered).slice(0, defaultLimit);
   const top = rows.slice(0, 3);
   const remainingCount = Math.max(0, rows.length - top.length);
-  if (topStoriesTitleEl) topStoriesTitleEl.textContent = state.activeSection === "hot" ? "今日重点信号" : `${section.label}重点信号`;
+  if (topStoriesTitleEl) topStoriesTitleEl.textContent = state.activeSection === "hot" ? "最新产业信号" : `${section.label}最新信号`;
   const storyMeta = usesStories
     ? `展示池：热点 ${fmtNumber(candidateCounts.hot)}/${fmtNumber(candidateCounts.hotTotal)} · 时间线 ${fmtNumber(candidateCounts.timeline)}/${fmtNumber(candidateCounts.timelineTotal)}`
     : `展示池：${fmtNumber(rows.length)} 条`;
@@ -2191,13 +2215,12 @@ function renderItemNode(item, context = {}) {
   const categoryEl = node.querySelector(".category");
   categoryEl.textContent = kind.label;
   categoryEl.classList.add(`kind-${kind.tone}`);
-  const score = scorePercent(item);
   const creatorScore = creatorHotScore(item);
   const tagEl = document.createElement("span");
   tagEl.className = `ai-tag tone-${itemLabelTone(item)}`;
   tagEl.textContent = creatorScore && itemSections(item).has("creator")
-    ? `自媒体热度 · ${creatorScore}分`
-    : `${labelText(item)} · ${score || "?"}分`;
+    ? "自媒体热度"
+    : labelText(item);
   categoryEl.insertAdjacentElement("afterend", tagEl);
 
   const sourceEl = node.querySelector(".source");
@@ -2315,7 +2338,6 @@ function dedupeSubgroupItems(items) {
 function subgroupSortValue(items) {
   if (!items.length) return 0;
   if (state.listSort === "latest") return Math.max(...items.map(timelineMs));
-  if (state.listSort === "ai") return Math.max(...items.map(scorePercent));
   if (state.listSort === "source") return items.length;
   const leading = [...items]
     .sort((a, b) => itemPriorityScore(b) - itemPriorityScore(a))
@@ -2327,9 +2349,7 @@ function subgroupSummary(items, rawCount = items.length) {
   const count = `${fmtNumber(items.length)} 条`;
   const merged = rawCount - items.length;
   let ranking = "";
-  if (state.listSort === "priority") ranking = `综合 ${subgroupSortValue(items)}`;
   if (state.listSort === "latest") ranking = `最新 ${fmtTime(timelineIso(items[0]))}`;
-  if (state.listSort === "ai") ranking = `最高 AI ${subgroupSortValue(items)}分`;
   const mergedLabel = merged > 0 ? `合并 ${fmtNumber(merged)} 条重复` : "";
   return [count, ranking, mergedLabel].filter(Boolean).join(" · ");
 }
