@@ -24,7 +24,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "GPU"
       ],
       "priority": "core",
@@ -58,7 +58,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "芯片"
       ],
       "priority": "core",
@@ -127,7 +127,7 @@
       ],
       "scope": [
         "AI",
-        "服务器",
+        "Server",
         "数据中心"
       ],
       "priority": "core",
@@ -171,7 +171,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "GPU"
       ],
       "priority": "core",
@@ -205,7 +205,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "芯片"
       ],
       "priority": "core",
@@ -274,7 +274,7 @@
       ],
       "scope": [
         "AI",
-        "服务器",
+        "Server",
         "数据中心"
       ],
       "priority": "core",
@@ -306,7 +306,7 @@
       ],
       "scope": [
         "AI",
-        "服务器",
+        "Server",
         "云",
         "软件"
       ],
@@ -421,7 +421,7 @@
       ],
       "scope": [
         "AI",
-        "服务器",
+        "Server",
         "GPU"
       ],
       "priority": "core",
@@ -465,7 +465,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "供应链"
       ],
       "priority": "core",
@@ -510,7 +510,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "战略"
       ],
       "priority": "extended",
@@ -582,7 +582,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "芯片"
       ],
       "priority": "extended",
@@ -651,7 +651,7 @@
       "scope": [
         "AI",
         "PC",
-        "服务器",
+        "Server",
         "芯片"
       ],
       "priority": "core",

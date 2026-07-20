@@ -21,6 +21,7 @@
     ],
     pc: [
       [7, /\b(?:pc|notebook|laptop|desktop|workstation|ai pc|copilot\+ pc|personal computer)\b|笔记本|台式机|工作站|个人电脑/i],
+      [6, /\b(?:apu|mobile processor|mobile chip|mobile cpu|laptop cpu|notebook processor)\b|移动处理器|移动芯片|笔记本处理器/i],
       [5, /\b(?:ryzen|core ultra|snapdragon x|macbook|chromebook|client gpu)\b/i],
       [4, /\b(?:cpu|npu|motherboard|webcam|headset|keyboard|touchpad|thunderbolt|usb-c)\b|处理器|主板|摄像头|耳机|键盘|触控板/i],
       [3, /\b(?:rtx\s?\d{3,4}|radeon|geforce|audio)\b|显卡|音频/i],

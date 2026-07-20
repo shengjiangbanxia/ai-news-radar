@@ -4,6 +4,7 @@ const taxonomy = require("../assets/industry-taxonomy.js");
 const cases = [
   ["Kimi K3 benchmark exceeds Gemini", "ai_models"],
   ["AMD Ryzen 7 desktop CPU review", "pc"],
+  ["AMD's next-gen 10-core Medusa Point APU outpaces every x86 mobile chip", "pc"],
   ["New AI server platform uses EPYC processors", "server"],
   ["Oracle data center faces a multibillion-dollar cost surprise", "datacenter"],
   ["TSMC expands CoWoS advanced packaging", "semiconductor"],
