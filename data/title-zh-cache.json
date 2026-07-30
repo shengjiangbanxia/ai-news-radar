@@ -28566,5 +28566,10 @@
   "Examining the best options for PCIe SSDs during the RAMpocalypse — capacity trumps raw speed for most tasks": "在 RAMpocalypse 期间检查 PCIe SSD 的最佳选择 — 对于大多数任务来说，容量胜过原始速度",
   "Server Networking Boom Drives $300 Million Funding For Xsight": "服务器网络热潮为 Xsight 带来 3 亿美元融资",
   "summary_zh|Intel reportedly licenses Atom-class x86 cores to a startup led by Lip-Bu Tan's co-investor and incorporated in May.": "据报道，英特尔将 Atom 级 x86 核心授权给一家由 Lip-Bu Tan 的联合投资者领导并于 5 月成立的初创公司。",
-  "TSMC Develops AI Chip Packaging Tech to Counter Intel": "台积电开发AI芯片封装技术对抗英特尔"
+  "TSMC Develops AI Chip Packaging Tech to Counter Intel": "台积电开发AI芯片封装技术对抗英特尔",
+  "summary_zh|An internal presentation revealed that a failed AI deployment cost Amazon $1.8 million, while a couple of other projects resulted in hundreds of thousands of extra AI expense. What's worse is that the issue went undetected for several months.": "一份内部演示显示，一次失败的人工智能部署给亚马逊造成了 180 万美元的损失，而其他几个项目则导致了数十万美元的额外人工智能费用。更糟糕的是，这个问题几个月都没有被发现。",
+  "summary_zh|It’s likely a niche issue, but I discovered recently that my magnetic watch clasp was confusing an Acer laptop into thinking I was closing and opening the lid, causing me to repeatedly get logged out of Windows just as I tried to type.": "这可能是一个小众问题，但我最近发现我的磁性手表扣让宏碁笔记本电脑误以为我正在关闭和打开盖子，导致我在尝试打字时反复退出 Windows。",
+  "summary_zh|Apple Silicon has been a popular choice for local AI exploration thanks to its high memory bandwidth compared to other unified memory platforms. We tested the M4 Max version of Apple's Mac Studio to see whether its 546GB/s of bandwidth makes it the clear winner in local LLM inference.": "与其他统一内存平台相比，Apple Silicon 凭借其高内存带宽而成为本地 AI 探索的热门选择。我们测试了 Apple Mac Studio 的 M4 Max 版本，看看其 546GB/s 的带宽是否使其在本地 LLM 推理中成为明显的赢家。",
+  "summary_zh|Google eyes to build more TPU AI accelerators in 2028 than Nvidia, if a report by Fubon Research is correct.": "如果富邦研究院的报告准确的话，谷歌计划在 2028 年建造比 Nvidia 更多的 TPU AI 加速器。",
+  "summary_zh|Premium Nvidia GeForce RTX 5080 and RTX 5090 graphics cards are once again selling far above MSRP, with some Asus and MSI models climbing close to $5,000.": "高级 Nvidia GeForce RTX 5080 和 RTX 5090 显卡的售价再次远高于建议零售价，部分华硕和 MSI 型号的售价攀升至接近 5,000 美元。"
 }
