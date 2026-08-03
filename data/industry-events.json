@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T06:53:35+08:00",
-  "as_of": "2026-08-03",
+  "generated_at": "2026-08-04T06:57:30+08:00",
+  "as_of": "2026-08-04",
   "timezone": "Asia/Shanghai",
   "lookahead_days": 180,
   "milestones": [
@@ -37,12 +37,14 @@
       "source_url": "https://www.hotchips.org/",
       "source_title": "Hot Chips 2026",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
-        "ok": false,
-        "method": null,
-        "error": "ConnectTimeout: HTTPSConnectionPool(host='www.hotchips.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hotchips.org', port=443) at 0x7fc770114ed0>, 'Connection to www.hotchips.org "
+        "checked_at": "2026-08-04T06:57:30+08:00",
+        "ok": true,
+        "method": "official_page",
+        "http_status": 200,
+        "registration_open": false,
+        "agenda_published": true
       },
-      "days_remaining": 20,
+      "days_remaining": 19,
       "reminder_band": "thirty_days",
       "within_lookahead": true,
       "has_material_change": true
@@ -70,14 +72,14 @@
       "source_url": "https://www.qualcomm.com/snapdragon/news/the-new-snapdragon-insiders-access-program-is-here--now-availabl",
       "source_title": "Snapdragon Insiders Access Program 2026",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": false,
         "agenda_published": false
       },
-      "days_remaining": 50,
+      "days_remaining": 49,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -104,15 +106,26 @@
       "source_url": "https://www.opencompute.org/summit/global-summit",
       "source_title": "2026 OCP Global Summit",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
-        "ok": false,
-        "method": null,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.opencompute.org/summit/global-summit"
+        "checked_at": "2026-08-04T06:57:30+08:00",
+        "ok": true,
+        "method": "official_text",
+        "http_status": 200,
+        "registration_open": false,
+        "agenda_published": true,
+        "structured_candidate": {
+          "name": "OCP Global Summit",
+          "start_date": "2026-10-12",
+          "end_date": "2026-10-15",
+          "location": null,
+          "attendance_mode": ""
+        },
+        "candidate_hash": "ebc5c535af19f013",
+        "text_date_match": true
       },
-      "days_remaining": 70,
+      "days_remaining": 69,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
-      "has_material_change": false
+      "has_material_change": true
     }
   ],
   "changes": [
@@ -122,13 +135,34 @@
       "changes": [
         {
           "field": "verification.registration_open",
-          "old": true,
-          "new": null
+          "old": null,
+          "new": false
         },
         {
           "field": "verification.agenda_published",
-          "old": true,
-          "new": null
+          "old": null,
+          "new": true
+        }
+      ]
+    },
+    {
+      "id": "ocp-global-summit",
+      "cycle": 2026,
+      "changes": [
+        {
+          "field": "verification.registration_open",
+          "old": null,
+          "new": false
+        },
+        {
+          "field": "verification.agenda_published",
+          "old": null,
+          "new": true
+        },
+        {
+          "field": "verification.candidate_hash",
+          "old": null,
+          "new": "ebc5c535af19f013"
         }
       ]
     }
@@ -136,9 +170,9 @@
   "source_check": {
     "configured": 18,
     "checked": 18,
-    "successful": 15,
+    "successful": 17,
     "structured_matches": 0,
-    "date_matches": 3,
+    "date_matches": 4,
     "review_required": 0
   },
   "events": [
@@ -165,12 +199,14 @@
       "source_url": "https://www.hotchips.org/",
       "source_title": "Hot Chips 2026",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
-        "ok": false,
-        "method": null,
-        "error": "ConnectTimeout: HTTPSConnectionPool(host='www.hotchips.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.hotchips.org', port=443) at 0x7fc770114ed0>, 'Connection to www.hotchips.org "
+        "checked_at": "2026-08-04T06:57:30+08:00",
+        "ok": true,
+        "method": "official_page",
+        "http_status": 200,
+        "registration_open": false,
+        "agenda_published": true
       },
-      "days_remaining": 20,
+      "days_remaining": 19,
       "reminder_band": "thirty_days",
       "within_lookahead": true,
       "has_material_change": true
@@ -198,14 +234,14 @@
       "source_url": "https://www.qualcomm.com/snapdragon/news/the-new-snapdragon-insiders-access-program-is-here--now-availabl",
       "source_title": "Snapdragon Insiders Access Program 2026",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": false,
         "agenda_published": false
       },
-      "days_remaining": 50,
+      "days_remaining": 49,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -232,15 +268,26 @@
       "source_url": "https://www.opencompute.org/summit/global-summit",
       "source_title": "2026 OCP Global Summit",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
-        "ok": false,
-        "method": null,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.opencompute.org/summit/global-summit"
+        "checked_at": "2026-08-04T06:57:30+08:00",
+        "ok": true,
+        "method": "official_text",
+        "http_status": 200,
+        "registration_open": false,
+        "agenda_published": true,
+        "structured_candidate": {
+          "name": "OCP Global Summit",
+          "start_date": "2026-10-12",
+          "end_date": "2026-10-15",
+          "location": null,
+          "attendance_mode": ""
+        },
+        "candidate_hash": "ebc5c535af19f013",
+        "text_date_match": true
       },
-      "days_remaining": 70,
+      "days_remaining": 69,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
-      "has_material_change": false
+      "has_material_change": true
     },
     {
       "id": "microsoft-ignite",
@@ -265,14 +312,14 @@
       "source_url": "https://ignite.microsoft.com/",
       "source_title": "Microsoft Ignite 2026",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": true,
         "agenda_published": true
       },
-      "days_remaining": 106,
+      "days_remaining": 105,
       "reminder_band": null,
       "within_lookahead": true,
       "has_material_change": false
@@ -299,7 +346,7 @@
       "source_url": "https://www.ces.tech/about-ces/about-ces/",
       "source_title": "CES Future Show Dates",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -315,7 +362,7 @@
         "candidate_hash": "39ce372dc777eb54",
         "text_date_match": true
       },
-      "days_remaining": 156,
+      "days_remaining": 155,
       "reminder_band": null,
       "within_lookahead": true,
       "has_material_change": false
@@ -344,14 +391,14 @@
       "source_url": "https://www.mwcbarcelona.com/about/",
       "source_title": "MWC Barcelona 2027 event details",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": true,
         "agenda_published": true
       },
-      "days_remaining": 210,
+      "days_remaining": 209,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
@@ -379,7 +426,7 @@
       "source_url": "https://www.nvidia.com/gtc/faq/",
       "source_title": "GTC 2027 Conference FAQs",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -395,7 +442,7 @@
         "candidate_hash": "30ac3f3df71e9ef9",
         "text_date_match": true
       },
-      "days_remaining": 223,
+      "days_remaining": 222,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
@@ -423,7 +470,7 @@
       "source_url": "https://www.computextaipei.com.tw/en/news/A9462967BB2D7702/info.html",
       "source_title": "COMPUTEX 2026 concludes and confirms 2027 dates",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -439,7 +486,7 @@
         "candidate_hash": "3e7e1878289d3ec0",
         "text_date_match": true
       },
-      "days_remaining": 302,
+      "days_remaining": 301,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
@@ -468,7 +515,7 @@
       "source_url": "https://ir.amd.com/news-events/financial-analyst-day",
       "source_title": "AMD Financial Analyst Day",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -504,7 +551,7 @@
       "source_url": "https://developer.apple.com/wwdc/",
       "source_title": "Apple Developer WWDC",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -540,7 +587,7 @@
       "source_url": "https://developer.arm.com/developer",
       "source_title": "Arm Developer",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -574,7 +621,7 @@
       "source_url": "https://io.google/",
       "source_title": "Google I/O",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -609,7 +656,7 @@
       "source_url": "https://www.intel.com/content/www/us/en/events/overview.html",
       "source_title": "Intel Events",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -644,7 +691,7 @@
       "source_url": "https://www.intel.com/content/www/us/en/support/articles/000096384/programs.html",
       "source_title": "Intel Client Ecosystem Symposium access",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -679,7 +726,7 @@
       "source_url": "https://build.microsoft.com/",
       "source_title": "Microsoft Build",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -714,7 +761,7 @@
       "source_url": "https://www.worldaic.com.cn/",
       "source_title": "世界人工智能大会",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -748,7 +795,7 @@
       "source_url": "https://learn.microsoft.com/windows-hardware/",
       "source_title": "Windows Hardware Developer",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -784,12 +831,12 @@
       "source_title": "AMD Events and Conferences",
       "note": "官方活动页列出 7 月 22–23 日；7 月 23 日为旗舰发布与直播主日程。",
       "verification": {
-        "checked_at": "2026-08-03T06:53:35+08:00",
+        "checked_at": "2026-08-04T06:57:30+08:00",
         "ok": false,
         "method": null,
         "error": "ReadTimeout: HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=12)"
       },
-      "days_remaining": -12,
+      "days_remaining": -13,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
