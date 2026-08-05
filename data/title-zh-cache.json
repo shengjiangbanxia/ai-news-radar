@@ -28661,5 +28661,7 @@
   "summary_zh|AMD reported record revenue in Q2 2026, including doubling its data center business year-over-year, but gaming revenue dived 31%.": "AMD 公布 2026 年第二季度收入创纪录，其中数据中心业务同比翻一番，但游戏收入下降了 31%。",
   "[News] Qualcomm’s Sep. Chip Price Hikes Revealed, Premium Flagships Face Steepest 10–15% Increase": "【新闻】高通9月芯片涨价曝光，高端旗舰涨价10-15%",
   "[News] Samsung Showcases zHBM at FMS 2026, a Next-Gen 3D Memory Architecture with 8X HBM5 Performance": "[新闻] 三星在 FMS 2026 上展示 zHBM，这是具有 8 倍 HBM5 性能的下一代 3D 内存架构",
-  "[News] Samsung Unveils Industry-First 400+ Layer V10 BV-NAND; Memory Density Up 58% vs. V9": "【新闻】三星推出业界首款400+层V10 BV-NAND；内存密度比 V9 提高 58%"
+  "[News] Samsung Unveils Industry-First 400+ Layer V10 BV-NAND; Memory Density Up 58% vs. V9": "【新闻】三星推出业界首款400+层V10 BV-NAND；内存密度比 V9 提高 58%",
+  "[Insights] Memory Spot Price Update: DRAM Spot Price Gains Slow, While DDR4 and DDR3 Continue Uptrend": "【洞察】内存现货价格更新：DRAM现货价格涨势缓慢，DDR4、DDR3持续上涨",
+  "summary_zh|A modder has attached a full-sized RTX 5060 graphics card to a ZimaCube 2 NAS server and achieved up to 8x faster performance in games. The jerry-rigged setup doesn't look the most polished, and the CPU is heavily bottlenecked, but it still, uh, exists.": "改装者将全尺寸 RTX 5060 显卡连接到 ZimaCube 2 NAS 服务器，游戏性能提高了 8 倍。偷工减料的设置看起来并不完美，CPU 也存在严重瓶颈，但它仍然存在。"
 }
