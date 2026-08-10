@@ -28760,5 +28760,8 @@
   "[News] Samsung Reportedly Developing In-House Humanoid Robots; Forms CEO-Led RX Robotics Division": "【新闻】据报道三星正在开发内部人形机器人；成立首席执行官领导的 RX 机器人部门",
   "[News] Samsung’s HBM4 Yield Reportedly Hits 80% as HBM Race Heats Up, SK hynix Labor Talks Add a Twist": "【新闻】HBM竞赛升温，三星HBM4良率据称达80%，SK海力士劳资谈判添波折",
   "summary_zh|Can TileRT software on NVIDIA GPU compete with Cerebras, Groq LPU, SambaNova? Batch Size 1, Disaggregated engine, high throughput engine Prefill, high interactivity engine decode": "NVIDIA GPU 上的 TileRT 软件能否与 Cerebras、Groq LPU、SambaNova 竞争？批量大小 1、分解引擎、高吞吐量引擎预填充、高交互性引擎解码",
-  "Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX": "NVIDIA GPU 上的超高交互性？ - TileRT InferenceX"
+  "Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX": "NVIDIA GPU 上的超高交互性？ - TileRT InferenceX",
+  "summary_zh|MSN Weather acts as the native weather app for Windows 11 and all it does it run a bunch of Chromium subprocesses in the background to retrieve the forecast data. This causes it to use 5x more memory than the macOS weather app. And, oh, you also get to enjoy ads!": "MSN Weather 充当 Windows 11 的本机天气应用程序，它的作用是在后台运行一堆 Chromium 子进程来检索预报数据。这导致它使用的内存比 macOS 天气应用多 5 倍。而且，哦，您还可以享受广告！",
+  "summary_zh|Save $413 on this 4TB Samsung 9100 Pro SSD, offering super-fast Gen 5 speeds, now priced at $619.99 in this limited-time Woot sale.": "购买这款 4TB 三星 9100 Pro SSD 可节省 413 美元，提供超快的第 5 代速度，现在 Woot 限时促销中售价 619.99 美元。",
+  "summary_zh|A farmer in China followed an AI app's advice for his 25-acre farmland, resulting in the death of his entire crop of sesame seedlings. 67-year-old man was initially skeptical of the tool but eventually trusted it after months of using it.": "中国的一名农民听从了人工智能应用程序的建议，照料了他 25 英亩的农田，结果导致他的芝麻苗全部死亡。 67 岁的男子最初对这个工具持怀疑态度，但在使用了几个月后最终信任了它。"
 }
