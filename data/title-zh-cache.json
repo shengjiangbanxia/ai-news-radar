@@ -28757,5 +28757,8 @@
   "Turtle Beach Command Series KB5 Review: A touchscreen and a numberpad in one keyboard?": "Turtle Beach Command 系列 KB5 评测：触摸屏和数字键盘合二为一？",
   "Data Center Bans Top 500 as New York, Texas Join Pushback": "纽约、德克萨斯州加入抵制，数据中心被禁止 500 强",
   "AI’s Software Winners and Losers Are Becoming Clearer": "人工智能软件的赢家和输家正变得更加清晰",
-  "[News] Samsung Reportedly Developing In-House Humanoid Robots; Forms CEO-Led RX Robotics Division": "【新闻】据报道三星正在开发内部人形机器人；成立首席执行官领导的 RX 机器人部门"
+  "[News] Samsung Reportedly Developing In-House Humanoid Robots; Forms CEO-Led RX Robotics Division": "【新闻】据报道三星正在开发内部人形机器人；成立首席执行官领导的 RX 机器人部门",
+  "[News] Samsung’s HBM4 Yield Reportedly Hits 80% as HBM Race Heats Up, SK hynix Labor Talks Add a Twist": "【新闻】HBM竞赛升温，三星HBM4良率据称达80%，SK海力士劳资谈判添波折",
+  "summary_zh|Can TileRT software on NVIDIA GPU compete with Cerebras, Groq LPU, SambaNova? Batch Size 1, Disaggregated engine, high throughput engine Prefill, high interactivity engine decode": "NVIDIA GPU 上的 TileRT 软件能否与 Cerebras、Groq LPU、SambaNova 竞争？批量大小 1、分解引擎、高吞吐量引擎预填充、高交互性引擎解码",
+  "Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX": "NVIDIA GPU 上的超高交互性？ - TileRT InferenceX"
 }
