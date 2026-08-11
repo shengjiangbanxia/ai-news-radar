@@ -28783,5 +28783,6 @@
   "Zuckerberg v. Amodei in AI Marketing": "扎克伯格诉阿莫迪人工智能营销案",
   "[News] SK hynix-linked BCPE Pangea Cayman2 Becomes Kioxia’s Largest Shareholder; Influence Under Scrutiny": "【新闻】SK海力士关联的BCPE Pangea Cayman2成为Kioxia第一大股东；影响力受到密切关注",
   "[News] Samsung Reportedly Eyes High-NA EUV for 1nm around 2030 as TSMC Also Takes a Cautious Approach": "[新闻] 据报道，三星计划在 2030 年左右推出高数值孔径 EUV 1nm，台积电也采取谨慎态度",
-  "[News] TSMC’s 5.5-Reticle CoWoS Reportedly Tops 99% Yield; Flags Memory, ABF as AI Bottlenecks": "【新闻】台积电5.5线CoWoS良率据称突破99%；将内存、ABF 标记为 AI 瓶颈"
+  "[News] TSMC’s 5.5-Reticle CoWoS Reportedly Tops 99% Yield; Flags Memory, ABF as AI Bottlenecks": "【新闻】台积电5.5线CoWoS良率据称突破99%；将内存、ABF 标记为 AI 瓶颈",
+  "summary_zh|The custom machine uses an ESP32-C3, OLED display, and 16-key keypad while squeezing retro gaming into a tiny 150mW power budget.": "这款定制机器采用 ESP32-C3、OLED 显示屏和 16 键键盘，同时将复古游戏压缩到 150mW 的微小功耗预算中。"
 }
