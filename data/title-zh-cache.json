@@ -28831,5 +28831,10 @@
   "summary_zh|Qualcomm has detailed the specs for its Snapdragon C processor, with 8 cores and claimed \"all-day\" battery life.": "高通公司详细介绍了其 Snapdragon C 处理器的规格，该处理器具有 8 个核心，并声称具有“全天”电池寿命。",
   "Nebius, CoreWeave Are Cashing In on Soaring AI Compute Prices": "Nebius 和 CoreWeave 正在从不断飙升的人工智能计算价格中获利",
   "[News] Samsung, SK hynix’s HBM4 Push Puts HBM, General Memory Pricing in the Spotlight for 2H Earnings": "【新闻】三星、SK海力士推HBM4，HBM、通用内存定价成为2H财报焦点",
-  "[News] Intel Reportedly Hints at Memory Reentry, Eyes CPU-Memory Stacking as XBM Patent Emerges": "[新闻]据报道英特尔暗示内存重入，随着XBM专利的出现，着眼于CPU内存堆叠"
+  "[News] Intel Reportedly Hints at Memory Reentry, Eyes CPU-Memory Stacking as XBM Patent Emerges": "[新闻]据报道英特尔暗示内存重入，随着XBM专利的出现，着眼于CPU内存堆叠",
+  "summary_zh|Alabama residents left powerless to stop 50 MW Bitcoin mining facility despite county and town moratoriums thanks to the state's lack of appropriate zoning laws.": "由于阿拉巴马州缺乏适当的分区法，尽管各县和城镇已暂停运营，但阿拉巴马州的居民仍无力停止 50 兆瓦的比特币挖矿设施。",
+  "summary_zh|Elon Musk expects xAI to increase its nameplate power draw to 10 GW by late 2027, which will increase its performance by orders of magnitude what is available to AI today.": "埃隆·马斯克 (Elon Musk) 预计 xAI 到 2027 年底将其铭牌功耗增加到 10 GW，这将使其性能比当今 AI 可用的性能提高几个数量级。",
+  "summary_zh|Cerebras keeps growing, but misses forecast as hardware sales dip amid explosive increase of AI cloud revenue.": "Cerebras 持续增长，但由于人工智能云收入爆炸性增长导致硬件销量下降，未能达到预期。",
+  "Cerebras shares plunge nearly 20% after missing earnings expectations — hardware sales drop but AI cloud revenue climbs 281%": "Cerebras 营收未达预期，股价暴跌近 20%——硬件销量下降，但人工智能云收入增长 281%",
+  "summary_zh|PCIe 6.0 SSDs are almost here. We review the state of PCIe 6.0 SSDs and controllers from Micron and Samsung, as well as controllers that can handle 2 Petabyte-class SSDs with 28 TB/s read/write speeds.": "PCIe 6.0 SSD 即将问世。我们回顾了美光和三星的 PCIe 6.0 SSD 和控制器的状态，以及可处理 2 PB 级 SSD、读/写速度为 28 TB/s 的控制器。"
 }
