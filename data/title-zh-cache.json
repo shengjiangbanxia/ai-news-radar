@@ -28862,5 +28862,10 @@
   "PoV of NVIDIA acquiring Groq, and then the leftover of Groq is now buying NVIDIA B300/GB300/Rubin GPUs &amp; LPUs and renting them out to enterprises/neolabs. A lot of the clusters Groq is renting out don’t even include…": "NVIDIA 收购 Groq 的 PoV，然后 Groq 的剩余部分现在购买 NVIDIA B300/GB300/Rubin GPU 和 LPU，并将其出租给企业/neolab。 Groq 出租的许多集群甚至不包括……",
   "OpenAI’s Latest Hire Burnishes Its Cybersecurity Credentials": "OpenAI 的最新员工提升了其网络安全资质",
   "[News] SMIC 2Q26 Gross Margin Hits 25.3%, Eyes 26%–28% in 3Q as AI Spillover, Pricing Momentum Build": "【新闻】中芯国际2Q26毛利率达25.3%，AI溢出，预计3Q 26%-28%，定价动能增强",
-  "[News] Nanya Tech Reportedly Eyes Yunlin, Pingtung Fabs for 1d DRAM, Custom Memory, Investment to Top NT$300B": "[新闻] 传南亚科技有意云林、屏东厂建1d DRAM、客制化内存 投资额高达新台币300B元"
+  "[News] Nanya Tech Reportedly Eyes Yunlin, Pingtung Fabs for 1d DRAM, Custom Memory, Investment to Top NT$300B": "[新闻] 传南亚科技有意云林、屏东厂建1d DRAM、客制化内存 投资额高达新台币300B元",
+  "summary_zh|The heavily modified ZTE Nubia Z70 Ultra uses two full-size CPU coolers to keep its Snapdragon 8 Elite running under sustained loads, while Termux, Linux and compatibility layers turn it into a makeshift desktop PC.": "经过大幅修改的中兴努比亚 Z70 Ultra 使用两个全尺寸 CPU 冷却器，以保持其 Snapdragon 8 Elite 在持续负载下运行，而 Termux、Linux 和兼容性层将其变成临时台式电脑。",
+  "summary_zh|In a surprising move, AMD announces plans to raise $4.75 billion and does not give a clue how it plans to spend them.": "AMD 出人意料地宣布计划筹集 47.5 亿美元资金，但没有透露计划如何使用这些资金。",
+  "AMD borrows $4.75 billion for 'general corporate purposes' — company gives no insight into how it plans to spend cash injection": "AMD 借入 47.5 亿美元用于“一般企业用途”——该公司没有透露计划如何支出现金注入",
+  "summary_zh|Gigabyte has quietly launched the B450M D3HP and B450M D3HP WIFI6E motherboards based on the AMD B450 chipset, which launched in 2018.": "技嘉悄然推出了基于AMD B450芯片组的B450M D3HP和B450M D3HP WIFI6E主板，该主板于2018年推出。",
+  "summary_zh|Just one instruction on AMD CPUs gets you access to Platform Security Processor, microcode, and System Management Interface — exploit for 15h and 16h chip families cracks open secret memory areas": "AMD CPU 上的一条指令即可让您访问平台安全处理器、微代码和系统管理接口 - 15h 和 16h 芯片系列的漏洞可破解公开秘密内存区域"
 }
