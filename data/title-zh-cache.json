@@ -28951,5 +28951,8 @@
   "Google Says Its AI Can Do the Work of Forward Deployed Engineers": "谷歌表示其人工智能可以完成前沿部署工程师的工作",
   "[News] ZHITAI Launches Ti600s SSD with YMTC’s Xtacking 4.0 QLC NAND, Random Write Performance Up 114%": "【新闻】智泰推出Ti600s SSD，搭载长江存储Xtacking 4.0 QLC NAND，随机写入性能提升114%",
   "[Insights] Memory Spot Price Update: 3Q DRAM Spot Volumes Seen Staying Low; DDR4 Prices Up 0.67% This Week": "[洞察]内存现货价格更新：第三季度DRAM现货量持续低迷； DDR4价格本周上涨0.67%",
-  "[News] Korea’s Next-Gen OLED Push Gains Steam With LG FLiPP, Samsung Wide View Debuts": "【新闻】LG FLiPP 助力韩国下一代 OLED 发展，三星 Wide View 亮相"
+  "[News] Korea’s Next-Gen OLED Push Gains Steam With LG FLiPP, Samsung Wide View Debuts": "【新闻】LG FLiPP 助力韩国下一代 OLED 发展，三星 Wide View 亮相",
+  "[News] SK hynix Reportedly Builds Silicon Valley HBM Team to Boost Customer Co-Design With U.S. Big Tech": "【新闻】据报道SK海力士组建硅谷HBM团队，推动与美国科技巨头客户协同设计",
+  "summary_zh|Building neural networks in Minecraft using redstone is a relatively common pursuit, but a clever creator has worked around the limitations of command blocks' available math operations to implement an LLM in just 445,782 blocks, down from over a million in the initial implementation.": "在《我的世界》中使用红石构建神经网络是一种相对常见的追求，但聪明的创造者已经解决了命令块可用数学运算的限制，仅用 445,782 个块实现了 LLM，而最初实现时的数量超过一百万个。",
+  "summary_zh|A developer posted their Doom port for the Canon EOS 550D on GitHub. The game uses the Magic Lantern firmware add-on to run on the camera, and uses various camera buttons to play the game directly from the SD card.": "一位开发人员在 GitHub 上发布了适用于 Canon EOS 550D 的 Doom 端口。该游戏使用Magic Lantern固件插件在相机上运行，​​并使用各种相机按钮直接从SD卡玩游戏。"
 }
