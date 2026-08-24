@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T19:01:14.957632Z",
+  "generated_at": "2026-08-24T19:46:09.850891Z",
   "window_hours": 24,
   "total_items": 1,
   "items": [
@@ -128,15 +128,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.6028,
-      "importance": 0.6028,
-      "importance_score": 0.6028,
+      "score": 0.6009,
+      "importance": 0.6009,
+      "importance_score": 0.6009,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.504,
         "source_tier": 0.5,
         "ai_relevance": 0.7,
-        "recency": 0.9812,
+        "recency": 0.9707,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -176,7 +176,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T19:07:49.450667Z"
+        "scored_at": "2026-08-24T19:52:55.852928Z"
       }
     }
   ]
