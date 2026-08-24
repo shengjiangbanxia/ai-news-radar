@@ -1,6 +1,183 @@
 {
-  "generated_at": "2026-08-24T17:47:43.130004Z",
+  "generated_at": "2026-08-24T19:01:14.957632Z",
   "window_hours": 24,
-  "total_items": 0,
-  "items": []
+  "total_items": 1,
+  "items": [
+    {
+      "story_id": "story_d1a2471e09a9",
+      "title": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+      "url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+      "primary_url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+      "source": "Tom's Hardware",
+      "source_name": "OPML RSS",
+      "sources": [
+        {
+          "id": "6e2dcc2685c95d21213ce5bba61f69faa4b828ec",
+          "title": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_zh": null,
+          "title_en": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_original": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "summary": "IBM is vastly expanding softwarte support on its mainframes with its first dual-ISA CPU core that natively supports z/Architecture and ARM instructions.",
+          "summary_zh": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+          "source": "Tom's Hardware",
+          "source_name": "OPML RSS",
+          "site_id": "opmlrss",
+          "published_at": "2026-08-24T17:42:34Z",
+          "personal_interest_match": true,
+          "personal_interest_categories": [
+            "ai",
+            "pc"
+          ],
+          "personal_interest_signals": [
+            "ai",
+            "arm",
+            "cpu",
+            "processor"
+          ],
+          "personal_interest_reason": "matched_interest"
+        },
+        {
+          "id": "c2c33f0cceac35727154655faff72770a67d7174",
+          "title": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_zh": null,
+          "title_en": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_original": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "summary": "IBM is vastly expanding softwarte support on its mainframes with its first dual-ISA CPU core that natively supports z/Architecture and ARM instructions.",
+          "summary_zh": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+          "source": "Tom's Hardware",
+          "source_name": "OPML RSS",
+          "site_id": "opmlrss",
+          "published_at": "2026-08-24T17:42:34Z",
+          "personal_interest_match": true,
+          "personal_interest_categories": [
+            "ai",
+            "pc"
+          ],
+          "personal_interest_signals": [
+            "ai",
+            "arm",
+            "cpu",
+            "processor"
+          ],
+          "personal_interest_reason": "matched_interest"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Tom's Hardware"
+      ],
+      "items": [
+        {
+          "id": "6e2dcc2685c95d21213ce5bba61f69faa4b828ec",
+          "title": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_zh": null,
+          "title_en": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_original": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "summary": "IBM is vastly expanding softwarte support on its mainframes with its first dual-ISA CPU core that natively supports z/Architecture and ARM instructions.",
+          "summary_zh": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+          "source": "Tom's Hardware",
+          "source_name": "OPML RSS",
+          "site_id": "opmlrss",
+          "published_at": "2026-08-24T17:42:34Z",
+          "personal_interest_match": true,
+          "personal_interest_categories": [
+            "ai",
+            "pc"
+          ],
+          "personal_interest_signals": [
+            "ai",
+            "arm",
+            "cpu",
+            "processor"
+          ],
+          "personal_interest_reason": "matched_interest"
+        },
+        {
+          "id": "c2c33f0cceac35727154655faff72770a67d7174",
+          "title": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_zh": null,
+          "title_en": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "title_original": "IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+          "summary": "IBM is vastly expanding softwarte support on its mainframes with its first dual-ISA CPU core that natively supports z/Architecture and ARM instructions.",
+          "summary_zh": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+          "source": "Tom's Hardware",
+          "source_name": "OPML RSS",
+          "site_id": "opmlrss",
+          "published_at": "2026-08-24T17:42:34Z",
+          "personal_interest_match": true,
+          "personal_interest_categories": [
+            "ai",
+            "pc"
+          ],
+          "personal_interest_signals": [
+            "ai",
+            "arm",
+            "cpu",
+            "processor"
+          ],
+          "personal_interest_reason": "matched_interest"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.6028,
+      "importance": 0.6028,
+      "importance_score": 0.6028,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.504,
+        "source_tier": 0.5,
+        "ai_relevance": 0.7,
+        "recency": 0.9812,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-24T17:42:34Z",
+      "latest_at": "2026-08-24T17:42:34Z",
+      "primary_item": {
+        "id": "6e2dcc2685c95d21213ce5bba61f69faa4b828ec",
+        "title": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+        "title_zh": null,
+        "title_en": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+        "title_original": "Hot Chips 2026: IBM's first dual-ISA core natively executes ARM and z/Architecture in the same core; all cores run at 5.7 GHz base frequency — next-gen mainframe AI processor is built on 2nm node with 11 cores",
+        "summary": "IBM is vastly expanding softwarte support on its mainframes with its first dual-ISA CPU core that natively supports z/Architecture and ARM instructions.",
+        "summary_zh": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.tomshardware.com/pc-components/cpus/ibms-first-dual-isa-core-natively-executes-arm-and-z-architecture-in-the-same-core-all-cores-run-at-5-7-ghz-base-frequency-next-gen-mainframe-ai-processor-is-built-on-2nm-node-with-11-cores",
+        "source": "Tom's Hardware",
+        "source_name": "OPML RSS",
+        "site_id": "opmlrss",
+        "published_at": "2026-08-24T17:42:34Z",
+        "personal_interest_match": true,
+        "personal_interest_categories": [
+          "ai",
+          "pc"
+        ],
+        "personal_interest_signals": [
+          "ai",
+          "arm",
+          "cpu",
+          "processor"
+        ],
+        "personal_interest_reason": "matched_interest"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-24T19:07:49.450667Z"
+      }
+    }
+  ]
 }
