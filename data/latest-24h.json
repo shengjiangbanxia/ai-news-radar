@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-26T23:36:21.098538Z",
+  "generated_at": "2026-08-27T09:52:23.105995Z",
   "window_hours": 24,
-  "total_items": 29,
-  "total_items_ai_raw": 30,
-  "total_items_raw": 43,
-  "total_items_all_mode": 30,
+  "total_items": 33,
+  "total_items_ai_raw": 34,
+  "total_items_raw": 48,
+  "total_items_all_mode": 34,
   "topic_filter": "personal_ai_pc_server_interest_v1",
   "ai_relevance_threshold": 0.65,
-  "archive_total": 754,
+  "archive_total": 763,
   "site_count": 2,
   "source_count": 3,
   "site_stats": [
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 29,
-      "raw_count": 43
+      "count": 33,
+      "raw_count": 48
     },
     {
       "site_id": "xapi",
@@ -30,6 +30,185 @@
   "creator_items_all": [],
   "items": [
     {
+      "id": "498d0acae25929895fd94e91df4279371d6c774a",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-apple-suppliers-diverge-in-1h26-lens-profit-nearly-halves-on-rising-memory-costs-luxshare-revenue-jumps-40",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "apple",
+        "memory"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%",
+      "title_en": "[News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%",
+      "title_zh": "【新闻】1H26苹果供应商分化：内存成本上涨镜头利润减半，立讯精密营收大涨40%",
+      "title_bilingual": "【新闻】1H26苹果供应商分化：内存成本上涨镜头利润减半，立讯精密营收大涨40% / [News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%"
+    },
+    {
+      "id": "855532405a471a4d03964aa6d43ce91e0555f8b7",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-apples-first-ternus-era-launch-event-set-for-sept-9-foldable-may-debut-standard-iphone-18-eyed-for-2027",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc"
+      ],
+      "personal_interest_signals": [
+        "apple"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027",
+      "title_en": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027",
+      "title_zh": null,
+      "title_bilingual": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027"
+    },
+    {
+      "id": "194a874d5f208fd51b02069669bcfff003b06db2",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-kioxia-reportedly-plans-jpy-1t-nand-fab-in-japan-operations-eyed-for-2029-or-later",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "kioxia",
+        "nand"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "title_en": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "title_zh": "[新闻] 据报道 Kioxia 计划在日本建设 JPY 1T+ NAND 晶圆厂，预计 2029 年或更晚运营",
+      "title_bilingual": "[新闻] 据报道 Kioxia 计划在日本建设 JPY 1T+ NAND 晶圆厂，预计 2029 年或更晚运营 / [News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later"
+    },
+    {
+      "id": "d6c792c95f825745e70fed4ac6f4a2660203b069",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-nvidias-supply-commitments-soar-to-279b-as-memory-costs-surge-new-nvhbm-boosts-bandwidth-30-cuts-power-15",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "memory",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%",
+      "title_en": "[News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%",
+      "title_zh": "【新闻】随着内存成本飙升，NVIDIA 的供应承诺飙升至 $279B；新的 NVHBM 将带宽提升 30%",
+      "title_bilingual": "【新闻】随着内存成本飙升，NVIDIA 的供应承诺飙升至 $279B；新的 NVHBM 将带宽提升 30% / [News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%"
+    },
+    {
+      "id": "bed30e7fc4941e9474aba54b11340727c05120fa",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-qualcomm-reportedly-enlists-samsung-sk-hynix-as-hbc-memory-partners-tsmc-eyes-packaging-role",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "memory",
+        "qualcomm",
+        "samsung",
+        "sk hynix",
+        "tsmc"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
+      "title_en": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
+      "title_zh": "【新闻】据报道高通宣布三星、SK海力士成为HBC内存合作伙伴；台积电关注封装角色",
+      "title_bilingual": "【新闻】据报道高通宣布三星、SK海力士成为HBC内存合作伙伴；台积电关注封装角色 / [News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role"
+    },
+    {
       "id": "b9492a7cd736232b6343bd910c62f68afae95c7d",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -62,8 +241,120 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%",
       "title_en": "[News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%",
+      "title_zh": "[新闻] 三星电机、LG Innotek 扩大 AI 基板产能，据报道 1H 利用率接近 90%",
+      "title_bilingual": "[新闻] 三星电机、LG Innotek 扩大 AI 基板产能，据报道 1H 利用率接近 90% / [News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%"
+    },
+    {
+      "id": "9bb1efd3683000b321c72f9acc1d3a3c4143bded",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-revenue-tops-usd96-billion-as-memory-commitments-soar-to-usd160-billion-ceo-jensen-huang-says-ai-has-reached-its-inflection-point",
+      "published_at": "2026-08-27T09:13:54Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "Nvidia's Q2 FY2027 revenue tops $96 billion as the company commits to buy up to $160 billion worth of memory, increasing its total commitments to $279 billion ahead of a major demand bump.",
+      "ai_is_related": true,
+      "ai_score": 0.67,
+      "ai_label": "ai_general",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "memory",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
+      "title_en": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
       "title_zh": null,
-      "title_bilingual": "[News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%"
+      "title_bilingual": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
+      "summary_zh": "Nvidia 2027 财年第二季度收入突破 960 亿美元，该公司承诺购买价值高达 1600 亿美元的内存，在需求大幅增长之前将其承诺总额增加到 2790 亿美元。"
+    },
+    {
+      "id": "0c1bf2b81c4b1c79eaf853ce79cf9eb607c6c4d7",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "The Information",
+      "title": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion",
+      "url": "https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion",
+      "published_at": "2026-08-27T01:26:00Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.71,
+      "ai_label": "ai_general",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "hugging face"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion",
+      "title_en": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion",
+      "title_zh": "Nvidia 同意以 129 亿美元收购开源 AI 平台 Hugging Face",
+      "title_bilingual": "Nvidia 同意以 129 亿美元收购开源 AI 平台 Hugging Face / Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion"
+    },
+    {
+      "id": "aa399c448b0345927fcbce336583e896a0682e62",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "The Information",
+      "title": "Bill Gates’ AI Warning and Nvidia’s Boffo Quarter",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/bill-gates-ai-warning-nvidias-boffo-quarter",
+      "published_at": "2026-08-27T00:01:00Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.67,
+      "ai_label": "ai_general",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Bill Gates’ AI Warning and Nvidia’s Boffo Quarter",
+      "title_en": "Bill Gates’ AI Warning and Nvidia’s Boffo Quarter",
+      "title_zh": "比尔·盖茨的人工智能警告和英伟达的 Boffo Quarter",
+      "title_bilingual": "比尔·盖茨的人工智能警告和英伟达的 Boffo Quarter / Bill Gates’ AI Warning and Nvidia’s Boffo Quarter"
     },
     {
       "id": "53ca20203cf959c64f04a7c507eff865452be2a8",
@@ -74,7 +365,7 @@
       "url": "https://www.tomshardware.com/pc-components/dram/nvidia-custom-nvhbm-promises-30-percent-higher-bandwidth-15-percent-lower-power-than-commodity-hbm4e-custom-base-die-and-phy-will-be-available-to-nvlink-fusion-partners",
       "published_at": "2026-08-26T22:45:22Z",
       "first_seen_at": "2026-08-26T23:36:21.098538Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Nvidia has unveiled NVHBM, a custom high-bandwidth memory implementation that promises higher bandwidth and lower power for customers building chips within the NVLink Fusion partner program.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -99,7 +390,8 @@
       "title_original": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
       "title_en": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
       "title_zh": null,
-      "title_bilingual": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners"
+      "title_bilingual": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
+      "summary_zh": "Nvidia 推出了 NVHBM，这是一种定制的高带宽内存实现，可为在 NVLink Fusion 合作伙伴计划中构建芯片的客户提供更高的带宽和更低的功耗。"
     },
     {
       "id": "461ed9703c6e7c3036438df414b1eb0e9a03a518",
@@ -110,7 +402,7 @@
       "url": "https://www.theinformation.com/newsletters/the-information-finance/investors-going-escape-ai",
       "published_at": "2026-08-26T19:40:00Z",
       "first_seen_at": "2026-08-26T23:36:21.098538Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -132,8 +424,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Where Investors Are Going to Escape AI",
       "title_en": "Where Investors Are Going to Escape AI",
-      "title_zh": null,
-      "title_bilingual": "Where Investors Are Going to Escape AI"
+      "title_zh": "投资者将逃离人工智能的地方",
+      "title_bilingual": "投资者将逃离人工智能的地方 / Where Investors Are Going to Escape AI"
     },
     {
       "id": "0dca9c98b0c3188fca26e6bfc95d767dda9f53b8",
@@ -144,7 +436,7 @@
       "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-presents-groq-3-lpx-architecture-and-unveils-its-first-third-party-inference-benchmark",
       "published_at": "2026-08-26T16:23:37Z",
       "first_seen_at": "2026-08-26T17:00:38.963208Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Igor Arsovski, now Nvidia's VP of hardware, presented the Groq 3 LPX rack's architecture and published the first third-party benchmark of the hardware.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -171,7 +463,8 @@
       "title_original": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
       "title_en": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says"
+      "title_bilingual": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
+      "summary_zh": "现任 Nvidia 硬件副总裁的 Igor Arsovski 介绍了 Groq 3 LPX 机架的架构，并发布了第一个第三方硬件基准测试。"
     },
     {
       "id": "362c08eb04a5763c64a4c44d2e8fe05a90c5c20e",
@@ -182,7 +475,7 @@
       "url": "https://www.trendforce.com/news/2026/08/26/news-apple-unveils-m6-its-first-2nm-chip-built-by-tsmc-with-30-ai-gpu-compute-boost-vs-m5",
       "published_at": "2026-08-26T15:59:59Z",
       "first_seen_at": "2026-08-26T04:57:04.940256Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.73,
@@ -212,8 +505,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5",
       "title_en": "[News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5",
-      "title_zh": null,
-      "title_bilingual": "[News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5"
+      "title_zh": "【新闻】苹果推出首款台积电2nm芯片M6，AI GPU计算能力较M5提升30%",
+      "title_bilingual": "【新闻】苹果推出首款台积电2nm芯片M6，AI GPU计算能力较M5提升30% / [News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5"
     },
     {
       "id": "063769cc9d187575c6013175e04f5c9ef00cf418",
@@ -224,7 +517,7 @@
       "url": "https://www.trendforce.com/news/2026/08/26/news-openai-debuts-jalapeno-ai-inference-chip-with-samsung-reportedly-supplying-hbm4",
       "published_at": "2026-08-26T15:59:59Z",
       "first_seen_at": "2026-08-26T03:19:22.301933Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.74,
@@ -253,8 +546,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4",
       "title_en": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4",
-      "title_zh": null,
-      "title_bilingual": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4"
+      "title_zh": "【新闻】OpenAI首次推出Jalapeño AI推理芯片 传三星供应HBM4",
+      "title_bilingual": "【新闻】OpenAI首次推出Jalapeño AI推理芯片 传三星供应HBM4 / [News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4"
     },
     {
       "id": "fb7649953894f24288c2344658314c5154663c8b",
@@ -289,8 +582,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027",
       "title_en": "[News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027",
-      "title_zh": null,
-      "title_bilingual": "[News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027"
+      "title_zh": "【新闻】三星 4nm GAIA 或将首次在 AI PC 中实现 PIM 商业化，最早将于 2027 年量产",
+      "title_bilingual": "【新闻】三星 4nm GAIA 或将首次在 AI PC 中实现 PIM 商业化，最早将于 2027 年量产 / [News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027"
     },
     {
       "id": "1f09a231725a9e4c904e5314163e302dee90b408",
@@ -323,8 +616,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold",
       "title_en": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold",
-      "title_zh": null,
-      "title_bilingual": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold"
+      "title_zh": "【新闻】据报道韩国 DRAM 价格三年内飙升 12.5 倍，涨幅超过黄金",
+      "title_bilingual": "【新闻】据报道韩国 DRAM 价格三年内飙升 12.5 倍，涨幅超过黄金 / [News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold"
     },
     {
       "id": "5a42d6e897f4f8c8edbf80c79f637193bc1d2bb3",
@@ -335,7 +628,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/hot-chips-2026-nvidia-touts-benefits-of-its-dsx-maxlps-site-power-management-approach-tech-allows-for-more-compute-from-fixed-data-center-power-budgets",
       "published_at": "2026-08-26T14:42:10Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "During Nvidia's Hot Chips presentation on the Rubin GPU, the company emphasized power as a hard limit on data center capacity and touted the amount of compute that Vera Rubin NVL72 systems can deliver within an example fixed facility power budget of 100MW.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -362,7 +655,8 @@
       "title_original": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
       "title_en": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets"
+      "title_bilingual": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
+      "summary_zh": "在 Nvidia 关于 Rubin GPU 的 Hot Chips 演示中，该公司强调功率是数据中心容量的硬性限制，并宣传 Vera Rubin NVL72 系统可以在 100MW 固定设施功率预算示例中提供的计算量。"
     },
     {
       "id": "12e940ade8b3ea87c45cf9a4eb54acfd72f847c5",
@@ -373,7 +667,7 @@
       "url": "https://www.theinformation.com/newsletters/ai-agenda/companies-using-old-school-software-grade-ai-agents",
       "published_at": "2026-08-26T14:00:00Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -395,8 +689,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "How Companies Are Using Old-School Software to Grade AI Agents",
       "title_en": "How Companies Are Using Old-School Software to Grade AI Agents",
-      "title_zh": null,
-      "title_bilingual": "How Companies Are Using Old-School Software to Grade AI Agents"
+      "title_zh": "公司如何使用老式软件对人工智能代理进行评分",
+      "title_bilingual": "公司如何使用老式软件对人工智能代理进行评分 / How Companies Are Using Old-School Software to Grade AI Agents"
     },
     {
       "id": "bf20971a5d192269b1a2118f68bceb5ce6d6082e",
@@ -407,7 +701,7 @@
       "url": "https://www.tomshardware.com/pc-components/save-usd260-on-this-high-end-am5-gaming-combo-from-newegg-just-usd1-345-99-buys-a-ryzen-9-9950x3d-32gb-corsair-ddr5-ram-msi-x870e-carbon-wifi-motherboard-along-with-a-free-240mm-aio-and-amd-game-bundle",
       "published_at": "2026-08-26T14:00:00Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Newegg bundles the Ryzen 9 9950X3D, MSI X870E Carbon Wifi, and 32GB Corsair Vengeance DDR5-6000 for only $1,345.99 - a solid $259.99 off, plus a free 240mm AIO and AMD game bundle. A wicked deal for gamers and creators alike",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -431,7 +725,8 @@
       "title_original": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
       "title_en": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
       "title_zh": null,
-      "title_bilingual": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle"
+      "title_bilingual": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
+      "summary_zh": "Newegg 捆绑 Ryzen 9 9950X3D、MSI X870E Carbon Wifi 和 32GB Corsair Vengeance DDR5-6000，仅需 1,345.99 美元 - 优惠 259.99 美元，外加免费的 240mm AIO 和 AMD 游戏捆绑包。对于游戏玩家和创作者来说都是一笔邪恶的交易"
     },
     {
       "id": "5c81dbcad43bbd43960ad81e1341bd2dab965974",
@@ -442,7 +737,7 @@
       "url": "https://www.tomshardware.com/pc-components/cpus/fujitsus-monaka-cpu-stacks-its-entire-cache-on-a-separate-5nm-die-and-narrows-to-256-bit-sve2",
       "published_at": "2026-08-26T13:30:00Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Fujitsu gave us a detailed look at its 144-core Monaka server CPU at Hot Chips 2026 on August 24, confirming for the first time that the Arm chip runs dual 256-bit SVE2 vector units, down from the 512-bit SVE in its A64FX predecessor.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -470,7 +765,8 @@
       "title_original": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
       "title_en": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027"
+      "title_bilingual": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
+      "summary_zh": "8 月 24 日，富士通在 Hot Chips 2026 上向我们详细介绍了其 144 核 Monaka 服务器 CPU，首次确认该 Arm 芯片运行双 256 位 SVE2 矢量单元，低于其 A64FX 前身中的 512 位 SVE。"
     },
     {
       "id": "48e5b6397aed62a30108e2da9145d6a86b3a4340",
@@ -481,7 +777,7 @@
       "url": "https://www.tomshardware.com/tech-industry/cryptocurrency/crypto-bro-faces-280-years-in-prison-for-defrauding-investors-with-promises-of-an-ai-supercomputer-for-mining-jury-convicts-businessman-of-running-usd24-million-ponzi-scheme-claimed-up-to-30-percent-apr-and-a-100-percent-money-back-guarantee",
       "published_at": "2026-08-26T13:29:52Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "A man claiming to give massive returns to investors has been found guilty of wire fraud, mail fraud, and money laundering by a Nevada court. Brent Kovar now faces up to 280 years behind bars for his crimes, although sentencing will still be held on November 30.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -506,7 +802,8 @@
       "title_original": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee",
       "title_en": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee",
       "title_zh": null,
-      "title_bilingual": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee"
+      "title_bilingual": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee",
+      "summary_zh": "一名声称为投资者提供巨额回报的男子被内华达州法院判定犯有电信欺诈、邮件欺诈和洗钱罪。布伦特·科瓦尔 (Brent Kovar) 目前因其罪行面临最高 280 年的监禁，不过宣判仍将于 11 月 30 日进行。"
     },
     {
       "id": "0fb150eff067a0e7beed3f52e051e37e9ebcaef7",
@@ -517,7 +814,7 @@
       "url": "https://www.tomshardware.com/video-games/console-gaming/xbox-marks-25-years-with-a-translucent-green-accessory-line-but-none-of-it-is-xbox-hardware",
       "published_at": "2026-08-26T13:12:05Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Microsoft has opened preorders for the Designed for Xbox 25th Anniversary Collection.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -541,7 +838,8 @@
       "title_original": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now",
       "title_en": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now",
       "title_zh": null,
-      "title_bilingual": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now"
+      "title_bilingual": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now",
+      "summary_zh": "Microsoft 已开放“Designed for Xbox 25 周年纪念系列”的预订。"
     },
     {
       "id": "477abcb3775ea1edb0e327859327929b7a6b4df9",
@@ -552,7 +850,7 @@
       "url": "https://www.tomshardware.com/laptops/chuwi-unibook-review-a-budget-rival-to-the-macbook-neo-and-dell-xps-13",
       "published_at": "2026-08-26T13:05:00Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "A budget-friendly ultraportable with premium aspirations, the Chuwi UniBook packs modern Intel hardware, excellent connectivity, and impressive battery life into a sleek metal chassis.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -575,8 +873,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
       "title_en": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
-      "title_zh": null,
-      "title_bilingual": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13"
+      "title_zh": "Chuwi UniBook 评测：MacBook Neo 和戴尔 XPS 13 的预算竞争对手",
+      "title_bilingual": "Chuwi UniBook 评测：MacBook Neo 和戴尔 XPS 13 的预算竞争对手 / Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
+      "summary_zh": "Chuwi UniBook 是一款经济实惠的超便携笔记本电脑，具有高端的愿望，将现代英特尔硬件、出色的连接性和令人印象深刻的电池寿命集成到时尚的金属机箱中。"
     },
     {
       "id": "4e2df46c238002fd838a8b56851c1f73740c201b",
@@ -587,7 +886,7 @@
       "url": "https://www.tomshardware.com/pc-components/ssds/hot-chips-2026-high-bandwidth-flash-promises-massive-bandwidth-and-capacity-but-its-usability-is-extremely-limited-new-memory-format-strikes-a-balance-between-hbm-and-nand-flash",
       "published_at": "2026-08-26T13:00:00Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "OXMIQ presented its High Bandwidth Flash (HBF) use-case scenarios at Hot Chips 2026, which dramatically narrow the circumstances under which HBF makes sense.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -614,7 +913,8 @@
       "title_original": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
       "title_en": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash"
+      "title_bilingual": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
+      "summary_zh": "OXMIQ 在 Hot Chips 2026 上展示了其高带宽闪存 (HBF) 使用场景，极大地缩小了 HBF 有意义的环境。"
     },
     {
       "id": "762043093c94f6ccf24d6213552f04be16e57134",
@@ -625,7 +925,7 @@
       "url": "https://www.tomshardware.com/pc-components/external-ssds/crucial-ssd-owner-offered-usd200-refund-for-4tb-drive-now-selling-for-over-usd500-company-finally-caves-to-warranty-demands-after-protracted-back-and-forth",
       "published_at": "2026-08-26T12:05:03Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Micron initially told a customer that no replacement Crucial X9 4TB SSDs were available and offered a refund based on last year’s purchase price, but a firm pushback ultimately resulted in a replacement.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -649,7 +949,8 @@
       "title_original": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth",
       "title_en": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth",
       "title_zh": null,
-      "title_bilingual": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth"
+      "title_bilingual": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth",
+      "summary_zh": "美光最初告诉一位客户，没有替代的 Crucial X9 4TB SSD，并根据去年的购买价格提供退款，但坚决抵制最终导致更换。"
     },
     {
       "id": "04296e867089c8581098dd7d214c3ea8ee299321",
@@ -660,7 +961,7 @@
       "url": "https://www.tomshardware.com/tech-industry/semiconductors/d-matrix-stacks-its-ai-accelerator-directly-on-custom-dram-for-100-tbs-per-card",
       "published_at": "2026-08-26T12:00:00Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "d-Matrix presented Raptor, which it calls the first 3D DRAM accelerator for generative inference, showing a TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed DRAM die.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -691,7 +992,8 @@
       "title_original": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die",
       "title_en": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die"
+      "title_bilingual": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die",
+      "summary_zh": "d-Matrix 展示了 Raptor，它称之为首款用于生成推理的 3D DRAM 加速器，展示了在定制设计的 DRAM 芯片顶部以 36 微米间距面对面粘合的台积电 4 纳米计算芯片。"
     },
     {
       "id": "682a9b2115779b6c8d569e0b82a1f2586798127c",
@@ -702,7 +1004,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/bill-gates-calls-for-some-jobs-to-be-human-reserved-suggests-taxing-ai-tokens-and-robots-billionaire-says-that-ai-era-will-be-one-of-the-most-turbulent-times-in-human-history",
       "published_at": "2026-08-26T11:34:04Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "The billionaire philanthropist penned a 6,000-word essay raising the societal risks that AI bring and his proposed solutions to protect the average person.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -727,7 +1029,8 @@
       "title_original": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
       "title_en": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
       "title_zh": null,
-      "title_bilingual": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’"
+      "title_bilingual": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
+      "summary_zh": "这位亿万富翁慈善家撰写了一篇 6000 字的文章，提出了人工智能带来的社会风险以及他提出的保护普通人的解决方案。"
     },
     {
       "id": "608f6d81bc1619e432ef2d1d707b49fce4a7d1ef",
@@ -738,7 +1041,7 @@
       "url": "https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-arm-details-agi-server-cpu-with-two-70-core-n3p-chiplets-touts-2-tb-s-ucie-fabric-link-and-12-channel-memory-controller",
       "published_at": "2026-08-26T11:00:00Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Arm reveals more details about its AGI processors with up to 136 cores, but fails to disclose performance.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -767,7 +1070,8 @@
       "title_original": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller",
       "title_en": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller"
+      "title_bilingual": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller",
+      "summary_zh": "Arm 透露了有关其最多 136 个核心的 AGI 处​​理器的更多细节，但没有透露性能。"
     },
     {
       "id": "a78fbde38589d983217e1bd195b1ff95266719c7",
@@ -778,7 +1082,7 @@
       "url": "https://www.tomshardware.com/maker-stem/mad-scientist-makes-leds-in-his-backyard-semiconductor-wizard-who-made-his-own-ram-turns-his-attention-to-blinkenlights",
       "published_at": "2026-08-26T11:00:00Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to blinkenlights",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -803,7 +1107,8 @@
       "title_original": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers",
       "title_en": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers",
       "title_zh": null,
-      "title_bilingual": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers"
+      "title_bilingual": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers",
+      "summary_zh": "疯狂科学家在自家后院制作 LED——自制 RAM 的半导体奇才将注意力转向了闪烁灯"
     },
     {
       "id": "d9fffcde477126ce568f45c042ff30544479d79f",
@@ -814,7 +1119,7 @@
       "url": "https://www.tomshardware.com/desktops/gaming-pcs/get-an-rtx-5080-gaming-pc-for-just-usd2-349-usd750-best-buy-discount-is-a-great-way-to-beat-inflated-component-prices",
       "published_at": "2026-08-26T10:56:21Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Get an RTX 5080 PC with 32GB of RAM and a 1TB SSD for just $2,349.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -839,7 +1144,8 @@
       "title_original": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices",
       "title_en": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices",
       "title_zh": null,
-      "title_bilingual": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices"
+      "title_bilingual": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices",
+      "summary_zh": "只需 2,349 美元即可购买配备 32GB RAM 和 1TB SSD 的 RTX 5080 PC。"
     },
     {
       "id": "e8495240d357d7d4c6c67b851a4d4a706cd22200",
@@ -850,7 +1156,7 @@
       "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/upgrade-to-a-premium-wireless-low-profile-gaming-keyboard-for-just-usd42-save-42-percent-on-the-hot-swappable-hexgears-immersion-a3-tkl-with-these-stackable-discounts",
       "published_at": "2026-08-26T10:49:48Z",
       "first_seen_at": "2026-08-26T10:52:21.317909Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Low-profile keys, a small screen, RGB, and plenty of connectivity options for an amazing price.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -873,7 +1179,8 @@
       "title_original": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts",
       "title_en": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts",
       "title_zh": null,
-      "title_bilingual": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts"
+      "title_bilingual": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts",
+      "summary_zh": "低调的按键、小屏幕、RGB 和大量的连接选项，价格令人惊叹。"
     },
     {
       "id": "18f932c47df6d980d48f56528831f6180c47a50e",
@@ -884,7 +1191,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-paint-and-photos-apps-add-invisible-watermark-to-ai-generated-content-developer-reverse-engineers-guid-embedding",
       "published_at": "2026-08-26T10:30:00Z",
       "first_seen_at": "2026-08-26T10:52:21.317909Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "A developer has uncovered some previously unknown GUID watermarking functionality deep within Microsoft’s Paint and Photos apps.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -910,7 +1217,8 @@
       "title_original": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding",
       "title_en": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding",
       "title_zh": null,
-      "title_bilingual": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding"
+      "title_bilingual": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding",
+      "summary_zh": "一名开发人员在微软的画图和照片应用程序中发现了一些以前未知的 GUID 水印功能。"
     },
     {
       "id": "43282eb8af10b8e200c159478386e48b35437506",
@@ -946,163 +1254,191 @@
       "title_original": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
       "title_en": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
       "title_zh": null,
-      "title_bilingual": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them"
-    },
-    {
-      "id": "80eb6803f6f3daeca163228ce3ca8aac2369b7e6",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Tom's Hardware",
-      "title": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-bans-russian-chatgpt-accounts-behind-a-fake-think-tank-pushing-pro-kremlin-narratives",
-      "published_at": "2026-08-26T09:41:55Z",
-      "first_seen_at": "2026-08-26T10:52:21.317909Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "Instead of using ChatGPT to write the articles, the operators used the chatbot to strip any wording that might mark them as Russian speakers.",
-      "ai_is_related": true,
-      "ai_score": 0.75,
-      "ai_label": "model_release",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [
-        "gpt",
-        "openai"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai"
-      ],
-      "personal_interest_signals": [
-        "openai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
-      "title_en": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
-      "title_zh": null,
-      "title_bilingual": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website"
-    },
-    {
-      "id": "0a1ff86b426988c3b389c82b3abffa70759650e5",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Tom's Hardware",
-      "title": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-turns-a-lenovo-yoga-laptop-an-m-2-slot-and-amd-radeon-rx-7900-xt-into-the-worlds-stupidest-desktop-for-local-ai-chatbots-m-2-franken-rig-crippled-by-laptop-dram-swap",
-      "published_at": "2026-08-26T09:30:00Z",
-      "first_seen_at": "2026-08-26T09:58:31.698240Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "Enthusiast turns a Lenovo Yoga laptop and an AMD Radeon RX 7900 XT into \"the world's stupidest\" desktop for local LLMs",
-      "ai_is_related": true,
-      "ai_score": 0.67,
-      "ai_label": "ai_general",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai",
-        "pc",
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "ai",
-        "amd",
-        "desktop",
-        "dram",
-        "laptop",
-        "local ai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
-      "title_en": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
-      "title_zh": null,
-      "title_bilingual": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap"
-    },
-    {
-      "id": "68e135f9a824bb9a0f36f861cf3e23fbc32af03e",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
-      "url": "https://www.theinformation.com/articles/deepseeks-revenue-reaches-70-million-july-tenfold-jump-2025",
-      "published_at": "2026-08-26T06:50:00Z",
-      "first_seen_at": "2026-08-26T07:10:08.166637Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "",
-      "ai_is_related": true,
-      "ai_score": 0.71,
-      "ai_label": "model_release",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [
-        "deepseek"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai"
-      ],
-      "personal_interest_signals": [
-        "deepseek"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
-      "title_en": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
-      "title_zh": null,
-      "title_bilingual": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025"
-    },
-    {
-      "id": "1d8a406c8e65896ec68a4d25b216e4b9bcc5336c",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
-      "url": "https://www.theinformation.com/newsletters/the-briefing/openais-jalapeno-might-sicken-nvidia",
-      "published_at": "2026-08-26T00:00:00Z",
-      "first_seen_at": "2026-08-26T01:59:14.690652Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "",
-      "ai_is_related": true,
-      "ai_score": 0.71,
-      "ai_label": "ai_product_update",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [
-        "openai"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai",
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "nvidia",
-        "openai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
-      "title_en": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
-      "title_zh": null,
-      "title_bilingual": "Why OpenAI’s Jalapeño Might Sicken Nvidia"
+      "title_bilingual": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
+      "summary_zh": "对美国环保局法规的拟议修改将取消各州就空气污染许可证征求公众意见的要求，特别是在人工智能数据中心周围。"
     }
   ],
   "items_ai": [
     {
+      "id": "498d0acae25929895fd94e91df4279371d6c774a",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-apple-suppliers-diverge-in-1h26-lens-profit-nearly-halves-on-rising-memory-costs-luxshare-revenue-jumps-40",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "apple",
+        "memory"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%",
+      "title_en": "[News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%",
+      "title_zh": "【新闻】1H26苹果供应商分化：内存成本上涨镜头利润减半，立讯精密营收大涨40%",
+      "title_bilingual": "【新闻】1H26苹果供应商分化：内存成本上涨镜头利润减半，立讯精密营收大涨40% / [News] Apple Suppliers Diverge in 1H26: Lens Profit Halves on Rising Memory Costs, Luxshare Revenue Jumps 40%"
+    },
+    {
+      "id": "855532405a471a4d03964aa6d43ce91e0555f8b7",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-apples-first-ternus-era-launch-event-set-for-sept-9-foldable-may-debut-standard-iphone-18-eyed-for-2027",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc"
+      ],
+      "personal_interest_signals": [
+        "apple"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027",
+      "title_en": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027",
+      "title_zh": null,
+      "title_bilingual": "[News] Apple’s First Ternus-Era Launch Event Set for Sept. 9, Foldable May Debut; Standard iPhone 18 Eyed for 2027"
+    },
+    {
+      "id": "194a874d5f208fd51b02069669bcfff003b06db2",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-kioxia-reportedly-plans-jpy-1t-nand-fab-in-japan-operations-eyed-for-2029-or-later",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "kioxia",
+        "nand"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "title_en": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "title_zh": "[新闻] 据报道 Kioxia 计划在日本建设 JPY 1T+ NAND 晶圆厂，预计 2029 年或更晚运营",
+      "title_bilingual": "[新闻] 据报道 Kioxia 计划在日本建设 JPY 1T+ NAND 晶圆厂，预计 2029 年或更晚运营 / [News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later"
+    },
+    {
+      "id": "d6c792c95f825745e70fed4ac6f4a2660203b069",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-nvidias-supply-commitments-soar-to-279b-as-memory-costs-surge-new-nvhbm-boosts-bandwidth-30-cuts-power-15",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "memory",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%",
+      "title_en": "[News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%",
+      "title_zh": "【新闻】随着内存成本飙升，NVIDIA 的供应承诺飙升至 $279B；新的 NVHBM 将带宽提升 30%",
+      "title_bilingual": "【新闻】随着内存成本飙升，NVIDIA 的供应承诺飙升至 $279B；新的 NVHBM 将带宽提升 30% / [News] NVIDIA’s Supply Commitments Soar to $279B as Memory Costs Surge; New NVHBM Boosts Bandwidth 30%"
+    },
+    {
+      "id": "bed30e7fc4941e9474aba54b11340727c05120fa",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
+      "url": "https://www.trendforce.com/news/2026/08/27/news-qualcomm-reportedly-enlists-samsung-sk-hynix-as-hbc-memory-partners-tsmc-eyes-packaging-role",
+      "published_at": "2026-08-27T15:59:59Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "memory",
+        "qualcomm",
+        "samsung",
+        "sk hynix",
+        "tsmc"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
+      "title_en": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
+      "title_zh": "【新闻】据报道高通宣布三星、SK海力士成为HBC内存合作伙伴；台积电关注封装角色",
+      "title_bilingual": "【新闻】据报道高通宣布三星、SK海力士成为HBC内存合作伙伴；台积电关注封装角色 / [News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role"
+    },
+    {
       "id": "b9492a7cd736232b6343bd910c62f68afae95c7d",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -1135,8 +1471,120 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%",
       "title_en": "[News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%",
+      "title_zh": "[新闻] 三星电机、LG Innotek 扩大 AI 基板产能，据报道 1H 利用率接近 90%",
+      "title_bilingual": "[新闻] 三星电机、LG Innotek 扩大 AI 基板产能，据报道 1H 利用率接近 90% / [News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%"
+    },
+    {
+      "id": "9bb1efd3683000b321c72f9acc1d3a3c4143bded",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-revenue-tops-usd96-billion-as-memory-commitments-soar-to-usd160-billion-ceo-jensen-huang-says-ai-has-reached-its-inflection-point",
+      "published_at": "2026-08-27T09:13:54Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "Nvidia's Q2 FY2027 revenue tops $96 billion as the company commits to buy up to $160 billion worth of memory, increasing its total commitments to $279 billion ahead of a major demand bump.",
+      "ai_is_related": true,
+      "ai_score": 0.67,
+      "ai_label": "ai_general",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "memory",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
+      "title_en": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
       "title_zh": null,
-      "title_bilingual": "[News] Samsung Electro-Mechanics, LG Innotek Ramp Up AI Substrate Capacity as 1H Utilization Reportedly Nears 90%"
+      "title_bilingual": "Nvidia revenue tops $96 billion as memory commitments soar to $160 billion — CEO Jensen Huang says AI 'has reached its inflection point'",
+      "summary_zh": "Nvidia 2027 财年第二季度收入突破 960 亿美元，该公司承诺购买价值高达 1600 亿美元的内存，在需求大幅增长之前将其承诺总额增加到 2790 亿美元。"
+    },
+    {
+      "id": "0c1bf2b81c4b1c79eaf853ce79cf9eb607c6c4d7",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "The Information",
+      "title": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion",
+      "url": "https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion",
+      "published_at": "2026-08-27T01:26:00Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.71,
+      "ai_label": "ai_general",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "hugging face"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion",
+      "title_en": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion",
+      "title_zh": "Nvidia 同意以 129 亿美元收购开源 AI 平台 Hugging Face",
+      "title_bilingual": "Nvidia 同意以 129 亿美元收购开源 AI 平台 Hugging Face / Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion"
+    },
+    {
+      "id": "aa399c448b0345927fcbce336583e896a0682e62",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "The Information",
+      "title": "Bill Gates’ AI Warning and Nvidia’s Boffo Quarter",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/bill-gates-ai-warning-nvidias-boffo-quarter",
+      "published_at": "2026-08-27T00:01:00Z",
+      "first_seen_at": "2026-08-27T09:52:23.105995Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.67,
+      "ai_label": "ai_general",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "nvidia"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Bill Gates’ AI Warning and Nvidia’s Boffo Quarter",
+      "title_en": "Bill Gates’ AI Warning and Nvidia’s Boffo Quarter",
+      "title_zh": "比尔·盖茨的人工智能警告和英伟达的 Boffo Quarter",
+      "title_bilingual": "比尔·盖茨的人工智能警告和英伟达的 Boffo Quarter / Bill Gates’ AI Warning and Nvidia’s Boffo Quarter"
     },
     {
       "id": "53ca20203cf959c64f04a7c507eff865452be2a8",
@@ -1147,7 +1595,7 @@
       "url": "https://www.tomshardware.com/pc-components/dram/nvidia-custom-nvhbm-promises-30-percent-higher-bandwidth-15-percent-lower-power-than-commodity-hbm4e-custom-base-die-and-phy-will-be-available-to-nvlink-fusion-partners",
       "published_at": "2026-08-26T22:45:22Z",
       "first_seen_at": "2026-08-26T23:36:21.098538Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Nvidia has unveiled NVHBM, a custom high-bandwidth memory implementation that promises higher bandwidth and lower power for customers building chips within the NVLink Fusion partner program.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1172,7 +1620,8 @@
       "title_original": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
       "title_en": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
       "title_zh": null,
-      "title_bilingual": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners"
+      "title_bilingual": "Nvidia custom 'NVHBM' promises 30% higher bandwidth, 15% lower power than commodity HBM4e — custom base die and PHY will be available to NVLink Fusion partners",
+      "summary_zh": "Nvidia 推出了 NVHBM，这是一种定制的高带宽内存实现，可为在 NVLink Fusion 合作伙伴计划中构建芯片的客户提供更高的带宽和更低的功耗。"
     },
     {
       "id": "461ed9703c6e7c3036438df414b1eb0e9a03a518",
@@ -1183,7 +1632,7 @@
       "url": "https://www.theinformation.com/newsletters/the-information-finance/investors-going-escape-ai",
       "published_at": "2026-08-26T19:40:00Z",
       "first_seen_at": "2026-08-26T23:36:21.098538Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1205,8 +1654,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Where Investors Are Going to Escape AI",
       "title_en": "Where Investors Are Going to Escape AI",
-      "title_zh": null,
-      "title_bilingual": "Where Investors Are Going to Escape AI"
+      "title_zh": "投资者将逃离人工智能的地方",
+      "title_bilingual": "投资者将逃离人工智能的地方 / Where Investors Are Going to Escape AI"
     },
     {
       "id": "0dca9c98b0c3188fca26e6bfc95d767dda9f53b8",
@@ -1217,7 +1666,7 @@
       "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-presents-groq-3-lpx-architecture-and-unveils-its-first-third-party-inference-benchmark",
       "published_at": "2026-08-26T16:23:37Z",
       "first_seen_at": "2026-08-26T17:00:38.963208Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Igor Arsovski, now Nvidia's VP of hardware, presented the Groq 3 LPX rack's architecture and published the first third-party benchmark of the hardware.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1244,7 +1693,8 @@
       "title_original": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
       "title_en": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says"
+      "title_bilingual": "Hot Chips 2026: Nvidia presents Groq 3 LPX architecture and unveils its first third-party inference benchmark — LP30-based rack already in production, company says",
+      "summary_zh": "现任 Nvidia 硬件副总裁的 Igor Arsovski 介绍了 Groq 3 LPX 机架的架构，并发布了第一个第三方硬件基准测试。"
     },
     {
       "id": "362c08eb04a5763c64a4c44d2e8fe05a90c5c20e",
@@ -1255,7 +1705,7 @@
       "url": "https://www.trendforce.com/news/2026/08/26/news-apple-unveils-m6-its-first-2nm-chip-built-by-tsmc-with-30-ai-gpu-compute-boost-vs-m5",
       "published_at": "2026-08-26T15:59:59Z",
       "first_seen_at": "2026-08-26T04:57:04.940256Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.73,
@@ -1285,8 +1735,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5",
       "title_en": "[News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5",
-      "title_zh": null,
-      "title_bilingual": "[News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5"
+      "title_zh": "【新闻】苹果推出首款台积电2nm芯片M6，AI GPU计算能力较M5提升30%",
+      "title_bilingual": "【新闻】苹果推出首款台积电2nm芯片M6，AI GPU计算能力较M5提升30% / [News] Apple Unveils M6, Its First 2nm Chip Built by TSMC, With 30% AI GPU Compute Boost vs. M5"
     },
     {
       "id": "063769cc9d187575c6013175e04f5c9ef00cf418",
@@ -1297,7 +1747,7 @@
       "url": "https://www.trendforce.com/news/2026/08/26/news-openai-debuts-jalapeno-ai-inference-chip-with-samsung-reportedly-supplying-hbm4",
       "published_at": "2026-08-26T15:59:59Z",
       "first_seen_at": "2026-08-26T03:19:22.301933Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.74,
@@ -1326,8 +1776,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4",
       "title_en": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4",
-      "title_zh": null,
-      "title_bilingual": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4"
+      "title_zh": "【新闻】OpenAI首次推出Jalapeño AI推理芯片 传三星供应HBM4",
+      "title_bilingual": "【新闻】OpenAI首次推出Jalapeño AI推理芯片 传三星供应HBM4 / [News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4"
     },
     {
       "id": "fb7649953894f24288c2344658314c5154663c8b",
@@ -1362,8 +1812,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027",
       "title_en": "[News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027",
-      "title_zh": null,
-      "title_bilingual": "[News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027"
+      "title_zh": "【新闻】三星 4nm GAIA 或将首次在 AI PC 中实现 PIM 商业化，最早将于 2027 年量产",
+      "title_bilingual": "【新闻】三星 4nm GAIA 或将首次在 AI PC 中实现 PIM 商业化，最早将于 2027 年量产 / [News] Samsung’s 4nm GAIA Could Mark First PIM Commercialization in AI PCs, Mass Production as Early as 2027"
     },
     {
       "id": "1f09a231725a9e4c904e5314163e302dee90b408",
@@ -1396,8 +1846,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold",
       "title_en": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold",
-      "title_zh": null,
-      "title_bilingual": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold"
+      "title_zh": "【新闻】据报道韩国 DRAM 价格三年内飙升 12.5 倍，涨幅超过黄金",
+      "title_bilingual": "【新闻】据报道韩国 DRAM 价格三年内飙升 12.5 倍，涨幅超过黄金 / [News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold"
     },
     {
       "id": "5a42d6e897f4f8c8edbf80c79f637193bc1d2bb3",
@@ -1408,7 +1858,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/hot-chips-2026-nvidia-touts-benefits-of-its-dsx-maxlps-site-power-management-approach-tech-allows-for-more-compute-from-fixed-data-center-power-budgets",
       "published_at": "2026-08-26T14:42:10Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "During Nvidia's Hot Chips presentation on the Rubin GPU, the company emphasized power as a hard limit on data center capacity and touted the amount of compute that Vera Rubin NVL72 systems can deliver within an example fixed facility power budget of 100MW.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1435,7 +1885,8 @@
       "title_original": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
       "title_en": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets"
+      "title_bilingual": "Hot Chips 2026: Nvidia touts benefits of its DSX MaxLPS site power management approach — tech allows for more compute from fixed data center power budgets",
+      "summary_zh": "在 Nvidia 关于 Rubin GPU 的 Hot Chips 演示中，该公司强调功率是数据中心容量的硬性限制，并宣传 Vera Rubin NVL72 系统可以在 100MW 固定设施功率预算示例中提供的计算量。"
     },
     {
       "id": "12e940ade8b3ea87c45cf9a4eb54acfd72f847c5",
@@ -1446,7 +1897,7 @@
       "url": "https://www.theinformation.com/newsletters/ai-agenda/companies-using-old-school-software-grade-ai-agents",
       "published_at": "2026-08-26T14:00:00Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1468,8 +1919,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "How Companies Are Using Old-School Software to Grade AI Agents",
       "title_en": "How Companies Are Using Old-School Software to Grade AI Agents",
-      "title_zh": null,
-      "title_bilingual": "How Companies Are Using Old-School Software to Grade AI Agents"
+      "title_zh": "公司如何使用老式软件对人工智能代理进行评分",
+      "title_bilingual": "公司如何使用老式软件对人工智能代理进行评分 / How Companies Are Using Old-School Software to Grade AI Agents"
     },
     {
       "id": "bf20971a5d192269b1a2118f68bceb5ce6d6082e",
@@ -1480,7 +1931,7 @@
       "url": "https://www.tomshardware.com/pc-components/save-usd260-on-this-high-end-am5-gaming-combo-from-newegg-just-usd1-345-99-buys-a-ryzen-9-9950x3d-32gb-corsair-ddr5-ram-msi-x870e-carbon-wifi-motherboard-along-with-a-free-240mm-aio-and-amd-game-bundle",
       "published_at": "2026-08-26T14:00:00Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Newegg bundles the Ryzen 9 9950X3D, MSI X870E Carbon Wifi, and 32GB Corsair Vengeance DDR5-6000 for only $1,345.99 - a solid $259.99 off, plus a free 240mm AIO and AMD game bundle. A wicked deal for gamers and creators alike",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1504,7 +1955,8 @@
       "title_original": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
       "title_en": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
       "title_zh": null,
-      "title_bilingual": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle"
+      "title_bilingual": "Save $260 on this high-end AM5 gaming combo from Newegg — just $1,345.99 buys a Ryzen 9 9950X3D, 32GB Corsair DDR5 RAM, MSI X870E Carbon Wifi motherboard, along with a free 240mm AIO and AMD game bundle",
+      "summary_zh": "Newegg 捆绑 Ryzen 9 9950X3D、MSI X870E Carbon Wifi 和 32GB Corsair Vengeance DDR5-6000，仅需 1,345.99 美元 - 优惠 259.99 美元，外加免费的 240mm AIO 和 AMD 游戏捆绑包。对于游戏玩家和创作者来说都是一笔邪恶的交易"
     },
     {
       "id": "5c81dbcad43bbd43960ad81e1341bd2dab965974",
@@ -1515,7 +1967,7 @@
       "url": "https://www.tomshardware.com/pc-components/cpus/fujitsus-monaka-cpu-stacks-its-entire-cache-on-a-separate-5nm-die-and-narrows-to-256-bit-sve2",
       "published_at": "2026-08-26T13:30:00Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Fujitsu gave us a detailed look at its 144-core Monaka server CPU at Hot Chips 2026 on August 24, confirming for the first time that the Arm chip runs dual 256-bit SVE2 vector units, down from the 512-bit SVE in its A64FX predecessor.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1543,7 +1995,8 @@
       "title_original": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
       "title_en": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027"
+      "title_bilingual": "Hot Chips 2026: Fujitsu's Monaka CPU stacks its entire cache on a separate 5nm die and narrows to 256-bit SVE2 — 350W and 500W SKUs due in 2027",
+      "summary_zh": "8 月 24 日，富士通在 Hot Chips 2026 上向我们详细介绍了其 144 核 Monaka 服务器 CPU，首次确认该 Arm 芯片运行双 256 位 SVE2 矢量单元，低于其 A64FX 前身中的 512 位 SVE。"
     },
     {
       "id": "48e5b6397aed62a30108e2da9145d6a86b3a4340",
@@ -1554,7 +2007,7 @@
       "url": "https://www.tomshardware.com/tech-industry/cryptocurrency/crypto-bro-faces-280-years-in-prison-for-defrauding-investors-with-promises-of-an-ai-supercomputer-for-mining-jury-convicts-businessman-of-running-usd24-million-ponzi-scheme-claimed-up-to-30-percent-apr-and-a-100-percent-money-back-guarantee",
       "published_at": "2026-08-26T13:29:52Z",
       "first_seen_at": "2026-08-26T15:55:14.107596Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "A man claiming to give massive returns to investors has been found guilty of wire fraud, mail fraud, and money laundering by a Nevada court. Brent Kovar now faces up to 280 years behind bars for his crimes, although sentencing will still be held on November 30.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1579,7 +2032,8 @@
       "title_original": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee",
       "title_en": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee",
       "title_zh": null,
-      "title_bilingual": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee"
+      "title_bilingual": "Crypto bro faces 280 years in prison for defrauding investors with promises of an 'AI supercomputer' for mining — jury convicts businessman of running $24-million Ponzi scheme, claimed up to 30% APR and a 100% money-back guarantee",
+      "summary_zh": "一名声称为投资者提供巨额回报的男子被内华达州法院判定犯有电信欺诈、邮件欺诈和洗钱罪。布伦特·科瓦尔 (Brent Kovar) 目前因其罪行面临最高 280 年的监禁，不过宣判仍将于 11 月 30 日进行。"
     },
     {
       "id": "0fb150eff067a0e7beed3f52e051e37e9ebcaef7",
@@ -1590,7 +2044,7 @@
       "url": "https://www.tomshardware.com/video-games/console-gaming/xbox-marks-25-years-with-a-translucent-green-accessory-line-but-none-of-it-is-xbox-hardware",
       "published_at": "2026-08-26T13:12:05Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Microsoft has opened preorders for the Designed for Xbox 25th Anniversary Collection.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1614,7 +2068,8 @@
       "title_original": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now",
       "title_en": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now",
       "title_zh": null,
-      "title_bilingual": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now"
+      "title_bilingual": "Xbox marks 25 years with eye-catching translucent green PC accessories — Razer mouse, keyboard, and earbuds available to pre-order now",
+      "summary_zh": "Microsoft 已开放“Designed for Xbox 25 周年纪念系列”的预订。"
     },
     {
       "id": "477abcb3775ea1edb0e327859327929b7a6b4df9",
@@ -1625,7 +2080,7 @@
       "url": "https://www.tomshardware.com/laptops/chuwi-unibook-review-a-budget-rival-to-the-macbook-neo-and-dell-xps-13",
       "published_at": "2026-08-26T13:05:00Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "A budget-friendly ultraportable with premium aspirations, the Chuwi UniBook packs modern Intel hardware, excellent connectivity, and impressive battery life into a sleek metal chassis.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1648,8 +2103,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
       "title_en": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
-      "title_zh": null,
-      "title_bilingual": "Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13"
+      "title_zh": "Chuwi UniBook 评测：MacBook Neo 和戴尔 XPS 13 的预算竞争对手",
+      "title_bilingual": "Chuwi UniBook 评测：MacBook Neo 和戴尔 XPS 13 的预算竞争对手 / Chuwi UniBook Review: A budget rival to the MacBook Neo and Dell XPS 13",
+      "summary_zh": "Chuwi UniBook 是一款经济实惠的超便携笔记本电脑，具有高端的愿望，将现代英特尔硬件、出色的连接性和令人印象深刻的电池寿命集成到时尚的金属机箱中。"
     },
     {
       "id": "4e2df46c238002fd838a8b56851c1f73740c201b",
@@ -1660,7 +2116,7 @@
       "url": "https://www.tomshardware.com/pc-components/ssds/hot-chips-2026-high-bandwidth-flash-promises-massive-bandwidth-and-capacity-but-its-usability-is-extremely-limited-new-memory-format-strikes-a-balance-between-hbm-and-nand-flash",
       "published_at": "2026-08-26T13:00:00Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "OXMIQ presented its High Bandwidth Flash (HBF) use-case scenarios at Hot Chips 2026, which dramatically narrow the circumstances under which HBF makes sense.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1687,7 +2143,8 @@
       "title_original": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
       "title_en": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash"
+      "title_bilingual": "Hot Chips 2026: High Bandwidth Flash promises massive bandwidth and capacity, but its usability is extremely limited — new memory format strikes a balance between HBM and NAND flash",
+      "summary_zh": "OXMIQ 在 Hot Chips 2026 上展示了其高带宽闪存 (HBF) 使用场景，极大地缩小了 HBF 有意义的环境。"
     },
     {
       "id": "762043093c94f6ccf24d6213552f04be16e57134",
@@ -1698,7 +2155,7 @@
       "url": "https://www.tomshardware.com/pc-components/external-ssds/crucial-ssd-owner-offered-usd200-refund-for-4tb-drive-now-selling-for-over-usd500-company-finally-caves-to-warranty-demands-after-protracted-back-and-forth",
       "published_at": "2026-08-26T12:05:03Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Micron initially told a customer that no replacement Crucial X9 4TB SSDs were available and offered a refund based on last year’s purchase price, but a firm pushback ultimately resulted in a replacement.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1722,7 +2179,8 @@
       "title_original": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth",
       "title_en": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth",
       "title_zh": null,
-      "title_bilingual": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth"
+      "title_bilingual": "Crucial SSD owner offered $200 refund for 4TB drive now selling for over $500 — company finally caves to warranty demands after protracted back-and-forth",
+      "summary_zh": "美光最初告诉一位客户，没有替代的 Crucial X9 4TB SSD，并根据去年的购买价格提供退款，但坚决抵制最终导致更换。"
     },
     {
       "id": "04296e867089c8581098dd7d214c3ea8ee299321",
@@ -1733,7 +2191,7 @@
       "url": "https://www.tomshardware.com/tech-industry/semiconductors/d-matrix-stacks-its-ai-accelerator-directly-on-custom-dram-for-100-tbs-per-card",
       "published_at": "2026-08-26T12:00:00Z",
       "first_seen_at": "2026-08-26T13:17:48.287511Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "d-Matrix presented Raptor, which it calls the first 3D DRAM accelerator for generative inference, showing a TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed DRAM die.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -1764,7 +2222,8 @@
       "title_original": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die",
       "title_en": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die"
+      "title_bilingual": "Hot Chips 2026: d-Matrix stacks AI accelerator directly on custom DRAM for 100 TB/s per card — TSMC 4nm compute die bonded face-to-face at a 36-micron pitch on top of a custom-designed die",
+      "summary_zh": "d-Matrix 展示了 Raptor，它称之为首款用于生成推理的 3D DRAM 加速器，展示了在定制设计的 DRAM 芯片顶部以 36 微米间距面对面粘合的台积电 4 纳米计算芯片。"
     },
     {
       "id": "682a9b2115779b6c8d569e0b82a1f2586798127c",
@@ -1775,7 +2234,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/bill-gates-calls-for-some-jobs-to-be-human-reserved-suggests-taxing-ai-tokens-and-robots-billionaire-says-that-ai-era-will-be-one-of-the-most-turbulent-times-in-human-history",
       "published_at": "2026-08-26T11:34:04Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "The billionaire philanthropist penned a 6,000-word essay raising the societal risks that AI bring and his proposed solutions to protect the average person.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -1800,7 +2259,8 @@
       "title_original": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
       "title_en": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
       "title_zh": null,
-      "title_bilingual": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’"
+      "title_bilingual": "Bill Gates calls for some jobs to be ‘Human Reserved,’ suggests taxing AI tokens and robots — billionaire says that ‘AI era will be one of the most turbulent times in human history’",
+      "summary_zh": "这位亿万富翁慈善家撰写了一篇 6000 字的文章，提出了人工智能带来的社会风险以及他提出的保护普通人的解决方案。"
     },
     {
       "id": "608f6d81bc1619e432ef2d1d707b49fce4a7d1ef",
@@ -1811,7 +2271,7 @@
       "url": "https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-arm-details-agi-server-cpu-with-two-70-core-n3p-chiplets-touts-2-tb-s-ucie-fabric-link-and-12-channel-memory-controller",
       "published_at": "2026-08-26T11:00:00Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Arm reveals more details about its AGI processors with up to 136 cores, but fails to disclose performance.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1840,7 +2300,8 @@
       "title_original": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller",
       "title_en": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller",
       "title_zh": null,
-      "title_bilingual": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller"
+      "title_bilingual": "Hot Chips 2026: Arm details AGI server CPU with two 70-core N3P chiplets — touts 2 TB/s UCIe fabric link and 12-channel memory controller",
+      "summary_zh": "Arm 透露了有关其最多 136 个核心的 AGI 处​​理器的更多细节，但没有透露性能。"
     },
     {
       "id": "a78fbde38589d983217e1bd195b1ff95266719c7",
@@ -1851,7 +2312,7 @@
       "url": "https://www.tomshardware.com/maker-stem/mad-scientist-makes-leds-in-his-backyard-semiconductor-wizard-who-made-his-own-ram-turns-his-attention-to-blinkenlights",
       "published_at": "2026-08-26T11:00:00Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to blinkenlights",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1876,7 +2337,8 @@
       "title_original": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers",
       "title_en": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers",
       "title_zh": null,
-      "title_bilingual": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers"
+      "title_bilingual": "Mad scientist makes LEDs in his backyard — semiconductor wizard who made his own RAM turns his attention to using bathroom eBay laser to etch sapphire wafers",
+      "summary_zh": "疯狂科学家在自家后院制作 LED——自制 RAM 的半导体奇才将注意力转向了闪烁灯"
     },
     {
       "id": "d9fffcde477126ce568f45c042ff30544479d79f",
@@ -1887,7 +2349,7 @@
       "url": "https://www.tomshardware.com/desktops/gaming-pcs/get-an-rtx-5080-gaming-pc-for-just-usd2-349-usd750-best-buy-discount-is-a-great-way-to-beat-inflated-component-prices",
       "published_at": "2026-08-26T10:56:21Z",
       "first_seen_at": "2026-08-26T11:46:25.868489Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Get an RTX 5080 PC with 32GB of RAM and a 1TB SSD for just $2,349.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1912,7 +2374,8 @@
       "title_original": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices",
       "title_en": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices",
       "title_zh": null,
-      "title_bilingual": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices"
+      "title_bilingual": "Get an RTX 5080 gaming PC for just $2,349 — $750 Best Buy discount is a great way to beat inflated component prices",
+      "summary_zh": "只需 2,349 美元即可购买配备 32GB RAM 和 1TB SSD 的 RTX 5080 PC。"
     },
     {
       "id": "e8495240d357d7d4c6c67b851a4d4a706cd22200",
@@ -1923,7 +2386,7 @@
       "url": "https://www.tomshardware.com/peripherals/gaming-keyboards/upgrade-to-a-premium-wireless-low-profile-gaming-keyboard-for-just-usd42-save-42-percent-on-the-hot-swappable-hexgears-immersion-a3-tkl-with-these-stackable-discounts",
       "published_at": "2026-08-26T10:49:48Z",
       "first_seen_at": "2026-08-26T10:52:21.317909Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "Low-profile keys, a small screen, RGB, and plenty of connectivity options for an amazing price.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1946,7 +2409,8 @@
       "title_original": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts",
       "title_en": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts",
       "title_zh": null,
-      "title_bilingual": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts"
+      "title_bilingual": "Upgrade to a premium wireless low-profile gaming keyboard for just $42 — save 42% on the hot-swappable Hexgears Immersion A3 TKL with these stackable discounts",
+      "summary_zh": "低调的按键、小屏幕、RGB 和大量的连接选项，价格令人惊叹。"
     },
     {
       "id": "18f932c47df6d980d48f56528831f6180c47a50e",
@@ -1957,7 +2421,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-paint-and-photos-apps-add-invisible-watermark-to-ai-generated-content-developer-reverse-engineers-guid-embedding",
       "published_at": "2026-08-26T10:30:00Z",
       "first_seen_at": "2026-08-26T10:52:21.317909Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
+      "last_seen_at": "2026-08-27T09:52:23.105995Z",
       "summary": "A developer has uncovered some previously unknown GUID watermarking functionality deep within Microsoft’s Paint and Photos apps.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -1983,7 +2447,8 @@
       "title_original": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding",
       "title_en": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding",
       "title_zh": null,
-      "title_bilingual": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding"
+      "title_bilingual": "Microsoft Paint and Photos apps add invisible watermark to AI-generated content — developer reverse engineers GUID embedding",
+      "summary_zh": "一名开发人员在微软的画图和照片应用程序中发现了一些以前未知的 GUID 水印功能。"
     },
     {
       "id": "43282eb8af10b8e200c159478386e48b35437506",
@@ -2019,159 +2484,8 @@
       "title_original": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
       "title_en": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
       "title_zh": null,
-      "title_bilingual": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them"
-    },
-    {
-      "id": "80eb6803f6f3daeca163228ce3ca8aac2369b7e6",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Tom's Hardware",
-      "title": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-bans-russian-chatgpt-accounts-behind-a-fake-think-tank-pushing-pro-kremlin-narratives",
-      "published_at": "2026-08-26T09:41:55Z",
-      "first_seen_at": "2026-08-26T10:52:21.317909Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "Instead of using ChatGPT to write the articles, the operators used the chatbot to strip any wording that might mark them as Russian speakers.",
-      "ai_is_related": true,
-      "ai_score": 0.75,
-      "ai_label": "model_release",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [
-        "gpt",
-        "openai"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai"
-      ],
-      "personal_interest_signals": [
-        "openai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
-      "title_en": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website",
-      "title_zh": null,
-      "title_bilingual": "OpenAI bans Russian ChatGPT accounts posing as a fake Israeli think tank — used VPNs to push pro-Kremlin narratives and steal academic papers for its website"
-    },
-    {
-      "id": "0a1ff86b426988c3b389c82b3abffa70759650e5",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Tom's Hardware",
-      "title": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-turns-a-lenovo-yoga-laptop-an-m-2-slot-and-amd-radeon-rx-7900-xt-into-the-worlds-stupidest-desktop-for-local-ai-chatbots-m-2-franken-rig-crippled-by-laptop-dram-swap",
-      "published_at": "2026-08-26T09:30:00Z",
-      "first_seen_at": "2026-08-26T09:58:31.698240Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "Enthusiast turns a Lenovo Yoga laptop and an AMD Radeon RX 7900 XT into \"the world's stupidest\" desktop for local LLMs",
-      "ai_is_related": true,
-      "ai_score": 0.67,
-      "ai_label": "ai_general",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai",
-        "pc",
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "ai",
-        "amd",
-        "desktop",
-        "dram",
-        "laptop",
-        "local ai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
-      "title_en": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap",
-      "title_zh": null,
-      "title_bilingual": "Enthusiast turns a Lenovo Yoga laptop, an M.2 slot, and AMD Radeon RX 7900 XT into 'the world's stupidest' desktop for local AI chatbots — M.2 franken-rig crippled by laptop DRAM swap"
-    },
-    {
-      "id": "68e135f9a824bb9a0f36f861cf3e23fbc32af03e",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
-      "url": "https://www.theinformation.com/articles/deepseeks-revenue-reaches-70-million-july-tenfold-jump-2025",
-      "published_at": "2026-08-26T06:50:00Z",
-      "first_seen_at": "2026-08-26T07:10:08.166637Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "",
-      "ai_is_related": true,
-      "ai_score": 0.71,
-      "ai_label": "model_release",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [
-        "deepseek"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai"
-      ],
-      "personal_interest_signals": [
-        "deepseek"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
-      "title_en": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
-      "title_zh": null,
-      "title_bilingual": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025"
-    },
-    {
-      "id": "1d8a406c8e65896ec68a4d25b216e4b9bcc5336c",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
-      "url": "https://www.theinformation.com/newsletters/the-briefing/openais-jalapeno-might-sicken-nvidia",
-      "published_at": "2026-08-26T00:00:00Z",
-      "first_seen_at": "2026-08-26T01:59:14.690652Z",
-      "last_seen_at": "2026-08-26T23:36:21.098538Z",
-      "summary": "",
-      "ai_is_related": true,
-      "ai_score": 0.71,
-      "ai_label": "ai_product_update",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [
-        "openai"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai",
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "nvidia",
-        "openai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
-      "title_en": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
-      "title_zh": null,
-      "title_bilingual": "Why OpenAI’s Jalapeño Might Sicken Nvidia"
+      "title_bilingual": "U.S. gov't moves to suppress pushback on data centers by removing requirements for public input on pollution — EPA change would allow air pollution permits without publicizing them",
+      "summary_zh": "对美国环保局法规的拟议修改将取消各州就空气污染许可证征求公众意见的要求，特别是在人工智能数据中心周围。"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json",
