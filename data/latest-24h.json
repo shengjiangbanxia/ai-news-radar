@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-06T14:12:12.391084Z",
+  "generated_at": "2026-09-06T17:05:29.809599Z",
   "window_hours": 24,
-  "total_items": 7,
-  "total_items_ai_raw": 7,
+  "total_items": 8,
+  "total_items_ai_raw": 8,
   "total_items_raw": 12,
-  "total_items_all_mode": 7,
+  "total_items_all_mode": 8,
   "topic_filter": "personal_ai_pc_server_interest_v1",
   "ai_relevance_threshold": 0.65,
   "archive_total": 711,
@@ -14,7 +14,7 @@
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 7,
+      "count": 8,
       "raw_count": 12
     },
     {
@@ -30,6 +30,79 @@
   "creator_items_all": [],
   "items": [
     {
+      "id": "58dc257dc090c70b872aa156bd2f9fb456322188",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
+      "url": "https://www.tomshardware.com/pc-components/gpus/single-slot-low-profile-75w-rtx-3060-with-no-power-connectors-disappoints-in-tests-gpu-runs-entirely-off-the-pcie-slot-but-offers-severely-crippled-performance-and-frightening-thermals",
+      "published_at": "2026-09-06T14:58:29Z",
+      "first_seen_at": "2026-09-06T17:05:29.809599Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
+      "summary": "If you want to cut your 12GB RTX 3060's performance in half while worsening its thermals, this might be the perfect product for you.",
+      "ai_is_related": false,
+      "ai_score": 0.23,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [
+        "gpu"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "gpu"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
+      "title_en": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
+      "title_zh": null,
+      "title_bilingual": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals"
+    },
+    {
+      "id": "7e33e77faebcc7d2bc737a7d56b2031050d5b9a3",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-admits-to-wiki-incident-after-its-agents-were-discovered-using-a-programming-hub-to-communicate-says-more-transparency-is-needed-regarding-misalignments",
+      "published_at": "2026-09-06T14:31:54Z",
+      "first_seen_at": "2026-09-06T17:05:29.809599Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
+      "summary": "OpenAI has admitted that its experimental AI agents used an open German programming wiki to communicate.",
+      "ai_is_related": true,
+      "ai_score": 0.71,
+      "ai_label": "agent_workflow",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "openai"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "openai"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "title_en": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "title_zh": null,
+      "title_bilingual": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments"
+    },
+    {
       "id": "eacb16380b28bb303279b8533c0edff1834457ac",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -38,7 +111,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/bitcoin-mining-data-center-condemned-after-leaking-3-million-gallons-of-water-and-forcing-school-closures-facility-operated-for-years-under-a-city-stop-work-order",
       "published_at": "2026-09-06T13:44:22Z",
       "first_seen_at": "2026-09-06T14:12:12.391084Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "A Bitcoin mining data center in El Reno, Oklahoma has been condemned after it leaked 3 million gallons of water.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -72,7 +145,7 @@
       "url": "https://www.tomshardware.com/pc-components/ssds/samsung-990-2tb-pcie-4-0-ssd-falls-to-usd339-99-on-amazon-usd190-discount-makes-high-capacity-storage-more-affordable",
       "published_at": "2026-09-06T13:08:31Z",
       "first_seen_at": "2026-09-06T14:12:12.391084Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "Samsung's 2TB 990 offers plenty of fast storage for games and is currently $190 cheaper than its regular $529.99 price.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -107,7 +180,7 @@
       "url": "https://www.tomshardware.com/video-games/pc-gaming/ps5-emulator-can-now-run-the-console-version-of-gta-v-at-up-to-60-fps-on-pc-but-quickly-crashes-as-tweakers-continue-to-optimize-ps5-emulation-advancing-at-an-astronomical-pace-leading-up-to-gta-vi-launch",
       "published_at": "2026-09-06T11:48:08Z",
       "first_seen_at": "2026-09-06T14:12:12.391084Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "A spark was lit under the PS5 emulation scene a couple of months ago and instead of fading over time, it seems to be burning brighter than ever. GTA V now runs between 40-60 FPS for a few minutes before crashing, along with several other games being rendered smoothly.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -141,7 +214,7 @@
       "url": "https://www.tomshardware.com/pc-components/storage/this-246tb-ssd-media-server-is-built-for-millionaire-cinephiles-kaleidescapes-newest-home-theater-vault-supports-25-simultaneous-4k-streams-stores-up-to-2-300-4k-cinematic-movies",
       "published_at": "2026-09-06T10:00:00Z",
       "first_seen_at": "2026-09-06T11:00:15.029478Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "Kaleidescape, a maker of luxury home theater equipment, has revealed its latest media server, the \"Compact Terra Prime 246TB SSD.\"",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -176,7 +249,7 @@
       "url": "https://www.tomshardware.com/pc-components/save-nearly-50-percent-on-this-awesome-16-inch-oled-laptop-with-a-ryzen-ai-5-430-cpu-and-16gb-ram-hps-macbook-neo-beating-omnibook-x-flip-is-down-to-just-usd699",
       "published_at": "2026-09-05T18:51:54Z",
       "first_seen_at": "2026-09-05T19:02:35.669260Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "If you're looking for a capable machine for everyday tasks and media consumption without breaking the bank, there isn't a better deal out there than this one.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -215,7 +288,7 @@
       "url": "https://www.tomshardware.com/software/windows/stripped-down-windows-11-for-ai-developers-demands-64gb-ram-and-insane-250-gb-s-bandwidth-project-zenith-will-debut-on-amds-flagship-ryzen-ai-halo-platform",
       "published_at": "2026-09-05T17:18:57Z",
       "first_seen_at": "2026-09-05T19:02:35.669260Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "Project Zenith is a version of Windows 11 that lets developers work right out of the box. It comes pre-installed with developer tools like Visual Studio Code, GitHub Copilot, and WSL 2+ Ubuntu, among others, and includes features that make developing and running AI agents more secure.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -245,46 +318,83 @@
       "title_en": "Stripped-down Windows 11 for AI developers demands 64GB RAM and insane 250 GB/s bandwidth — Project Zenith will debut on AMD's flagship Ryzen AI Halo platform",
       "title_zh": null,
       "title_bilingual": "Stripped-down Windows 11 for AI developers demands 64GB RAM and insane 250 GB/s bandwidth — Project Zenith will debut on AMD's flagship Ryzen AI Halo platform"
-    },
-    {
-      "id": "d21e517b72280c48602d5250016a09b4907f75ba",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Tom's Hardware",
-      "title": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price",
-      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-returns-to-selling-founders-edition-rtx-50-series-gpus-at-msrp-in-person-at-pax-west-verified-priority-access-has-rtx-5090-rtx-5080-and-rtx-5070-at-list-price",
-      "published_at": "2026-09-05T15:04:13Z",
-      "first_seen_at": "2026-09-05T16:50:09.111384Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
-      "summary": "Nvidia is offering its RTX 5090, RTX 5080, and RTX 5070 Founder's Edition models at MSRP at PAX West.",
-      "ai_is_related": false,
-      "ai_score": 0.23,
-      "ai_label": "not_ai",
-      "ai_relevance_reason": "missing_meaningful_ai_signal",
-      "ai_signals": [
-        "gpu"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "nvidia"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price",
-      "title_en": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price",
-      "title_zh": null,
-      "title_bilingual": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price"
     }
   ],
   "items_ai": [
     {
+      "id": "58dc257dc090c70b872aa156bd2f9fb456322188",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
+      "url": "https://www.tomshardware.com/pc-components/gpus/single-slot-low-profile-75w-rtx-3060-with-no-power-connectors-disappoints-in-tests-gpu-runs-entirely-off-the-pcie-slot-but-offers-severely-crippled-performance-and-frightening-thermals",
+      "published_at": "2026-09-06T14:58:29Z",
+      "first_seen_at": "2026-09-06T17:05:29.809599Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
+      "summary": "If you want to cut your 12GB RTX 3060's performance in half while worsening its thermals, this might be the perfect product for you.",
+      "ai_is_related": false,
+      "ai_score": 0.23,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [
+        "gpu"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "gpu"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
+      "title_en": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals",
+      "title_zh": null,
+      "title_bilingual": "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests — GPU runs entirely off the PCIe slot, but offers severely crippled performance and frightening thermals"
+    },
+    {
+      "id": "7e33e77faebcc7d2bc737a7d56b2031050d5b9a3",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-admits-to-wiki-incident-after-its-agents-were-discovered-using-a-programming-hub-to-communicate-says-more-transparency-is-needed-regarding-misalignments",
+      "published_at": "2026-09-06T14:31:54Z",
+      "first_seen_at": "2026-09-06T17:05:29.809599Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
+      "summary": "OpenAI has admitted that its experimental AI agents used an open German programming wiki to communicate.",
+      "ai_is_related": true,
+      "ai_score": 0.71,
+      "ai_label": "agent_workflow",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "openai"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "openai"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "title_en": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments",
+      "title_zh": null,
+      "title_bilingual": "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate — says more transparency is needed regarding misalignments"
+    },
+    {
       "id": "eacb16380b28bb303279b8533c0edff1834457ac",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -293,7 +403,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/bitcoin-mining-data-center-condemned-after-leaking-3-million-gallons-of-water-and-forcing-school-closures-facility-operated-for-years-under-a-city-stop-work-order",
       "published_at": "2026-09-06T13:44:22Z",
       "first_seen_at": "2026-09-06T14:12:12.391084Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "A Bitcoin mining data center in El Reno, Oklahoma has been condemned after it leaked 3 million gallons of water.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -327,7 +437,7 @@
       "url": "https://www.tomshardware.com/pc-components/ssds/samsung-990-2tb-pcie-4-0-ssd-falls-to-usd339-99-on-amazon-usd190-discount-makes-high-capacity-storage-more-affordable",
       "published_at": "2026-09-06T13:08:31Z",
       "first_seen_at": "2026-09-06T14:12:12.391084Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "Samsung's 2TB 990 offers plenty of fast storage for games and is currently $190 cheaper than its regular $529.99 price.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -362,7 +472,7 @@
       "url": "https://www.tomshardware.com/video-games/pc-gaming/ps5-emulator-can-now-run-the-console-version-of-gta-v-at-up-to-60-fps-on-pc-but-quickly-crashes-as-tweakers-continue-to-optimize-ps5-emulation-advancing-at-an-astronomical-pace-leading-up-to-gta-vi-launch",
       "published_at": "2026-09-06T11:48:08Z",
       "first_seen_at": "2026-09-06T14:12:12.391084Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "A spark was lit under the PS5 emulation scene a couple of months ago and instead of fading over time, it seems to be burning brighter than ever. GTA V now runs between 40-60 FPS for a few minutes before crashing, along with several other games being rendered smoothly.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -396,7 +506,7 @@
       "url": "https://www.tomshardware.com/pc-components/storage/this-246tb-ssd-media-server-is-built-for-millionaire-cinephiles-kaleidescapes-newest-home-theater-vault-supports-25-simultaneous-4k-streams-stores-up-to-2-300-4k-cinematic-movies",
       "published_at": "2026-09-06T10:00:00Z",
       "first_seen_at": "2026-09-06T11:00:15.029478Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "Kaleidescape, a maker of luxury home theater equipment, has revealed its latest media server, the \"Compact Terra Prime 246TB SSD.\"",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -431,7 +541,7 @@
       "url": "https://www.tomshardware.com/pc-components/save-nearly-50-percent-on-this-awesome-16-inch-oled-laptop-with-a-ryzen-ai-5-430-cpu-and-16gb-ram-hps-macbook-neo-beating-omnibook-x-flip-is-down-to-just-usd699",
       "published_at": "2026-09-05T18:51:54Z",
       "first_seen_at": "2026-09-05T19:02:35.669260Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "If you're looking for a capable machine for everyday tasks and media consumption without breaking the bank, there isn't a better deal out there than this one.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -470,7 +580,7 @@
       "url": "https://www.tomshardware.com/software/windows/stripped-down-windows-11-for-ai-developers-demands-64gb-ram-and-insane-250-gb-s-bandwidth-project-zenith-will-debut-on-amds-flagship-ryzen-ai-halo-platform",
       "published_at": "2026-09-05T17:18:57Z",
       "first_seen_at": "2026-09-05T19:02:35.669260Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
+      "last_seen_at": "2026-09-06T17:05:29.809599Z",
       "summary": "Project Zenith is a version of Windows 11 that lets developers work right out of the box. It comes pre-installed with developer tools like Visual Studio Code, GitHub Copilot, and WSL 2+ Ubuntu, among others, and includes features that make developing and running AI agents more secure.",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -500,42 +610,6 @@
       "title_en": "Stripped-down Windows 11 for AI developers demands 64GB RAM and insane 250 GB/s bandwidth — Project Zenith will debut on AMD's flagship Ryzen AI Halo platform",
       "title_zh": null,
       "title_bilingual": "Stripped-down Windows 11 for AI developers demands 64GB RAM and insane 250 GB/s bandwidth — Project Zenith will debut on AMD's flagship Ryzen AI Halo platform"
-    },
-    {
-      "id": "d21e517b72280c48602d5250016a09b4907f75ba",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "Tom's Hardware",
-      "title": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price",
-      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-returns-to-selling-founders-edition-rtx-50-series-gpus-at-msrp-in-person-at-pax-west-verified-priority-access-has-rtx-5090-rtx-5080-and-rtx-5070-at-list-price",
-      "published_at": "2026-09-05T15:04:13Z",
-      "first_seen_at": "2026-09-05T16:50:09.111384Z",
-      "last_seen_at": "2026-09-06T14:12:12.391084Z",
-      "summary": "Nvidia is offering its RTX 5090, RTX 5080, and RTX 5070 Founder's Edition models at MSRP at PAX West.",
-      "ai_is_related": false,
-      "ai_score": 0.23,
-      "ai_label": "not_ai",
-      "ai_relevance_reason": "missing_meaningful_ai_signal",
-      "ai_signals": [
-        "gpu"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "nvidia"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price",
-      "title_en": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price",
-      "title_zh": null,
-      "title_bilingual": "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West — Verified Priority Access has RTX 5090, RTX 5080, and RTX 5070 at list price"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json",
