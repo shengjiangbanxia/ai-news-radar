@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T07:57:55+08:00",
-  "as_of": "2026-09-08",
+  "generated_at": "2026-09-09T07:48:45+08:00",
+  "as_of": "2026-09-09",
   "timezone": "Asia/Shanghai",
   "lookahead_days": 180,
   "milestones": [
@@ -37,14 +37,14 @@
       "source_url": "https://www.qualcomm.com/snapdragon/news/the-new-snapdragon-insiders-access-program-is-here--now-availabl",
       "source_title": "Snapdragon Insiders Access Program 2026",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": false,
         "agenda_published": false
       },
-      "days_remaining": 14,
+      "days_remaining": 13,
       "reminder_band": "fourteen_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -71,7 +71,7 @@
       "source_url": "https://www.opencompute.org/summit/global-summit",
       "source_title": "2026 OCP Global Summit",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -87,7 +87,7 @@
         "candidate_hash": "ebc5c535af19f013",
         "text_date_match": true
       },
-      "days_remaining": 34,
+      "days_remaining": 33,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -115,20 +115,75 @@
       "source_url": "https://ignite.microsoft.com/",
       "source_title": "Microsoft Ignite 2026",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": true,
         "agenda_published": true
       },
-      "days_remaining": 70,
+      "days_remaining": 69,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
       "has_material_change": false
+    },
+    {
+      "id": "ces",
+      "name": "CES",
+      "category": "行业峰会",
+      "aliases": [
+        "Consumer Electronics Show"
+      ],
+      "scope": [
+        "AI",
+        "PC",
+        "终端"
+      ],
+      "priority": "core",
+      "cycle": 2027,
+      "status": "confirmed",
+      "start_date": "2027-01-06",
+      "end_date": "2027-01-09",
+      "location": "Las Vegas, USA",
+      "format": "in-person",
+      "source_url": "https://www.ces.tech/about-ces/about-ces/",
+      "source_title": "CES Future Show Dates",
+      "verification": {
+        "checked_at": "2026-09-09T07:48:45+08:00",
+        "ok": true,
+        "method": "official_text",
+        "http_status": 200,
+        "registration_open": true,
+        "agenda_published": false,
+        "structured_candidate": {
+          "name": "CES",
+          "start_date": "2027-01-06",
+          "end_date": "2027-01-09",
+          "location": null,
+          "attendance_mode": ""
+        },
+        "candidate_hash": "39ce372dc777eb54",
+        "text_date_match": true
+      },
+      "days_remaining": 119,
+      "reminder_band": null,
+      "within_lookahead": true,
+      "has_material_change": true
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": "ces",
+      "cycle": 2027,
+      "changes": [
+        {
+          "field": "verification.registration_open",
+          "old": false,
+          "new": true
+        }
+      ]
+    }
+  ],
   "source_check": {
     "configured": 18,
     "checked": 18,
@@ -161,14 +216,14 @@
       "source_url": "https://www.qualcomm.com/snapdragon/news/the-new-snapdragon-insiders-access-program-is-here--now-availabl",
       "source_title": "Snapdragon Insiders Access Program 2026",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": false,
         "agenda_published": false
       },
-      "days_remaining": 14,
+      "days_remaining": 13,
       "reminder_band": "fourteen_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -195,7 +250,7 @@
       "source_url": "https://www.opencompute.org/summit/global-summit",
       "source_title": "2026 OCP Global Summit",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -211,7 +266,7 @@
         "candidate_hash": "ebc5c535af19f013",
         "text_date_match": true
       },
-      "days_remaining": 34,
+      "days_remaining": 33,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -239,14 +294,14 @@
       "source_url": "https://ignite.microsoft.com/",
       "source_title": "Microsoft Ignite 2026",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": true,
         "agenda_published": true
       },
-      "days_remaining": 70,
+      "days_remaining": 69,
       "reminder_band": "ninety_days",
       "within_lookahead": true,
       "has_material_change": false
@@ -273,11 +328,11 @@
       "source_url": "https://www.ces.tech/about-ces/about-ces/",
       "source_title": "CES Future Show Dates",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
-        "registration_open": false,
+        "registration_open": true,
         "agenda_published": false,
         "structured_candidate": {
           "name": "CES",
@@ -289,10 +344,10 @@
         "candidate_hash": "39ce372dc777eb54",
         "text_date_match": true
       },
-      "days_remaining": 120,
+      "days_remaining": 119,
       "reminder_band": null,
       "within_lookahead": true,
-      "has_material_change": false
+      "has_material_change": true
     },
     {
       "id": "mwc",
@@ -318,7 +373,7 @@
       "source_url": "https://www.mwcbarcelona.com/about/",
       "source_title": "MWC Barcelona 2027 event details",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_jsonld",
         "http_status": 200,
@@ -333,7 +388,7 @@
         },
         "candidate_hash": "b04f8c618bd1b456"
       },
-      "days_remaining": 174,
+      "days_remaining": 173,
       "reminder_band": null,
       "within_lookahead": true,
       "has_material_change": false
@@ -361,7 +416,7 @@
       "source_url": "https://www.nvidia.com/gtc/faq/",
       "source_title": "GTC 2027 Conference FAQs",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -377,7 +432,7 @@
         "candidate_hash": "30ac3f3df71e9ef9",
         "text_date_match": true
       },
-      "days_remaining": 187,
+      "days_remaining": 186,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
@@ -405,7 +460,7 @@
       "source_url": "https://www.computextaipei.com.tw/en/news/A9462967BB2D7702/info.html",
       "source_title": "COMPUTEX 2026 concludes and confirms 2027 dates",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_text",
         "http_status": 200,
@@ -421,7 +476,7 @@
         "candidate_hash": "3e7e1878289d3ec0",
         "text_date_match": true
       },
-      "days_remaining": 266,
+      "days_remaining": 265,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
@@ -450,7 +505,7 @@
       "source_url": "https://ir.amd.com/news-events/financial-analyst-day",
       "source_title": "AMD Financial Analyst Day",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -486,7 +541,7 @@
       "source_url": "https://developer.apple.com/wwdc/",
       "source_title": "Apple Developer WWDC",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -522,7 +577,7 @@
       "source_url": "https://developer.arm.com/developer",
       "source_title": "Arm Developer",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -556,7 +611,7 @@
       "source_url": "https://io.google/",
       "source_title": "Google I/O",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -591,7 +646,7 @@
       "source_url": "https://www.intel.com/content/www/us/en/events/overview.html",
       "source_title": "Intel Events",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -626,7 +681,7 @@
       "source_url": "https://www.intel.com/content/www/us/en/support/articles/000096384/programs.html",
       "source_title": "Intel Client Ecosystem Symposium access",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -661,7 +716,7 @@
       "source_url": "https://build.microsoft.com/",
       "source_title": "Microsoft Build",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -696,7 +751,7 @@
       "source_url": "https://www.worldaic.com.cn/",
       "source_title": "世界人工智能大会",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -730,7 +785,7 @@
       "source_url": "https://learn.microsoft.com/windows-hardware/",
       "source_title": "Windows Hardware Developer",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
@@ -766,12 +821,12 @@
       "source_title": "AMD Events and Conferences",
       "note": "官方活动页列出 7 月 22–23 日；7 月 23 日为旗舰发布与直播主日程。",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": false,
         "method": null,
         "error": "ReadTimeout: HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=12)"
       },
-      "days_remaining": -48,
+      "days_remaining": -49,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
@@ -799,14 +854,14 @@
       "source_url": "https://www.hotchips.org/",
       "source_title": "Hot Chips 2026",
       "verification": {
-        "checked_at": "2026-09-08T07:57:55+08:00",
+        "checked_at": "2026-09-09T07:48:45+08:00",
         "ok": true,
         "method": "official_page",
         "http_status": 200,
         "registration_open": true,
         "agenda_published": false
       },
-      "days_remaining": -16,
+      "days_remaining": -17,
       "reminder_band": null,
       "within_lookahead": false,
       "has_material_change": false
