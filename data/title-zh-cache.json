@@ -29226,5 +29226,16 @@
   "summary_zh|Acer chairperson and CEO Jason Chen believes that PC prices will plateau by the first half of next year and start coming down towards the latter part of 2027. He also said that memory makers predict high prices because they want to keep their high margins for as long as possible.": "宏碁董事长兼首席执行官 Jason Chen 认为，PC 价格将在明年上半年趋于稳定，并在 2027 年下半年开始下降。他还表示，内存制造商预测价格较高，因为他们希望尽可能长时间地保持高利润。",
   "summary_zh|Leaker Kopite7kimi claims that Nvidia's next-gen RTX 60 series may not be released until 2028, meaning that consumers will have to wait three years between GPU generations": "泄密者 Kopite7kimi 声称 Nvidia 的下一代 RTX 60 系列可能要到 2028 年才会发布，这意味着消费者将不得不在 GPU 各代之间等待三年",
   "summary_zh|Techie makes his own motherboard to refurbish an HP ProLiant N40L — Raspberry Pi 5 Compute Module to the rescue": "Techie 制作了自己的主板来翻新 HP ProLiant N40L — Raspberry Pi 5 计算模块来救援",
-  "summary_zh|The Wolfbox MF60 packs dual 2,500mAh batteries, three fan speeds, USB Type-C charging, and multiple nozzles into a compact wireless air duster designed for cleaning PCs, laptops, keyboards, and more.": "Wolfbox MF60 将双 2,500mAh 电池、三种风扇速度、USB Type-C 充电和多个喷嘴装入紧凑型无线空气除尘器中，专为清洁 PC、笔记本电脑、键盘等而设计。"
+  "summary_zh|The Wolfbox MF60 packs dual 2,500mAh batteries, three fan speeds, USB Type-C charging, and multiple nozzles into a compact wireless air duster designed for cleaning PCs, laptops, keyboards, and more.": "Wolfbox MF60 将双 2,500mAh 电池、三种风扇速度、USB Type-C 充电和多个喷嘴装入紧凑型无线空气除尘器中，专为清洁 PC、笔记本电脑、键盘等而设计。",
+  "[News] Intel Unveils Micro-LED-Based Glass Substrate Packaging Technology Patent": "【新闻】英特尔公布基于Micro-LED的玻璃基板封装技术专利",
+  "[News] TSMC’s A14 Race Heats Up: Pilot Run Reportedly Pulled Forward to 1Q27, Closing In on Intel’s 14A": "【新闻】台积电A14竞赛升温：试产传闻提前至2027年第一季度，逼近英特尔14A",
+  "[News] Micron Earnings Preview: Can the Margin Boom Last? HBM4 Ramp and Long-term Contracts in Focus": "[新闻] 美光财报前瞻：利润率繁荣能否持续？ HBM4 升级和长期合同成为焦点",
+  "summary_zh|Apple's use of QLC NAND allows the iPhone 18 Pro Max to offer higher storage capacity, but Homolab's testing highlights the potential performance trade-off under sustained writes.": "苹果使用 QLC NAND 使 iPhone 18 Pro Max 能够提供更高的存储容量，但 Homolab 的测试凸显了持续写入下潜在的性能权衡。",
+  "summary_zh|Walmart is selling a CyberPowerPC gaming PC with a Ryzen 7 9800X3D, GeForce RTX 5080 Founders Edition, 32GB of DDR5-6000 memory, and a 1TB PCIe 4.0 SSD for $2,299.": "Walmart 正在销售一款 Cyber​​PowerPC 游戏电脑，配备 Ryzen 7 9800X3D、GeForce RTX 5080 Founders Edition、32GB DDR5-6000 内存和 1TB PCIe 4.0 SSD，售价 2,299 美元。",
+  "The Real Cost of AI: A Survey of the Unpredictable Token Economics": "人工智能的真实成本：不可预测的代币经济学调查",
+  "summary_zh|Local opposition to data center buildouts has blocked $68 billion worth of data center projects in the second quarter of 2026, despite investments still rising.": "尽管投资仍在增加，但当地对数据中心建设的反对已经阻止了 2026 年第二季度价值 680 亿美元的数据中心项目。",
+  "summary_zh|AMD has crossed the $1 trillion market cap mark, joining an exclusive list of less than two dozen companies around the world.": "AMD 市值已突破 1 万亿美元大关，跻身全球不到两打公司之列。",
+  "summary_zh|Nearly two weeks after they were announced, AMD's Ryzen 5 5500F and 7500 (non-F) are available for sale, though prices are slightly above MSRP.": "在发布近两周后，AMD 的 Ryzen 5 5500F 和 7500（非 F）开始发售，不过价格略高于建议零售价。",
+  "summary_zh|Huawei says it will not offer its latest AI hardware outside of China citing lack of capacity to serve domestic demand.": "华为表示，由于缺乏满足国内需求的能力，不会在中国境外提供最新的人工智能硬件。",
+  "OpenAI Develops Features to Counter Grok Bot, Mulls Response to Meta’s Muse": "OpenAI 开发对抗 Grok Bot 的功能，考虑对 Meta 的 Muse 做出回应"
 }
