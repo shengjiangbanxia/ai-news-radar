@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-23T20:24:49.637305Z",
+  "generated_at": "2026-09-23T23:43:38.142949Z",
   "window_hours": 24,
-  "total_items": 22,
-  "total_items_ai_raw": 23,
-  "total_items_raw": 28,
-  "total_items_all_mode": 23,
+  "total_items": 23,
+  "total_items_ai_raw": 24,
+  "total_items_raw": 29,
+  "total_items_all_mode": 24,
   "topic_filter": "personal_ai_pc_server_interest_v1",
   "ai_relevance_threshold": 0.65,
-  "archive_total": 682,
+  "archive_total": 683,
   "site_count": 2,
-  "source_count": 3,
+  "source_count": 4,
   "site_stats": [
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 22,
-      "raw_count": 28
+      "count": 23,
+      "raw_count": 29
     },
     {
       "site_id": "xapi",
@@ -30,6 +30,119 @@
   "creator_items_all": [],
   "items": [
     {
+      "id": "150e50bc154b214c4cb9856fb9c8e7df21c34d1f",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
+      "url": "https://www.trendforce.com/news/2026/09/24/news-qualcomm-says-announced-2nm-chips-will-use-tsmc-keeps-door-open-to-samsung-foundry",
+      "published_at": "2026-09-24T15:59:59Z",
+      "first_seen_at": "2026-09-23T23:43:38.142949Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.23,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [
+        "chip"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "foundry",
+        "qualcomm",
+        "samsung",
+        "tsmc"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
+      "title_en": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
+      "title_zh": null,
+      "title_bilingual": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry"
+    },
+    {
+      "id": "0d5717641297cf0c42b25c93f7737222327e0601",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "SemiAnalysis",
+      "title": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+      "published_at": "2026-09-23T21:20:29Z",
+      "first_seen_at": "2026-09-23T23:43:38.142949Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
+      "summary": "In gory detail: reliability, performance, support, pricing—and, of course, security—in our most thorough analysis of GPU cloud providers globally.",
+      "ai_is_related": false,
+      "ai_score": 0.23,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [
+        "cloud",
+        "gpu"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "gpu"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "title_en": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "title_zh": null,
+      "title_bilingual": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns"
+    },
+    {
+      "id": "32964cded643aaa3647ee1c1835b496eb125b157",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-brings-snapdragon-x2-plus-to-13-inch-surface-laptop-12-inch-surface-pro-low-end-systems-finally-get-upgrades",
+      "published_at": "2026-09-23T20:30:00Z",
+      "first_seen_at": "2026-09-23T23:43:38.142949Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
+      "summary": "Microsoft's lowest-end systems are getting upgrades to Qualcomm's latest Snapdragon X2 Plus processors.",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc"
+      ],
+      "personal_interest_signals": [
+        "laptop",
+        "qualcomm",
+        "snapdragon"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "title_en": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "title_zh": null,
+      "title_bilingual": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro"
+    },
+    {
       "id": "0713dbf2fe589ed4825353ee0570bae5c6938de9",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -72,7 +185,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/insights-memory-spot-price-update-dram-spot-prices-hold-cautious-tone-ddr4-2gx8-drops-3-6",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -178,7 +291,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-deepseek-reportedly-expands-huawei-chips-to-ai-training-new-supply-could-arrive-in-4q26",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T06:00:21.771309Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.74,
@@ -217,7 +330,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-german-court-reportedly-finds-micron-infringed-two-ymtc-nand-patents-grants-injunctions",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -252,7 +365,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-samsungs-lpddr6-passes-industry-first-snapdragon-validation-at-10-7-gbps-galaxy-s27-may-split-memory-tiers",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -289,7 +402,7 @@
       "url": "https://www.tomshardware.com/pc-components/storage/chinas-ymtc-wins-patent-battle-against-micron-in-ongoing-3-year-legal-war-over-memory-patents-new-injunctions-could-restrict-microns-supply-into-germany",
       "published_at": "2026-09-23T15:56:02Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "A Munich court has granted YMTC two injunctions against Micron over 3D NAND patents, the latest development in a years-long cross-border legal battle between the memory rivals.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -325,7 +438,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-claims-new-qwen-image-2-1-ai-model-beats-google-nano-banana-2-0-with-minuscule-7b-parameter-model-benchmarks-show-open-weight-contender-is-competitive-with-openai-and-meta-image-models",
       "published_at": "2026-09-23T15:34:36Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Alibaba Group's AI division has released Qwen 2.1 Image, an ultra-lightweight image generation model with just 7B parameters, able to run on local hardware like the RTX 3090.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -361,7 +474,7 @@
       "url": "https://www.theinformation.com/newsletters/ai-agenda/expect-ai-agenda-live-crusoe-thinking-machines-labs-strike-compute-deal",
       "published_at": "2026-09-23T14:01:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -395,7 +508,7 @@
       "url": "https://www.tomshardware.com/pc-components/case-mods/usd14-000-gaming-pc-features-70-handcrafted-titanium-cherry-blossoms-which-unfurl-as-temperatures-rise-zotac-designed-rtx-5080-system-features-impressive-sculpture-and-an-eye-watering-price-tag-to-match",
       "published_at": "2026-09-23T13:14:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "The Aftershock PC Cherry Bloom includes 70 hand-crafted cherry blossoms made of titanium alloy that open and close with the heat generated by the PC.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -429,7 +542,7 @@
       "url": "https://www.theinformation.com/articles/founders-fund-khosla-ventures-visit-china-countrys-ai-prowess-rises",
       "published_at": "2026-09-23T13:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -451,8 +564,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises",
       "title_en": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises",
-      "title_zh": null,
-      "title_bilingual": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises"
+      "title_zh": "随着中国人工智能实力的崛起，Founders Fund、Khosla Ventures 访问中国",
+      "title_bilingual": "随着中国人工智能实力的崛起，Founders Fund、Khosla Ventures 访问中国 / Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises"
     },
     {
       "id": "c303dc04a04b28e8d21a13ce072e0371ab5b6230",
@@ -463,7 +576,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/filing-reveals-how-bytedance-gained-access-to-over-2-000-nvidia-b200-chips-through-nscales-norway-data-center-singaporean-subsidiary-spring-contributed-73-percent-of-uk-neoclouds-2025-revenue",
       "published_at": "2026-09-23T12:00:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "UK-based Nscale signed a deal with Spring (SG) Pte Ltd, which is a subsidiary of Chinese tech giant ByteDance. The company did not make any direct mention of the TikTok parent in its filings for a U.S. IPO, while a supporting document only labeled Spring as a significant customer.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -488,8 +601,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center",
       "title_en": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center",
-      "title_zh": null,
-      "title_bilingual": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center"
+      "title_zh": "中国字节跳动通过挪威数据中心获得了超过2000块Nvidia B200芯片",
+      "title_bilingual": "中国字节跳动通过挪威数据中心获得了超过2000块Nvidia B200芯片 / China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center",
+      "summary_zh": "总部位于英国的 Nscale 与中国科技巨头字节跳动的子公司 Spring (SG) Pte Ltd 签署了一项协议。该公司在美国首次公开募股的文件中没有直接提及 TikTok 母公司，而一份支持文件仅将 Spring 标记为重要客户。"
     },
     {
       "id": "34b858a2c5b8cb5b209091e53b914c6304365635",
@@ -500,7 +614,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-unveils-zhenwu-v900-ai-accelerator-claims-its-the-most-powerful-ai-chip-in-china-accelerator-supports-500-000-chip-supercluster-with-a-10t-parameter-qwen-model-on-the-roadmap",
       "published_at": "2026-09-23T12:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Alibaba’s T-Head Zhenwu V900 claims three times the M890’s performance with 216GB of memory as Alibaba targets 10T-parameter Qwen",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -528,8 +642,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'",
       "title_en": "Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'",
-      "title_zh": null,
-      "title_bilingual": "Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'"
+      "title_zh": "阿里巴巴推出真武V900人工智能加速器，声称它是“中国最强大的人工智能芯片”",
+      "title_bilingual": "阿里巴巴推出真武V900人工智能加速器，声称它是“中国最强大的人工智能芯片” / Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'",
+      "summary_zh": "阿里T头真武V900声称性能是M890的三倍，内存216GB，阿里瞄准10T参数Qwen"
     },
     {
       "id": "21e1d76e45d96e63ec6b2e33792063fc946a84b8",
@@ -540,7 +655,7 @@
       "url": "https://www.tomshardware.com/pc-components/gpus/amd-begins-to-add-gddr7-support-to-its-linux-gpu-drivers-changes-could-herald-use-of-advanced-memory-standard-with-next-gen-radeon-gpus",
       "published_at": "2026-09-23T11:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Recent changes to AMD's Linux drivers to enable GDDR7 memory and other graphics IP blocks could indicate that that enablement work on its RDNA 5 GPUs is under way.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -567,8 +682,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "AMD begins to add GDDR7 support to its Linux GPU drivers",
       "title_en": "AMD begins to add GDDR7 support to its Linux GPU drivers",
-      "title_zh": null,
-      "title_bilingual": "AMD begins to add GDDR7 support to its Linux GPU drivers"
+      "title_zh": "AMD 开始在其 Linux GPU 驱动程序中添加 GDDR7 支持",
+      "title_bilingual": "AMD 开始在其 Linux GPU 驱动程序中添加 GDDR7 支持 / AMD begins to add GDDR7 support to its Linux GPU drivers",
+      "summary_zh": "AMD 最近对 Linux 驱动程序进行了更改，以支持 GDDR7 内存和其他图形 IP 块，这可能表明其 RDNA 5 GPU 的支持工作正在进行中。"
     },
     {
       "id": "e68f0570f2480dc45072bd1d1894def1bf228631",
@@ -579,7 +695,7 @@
       "url": "https://www.tomshardware.com/pc-components/this-32gb-corsair-vengeance-ddr5-6000-memory-is-the-cheapest-kit-available-discount-plus-usd40-promo-code-offers-the-least-expensive-ddr5-6000-kit-available-today",
       "published_at": "2026-09-23T10:45:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Get a great deal on 32GB Corsair Vengeance DDR5-6000 RAM. Just $439 after promo code SSF73844 yields one of the lowest priced 32GB kits available today",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -601,8 +717,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available",
       "title_en": "This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available",
-      "title_zh": null,
-      "title_bilingual": "This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available"
+      "title_zh": "这款 32GB Corsair Vengeance DDR5-6000 内存是最便宜的套件",
+      "title_bilingual": "这款 32GB Corsair Vengeance DDR5-6000 内存是最便宜的套件 / This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available",
+      "summary_zh": "超值优惠购买 32GB Corsair Vengeance DDR5-6000 RAM。促销代码 SSF73844 后仅需 439 美元即可获得当今价格最低的 32GB 套件之一"
     },
     {
       "id": "702e5a9637b23c686ad70d89a0ecf67eaa0f1f4e",
@@ -613,7 +730,7 @@
       "url": "https://www.tomshardware.com/tech-industry/space/china-puts-ai-compute-into-orbit-with-supercomputing-1-satellite-onboard-processing-aims-to-cut-earth-observation-data-processing-from-hours-to-minutes",
       "published_at": "2026-09-23T10:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "But it's a far cry from an orbital data center.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -637,8 +754,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum",
       "title_en": "China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum",
-      "title_zh": null,
-      "title_bilingual": "China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum"
+      "title_zh": "中国发射“超算一号”人工智能卫星，轨道数据中心蓄势待发",
+      "title_bilingual": "中国发射“超算一号”人工智能卫星，轨道数据中心蓄势待发 / China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum",
+      "summary_zh": "但这与轨道数据中心相去甚远。"
     },
     {
       "id": "a48054122a768e56e03f64809b1adeebba5d5403",
@@ -649,7 +767,7 @@
       "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
       "published_at": "2026-09-23T02:21:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.74,
@@ -676,8 +794,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer",
       "title_en": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer",
-      "title_zh": null,
-      "title_bilingual": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer"
+      "title_zh": "Anthropic 正在与 Apollo 支持的开发商洽谈 1 吉瓦数据中心租赁事宜",
+      "title_bilingual": "Anthropic 正在与 Apollo 支持的开发商洽谈 1 吉瓦数据中心租赁事宜 / Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer"
     },
     {
       "id": "f8dd5f14b613aba6f7764729dd68ee06ec6048e6",
@@ -712,8 +830,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Anthropic in Talks to Cement Control Over More Data Centers",
       "title_en": "Anthropic in Talks to Cement Control Over More Data Centers",
-      "title_zh": null,
-      "title_bilingual": "Anthropic in Talks to Cement Control Over More Data Centers"
+      "title_zh": "Anthropic 正在洽谈对更多数据中心的水泥控制",
+      "title_bilingual": "Anthropic 正在洽谈对更多数据中心的水泥控制 / Anthropic in Talks to Cement Control Over More Data Centers"
     },
     {
       "id": "0c370434632b818f757f7e19e931c5ca493d6eb8",
@@ -724,7 +842,7 @@
       "url": "https://www.theinformation.com/newsletters/the-briefing/ai-un-xi-trump",
       "published_at": "2026-09-23T00:01:00Z",
       "first_seen_at": "2026-09-23T00:36:28.973855Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -746,82 +864,125 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "AI, the UN, Xi and Trump",
       "title_en": "AI, the UN, Xi and Trump",
-      "title_zh": null,
-      "title_bilingual": "AI, the UN, Xi and Trump"
-    },
-    {
-      "id": "f2e9881fa2896d2641960fbe2157d1b3e725f14e",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "Barrick Gold Inks Five-Year AI Deal Before IPO",
-      "url": "https://www.theinformation.com/newsletters/dealmaker/barrick-gold-inks-five-year-ai-deal-ipo",
-      "published_at": "2026-09-22T23:28:00Z",
-      "first_seen_at": "2026-09-23T00:36:28.973855Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
-      "summary": "",
-      "ai_is_related": true,
-      "ai_score": 0.67,
-      "ai_label": "ai_general",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai"
-      ],
-      "personal_interest_signals": [
-        "ai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Barrick Gold Inks Five-Year AI Deal Before IPO",
-      "title_en": "Barrick Gold Inks Five-Year AI Deal Before IPO",
-      "title_zh": null,
-      "title_bilingual": "Barrick Gold Inks Five-Year AI Deal Before IPO"
-    },
-    {
-      "id": "6f0b3175cad42ff81a3652b6d1ce8527b679f38a",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "Wall Street’s GPU Futures Push Stalls at the CFTC",
-      "url": "https://www.theinformation.com/articles/wall-streets-gpu-futures-push-stalls-cftc",
-      "published_at": "2026-09-22T20:58:00Z",
-      "first_seen_at": "2026-09-22T22:11:47.799094Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
-      "summary": "",
-      "ai_is_related": false,
-      "ai_score": 0.23,
-      "ai_label": "not_ai",
-      "ai_relevance_reason": "missing_meaningful_ai_signal",
-      "ai_signals": [
-        "gpu"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "gpu"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Wall Street’s GPU Futures Push Stalls at the CFTC",
-      "title_en": "Wall Street’s GPU Futures Push Stalls at the CFTC",
-      "title_zh": null,
-      "title_bilingual": "Wall Street’s GPU Futures Push Stalls at the CFTC"
+      "title_zh": "人工智能、联合国、习近平和特朗普",
+      "title_bilingual": "人工智能、联合国、习近平和特朗普 / AI, the UN, Xi and Trump"
     }
   ],
   "items_ai": [
     {
+      "id": "150e50bc154b214c4cb9856fb9c8e7df21c34d1f",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
+      "url": "https://www.trendforce.com/news/2026/09/24/news-qualcomm-says-announced-2nm-chips-will-use-tsmc-keeps-door-open-to-samsung-foundry",
+      "published_at": "2026-09-24T15:59:59Z",
+      "first_seen_at": "2026-09-23T23:43:38.142949Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
+      "summary": "",
+      "ai_is_related": false,
+      "ai_score": 0.23,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [
+        "chip"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "foundry",
+        "qualcomm",
+        "samsung",
+        "tsmc"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
+      "title_en": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
+      "title_zh": null,
+      "title_bilingual": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry"
+    },
+    {
+      "id": "0d5717641297cf0c42b25c93f7737222327e0601",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "SemiAnalysis",
+      "title": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+      "published_at": "2026-09-23T21:20:29Z",
+      "first_seen_at": "2026-09-23T23:43:38.142949Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
+      "summary": "In gory detail: reliability, performance, support, pricing—and, of course, security—in our most thorough analysis of GPU cloud providers globally.",
+      "ai_is_related": false,
+      "ai_score": 0.23,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [
+        "cloud",
+        "gpu"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "gpu"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "title_en": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "title_zh": null,
+      "title_bilingual": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns"
+    },
+    {
+      "id": "32964cded643aaa3647ee1c1835b496eb125b157",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-brings-snapdragon-x2-plus-to-13-inch-surface-laptop-12-inch-surface-pro-low-end-systems-finally-get-upgrades",
+      "published_at": "2026-09-23T20:30:00Z",
+      "first_seen_at": "2026-09-23T23:43:38.142949Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
+      "summary": "Microsoft's lowest-end systems are getting upgrades to Qualcomm's latest Snapdragon X2 Plus processors.",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc"
+      ],
+      "personal_interest_signals": [
+        "laptop",
+        "qualcomm",
+        "snapdragon"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "title_en": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "title_zh": null,
+      "title_bilingual": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro"
+    },
+    {
       "id": "0713dbf2fe589ed4825353ee0570bae5c6938de9",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -864,7 +1025,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/insights-memory-spot-price-update-dram-spot-prices-hold-cautious-tone-ddr4-2gx8-drops-3-6",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -970,7 +1131,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-deepseek-reportedly-expands-huawei-chips-to-ai-training-new-supply-could-arrive-in-4q26",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T06:00:21.771309Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.74,
@@ -1009,7 +1170,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-german-court-reportedly-finds-micron-infringed-two-ymtc-nand-patents-grants-injunctions",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1044,7 +1205,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-samsungs-lpddr6-passes-industry-first-snapdragon-validation-at-10-7-gbps-galaxy-s27-may-split-memory-tiers",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1081,7 +1242,7 @@
       "url": "https://www.tomshardware.com/pc-components/storage/chinas-ymtc-wins-patent-battle-against-micron-in-ongoing-3-year-legal-war-over-memory-patents-new-injunctions-could-restrict-microns-supply-into-germany",
       "published_at": "2026-09-23T15:56:02Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "A Munich court has granted YMTC two injunctions against Micron over 3D NAND patents, the latest development in a years-long cross-border legal battle between the memory rivals.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1117,7 +1278,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-claims-new-qwen-image-2-1-ai-model-beats-google-nano-banana-2-0-with-minuscule-7b-parameter-model-benchmarks-show-open-weight-contender-is-competitive-with-openai-and-meta-image-models",
       "published_at": "2026-09-23T15:34:36Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Alibaba Group's AI division has released Qwen 2.1 Image, an ultra-lightweight image generation model with just 7B parameters, able to run on local hardware like the RTX 3090.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1153,7 +1314,7 @@
       "url": "https://www.theinformation.com/newsletters/ai-agenda/expect-ai-agenda-live-crusoe-thinking-machines-labs-strike-compute-deal",
       "published_at": "2026-09-23T14:01:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1187,7 +1348,7 @@
       "url": "https://www.tomshardware.com/pc-components/case-mods/usd14-000-gaming-pc-features-70-handcrafted-titanium-cherry-blossoms-which-unfurl-as-temperatures-rise-zotac-designed-rtx-5080-system-features-impressive-sculpture-and-an-eye-watering-price-tag-to-match",
       "published_at": "2026-09-23T13:14:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "The Aftershock PC Cherry Bloom includes 70 hand-crafted cherry blossoms made of titanium alloy that open and close with the heat generated by the PC.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1221,7 +1382,7 @@
       "url": "https://www.theinformation.com/articles/founders-fund-khosla-ventures-visit-china-countrys-ai-prowess-rises",
       "published_at": "2026-09-23T13:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1243,8 +1404,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises",
       "title_en": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises",
-      "title_zh": null,
-      "title_bilingual": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises"
+      "title_zh": "随着中国人工智能实力的崛起，Founders Fund、Khosla Ventures 访问中国",
+      "title_bilingual": "随着中国人工智能实力的崛起，Founders Fund、Khosla Ventures 访问中国 / Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises"
     },
     {
       "id": "c303dc04a04b28e8d21a13ce072e0371ab5b6230",
@@ -1255,7 +1416,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/filing-reveals-how-bytedance-gained-access-to-over-2-000-nvidia-b200-chips-through-nscales-norway-data-center-singaporean-subsidiary-spring-contributed-73-percent-of-uk-neoclouds-2025-revenue",
       "published_at": "2026-09-23T12:00:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "UK-based Nscale signed a deal with Spring (SG) Pte Ltd, which is a subsidiary of Chinese tech giant ByteDance. The company did not make any direct mention of the TikTok parent in its filings for a U.S. IPO, while a supporting document only labeled Spring as a significant customer.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1280,8 +1441,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center",
       "title_en": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center",
-      "title_zh": null,
-      "title_bilingual": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center"
+      "title_zh": "中国字节跳动通过挪威数据中心获得了超过2000块Nvidia B200芯片",
+      "title_bilingual": "中国字节跳动通过挪威数据中心获得了超过2000块Nvidia B200芯片 / China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center",
+      "summary_zh": "总部位于英国的 Nscale 与中国科技巨头字节跳动的子公司 Spring (SG) Pte Ltd 签署了一项协议。该公司在美国首次公开募股的文件中没有直接提及 TikTok 母公司，而一份支持文件仅将 Spring 标记为重要客户。"
     },
     {
       "id": "34b858a2c5b8cb5b209091e53b914c6304365635",
@@ -1292,7 +1454,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-unveils-zhenwu-v900-ai-accelerator-claims-its-the-most-powerful-ai-chip-in-china-accelerator-supports-500-000-chip-supercluster-with-a-10t-parameter-qwen-model-on-the-roadmap",
       "published_at": "2026-09-23T12:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Alibaba’s T-Head Zhenwu V900 claims three times the M890’s performance with 216GB of memory as Alibaba targets 10T-parameter Qwen",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -1320,8 +1482,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'",
       "title_en": "Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'",
-      "title_zh": null,
-      "title_bilingual": "Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'"
+      "title_zh": "阿里巴巴推出真武V900人工智能加速器，声称它是“中国最强大的人工智能芯片”",
+      "title_bilingual": "阿里巴巴推出真武V900人工智能加速器，声称它是“中国最强大的人工智能芯片” / Alibaba unveils Zhenwu V900 AI accelerator, claims it's 'the most powerful AI chip in China'",
+      "summary_zh": "阿里T头真武V900声称性能是M890的三倍，内存216GB，阿里瞄准10T参数Qwen"
     },
     {
       "id": "21e1d76e45d96e63ec6b2e33792063fc946a84b8",
@@ -1332,7 +1495,7 @@
       "url": "https://www.tomshardware.com/pc-components/gpus/amd-begins-to-add-gddr7-support-to-its-linux-gpu-drivers-changes-could-herald-use-of-advanced-memory-standard-with-next-gen-radeon-gpus",
       "published_at": "2026-09-23T11:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Recent changes to AMD's Linux drivers to enable GDDR7 memory and other graphics IP blocks could indicate that that enablement work on its RDNA 5 GPUs is under way.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1359,8 +1522,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "AMD begins to add GDDR7 support to its Linux GPU drivers",
       "title_en": "AMD begins to add GDDR7 support to its Linux GPU drivers",
-      "title_zh": null,
-      "title_bilingual": "AMD begins to add GDDR7 support to its Linux GPU drivers"
+      "title_zh": "AMD 开始在其 Linux GPU 驱动程序中添加 GDDR7 支持",
+      "title_bilingual": "AMD 开始在其 Linux GPU 驱动程序中添加 GDDR7 支持 / AMD begins to add GDDR7 support to its Linux GPU drivers",
+      "summary_zh": "AMD 最近对 Linux 驱动程序进行了更改，以支持 GDDR7 内存和其他图形 IP 块，这可能表明其 RDNA 5 GPU 的支持工作正在进行中。"
     },
     {
       "id": "e68f0570f2480dc45072bd1d1894def1bf228631",
@@ -1371,7 +1535,7 @@
       "url": "https://www.tomshardware.com/pc-components/this-32gb-corsair-vengeance-ddr5-6000-memory-is-the-cheapest-kit-available-discount-plus-usd40-promo-code-offers-the-least-expensive-ddr5-6000-kit-available-today",
       "published_at": "2026-09-23T10:45:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "Get a great deal on 32GB Corsair Vengeance DDR5-6000 RAM. Just $439 after promo code SSF73844 yields one of the lowest priced 32GB kits available today",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1393,8 +1557,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available",
       "title_en": "This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available",
-      "title_zh": null,
-      "title_bilingual": "This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available"
+      "title_zh": "这款 32GB Corsair Vengeance DDR5-6000 内存是最便宜的套件",
+      "title_bilingual": "这款 32GB Corsair Vengeance DDR5-6000 内存是最便宜的套件 / This 32GB Corsair Vengeance DDR5-6000 memory is the cheapest kit available",
+      "summary_zh": "超值优惠购买 32GB Corsair Vengeance DDR5-6000 RAM。促销代码 SSF73844 后仅需 439 美元即可获得当今价格最低的 32GB 套件之一"
     },
     {
       "id": "702e5a9637b23c686ad70d89a0ecf67eaa0f1f4e",
@@ -1405,7 +1570,7 @@
       "url": "https://www.tomshardware.com/tech-industry/space/china-puts-ai-compute-into-orbit-with-supercomputing-1-satellite-onboard-processing-aims-to-cut-earth-observation-data-processing-from-hours-to-minutes",
       "published_at": "2026-09-23T10:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "But it's a far cry from an orbital data center.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1429,8 +1594,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum",
       "title_en": "China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum",
-      "title_zh": null,
-      "title_bilingual": "China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum"
+      "title_zh": "中国发射“超算一号”人工智能卫星，轨道数据中心蓄势待发",
+      "title_bilingual": "中国发射“超算一号”人工智能卫星，轨道数据中心蓄势待发 / China launches 'Supercomputing-1' AI satellite as orbital data centers gather momentum",
+      "summary_zh": "但这与轨道数据中心相去甚远。"
     },
     {
       "id": "a48054122a768e56e03f64809b1adeebba5d5403",
@@ -1441,7 +1607,7 @@
       "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
       "published_at": "2026-09-23T02:21:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.74,
@@ -1468,8 +1634,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer",
       "title_en": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer",
-      "title_zh": null,
-      "title_bilingual": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer"
+      "title_zh": "Anthropic 正在与 Apollo 支持的开发商洽谈 1 吉瓦数据中心租赁事宜",
+      "title_bilingual": "Anthropic 正在与 Apollo 支持的开发商洽谈 1 吉瓦数据中心租赁事宜 / Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer"
     },
     {
       "id": "f8dd5f14b613aba6f7764729dd68ee06ec6048e6",
@@ -1504,8 +1670,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Anthropic in Talks to Cement Control Over More Data Centers",
       "title_en": "Anthropic in Talks to Cement Control Over More Data Centers",
-      "title_zh": null,
-      "title_bilingual": "Anthropic in Talks to Cement Control Over More Data Centers"
+      "title_zh": "Anthropic 正在洽谈对更多数据中心的水泥控制",
+      "title_bilingual": "Anthropic 正在洽谈对更多数据中心的水泥控制 / Anthropic in Talks to Cement Control Over More Data Centers"
     },
     {
       "id": "0c370434632b818f757f7e19e931c5ca493d6eb8",
@@ -1516,7 +1682,7 @@
       "url": "https://www.theinformation.com/newsletters/the-briefing/ai-un-xi-trump",
       "published_at": "2026-09-23T00:01:00Z",
       "first_seen_at": "2026-09-23T00:36:28.973855Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
+      "last_seen_at": "2026-09-23T23:43:38.142949Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1538,78 +1704,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "AI, the UN, Xi and Trump",
       "title_en": "AI, the UN, Xi and Trump",
-      "title_zh": null,
-      "title_bilingual": "AI, the UN, Xi and Trump"
-    },
-    {
-      "id": "f2e9881fa2896d2641960fbe2157d1b3e725f14e",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "Barrick Gold Inks Five-Year AI Deal Before IPO",
-      "url": "https://www.theinformation.com/newsletters/dealmaker/barrick-gold-inks-five-year-ai-deal-ipo",
-      "published_at": "2026-09-22T23:28:00Z",
-      "first_seen_at": "2026-09-23T00:36:28.973855Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
-      "summary": "",
-      "ai_is_related": true,
-      "ai_score": 0.67,
-      "ai_label": "ai_general",
-      "ai_relevance_reason": "matched_ai_signal",
-      "ai_signals": [],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "ai"
-      ],
-      "personal_interest_signals": [
-        "ai"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Barrick Gold Inks Five-Year AI Deal Before IPO",
-      "title_en": "Barrick Gold Inks Five-Year AI Deal Before IPO",
-      "title_zh": null,
-      "title_bilingual": "Barrick Gold Inks Five-Year AI Deal Before IPO"
-    },
-    {
-      "id": "6f0b3175cad42ff81a3652b6d1ce8527b679f38a",
-      "site_id": "opmlrss",
-      "site_name": "OPML RSS",
-      "source": "The Information",
-      "title": "Wall Street’s GPU Futures Push Stalls at the CFTC",
-      "url": "https://www.theinformation.com/articles/wall-streets-gpu-futures-push-stalls-cftc",
-      "published_at": "2026-09-22T20:58:00Z",
-      "first_seen_at": "2026-09-22T22:11:47.799094Z",
-      "last_seen_at": "2026-09-23T20:24:49.637305Z",
-      "summary": "",
-      "ai_is_related": false,
-      "ai_score": 0.23,
-      "ai_label": "not_ai",
-      "ai_relevance_reason": "missing_meaningful_ai_signal",
-      "ai_signals": [
-        "gpu"
-      ],
-      "ai_noise": [],
-      "source_tier": "user_opml",
-      "source_tier_label": "RSS/OPML",
-      "source_tier_rank": 3,
-      "personal_interest_match": true,
-      "personal_interest_categories": [
-        "server_industry"
-      ],
-      "personal_interest_signals": [
-        "gpu"
-      ],
-      "personal_interest_excluded_topics": [],
-      "personal_interest_reason": "matched_interest",
-      "title_original": "Wall Street’s GPU Futures Push Stalls at the CFTC",
-      "title_en": "Wall Street’s GPU Futures Push Stalls at the CFTC",
-      "title_zh": null,
-      "title_bilingual": "Wall Street’s GPU Futures Push Stalls at the CFTC"
+      "title_zh": "人工智能、联合国、习近平和特朗普",
+      "title_bilingual": "人工智能、联合国、习近平和特朗普 / AI, the UN, Xi and Trump"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json",
