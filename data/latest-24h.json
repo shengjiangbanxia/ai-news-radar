@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-24T04:55:07.130167Z",
+  "generated_at": "2026-09-24T10:03:42.833018Z",
   "window_hours": 24,
-  "total_items": 25,
-  "total_items_ai_raw": 26,
-  "total_items_raw": 32,
-  "total_items_all_mode": 26,
+  "total_items": 29,
+  "total_items_ai_raw": 30,
+  "total_items_raw": 35,
+  "total_items_all_mode": 30,
   "topic_filter": "personal_ai_pc_server_interest_v1",
   "ai_relevance_threshold": 0.65,
-  "archive_total": 684,
+  "archive_total": 681,
   "site_count": 2,
   "source_count": 4,
   "site_stats": [
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
-      "count": 25,
-      "raw_count": 32
+      "count": 29,
+      "raw_count": 35
     },
     {
       "site_id": "xapi",
@@ -30,6 +30,45 @@
   "creator_items_all": [],
   "items": [
     {
+      "id": "a61e260361271efa14a3a1394d72b58ed232a94c",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
+      "url": "https://www.trendforce.com/news/2026/09/24/news-cxmt-ymtc-ramp-memory-capacity-but-chinas-ai-cloud-boom-could-soak-up-new-supply-through-2027",
+      "published_at": "2026-09-24T15:59:59Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.7,
+      "ai_label": "ai_tech",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "cloud"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "cxmt",
+        "memory"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
+      "title_en": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
+      "title_zh": null,
+      "title_bilingual": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027"
+    },
+    {
       "id": "510fc11753751e20f357782694929a3d9f43e572",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -38,7 +77,7 @@
       "url": "https://www.trendforce.com/news/2026/09/24/news-meta-to-launch-charm-device-for-muse-ai-in-december-unveils-new-vr-and-ray-ban-glasses",
       "published_at": "2026-09-24T15:59:59Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -60,8 +99,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses",
       "title_en": "[News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses",
-      "title_zh": null,
-      "title_bilingual": "[News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses"
+      "title_zh": "【新闻】Meta 将于 12 月推出 Muse AI Charm 设备，并推出新款 VR 和雷朋眼镜",
+      "title_bilingual": "【新闻】Meta 将于 12 月推出 Muse AI Charm 设备，并推出新款 VR 和雷朋眼镜 / [News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses"
     },
     {
       "id": "6cc7f5967d2b73745bc762bfa30f5ff39f94c311",
@@ -72,7 +111,7 @@
       "url": "https://www.trendforce.com/news/2026/09/24/news-micron-reportedly-ends-2gb-gddr7-narrowing-supply-options-for-nvidias-rtx-50-series",
       "published_at": "2026-09-24T15:59:59Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -95,8 +134,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series",
       "title_en": "[News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series",
-      "title_zh": null,
-      "title_bilingual": "[News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series"
+      "title_zh": "[新闻] 据报道美光终止 2GB GDDR7，缩小 NVIDIA RTX 50 系列的供应选择",
+      "title_bilingual": "[新闻] 据报道美光终止 2GB GDDR7，缩小 NVIDIA RTX 50 系列的供应选择 / [News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series"
     },
     {
       "id": "150e50bc154b214c4cb9856fb9c8e7df21c34d1f",
@@ -107,7 +146,7 @@
       "url": "https://www.trendforce.com/news/2026/09/24/news-qualcomm-says-announced-2nm-chips-will-use-tsmc-keeps-door-open-to-samsung-foundry",
       "published_at": "2026-09-24T15:59:59Z",
       "first_seen_at": "2026-09-23T23:43:38.142949Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -135,8 +174,118 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
       "title_en": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
-      "title_zh": null,
-      "title_bilingual": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry"
+      "title_zh": "【新闻】高通称宣布的2nm芯片将采用台积电，向三星代工敞开大门",
+      "title_bilingual": "【新闻】高通称宣布的2nm芯片将采用台积电，向三星代工敞开大门 / [News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry"
+    },
+    {
+      "id": "c6f38374b3ed292bbffe2446657d66f4d47ff2c2",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "url": "https://www.tomshardware.com/service-providers/samsungs-disastrous-firmware-update-breaks-refrigerators-ahead-of-south-korean-holiday-customers-complain-of-non-functioning-units-food-spoilage-ahead-of-three-day-celebration",
+      "published_at": "2026-09-24T10:00:00Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "A broken Samsung update left many refrigerators stuck and non-functional. The incident, which happened right before a major holiday, has many users complaining of spoiled food and a ruined holiday.",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "samsung"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "title_en": "Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "title_zh": "韩国假期前三星灾难性的固件更新导致冰箱变砖",
+      "title_bilingual": "韩国假期前三星灾难性的固件更新导致冰箱变砖 / Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "summary_zh": "三星的一次故障更新导致许多冰箱陷入困境且无法使用。这起事件发生在重大节日之前，许多用户抱怨食物变质，假期被毁。"
+    },
+    {
+      "id": "59a82e99a357965b8efc75865c6e0f1a970b8872",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "url": "https://www.tomshardware.com/pc-components/gpus/cyberpowerpc-lands-rare-rtx-50-series-founders-edition-cards-in-discounted-walmart-rigs-complete-rtx-5090-pc-costs-usd2-400-less-than-a-standalone-gpu",
+      "published_at": "2026-09-24T09:30:00Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "CyberPowerPC is offering five different pre-built gaming PCs with either an RTX 5070, 5080, or 5090 Founders Edition GPUs paired with either an Intel or AMD X3D CPU. They also come with 32GB of DDR5 RAM and 1TB of NVMe SSD, all for reasonable prices.",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "amd",
+        "cpu",
+        "intel",
+        "ssd"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "title_en": "CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "title_zh": "Cyber​​PowerPC 在打折的沃尔玛装备中推出了罕见的 RTX 50 系列创始人版卡",
+      "title_bilingual": "Cyber​​PowerPC 在打折的沃尔玛装备中推出了罕见的 RTX 50 系列创始人版卡 / CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "summary_zh": "Cyber​​PowerPC 提供五款不同的预制游戏电脑，配备 RTX 5070、5080 或 5090 Founders Edition GPU，搭配 Intel 或 AMD X3D CPU。它们还配备 32GB DDR5 RAM 和 1TB NVMe SSD，价格合理。"
+    },
+    {
+      "id": "2d4d5a6925e890c7cfcdc9ea52cec505c7375dd9",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "The Information",
+      "title": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "url": "https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising",
+      "published_at": "2026-09-24T06:20:00Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.71,
+      "ai_label": "model_release",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "deepseek"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai"
+      ],
+      "personal_interest_signals": [
+        "deepseek"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "title_en": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "title_zh": "DeepSeek 完成 75 亿美元融资，年收入突破 10 亿美元",
+      "title_bilingual": "DeepSeek 完成 75 亿美元融资，年收入突破 10 亿美元 / DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising"
     },
     {
       "id": "a0bcf1a8cf35dbad3e5b3cbed156bcfc1b3e4750",
@@ -147,7 +296,7 @@
       "url": "https://www.theinformation.com/articles/open-source-model-price-cuts-keep-ai-costs-control",
       "published_at": "2026-09-24T04:25:00Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -169,8 +318,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Open Source, Model Price Cuts Keep AI Costs Under Control",
       "title_en": "Open Source, Model Price Cuts Keep AI Costs Under Control",
-      "title_zh": null,
-      "title_bilingual": "Open Source, Model Price Cuts Keep AI Costs Under Control"
+      "title_zh": "开源、模型降价使人工智能成本得到控制",
+      "title_bilingual": "开源、模型降价使人工智能成本得到控制 / Open Source, Model Price Cuts Keep AI Costs Under Control"
     },
     {
       "id": "db456fac6148144ef4296c0495ff2e32b9ed8067",
@@ -181,7 +330,7 @@
       "url": "https://www.theinformation.com/articles/google-nears-release-flagship-gemini-4-ai-model",
       "published_at": "2026-09-24T02:15:00Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.71,
@@ -207,8 +356,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Google Nears Release of Flagship Gemini 4 AI Model",
       "title_en": "Google Nears Release of Flagship Gemini 4 AI Model",
-      "title_zh": null,
-      "title_bilingual": "Google Nears Release of Flagship Gemini 4 AI Model"
+      "title_zh": "谷歌即将发布旗舰 Gemini 4 AI 模型",
+      "title_bilingual": "谷歌即将发布旗舰 Gemini 4 AI 模型 / Google Nears Release of Flagship Gemini 4 AI Model"
     },
     {
       "id": "3ef331535ed7fd63bf618d1a2d9e09449b73a493",
@@ -219,7 +368,7 @@
       "url": "https://www.theinformation.com/newsletters/the-briefing/amazons-new-ai-offer-reflects-discounting-surge",
       "published_at": "2026-09-24T00:01:00Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -241,8 +390,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Amazon’s New AI Offer Reflects Discounting Surge",
       "title_en": "Amazon’s New AI Offer Reflects Discounting Surge",
-      "title_zh": null,
-      "title_bilingual": "Amazon’s New AI Offer Reflects Discounting Surge"
+      "title_zh": "亚马逊的新人工智能优惠反映出折扣激增",
+      "title_bilingual": "亚马逊的新人工智能优惠反映出折扣激增 / Amazon’s New AI Offer Reflects Discounting Surge"
     },
     {
       "id": "0d5717641297cf0c42b25c93f7737222327e0601",
@@ -253,7 +402,7 @@
       "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
       "published_at": "2026-09-23T21:20:29Z",
       "first_seen_at": "2026-09-23T23:43:38.142949Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "In gory detail: reliability, performance, support, pricing—and, of course, security—in our most thorough analysis of GPU cloud providers globally.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -278,8 +427,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
       "title_en": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
-      "title_zh": null,
-      "title_bilingual": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns"
+      "title_zh": "ClusterMAX 3.0：行业标准GPU云评级系统回归",
+      "title_bilingual": "ClusterMAX 3.0：行业标准GPU云评级系统回归 / ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "summary_zh": "我们对全球 GPU 云提供商进行了最全面的分析，详细介绍了：可靠性、性能、支持、定价，当然还有安全性。"
     },
     {
       "id": "32964cded643aaa3647ee1c1835b496eb125b157",
@@ -290,7 +440,7 @@
       "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-brings-snapdragon-x2-plus-to-13-inch-surface-laptop-12-inch-surface-pro-low-end-systems-finally-get-upgrades",
       "published_at": "2026-09-23T20:30:00Z",
       "first_seen_at": "2026-09-23T23:43:38.142949Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Microsoft's lowest-end systems are getting upgrades to Qualcomm's latest Snapdragon X2 Plus processors.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -314,8 +464,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
       "title_en": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
-      "title_zh": null,
-      "title_bilingual": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro"
+      "title_zh": "微软将 Snapdragon X2 Plus 引入 13 英寸 Surface Laptop、12 英寸 Surface Pro",
+      "title_bilingual": "微软将 Snapdragon X2 Plus 引入 13 英寸 Surface Laptop、12 英寸 Surface Pro / Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "summary_zh": "微软的最低端系统正在升级至高通最新的 Snapdragon X2 Plus 处理器。"
     },
     {
       "id": "0713dbf2fe589ed4825353ee0570bae5c6938de9",
@@ -326,7 +477,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/breaking-intel-emib-substrate-yields-reportedly-hit-45-suppliers-eye-60-by-1q27",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T00:36:28.973855Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -348,8 +499,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27",
       "title_en": "[Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27",
-      "title_zh": null,
-      "title_bilingual": "[Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27"
+      "title_zh": "[突发] 据报道，英特尔 EMIB 基板良率到 2027 年第一季度将达到 45%，供应商预计将达到 60%",
+      "title_bilingual": "[突发] 据报道，英特尔 EMIB 基板良率到 2027 年第一季度将达到 45%，供应商预计将达到 60% / [Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27"
     },
     {
       "id": "6ac0272e5cdd9b445336d2c7e1033bde63239d8b",
@@ -383,8 +534,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%",
       "title_en": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%",
-      "title_zh": null,
-      "title_bilingual": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%"
+      "title_zh": "【洞察】内存现货价格更新：DRAM现货价格持谨慎态度； DDR4 2Gx8 下降 3.6%",
+      "title_bilingual": "【洞察】内存现货价格更新：DRAM现货价格持谨慎态度； DDR4 2Gx8 下降 3.6% / [Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%"
     },
     {
       "id": "4af0be2c47a67fdf30224fab4e1f4c56126c5e72",
@@ -417,8 +568,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp",
       "title_en": "[News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp",
-      "title_zh": null,
-      "title_bilingual": "[News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp"
+      "title_zh": "[新闻]京东方加入玻璃基板竞赛，三星电机、SKC、LG Eye 2027-2028年斜坡",
+      "title_bilingual": "[新闻]京东方加入玻璃基板竞赛，三星电机、SKC、LG Eye 2027-2028年斜坡 / [News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp"
     },
     {
       "id": "e92a0cd5572b15270de9b4dd7bca0bbba6f95862",
@@ -454,8 +605,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings",
       "title_en": "[News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings",
-      "title_zh": null,
-      "title_bilingual": "[News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings"
+      "title_zh": "【新闻】2026年上半年中国A股半导体利润同比增长607%；长鑫存储收入、利润双双位居榜首",
+      "title_bilingual": "【新闻】2026年上半年中国A股半导体利润同比增长607%；长鑫存储收入、利润双双位居榜首 / [News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings"
     },
     {
       "id": "c7d175fbd605e8504271bad4d945361a836476d0",
@@ -493,8 +644,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26",
       "title_en": "[News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26",
-      "title_zh": null,
-      "title_bilingual": "[News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26"
+      "title_zh": "【新闻】据报道 DeepSeek 将华为芯片拓展至 AI 训练领域；新供应可能于 2026 年第 4 季度抵达",
+      "title_bilingual": "【新闻】据报道 DeepSeek 将华为芯片拓展至 AI 训练领域；新供应可能于 2026 年第 4 季度抵达 / [News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26"
     },
     {
       "id": "b63f1278e05b7db4b40dc7d76a80314d09c6c026",
@@ -505,7 +656,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-german-court-reportedly-finds-micron-infringed-two-ymtc-nand-patents-grants-injunctions",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -528,8 +679,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "title_en": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
-      "title_zh": null,
-      "title_bilingual": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions"
+      "title_zh": "【新闻】据报道，德国法院认定美光侵犯长江存储两项 NAND 专利，并颁发禁令",
+      "title_bilingual": "【新闻】据报道，德国法院认定美光侵犯长江存储两项 NAND 专利，并颁发禁令 / [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions"
     },
     {
       "id": "f25c9cfb07bca42a172d6ef3bf95fbffbb8b823b",
@@ -540,7 +691,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-samsungs-lpddr6-passes-industry-first-snapdragon-validation-at-10-7-gbps-galaxy-s27-may-split-memory-tiers",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -565,8 +716,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers",
       "title_en": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers",
-      "title_zh": null,
-      "title_bilingual": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers"
+      "title_zh": "【新闻】三星LPDDR6通过业界首个Snapdragon验证； Galaxy S27 可能会拆分内存层",
+      "title_bilingual": "【新闻】三星LPDDR6通过业界首个Snapdragon验证； Galaxy S27 可能会拆分内存层 / [News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers"
     },
     {
       "id": "91649181707543091fc0da701ccb5aed1d5939fc",
@@ -577,7 +728,7 @@
       "url": "https://www.tomshardware.com/pc-components/storage/chinas-ymtc-wins-patent-battle-against-micron-in-ongoing-3-year-legal-war-over-memory-patents-new-injunctions-could-restrict-microns-supply-into-germany",
       "published_at": "2026-09-23T15:56:02Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "A Munich court has granted YMTC two injunctions against Micron over 3D NAND patents, the latest development in a years-long cross-border legal battle between the memory rivals.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -601,8 +752,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents",
       "title_en": "China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents",
-      "title_zh": null,
-      "title_bilingual": "China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents"
+      "title_zh": "中国长江存储在与美光长达三年的内存专利诉讼中获胜",
+      "title_bilingual": "中国长江存储在与美光长达三年的内存专利诉讼中获胜 / China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents",
+      "summary_zh": "慕尼黑一家法院已就 3D NAND 专利向长江存储授予了两项针对美光的禁令，这是这两家内存竞争对手之间长达数年的跨境法律斗争的最新进展。"
     },
     {
       "id": "d4260e9d7fb8df3d67075e32108429077aab308a",
@@ -613,7 +765,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-claims-new-qwen-image-2-1-ai-model-beats-google-nano-banana-2-0-with-minuscule-7b-parameter-model-benchmarks-show-open-weight-contender-is-competitive-with-openai-and-meta-image-models",
       "published_at": "2026-09-23T15:34:36Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Alibaba Group's AI division has released Qwen 2.1 Image, an ultra-lightweight image generation model with just 7B parameters, able to run on local hardware like the RTX 3090.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -638,7 +790,8 @@
       "title_original": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model",
       "title_en": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model",
       "title_zh": null,
-      "title_bilingual": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model"
+      "title_bilingual": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model",
+      "summary_zh": "阿里巴巴集团人工智能部门发布了Qwen 2.1 Image，这是一种仅7B参数的超轻量级图像生成模型，能够在RTX 3090等本地硬件上运行。"
     },
     {
       "id": "b34ae3eab6a0833477a1ac6ad9f6af2f6da78c00",
@@ -649,7 +802,7 @@
       "url": "https://www.theinformation.com/newsletters/ai-agenda/expect-ai-agenda-live-crusoe-thinking-machines-labs-strike-compute-deal",
       "published_at": "2026-09-23T14:01:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -671,8 +824,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal",
       "title_en": "What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal",
-      "title_zh": null,
-      "title_bilingual": "What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal"
+      "title_zh": "AI Agenda Live 有何期待； Crusoe 与思维机器实验室达成计算协议",
+      "title_bilingual": "AI Agenda Live 有何期待； Crusoe 与思维机器实验室达成计算协议 / What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal"
     },
     {
       "id": "f5cd89f49dce2e7a4fc4ac5a57bc3ec6ea0c8590",
@@ -683,7 +836,7 @@
       "url": "https://www.tomshardware.com/pc-components/case-mods/usd14-000-gaming-pc-features-70-handcrafted-titanium-cherry-blossoms-which-unfurl-as-temperatures-rise-zotac-designed-rtx-5080-system-features-impressive-sculpture-and-an-eye-watering-price-tag-to-match",
       "published_at": "2026-09-23T13:14:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "The Aftershock PC Cherry Bloom includes 70 hand-crafted cherry blossoms made of titanium alloy that open and close with the heat generated by the PC.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -705,8 +858,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "$14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise",
       "title_en": "$14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise",
-      "title_zh": null,
-      "title_bilingual": "$14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise"
+      "title_zh": "售价 14,000 美元的游戏电脑配有 70 朵手工制作的钛合金樱花，随着温度升高而绽放",
+      "title_bilingual": "售价 14,000 美元的游戏电脑配有 70 朵手工制作的钛合金樱花，随着温度升高而绽放 / $14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise",
+      "summary_zh": "Aftershock PC Cherry Bloom 包括 70 朵由钛合金制成的手工制作的樱花，它们会随着 PC 产生的热量而打开和关闭。"
     },
     {
       "id": "23838704edc001c7672a97a347afae7ef1ddfdc1",
@@ -717,7 +871,7 @@
       "url": "https://www.theinformation.com/articles/founders-fund-khosla-ventures-visit-china-countrys-ai-prowess-rises",
       "published_at": "2026-09-23T13:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -751,7 +905,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/filing-reveals-how-bytedance-gained-access-to-over-2-000-nvidia-b200-chips-through-nscales-norway-data-center-singaporean-subsidiary-spring-contributed-73-percent-of-uk-neoclouds-2025-revenue",
       "published_at": "2026-09-23T12:00:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "UK-based Nscale signed a deal with Spring (SG) Pte Ltd, which is a subsidiary of Chinese tech giant ByteDance. The company did not make any direct mention of the TikTok parent in its filings for a U.S. IPO, while a supporting document only labeled Spring as a significant customer.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -789,7 +943,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-unveils-zhenwu-v900-ai-accelerator-claims-its-the-most-powerful-ai-chip-in-china-accelerator-supports-500-000-chip-supercluster-with-a-10t-parameter-qwen-model-on-the-roadmap",
       "published_at": "2026-09-23T12:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Alibaba’s T-Head Zhenwu V900 claims three times the M890’s performance with 216GB of memory as Alibaba targets 10T-parameter Qwen",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -830,7 +984,7 @@
       "url": "https://www.tomshardware.com/pc-components/gpus/amd-begins-to-add-gddr7-support-to-its-linux-gpu-drivers-changes-could-herald-use-of-advanced-memory-standard-with-next-gen-radeon-gpus",
       "published_at": "2026-09-23T11:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Recent changes to AMD's Linux drivers to enable GDDR7 memory and other graphics IP blocks could indicate that that enablement work on its RDNA 5 GPUs is under way.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -870,7 +1024,7 @@
       "url": "https://www.tomshardware.com/pc-components/this-32gb-corsair-vengeance-ddr5-6000-memory-is-the-cheapest-kit-available-discount-plus-usd40-promo-code-offers-the-least-expensive-ddr5-6000-kit-available-today",
       "published_at": "2026-09-23T10:45:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Get a great deal on 32GB Corsair Vengeance DDR5-6000 RAM. Just $439 after promo code SSF73844 yields one of the lowest priced 32GB kits available today",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -905,7 +1059,7 @@
       "url": "https://www.tomshardware.com/tech-industry/space/china-puts-ai-compute-into-orbit-with-supercomputing-1-satellite-onboard-processing-aims-to-cut-earth-observation-data-processing-from-hours-to-minutes",
       "published_at": "2026-09-23T10:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "But it's a far cry from an orbital data center.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -936,6 +1090,45 @@
   ],
   "items_ai": [
     {
+      "id": "a61e260361271efa14a3a1394d72b58ed232a94c",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "TrendForce News",
+      "title": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
+      "url": "https://www.trendforce.com/news/2026/09/24/news-cxmt-ymtc-ramp-memory-capacity-but-chinas-ai-cloud-boom-could-soak-up-new-supply-through-2027",
+      "published_at": "2026-09-24T15:59:59Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.7,
+      "ai_label": "ai_tech",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "cloud"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "ai",
+        "cxmt",
+        "memory"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
+      "title_en": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
+      "title_zh": null,
+      "title_bilingual": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027"
+    },
+    {
       "id": "510fc11753751e20f357782694929a3d9f43e572",
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
@@ -944,7 +1137,7 @@
       "url": "https://www.trendforce.com/news/2026/09/24/news-meta-to-launch-charm-device-for-muse-ai-in-december-unveils-new-vr-and-ray-ban-glasses",
       "published_at": "2026-09-24T15:59:59Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -966,8 +1159,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses",
       "title_en": "[News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses",
-      "title_zh": null,
-      "title_bilingual": "[News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses"
+      "title_zh": "【新闻】Meta 将于 12 月推出 Muse AI Charm 设备，并推出新款 VR 和雷朋眼镜",
+      "title_bilingual": "【新闻】Meta 将于 12 月推出 Muse AI Charm 设备，并推出新款 VR 和雷朋眼镜 / [News] Meta to Launch Charm Device for Muse AI in December, Unveils New VR and Ray-Ban Glasses"
     },
     {
       "id": "6cc7f5967d2b73745bc762bfa30f5ff39f94c311",
@@ -978,7 +1171,7 @@
       "url": "https://www.trendforce.com/news/2026/09/24/news-micron-reportedly-ends-2gb-gddr7-narrowing-supply-options-for-nvidias-rtx-50-series",
       "published_at": "2026-09-24T15:59:59Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1001,8 +1194,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series",
       "title_en": "[News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series",
-      "title_zh": null,
-      "title_bilingual": "[News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series"
+      "title_zh": "[新闻] 据报道美光终止 2GB GDDR7，缩小 NVIDIA RTX 50 系列的供应选择",
+      "title_bilingual": "[新闻] 据报道美光终止 2GB GDDR7，缩小 NVIDIA RTX 50 系列的供应选择 / [News] Micron Reportedly Ends 2GB GDDR7, Narrowing Supply Options for NVIDIA’s RTX 50 Series"
     },
     {
       "id": "150e50bc154b214c4cb9856fb9c8e7df21c34d1f",
@@ -1013,7 +1206,7 @@
       "url": "https://www.trendforce.com/news/2026/09/24/news-qualcomm-says-announced-2nm-chips-will-use-tsmc-keeps-door-open-to-samsung-foundry",
       "published_at": "2026-09-24T15:59:59Z",
       "first_seen_at": "2026-09-23T23:43:38.142949Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1041,8 +1234,118 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
       "title_en": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry",
-      "title_zh": null,
-      "title_bilingual": "[News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry"
+      "title_zh": "【新闻】高通称宣布的2nm芯片将采用台积电，向三星代工敞开大门",
+      "title_bilingual": "【新闻】高通称宣布的2nm芯片将采用台积电，向三星代工敞开大门 / [News] Qualcomm Says Announced 2nm Chips Will Use TSMC, Keeps Door Open to Samsung Foundry"
+    },
+    {
+      "id": "c6f38374b3ed292bbffe2446657d66f4d47ff2c2",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "url": "https://www.tomshardware.com/service-providers/samsungs-disastrous-firmware-update-breaks-refrigerators-ahead-of-south-korean-holiday-customers-complain-of-non-functioning-units-food-spoilage-ahead-of-three-day-celebration",
+      "published_at": "2026-09-24T10:00:00Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "A broken Samsung update left many refrigerators stuck and non-functional. The incident, which happened right before a major holiday, has many users complaining of spoiled food and a ruined holiday.",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "samsung"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "title_en": "Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "title_zh": "韩国假期前三星灾难性的固件更新导致冰箱变砖",
+      "title_bilingual": "韩国假期前三星灾难性的固件更新导致冰箱变砖 / Samsung's disastrous firmware update bricks refrigerators ahead of South Korean holiday",
+      "summary_zh": "三星的一次故障更新导致许多冰箱陷入困境且无法使用。这起事件发生在重大节日之前，许多用户抱怨食物变质，假期被毁。"
+    },
+    {
+      "id": "59a82e99a357965b8efc75865c6e0f1a970b8872",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "Tom's Hardware",
+      "title": "CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "url": "https://www.tomshardware.com/pc-components/gpus/cyberpowerpc-lands-rare-rtx-50-series-founders-edition-cards-in-discounted-walmart-rigs-complete-rtx-5090-pc-costs-usd2-400-less-than-a-standalone-gpu",
+      "published_at": "2026-09-24T09:30:00Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "CyberPowerPC is offering five different pre-built gaming PCs with either an RTX 5070, 5080, or 5090 Founders Edition GPUs paired with either an Intel or AMD X3D CPU. They also come with 32GB of DDR5 RAM and 1TB of NVMe SSD, all for reasonable prices.",
+      "ai_is_related": false,
+      "ai_score": 0.15,
+      "ai_label": "not_ai",
+      "ai_relevance_reason": "missing_meaningful_ai_signal",
+      "ai_signals": [],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "pc",
+        "server_industry"
+      ],
+      "personal_interest_signals": [
+        "amd",
+        "cpu",
+        "intel",
+        "ssd"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "title_en": "CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "title_zh": "Cyber​​PowerPC 在打折的沃尔玛装备中推出了罕见的 RTX 50 系列创始人版卡",
+      "title_bilingual": "Cyber​​PowerPC 在打折的沃尔玛装备中推出了罕见的 RTX 50 系列创始人版卡 / CyberPowerPC lands rare RTX 50-series Founders Edition cards in discounted Walmart rigs",
+      "summary_zh": "Cyber​​PowerPC 提供五款不同的预制游戏电脑，配备 RTX 5070、5080 或 5090 Founders Edition GPU，搭配 Intel 或 AMD X3D CPU。它们还配备 32GB DDR5 RAM 和 1TB NVMe SSD，价格合理。"
+    },
+    {
+      "id": "2d4d5a6925e890c7cfcdc9ea52cec505c7375dd9",
+      "site_id": "opmlrss",
+      "site_name": "OPML RSS",
+      "source": "The Information",
+      "title": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "url": "https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising",
+      "published_at": "2026-09-24T06:20:00Z",
+      "first_seen_at": "2026-09-24T10:03:42.833018Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
+      "summary": "",
+      "ai_is_related": true,
+      "ai_score": 0.71,
+      "ai_label": "model_release",
+      "ai_relevance_reason": "matched_ai_signal",
+      "ai_signals": [
+        "deepseek"
+      ],
+      "ai_noise": [],
+      "source_tier": "user_opml",
+      "source_tier_label": "RSS/OPML",
+      "source_tier_rank": 3,
+      "personal_interest_match": true,
+      "personal_interest_categories": [
+        "ai"
+      ],
+      "personal_interest_signals": [
+        "deepseek"
+      ],
+      "personal_interest_excluded_topics": [],
+      "personal_interest_reason": "matched_interest",
+      "title_original": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "title_en": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "title_zh": "DeepSeek 完成 75 亿美元融资，年收入突破 10 亿美元",
+      "title_bilingual": "DeepSeek 完成 75 亿美元融资，年收入突破 10 亿美元 / DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising"
     },
     {
       "id": "a0bcf1a8cf35dbad3e5b3cbed156bcfc1b3e4750",
@@ -1053,7 +1356,7 @@
       "url": "https://www.theinformation.com/articles/open-source-model-price-cuts-keep-ai-costs-control",
       "published_at": "2026-09-24T04:25:00Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1075,8 +1378,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Open Source, Model Price Cuts Keep AI Costs Under Control",
       "title_en": "Open Source, Model Price Cuts Keep AI Costs Under Control",
-      "title_zh": null,
-      "title_bilingual": "Open Source, Model Price Cuts Keep AI Costs Under Control"
+      "title_zh": "开源、模型降价使人工智能成本得到控制",
+      "title_bilingual": "开源、模型降价使人工智能成本得到控制 / Open Source, Model Price Cuts Keep AI Costs Under Control"
     },
     {
       "id": "db456fac6148144ef4296c0495ff2e32b9ed8067",
@@ -1087,7 +1390,7 @@
       "url": "https://www.theinformation.com/articles/google-nears-release-flagship-gemini-4-ai-model",
       "published_at": "2026-09-24T02:15:00Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.71,
@@ -1113,8 +1416,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Google Nears Release of Flagship Gemini 4 AI Model",
       "title_en": "Google Nears Release of Flagship Gemini 4 AI Model",
-      "title_zh": null,
-      "title_bilingual": "Google Nears Release of Flagship Gemini 4 AI Model"
+      "title_zh": "谷歌即将发布旗舰 Gemini 4 AI 模型",
+      "title_bilingual": "谷歌即将发布旗舰 Gemini 4 AI 模型 / Google Nears Release of Flagship Gemini 4 AI Model"
     },
     {
       "id": "3ef331535ed7fd63bf618d1a2d9e09449b73a493",
@@ -1125,7 +1428,7 @@
       "url": "https://www.theinformation.com/newsletters/the-briefing/amazons-new-ai-offer-reflects-discounting-surge",
       "published_at": "2026-09-24T00:01:00Z",
       "first_seen_at": "2026-09-24T04:55:07.130167Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1147,8 +1450,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Amazon’s New AI Offer Reflects Discounting Surge",
       "title_en": "Amazon’s New AI Offer Reflects Discounting Surge",
-      "title_zh": null,
-      "title_bilingual": "Amazon’s New AI Offer Reflects Discounting Surge"
+      "title_zh": "亚马逊的新人工智能优惠反映出折扣激增",
+      "title_bilingual": "亚马逊的新人工智能优惠反映出折扣激增 / Amazon’s New AI Offer Reflects Discounting Surge"
     },
     {
       "id": "0d5717641297cf0c42b25c93f7737222327e0601",
@@ -1159,7 +1462,7 @@
       "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
       "published_at": "2026-09-23T21:20:29Z",
       "first_seen_at": "2026-09-23T23:43:38.142949Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "In gory detail: reliability, performance, support, pricing—and, of course, security—in our most thorough analysis of GPU cloud providers globally.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1184,8 +1487,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
       "title_en": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
-      "title_zh": null,
-      "title_bilingual": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns"
+      "title_zh": "ClusterMAX 3.0：行业标准GPU云评级系统回归",
+      "title_bilingual": "ClusterMAX 3.0：行业标准GPU云评级系统回归 / ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns",
+      "summary_zh": "我们对全球 GPU 云提供商进行了最全面的分析，详细介绍了：可靠性、性能、支持、定价，当然还有安全性。"
     },
     {
       "id": "32964cded643aaa3647ee1c1835b496eb125b157",
@@ -1196,7 +1500,7 @@
       "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-brings-snapdragon-x2-plus-to-13-inch-surface-laptop-12-inch-surface-pro-low-end-systems-finally-get-upgrades",
       "published_at": "2026-09-23T20:30:00Z",
       "first_seen_at": "2026-09-23T23:43:38.142949Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Microsoft's lowest-end systems are getting upgrades to Qualcomm's latest Snapdragon X2 Plus processors.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1220,8 +1524,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
       "title_en": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
-      "title_zh": null,
-      "title_bilingual": "Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro"
+      "title_zh": "微软将 Snapdragon X2 Plus 引入 13 英寸 Surface Laptop、12 英寸 Surface Pro",
+      "title_bilingual": "微软将 Snapdragon X2 Plus 引入 13 英寸 Surface Laptop、12 英寸 Surface Pro / Microsoft brings Snapdragon X2 Plus to 13-inch Surface Laptop, 12-inch Surface Pro",
+      "summary_zh": "微软的最低端系统正在升级至高通最新的 Snapdragon X2 Plus 处理器。"
     },
     {
       "id": "0713dbf2fe589ed4825353ee0570bae5c6938de9",
@@ -1232,7 +1537,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/breaking-intel-emib-substrate-yields-reportedly-hit-45-suppliers-eye-60-by-1q27",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T00:36:28.973855Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1254,8 +1559,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27",
       "title_en": "[Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27",
-      "title_zh": null,
-      "title_bilingual": "[Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27"
+      "title_zh": "[突发] 据报道，英特尔 EMIB 基板良率到 2027 年第一季度将达到 45%，供应商预计将达到 60%",
+      "title_bilingual": "[突发] 据报道，英特尔 EMIB 基板良率到 2027 年第一季度将达到 45%，供应商预计将达到 60% / [Breaking] Intel EMIB Substrate Yields Reportedly Hit 45%, Suppliers Eye 60% by 1Q27"
     },
     {
       "id": "6ac0272e5cdd9b445336d2c7e1033bde63239d8b",
@@ -1289,8 +1594,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%",
       "title_en": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%",
-      "title_zh": null,
-      "title_bilingual": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%"
+      "title_zh": "【洞察】内存现货价格更新：DRAM现货价格持谨慎态度； DDR4 2Gx8 下降 3.6%",
+      "title_bilingual": "【洞察】内存现货价格更新：DRAM现货价格持谨慎态度； DDR4 2Gx8 下降 3.6% / [Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%"
     },
     {
       "id": "4af0be2c47a67fdf30224fab4e1f4c56126c5e72",
@@ -1323,8 +1628,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp",
       "title_en": "[News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp",
-      "title_zh": null,
-      "title_bilingual": "[News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp"
+      "title_zh": "[新闻]京东方加入玻璃基板竞赛，三星电机、SKC、LG Eye 2027-2028年斜坡",
+      "title_bilingual": "[新闻]京东方加入玻璃基板竞赛，三星电机、SKC、LG Eye 2027-2028年斜坡 / [News] BOE Joins Glass Substrate Race as Samsung Electro-Mechanics, SKC, LG Eye 2027–2028 Ramp"
     },
     {
       "id": "e92a0cd5572b15270de9b4dd7bca0bbba6f95862",
@@ -1360,8 +1665,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings",
       "title_en": "[News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings",
-      "title_zh": null,
-      "title_bilingual": "[News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings"
+      "title_zh": "【新闻】2026年上半年中国A股半导体利润同比增长607%；长鑫存储收入、利润双双位居榜首",
+      "title_bilingual": "【新闻】2026年上半年中国A股半导体利润同比增长607%；长鑫存储收入、利润双双位居榜首 / [News] China’s A-Share Semiconductor Profit Jumps 607% YoY in 1H26; CXMT Tops Both Revenue and Profit Rankings"
     },
     {
       "id": "c7d175fbd605e8504271bad4d945361a836476d0",
@@ -1399,8 +1704,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26",
       "title_en": "[News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26",
-      "title_zh": null,
-      "title_bilingual": "[News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26"
+      "title_zh": "【新闻】据报道 DeepSeek 将华为芯片拓展至 AI 训练领域；新供应可能于 2026 年第 4 季度抵达",
+      "title_bilingual": "【新闻】据报道 DeepSeek 将华为芯片拓展至 AI 训练领域；新供应可能于 2026 年第 4 季度抵达 / [News] DeepSeek Reportedly Expands Huawei Chips to AI Training; New Supply Could Arrive in 4Q26"
     },
     {
       "id": "b63f1278e05b7db4b40dc7d76a80314d09c6c026",
@@ -1411,7 +1716,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-german-court-reportedly-finds-micron-infringed-two-ymtc-nand-patents-grants-injunctions",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1434,8 +1739,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "title_en": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
-      "title_zh": null,
-      "title_bilingual": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions"
+      "title_zh": "【新闻】据报道，德国法院认定美光侵犯长江存储两项 NAND 专利，并颁发禁令",
+      "title_bilingual": "【新闻】据报道，德国法院认定美光侵犯长江存储两项 NAND 专利，并颁发禁令 / [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions"
     },
     {
       "id": "f25c9cfb07bca42a172d6ef3bf95fbffbb8b823b",
@@ -1446,7 +1751,7 @@
       "url": "https://www.trendforce.com/news/2026/09/23/news-samsungs-lpddr6-passes-industry-first-snapdragon-validation-at-10-7-gbps-galaxy-s27-may-split-memory-tiers",
       "published_at": "2026-09-23T15:59:59Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1471,8 +1776,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers",
       "title_en": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers",
-      "title_zh": null,
-      "title_bilingual": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers"
+      "title_zh": "【新闻】三星LPDDR6通过业界首个Snapdragon验证； Galaxy S27 可能会拆分内存层",
+      "title_bilingual": "【新闻】三星LPDDR6通过业界首个Snapdragon验证； Galaxy S27 可能会拆分内存层 / [News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers"
     },
     {
       "id": "91649181707543091fc0da701ccb5aed1d5939fc",
@@ -1483,7 +1788,7 @@
       "url": "https://www.tomshardware.com/pc-components/storage/chinas-ymtc-wins-patent-battle-against-micron-in-ongoing-3-year-legal-war-over-memory-patents-new-injunctions-could-restrict-microns-supply-into-germany",
       "published_at": "2026-09-23T15:56:02Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "A Munich court has granted YMTC two injunctions against Micron over 3D NAND patents, the latest development in a years-long cross-border legal battle between the memory rivals.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1507,8 +1812,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents",
       "title_en": "China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents",
-      "title_zh": null,
-      "title_bilingual": "China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents"
+      "title_zh": "中国长江存储在与美光长达三年的内存专利诉讼中获胜",
+      "title_bilingual": "中国长江存储在与美光长达三年的内存专利诉讼中获胜 / China's YMTC wins patent battle against Micron in ongoing 3-year legal war over memory patents",
+      "summary_zh": "慕尼黑一家法院已就 3D NAND 专利向长江存储授予了两项针对美光的禁令，这是这两家内存竞争对手之间长达数年的跨境法律斗争的最新进展。"
     },
     {
       "id": "d4260e9d7fb8df3d67075e32108429077aab308a",
@@ -1519,7 +1825,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-claims-new-qwen-image-2-1-ai-model-beats-google-nano-banana-2-0-with-minuscule-7b-parameter-model-benchmarks-show-open-weight-contender-is-competitive-with-openai-and-meta-image-models",
       "published_at": "2026-09-23T15:34:36Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Alibaba Group's AI division has released Qwen 2.1 Image, an ultra-lightweight image generation model with just 7B parameters, able to run on local hardware like the RTX 3090.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1544,7 +1850,8 @@
       "title_original": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model",
       "title_en": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model",
       "title_zh": null,
-      "title_bilingual": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model"
+      "title_bilingual": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model",
+      "summary_zh": "阿里巴巴集团人工智能部门发布了Qwen 2.1 Image，这是一种仅7B参数的超轻量级图像生成模型，能够在RTX 3090等本地硬件上运行。"
     },
     {
       "id": "b34ae3eab6a0833477a1ac6ad9f6af2f6da78c00",
@@ -1555,7 +1862,7 @@
       "url": "https://www.theinformation.com/newsletters/ai-agenda/expect-ai-agenda-live-crusoe-thinking-machines-labs-strike-compute-deal",
       "published_at": "2026-09-23T14:01:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1577,8 +1884,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal",
       "title_en": "What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal",
-      "title_zh": null,
-      "title_bilingual": "What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal"
+      "title_zh": "AI Agenda Live 有何期待； Crusoe 与思维机器实验室达成计算协议",
+      "title_bilingual": "AI Agenda Live 有何期待； Crusoe 与思维机器实验室达成计算协议 / What To Expect at AI Agenda Live; Crusoe and Thinking Machines Labs Strike a Compute Deal"
     },
     {
       "id": "f5cd89f49dce2e7a4fc4ac5a57bc3ec6ea0c8590",
@@ -1589,7 +1896,7 @@
       "url": "https://www.tomshardware.com/pc-components/case-mods/usd14-000-gaming-pc-features-70-handcrafted-titanium-cherry-blossoms-which-unfurl-as-temperatures-rise-zotac-designed-rtx-5080-system-features-impressive-sculpture-and-an-eye-watering-price-tag-to-match",
       "published_at": "2026-09-23T13:14:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "The Aftershock PC Cherry Bloom includes 70 hand-crafted cherry blossoms made of titanium alloy that open and close with the heat generated by the PC.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1611,8 +1918,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "$14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise",
       "title_en": "$14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise",
-      "title_zh": null,
-      "title_bilingual": "$14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise"
+      "title_zh": "售价 14,000 美元的游戏电脑配有 70 朵手工制作的钛合金樱花，随着温度升高而绽放",
+      "title_bilingual": "售价 14,000 美元的游戏电脑配有 70 朵手工制作的钛合金樱花，随着温度升高而绽放 / $14,000 gaming PC features 70 handcrafted titanium cherry blossoms which unfurl as temperatures rise",
+      "summary_zh": "Aftershock PC Cherry Bloom 包括 70 朵由钛合金制成的手工制作的樱花，它们会随着 PC 产生的热量而打开和关闭。"
     },
     {
       "id": "23838704edc001c7672a97a347afae7ef1ddfdc1",
@@ -1623,7 +1931,7 @@
       "url": "https://www.theinformation.com/articles/founders-fund-khosla-ventures-visit-china-countrys-ai-prowess-rises",
       "published_at": "2026-09-23T13:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -1657,7 +1965,7 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/filing-reveals-how-bytedance-gained-access-to-over-2-000-nvidia-b200-chips-through-nscales-norway-data-center-singaporean-subsidiary-spring-contributed-73-percent-of-uk-neoclouds-2025-revenue",
       "published_at": "2026-09-23T12:00:43Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "UK-based Nscale signed a deal with Spring (SG) Pte Ltd, which is a subsidiary of Chinese tech giant ByteDance. The company did not make any direct mention of the TikTok parent in its filings for a U.S. IPO, while a supporting document only labeled Spring as a significant customer.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1695,7 +2003,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-unveils-zhenwu-v900-ai-accelerator-claims-its-the-most-powerful-ai-chip-in-china-accelerator-supports-500-000-chip-supercluster-with-a-10t-parameter-qwen-model-on-the-roadmap",
       "published_at": "2026-09-23T12:00:00Z",
       "first_seen_at": "2026-09-23T17:04:14.016777Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Alibaba’s T-Head Zhenwu V900 claims three times the M890’s performance with 216GB of memory as Alibaba targets 10T-parameter Qwen",
       "ai_is_related": true,
       "ai_score": 0.7,
@@ -1736,7 +2044,7 @@
       "url": "https://www.tomshardware.com/pc-components/gpus/amd-begins-to-add-gddr7-support-to-its-linux-gpu-drivers-changes-could-herald-use-of-advanced-memory-standard-with-next-gen-radeon-gpus",
       "published_at": "2026-09-23T11:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Recent changes to AMD's Linux drivers to enable GDDR7 memory and other graphics IP blocks could indicate that that enablement work on its RDNA 5 GPUs is under way.",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -1776,7 +2084,7 @@
       "url": "https://www.tomshardware.com/pc-components/this-32gb-corsair-vengeance-ddr5-6000-memory-is-the-cheapest-kit-available-discount-plus-usd40-promo-code-offers-the-least-expensive-ddr5-6000-kit-available-today",
       "published_at": "2026-09-23T10:45:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "Get a great deal on 32GB Corsair Vengeance DDR5-6000 RAM. Just $439 after promo code SSF73844 yields one of the lowest priced 32GB kits available today",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -1811,7 +2119,7 @@
       "url": "https://www.tomshardware.com/tech-industry/space/china-puts-ai-compute-into-orbit-with-supercomputing-1-satellite-onboard-processing-aims-to-cut-earth-observation-data-processing-from-hours-to-minutes",
       "published_at": "2026-09-23T10:30:00Z",
       "first_seen_at": "2026-09-23T11:40:56.431172Z",
-      "last_seen_at": "2026-09-24T04:55:07.130167Z",
+      "last_seen_at": "2026-09-24T10:03:42.833018Z",
       "summary": "But it's a far cry from an orbital data center.",
       "ai_is_related": true,
       "ai_score": 0.67,
