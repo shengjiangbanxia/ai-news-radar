@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T22:54:11.465271Z",
+  "generated_at": "2026-09-27T01:29:30.354533Z",
   "window_hours": 24,
   "total_items": 8,
   "total_items_ai_raw": 8,
-  "total_items_raw": 17,
+  "total_items_raw": 16,
   "total_items_all_mode": 8,
   "topic_filter": "personal_ai_pc_server_interest_v1",
   "ai_relevance_threshold": 0.65,
@@ -15,7 +15,7 @@
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
       "count": 8,
-      "raw_count": 17
+      "raw_count": 16
     },
     {
       "site_id": "xapi",
@@ -38,7 +38,7 @@
       "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-quietly-drops-copilot-branding-from-its-new-laptops-surface-cvp-confirms-new-devices-meet-hardware-requirements-but-lack-controversial-branding",
       "published_at": "2026-09-26T14:00:00Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Microsoft's latest Surface laptops dropped the Copilot+ PC branding despite hitting the minimum requirements. Even high-end AI devices like the Nvidia RTX Spark and Microsoft's own Project Zenith are noticeably missing the label.",
       "ai_is_related": true,
       "ai_score": 0.71,
@@ -67,8 +67,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Microsoft quietly drops Copilot+ branding from new laptops",
       "title_en": "Microsoft quietly drops Copilot+ branding from new laptops",
-      "title_zh": null,
-      "title_bilingual": "Microsoft quietly drops Copilot+ branding from new laptops"
+      "title_zh": "微软悄然从新笔记本电脑上放弃了 Copilot+ 品牌",
+      "title_bilingual": "微软悄然从新笔记本电脑上放弃了 Copilot+ 品牌 / Microsoft quietly drops Copilot+ branding from new laptops",
+      "summary_zh": "尽管达到了最低要求，微软最新的 Surface 笔记本电脑还是放弃了 Copilot+ PC 品牌。即使是像 Nvidia RTX Spark 和微软自己的 Project Zenith 这样的高端人工智能设备也明显缺少这个标签。"
     },
     {
       "id": "0d2f2a3241bf7839b28339bb133493771802973e",
@@ -79,7 +80,7 @@
       "url": "https://www.tomshardware.com/video-games/playstation/open-source-anyps5-dumps-emulation-to-run-playstation-5-console-games-natively-on-pc-amd-zen-2-architecture-enables-proton-like-binary-translation-for-windows-and-linux",
       "published_at": "2026-09-26T13:59:04Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Traditional PS5 emulators attempt to recreate the console's hardware and software environment, but AnyPS5 is experimenting with a compatibility layer that translates PlayStation 5 executables into formats that can run on Windows and Linux.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -102,8 +103,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC",
       "title_en": "Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC",
-      "title_zh": null,
-      "title_bilingual": "Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC"
+      "title_zh": "开源 AnyPS5 转储仿真以在 PC 上本地运行 PlayStation 5 主机游戏",
+      "title_bilingual": "开源 AnyPS5 转储仿真以在 PC 上本地运行 PlayStation 5 主机游戏 / Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC",
+      "summary_zh": "传统的 PS5 模拟器试图重新创建控制台的硬件和软件环境，但 AnyPS5 正在尝试使用兼容层，将 PlayStation 5 可执行文件转换为可以在 Windows 和 Linux 上运行的格式。"
     },
     {
       "id": "514e8d886fa7e2bc8091e51ee57b69f578b8936e",
@@ -114,7 +116,7 @@
       "url": "https://newsletter.semianalysis.com/p/intel-panther-lake-teardown",
       "published_at": "2026-09-26T13:36:32Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Looking inside Intel 18A and Intel’s Panther Lake. A free SemiAnalysis STEEL teardown.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -136,8 +138,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Intel Panther Lake Teardown",
       "title_en": "Intel Panther Lake Teardown",
-      "title_zh": null,
-      "title_bilingual": "Intel Panther Lake Teardown"
+      "title_zh": "英特尔 Panther Lake 拆解",
+      "title_bilingual": "英特尔 Panther Lake 拆解 / Intel Panther Lake Teardown",
+      "summary_zh": "深入了解 Intel 18A 和 Intel Panther Lake。免费的 SemiAnalysis STEEL 拆解。"
     },
     {
       "id": "7223218d1f2e7bd87b491785b8968ee74fcff0b4",
@@ -148,7 +151,7 @@
       "url": "https://www.theinformation.com/articles/wall-streets-big-bad-bears-ready-bet-ai-yet",
       "published_at": "2026-09-26T13:11:00Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -170,8 +173,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet",
       "title_en": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet",
-      "title_zh": null,
-      "title_bilingual": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet"
+      "title_zh": "为什么华尔街的大空头还没有准备好做空人工智能",
+      "title_bilingual": "为什么华尔街的大空头还没有准备好做空人工智能 / Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet"
     },
     {
       "id": "edb164c7a62022ca6bf8531488ff186a238e0d4a",
@@ -182,7 +185,7 @@
       "url": "https://www.tomshardware.com/video-games/pc-gaming/an-nvidia-chatbot-could-one-day-help-developers-better-optimize-their-games-patent-filing-show-requests-can-be-made-in-plain-english",
       "published_at": "2026-09-26T13:00:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "An Nvidia patent suggests the company could push developers to use a new chatbot as a way to get guidance on how to optimize their new games before release.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -208,8 +211,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Nvidia patents AI chatbot to streamline PC game optimization",
       "title_en": "Nvidia patents AI chatbot to streamline PC game optimization",
-      "title_zh": null,
-      "title_bilingual": "Nvidia patents AI chatbot to streamline PC game optimization"
+      "title_zh": "Nvidia 获得 AI 聊天机器人专利以简化 PC 游戏优化",
+      "title_bilingual": "Nvidia 获得 AI 聊天机器人专利以简化 PC 游戏优化 / Nvidia patents AI chatbot to streamline PC game optimization",
+      "summary_zh": "英伟达的一项专利表明，该公司可以推动开发者使用新的聊天机器人，作为在发布前获得如何优化新游戏的指导的一种方式。"
     },
     {
       "id": "2bf135429713cfc68a413d62f4b30ccf3e986ea4",
@@ -220,7 +224,7 @@
       "url": "https://www.tomshardware.com/pc-components/ssds/sandisk-optimus-gx-pro-850p-2tb-ssd-review",
       "published_at": "2026-09-26T13:00:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "The Sandisk Optimus GX Pro 850P is a WD Black SN850P by another name. It’s a great PS5 SSD with good performance in a mature package, but with a stiff premium.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -242,8 +246,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t",
       "title_en": "Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t",
-      "title_zh": null,
-      "title_bilingual": "Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t"
+      "title_zh": "Sandisk Optimus GX Pro 850P 2TB SSD 评测：一款你认识的 PS5 SSD，但价格却不一样",
+      "title_bilingual": "Sandisk Optimus GX Pro 850P 2TB SSD 评测：一款你认识的 PS5 SSD，但价格却不一样 / Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t",
+      "summary_zh": "Sandisk Optimus GX Pro 850P 是 WD Black SN850P 的另一个名称。这是一款出色的 PS5 SSD，在成熟的封装中具有良好的性能，但溢价很高。"
     },
     {
       "id": "6387b79f485b180ab55a07634a1da6a8e90881e9",
@@ -254,7 +259,7 @@
       "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-mega-geometry-2-0-streams-ray-tracing-geometry-into-vram-on-demand-nanite-inspired-design-drops-detail-instead-of-dropping-out",
       "published_at": "2026-09-26T12:30:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Nvidia’s RTX Mega Geometry 2.0 SDK arrives alongside RTX Kit 2026.3 with on-demand ray-tracing geometry streaming.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -276,8 +281,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
       "title_en": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
-      "title_zh": null,
-      "title_bilingual": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand"
+      "title_zh": "Nvidia 的 RTX Mega Geometry 2.0 根据需要将光线追踪几何图形流式传输到 VRAM 中",
+      "title_bilingual": "Nvidia 的 RTX Mega Geometry 2.0 根据需要将光线追踪几何图形流式传输到 VRAM 中 / Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
+      "summary_zh": "Nvidia 的 RTX Mega Geometry 2.0 SDK 与 RTX Kit 2026.3 一起推出，具有按需光线追踪几何流。"
     },
     {
       "id": "3bc946828f4fa90e2eb38ea8271ac93910fc6377",
@@ -288,7 +294,7 @@
       "url": "https://www.tomshardware.com/pc-components/liquid-cooling/enthusiast-cooled-iphone-18-pro-with-cold-can-of-la-croix-sparkling-water-benchmarks-show-25-percent-higher-sustained-performance-liquid-cooling-surprisingly-reduced-thermal-throttling",
       "published_at": "2026-09-26T11:00:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Matt Birchler put a cold drink can on the back of an iPhone 18 Pro to see how much performance uplift it would get in a prolonged benchmarking session. The results showed up to 25% higher sustained performance from the cold drink, showing the effectiveness of 'liquid cooling.'",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -312,8 +318,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance",
       "title_en": "Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance",
-      "title_zh": null,
-      "title_bilingual": "Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance"
+      "title_zh": "发烧友用冷罐 La Croix 苏打水冷却 iPhone 18 Pro；基准测试显示持续性能提高 25%",
+      "title_bilingual": "发烧友用冷罐 La Croix 苏打水冷却 iPhone 18 Pro；基准测试显示持续性能提高 25% / Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance",
+      "summary_zh": "Matt Birchler 将一个冷饮罐放在 iPhone 18 Pro 的背面，看看在长时间的基准测试中它的性能会得到多少提升。结果显示，冷饮的持续性能提高了 25%，显示了“液体冷却”的有效性。"
     }
   ],
   "items_ai": [
@@ -326,7 +333,7 @@
       "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-quietly-drops-copilot-branding-from-its-new-laptops-surface-cvp-confirms-new-devices-meet-hardware-requirements-but-lack-controversial-branding",
       "published_at": "2026-09-26T14:00:00Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Microsoft's latest Surface laptops dropped the Copilot+ PC branding despite hitting the minimum requirements. Even high-end AI devices like the Nvidia RTX Spark and Microsoft's own Project Zenith are noticeably missing the label.",
       "ai_is_related": true,
       "ai_score": 0.71,
@@ -355,8 +362,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Microsoft quietly drops Copilot+ branding from new laptops",
       "title_en": "Microsoft quietly drops Copilot+ branding from new laptops",
-      "title_zh": null,
-      "title_bilingual": "Microsoft quietly drops Copilot+ branding from new laptops"
+      "title_zh": "微软悄然从新笔记本电脑上放弃了 Copilot+ 品牌",
+      "title_bilingual": "微软悄然从新笔记本电脑上放弃了 Copilot+ 品牌 / Microsoft quietly drops Copilot+ branding from new laptops",
+      "summary_zh": "尽管达到了最低要求，微软最新的 Surface 笔记本电脑还是放弃了 Copilot+ PC 品牌。即使是像 Nvidia RTX Spark 和微软自己的 Project Zenith 这样的高端人工智能设备也明显缺少这个标签。"
     },
     {
       "id": "0d2f2a3241bf7839b28339bb133493771802973e",
@@ -367,7 +375,7 @@
       "url": "https://www.tomshardware.com/video-games/playstation/open-source-anyps5-dumps-emulation-to-run-playstation-5-console-games-natively-on-pc-amd-zen-2-architecture-enables-proton-like-binary-translation-for-windows-and-linux",
       "published_at": "2026-09-26T13:59:04Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Traditional PS5 emulators attempt to recreate the console's hardware and software environment, but AnyPS5 is experimenting with a compatibility layer that translates PlayStation 5 executables into formats that can run on Windows and Linux.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -390,8 +398,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC",
       "title_en": "Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC",
-      "title_zh": null,
-      "title_bilingual": "Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC"
+      "title_zh": "开源 AnyPS5 转储仿真以在 PC 上本地运行 PlayStation 5 主机游戏",
+      "title_bilingual": "开源 AnyPS5 转储仿真以在 PC 上本地运行 PlayStation 5 主机游戏 / Open-source AnyPS5 dumps emulation to run PlayStation 5 console games natively on PC",
+      "summary_zh": "传统的 PS5 模拟器试图重新创建控制台的硬件和软件环境，但 AnyPS5 正在尝试使用兼容层，将 PlayStation 5 可执行文件转换为可以在 Windows 和 Linux 上运行的格式。"
     },
     {
       "id": "514e8d886fa7e2bc8091e51ee57b69f578b8936e",
@@ -402,7 +411,7 @@
       "url": "https://newsletter.semianalysis.com/p/intel-panther-lake-teardown",
       "published_at": "2026-09-26T13:36:32Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Looking inside Intel 18A and Intel’s Panther Lake. A free SemiAnalysis STEEL teardown.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -424,8 +433,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Intel Panther Lake Teardown",
       "title_en": "Intel Panther Lake Teardown",
-      "title_zh": null,
-      "title_bilingual": "Intel Panther Lake Teardown"
+      "title_zh": "英特尔 Panther Lake 拆解",
+      "title_bilingual": "英特尔 Panther Lake 拆解 / Intel Panther Lake Teardown",
+      "summary_zh": "深入了解 Intel 18A 和 Intel Panther Lake。免费的 SemiAnalysis STEEL 拆解。"
     },
     {
       "id": "7223218d1f2e7bd87b491785b8968ee74fcff0b4",
@@ -436,7 +446,7 @@
       "url": "https://www.theinformation.com/articles/wall-streets-big-bad-bears-ready-bet-ai-yet",
       "published_at": "2026-09-26T13:11:00Z",
       "first_seen_at": "2026-09-26T17:12:35.708275Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -458,8 +468,8 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet",
       "title_en": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet",
-      "title_zh": null,
-      "title_bilingual": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet"
+      "title_zh": "为什么华尔街的大空头还没有准备好做空人工智能",
+      "title_bilingual": "为什么华尔街的大空头还没有准备好做空人工智能 / Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet"
     },
     {
       "id": "edb164c7a62022ca6bf8531488ff186a238e0d4a",
@@ -470,7 +480,7 @@
       "url": "https://www.tomshardware.com/video-games/pc-gaming/an-nvidia-chatbot-could-one-day-help-developers-better-optimize-their-games-patent-filing-show-requests-can-be-made-in-plain-english",
       "published_at": "2026-09-26T13:00:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "An Nvidia patent suggests the company could push developers to use a new chatbot as a way to get guidance on how to optimize their new games before release.",
       "ai_is_related": true,
       "ai_score": 0.67,
@@ -496,8 +506,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Nvidia patents AI chatbot to streamline PC game optimization",
       "title_en": "Nvidia patents AI chatbot to streamline PC game optimization",
-      "title_zh": null,
-      "title_bilingual": "Nvidia patents AI chatbot to streamline PC game optimization"
+      "title_zh": "Nvidia 获得 AI 聊天机器人专利以简化 PC 游戏优化",
+      "title_bilingual": "Nvidia 获得 AI 聊天机器人专利以简化 PC 游戏优化 / Nvidia patents AI chatbot to streamline PC game optimization",
+      "summary_zh": "英伟达的一项专利表明，该公司可以推动开发者使用新的聊天机器人，作为在发布前获得如何优化新游戏的指导的一种方式。"
     },
     {
       "id": "2bf135429713cfc68a413d62f4b30ccf3e986ea4",
@@ -508,7 +519,7 @@
       "url": "https://www.tomshardware.com/pc-components/ssds/sandisk-optimus-gx-pro-850p-2tb-ssd-review",
       "published_at": "2026-09-26T13:00:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "The Sandisk Optimus GX Pro 850P is a WD Black SN850P by another name. It’s a great PS5 SSD with good performance in a mature package, but with a stiff premium.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -530,8 +541,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t",
       "title_en": "Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t",
-      "title_zh": null,
-      "title_bilingual": "Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t"
+      "title_zh": "Sandisk Optimus GX Pro 850P 2TB SSD 评测：一款你认识的 PS5 SSD，但价格却不一样",
+      "title_bilingual": "Sandisk Optimus GX Pro 850P 2TB SSD 评测：一款你认识的 PS5 SSD，但价格却不一样 / Sandisk Optimus GX Pro 850P 2TB SSD review: A PS5 SSD you recognize at a price you don’t",
+      "summary_zh": "Sandisk Optimus GX Pro 850P 是 WD Black SN850P 的另一个名称。这是一款出色的 PS5 SSD，在成熟的封装中具有良好的性能，但溢价很高。"
     },
     {
       "id": "6387b79f485b180ab55a07634a1da6a8e90881e9",
@@ -542,7 +554,7 @@
       "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-mega-geometry-2-0-streams-ray-tracing-geometry-into-vram-on-demand-nanite-inspired-design-drops-detail-instead-of-dropping-out",
       "published_at": "2026-09-26T12:30:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Nvidia’s RTX Mega Geometry 2.0 SDK arrives alongside RTX Kit 2026.3 with on-demand ray-tracing geometry streaming.",
       "ai_is_related": false,
       "ai_score": 0.15,
@@ -564,8 +576,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
       "title_en": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
-      "title_zh": null,
-      "title_bilingual": "Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand"
+      "title_zh": "Nvidia 的 RTX Mega Geometry 2.0 根据需要将光线追踪几何图形流式传输到 VRAM 中",
+      "title_bilingual": "Nvidia 的 RTX Mega Geometry 2.0 根据需要将光线追踪几何图形流式传输到 VRAM 中 / Nvidia’s RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
+      "summary_zh": "Nvidia 的 RTX Mega Geometry 2.0 SDK 与 RTX Kit 2026.3 一起推出，具有按需光线追踪几何流。"
     },
     {
       "id": "3bc946828f4fa90e2eb38ea8271ac93910fc6377",
@@ -576,7 +589,7 @@
       "url": "https://www.tomshardware.com/pc-components/liquid-cooling/enthusiast-cooled-iphone-18-pro-with-cold-can-of-la-croix-sparkling-water-benchmarks-show-25-percent-higher-sustained-performance-liquid-cooling-surprisingly-reduced-thermal-throttling",
       "published_at": "2026-09-26T11:00:00Z",
       "first_seen_at": "2026-09-26T13:07:38.052582Z",
-      "last_seen_at": "2026-09-26T22:54:11.465271Z",
+      "last_seen_at": "2026-09-27T01:29:30.354533Z",
       "summary": "Matt Birchler put a cold drink can on the back of an iPhone 18 Pro to see how much performance uplift it would get in a prolonged benchmarking session. The results showed up to 25% higher sustained performance from the cold drink, showing the effectiveness of 'liquid cooling.'",
       "ai_is_related": false,
       "ai_score": 0.23,
@@ -600,8 +613,9 @@
       "personal_interest_reason": "matched_interest",
       "title_original": "Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance",
       "title_en": "Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance",
-      "title_zh": null,
-      "title_bilingual": "Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance"
+      "title_zh": "发烧友用冷罐 La Croix 苏打水冷却 iPhone 18 Pro；基准测试显示持续性能提高 25%",
+      "title_bilingual": "发烧友用冷罐 La Croix 苏打水冷却 iPhone 18 Pro；基准测试显示持续性能提高 25% / Enthusiast cooled iPhone 18 Pro with cold can of La Croix sparkling water; benchmarks show 25% higher sustained performance",
+      "summary_zh": "Matt Birchler 将一个冷饮罐放在 iPhone 18 Pro 的背面，看看在长时间的基准测试中它的性能会得到多少提升。结果显示，冷饮的持续性能提高了 25%，显示了“液体冷却”的有效性。"
     }
   ],
   "all_mode_data_url": "data/latest-24h-all.json",
