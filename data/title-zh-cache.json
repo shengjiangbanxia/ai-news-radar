@@ -29442,5 +29442,19 @@
   "summary_zh|The form requires RTX 5090 buyers to input their personal data before getting approved to make the purchase. However, it remains unclear how Micro Center can use this information to track illegally exported GPUs.": "该表格要求 RTX 5090 买家输入个人数据，然后才能获得批准进行购买。然而，目前尚不清楚 Micro Center 如何利用这些信息来追踪非法出口的 GPU。",
   "Micro Center requires photo ID and signed no-export pledge to buy RTX 5090 gaming GPU": "Micro Center需要带照片的身份证件并签署不出口承诺才能购买RTX 5090游戏GPU",
   "summary_zh|PewDiePie says OpenAI banned him twice while he made Ajax, a fine-tuned Qwen3.5-9B agent.": "PewDiePie 表示，在他制作 Ajax（一款经过微调的 Qwen3.5-9B 代理）时，OpenAI 两次禁止了他。",
-  "PewDiePie unveils ‘uncensored’ Ajax AI model for home PCs": "PewDiePie 推出适用于家用 PC 的“未经审查”Ajax AI 模型"
+  "PewDiePie unveils ‘uncensored’ Ajax AI model for home PCs": "PewDiePie 推出适用于家用 PC 的“未经审查”Ajax AI 模型",
+  "summary_zh|Daniel Newman’s number comes from OpenRouter data, where agents passed humans in February and grew 14x by August.": "Daniel Newman 的数据来自 OpenRouter 数据，其中代理在 2 月份超越了人类，到 8 月份增长了 14 倍。",
+  "AI agents use 5x more tokens than humans as cached prompts explode, headed for 10x": "随着缓存提示的爆炸式增长，人工智能代理使用的令牌比人类多 5 倍，未来将达到 10 倍",
+  "summary_zh|Google suspends product vulnerability submissions to its Open Source Software Vulnerability Reward Program (OSS VRP) over an influx of invalid AI-driven reports.": "由于大量无效的人工智能驱动报告涌入，谷歌暂停了向其开源软件漏洞奖励计划（OSS VRP）提交产品漏洞。",
+  "Google freezes open-source bug bounty program amid flood of invalid AI slop submissions": "由于大量无效的人工智能漏洞提交，谷歌冻结了开源漏洞悬赏计划",
+  "summary_zh|When one gamer's prebuilt PC had a GPU and power cables burn up, they didn't know where to turn: the system builder or the GPU manufacturer. It turned into a headache of differing policies and warranties.": "当一名游戏玩家的预装 PC 的 GPU 和电源线烧毁时，他们不知道该向哪里求助：系统构建商还是 GPU 制造商。不同的政策和保修变成了令人头痛的问题。",
+  "$5,245 prebuilt RTX 5090 PC's connectors melt after sitting boxed for a year": "价值 5,245 美元的预制 RTX 5090 PC 的连接器在装箱一年后融化",
+  "summary_zh|California state Attorney General Rob Bonta issued a subpoena to OpenAI, compelling it to submit information on the hacking incidents that its models have been involved in. While the investigators haven't determined yet whether the company has broken any rules or regulations, Bonta said that developers are responsible for the models they build and should be held legally accountable if they perpetrate cyberattacks.": "加州总检察长 Rob Bonta 向 OpenAI 发出传票，迫使其提交有关其模型所涉及的黑客事件的信息。虽然调查人员尚未确定该公司是否违反了任何规则或规定，但 Bonta 表示，开发人员应对他们构建的模型负责，如果他们实施网络攻击，则应承担法律责任。",
+  "California subpoenas OpenAI over rogue AI agents conducting hacking attacks": "加州就流氓人工智能代理进行黑客攻击向 OpenAI 发出传票",
+  "summary_zh|AWS CEO Matt Garman said in a company blog post that it will allocate $1 billion over five years to key issues that data center communities raised, including education, workforce pathways, energy affordability, and more. This amounts to grants of $200 million annually, even as the company allocates $220 billion on data center infrastructure for 2026.": "AWS 首席执行官马特·加曼 (Matt Garman) 在公司博客文章中表示，它将在五年内拨款 10 亿美元，用于解决数据中心社区提出的关键问题，包括教育、劳动力路径、能源负担能力等。即使该公司在 2026 年为数据中心基础设施拨款 2200 亿美元，这也相当于每年 2 亿美元的拨款。",
+  "Amazon promises to spend $1 billion on communities close to its data centers, but critics push back": "亚马逊承诺斥资 10 亿美元建设靠近其数据中心的社区，但遭到批评者反对",
+  "summary_zh|A user from the Chinese Chiphell forums shows off AMD's unreleased Ryzen 9 5900X3D, the X3D variant of the Ryzen 9 5900X.": "中国Chiphell论坛的一位用户展示了AMD尚未发布的Ryzen 9 5900X3D，即Ryzen 9 5900X的X3D变体。",
+  "AMD’s secret Zen 3 gaming CPU had 128MB of game-boosting L3 cache but never saw the light of day": "AMD 秘密的 Zen 3 游戏 CPU 拥有 128MB 游戏加速 L3 缓存，但从未面世",
+  "summary_zh|The model created its own World of Warcraft pathfinder on a private server with one prompt in OpenAI's Codex.": "该模型在一台私人服务器上创建了自己的《魔兽世界》探路者，并在 OpenAI 的 Codex 中给出了提示。",
+  "ChatGPT-6 Astra plays World of Warcraft 'blind' and clears the orc starting zone in 40 minutes with no deaths": "ChatGPT-6 Astra“盲目”玩魔兽世界，40分钟清空兽人起始区，无人死亡"
 }
