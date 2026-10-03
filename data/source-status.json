@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T22:59:14.450103Z",
+  "generated_at": "2026-10-03T02:00:35.603338Z",
   "source_mode": "opml_only",
   "sites": [
     {
@@ -18,7 +18,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 98,
-      "duration_ms": 4241,
+      "duration_ms": 3430,
       "error": null,
       "feed_count": 4,
       "effective_feed_count": 4,
@@ -33,7 +33,7 @@
   "zero_item_sites": [],
   "empty_advanced_sources": [],
   "fetched_raw_items": 98,
-  "items_before_topic_filter": 25,
+  "items_before_topic_filter": 24,
   "items_in_24h": 19,
   "rss_opml": {
     "enabled": true,
@@ -54,7 +54,7 @@
         "effective_feed_url": "https://newsletter.semianalysis.com/feed",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 1236,
+        "duration_ms": 810,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -69,7 +69,7 @@
         "effective_feed_url": "https://www.theinformation.com/articles",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 978,
+        "duration_ms": 767,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -84,7 +84,7 @@
         "effective_feed_url": "https://www.tomshardware.com/feeds/all",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 1160,
+        "duration_ms": 1018,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -99,7 +99,7 @@
         "effective_feed_url": "https://www.trendforce.com/news/",
         "ok": true,
         "item_count": 8,
-        "duration_ms": 867,
+        "duration_ms": 835,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -130,7 +130,7 @@
     "effective_result_cap": 10,
     "estimated_max_cost_usd_per_run": 0.05,
     "run_utc_hour": 0,
-    "generated_date_utc": "2026-10-02",
+    "generated_date_utc": "2026-10-03",
     "skipped": true,
     "skip_reason": "outside_x_api_daily_window"
   },
@@ -156,7 +156,7 @@
     "run_utc_minute_max": 10,
     "last_run_at": "2026-07-18T03:32:51.156475Z",
     "last_success_at": "2026-07-18T03:32:51.156475Z",
-    "generated_date_utc": "2026-10-02",
+    "generated_date_utc": "2026-10-03",
     "disabled_reason": "no_api_key"
   },
   "tikhub": {
@@ -181,7 +181,7 @@
     "run_utc_minute_max": 10,
     "last_run_at": "2026-07-18T03:32:51.156475Z",
     "last_success_at": "2026-07-18T03:32:51.156475Z",
-    "generated_date_utc": "2026-10-02",
+    "generated_date_utc": "2026-10-03",
     "disabled_reason": "no_api_key"
   }
 }
