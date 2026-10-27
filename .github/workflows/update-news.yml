@@ -80,7 +80,7 @@ jobs:
           # 22,02,06,10 UTC = 06:00,10:00,14:00,18:00 Asia/Shanghai.
           # The hourly :23 workflow falls inside each half-hour paid-read window.
           X_API_RUN_UTC_HOURS: ${{ vars.X_API_RUN_UTC_HOURS || '22,2,6,10' }}
-          X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX || 30 }}
+          X_API_RUN_UTC_MINUTE_MAX: 30
           X_API_FORCE_RUN: ${{ inputs.force_x_api && '1' || '' }}
           SOCIALDATA_ENABLED: ${{ secrets.SOCIALDATA_ENABLED || vars.SOCIALDATA_ENABLED }}
           SOCIALDATA_API_KEY: ${{ secrets.SOCIALDATA_API_KEY }}
