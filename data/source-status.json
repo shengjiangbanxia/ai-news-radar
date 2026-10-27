@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-19T00:05:30.012143Z",
+  "generated_at": "2026-10-27T13:00:57.076290Z",
   "source_mode": "opml_only",
   "sites": [
     {
       "site_id": "xapi",
       "site_name": "X API",
       "ok": true,
-      "item_count": 10,
+      "item_count": 0,
       "duration_ms": 0,
       "error": null,
-      "skipped": false,
-      "skip_reason": null
+      "skipped": true,
+      "skip_reason": "outside_x_api_daily_window"
     },
     {
       "site_id": "opmlrss",
@@ -18,7 +18,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 97,
-      "duration_ms": 3904,
+      "duration_ms": 3530,
       "error": null,
       "feed_count": 4,
       "effective_feed_count": 4,
@@ -32,9 +32,9 @@
   "failed_sites": [],
   "zero_item_sites": [],
   "empty_advanced_sources": [],
-  "fetched_raw_items": 107,
-  "items_before_topic_filter": 22,
-  "items_in_24h": 11,
+  "fetched_raw_items": 97,
+  "items_before_topic_filter": 28,
+  "items_in_24h": 21,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -54,7 +54,7 @@
         "effective_feed_url": "https://newsletter.semianalysis.com/feed",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 1067,
+        "duration_ms": 1171,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -69,7 +69,7 @@
         "effective_feed_url": "https://www.theinformation.com/articles",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 747,
+        "duration_ms": 1209,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -84,7 +84,7 @@
         "effective_feed_url": "https://www.tomshardware.com/feeds/all",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 1266,
+        "duration_ms": 302,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -99,7 +99,7 @@
         "effective_feed_url": "https://www.trendforce.com/news/",
         "ok": true,
         "item_count": 7,
-        "duration_ms": 824,
+        "duration_ms": 848,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -119,8 +119,8 @@
     "enabled": true,
     "enable_toggle": true,
     "api_key_present": true,
-    "ok": true,
-    "item_count": 10,
+    "ok": null,
+    "item_count": 0,
     "privacy": "public_posts_metadata_only",
     "published_by_default": false,
     "official_free_read_quota": false,
@@ -130,8 +130,9 @@
     "effective_result_cap": 10,
     "estimated_max_cost_usd_per_run": 0.05,
     "run_utc_hour": 0,
-    "generated_date_utc": "2026-10-19",
-    "estimated_cost_usd": 0.05
+    "generated_date_utc": "2026-10-27",
+    "skipped": true,
+    "skip_reason": "outside_x_api_daily_window"
   },
   "socialdata": {
     "enabled": false,
@@ -155,7 +156,7 @@
     "run_utc_minute_max": 10,
     "last_run_at": "2026-07-18T03:32:51.156475Z",
     "last_success_at": "2026-07-18T03:32:51.156475Z",
-    "generated_date_utc": "2026-10-19",
+    "generated_date_utc": "2026-10-27",
     "disabled_reason": "no_api_key"
   },
   "tikhub": {
@@ -180,7 +181,7 @@
     "run_utc_minute_max": 10,
     "last_run_at": "2026-07-18T03:32:51.156475Z",
     "last_success_at": "2026-07-18T03:32:51.156475Z",
-    "generated_date_utc": "2026-10-19",
+    "generated_date_utc": "2026-10-27",
     "disabled_reason": "no_api_key"
   }
 }
