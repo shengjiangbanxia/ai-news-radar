@@ -121,7 +121,9 @@ baseline, then let the aggregator layer add breadth.
   through `X_API_ENABLED=1` and `X_BEARER_TOKEN`, but disabled by default because
   current official X API docs describe paid read credits rather than a free daily
   read quota. Use `X_API_MAX_RESULTS`, `X_API_DAILY_POST_LIMIT`, and
-  `X_API_RUN_UTC_HOUR` to cap usage.
+  `X_API_RUN_UTC_HOURS` to cap usage. The personal deployment defaults to
+  half-hour windows at 22,02,06,10 UTC, corresponding to 06:00, 10:00, 14:00,
+  and 18:00 in Asia/Shanghai.
 - **SocialData.tools X search**: supported as an advanced, secret-backed adapter
   through `SOCIALDATA_ENABLED=1` and `SOCIALDATA_API_KEY`, but disabled by
   default. It reads public X/Twitter search results from the third-party

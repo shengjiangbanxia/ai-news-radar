@@ -25,6 +25,7 @@ from scripts.update_news import (
     socialdata_status_base,
     maybe_fetch_tikhub_updates,
     maybe_fetch_x_api_updates,
+    x_api_should_run_now,
     maybe_fix_mojibake,
     normalize_source_for_display,
     parse_ai_breakfast_items,
@@ -818,7 +819,7 @@ class TopicFilterTests(unittest.TestCase):
                 raise AssertionError("should wait for the daily window, not call now")
 
         session = NoNetworkSession()
-        env = {"X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOUR": "0"}
+        env = {"X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOURS": "22,2,6,10"}
         with patch.dict("os.environ", env, clear=True):
             items, status = maybe_fetch_x_api_updates(session, __import__("datetime").datetime.fromisoformat("2026-05-03T01:00:00+00:00"))
         self.assertEqual(items, [])
@@ -836,7 +837,7 @@ class TopicFilterTests(unittest.TestCase):
                 raise AssertionError("X API should wait for its daily run window")
 
         session = NoNetworkSession()
-        env = {"X_API_ENABLED": "1", "X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOUR": "0"}
+        env = {"X_API_ENABLED": "1", "X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOURS": "22,2,6,10"}
         with patch.dict("os.environ", env, clear=True):
             items, status = maybe_fetch_x_api_updates(session, __import__("datetime").datetime.fromisoformat("2026-05-03T01:00:00+00:00"))
         self.assertEqual(items, [])
@@ -844,6 +845,29 @@ class TopicFilterTests(unittest.TestCase):
         self.assertTrue(status["skipped"])
         self.assertEqual(status["skip_reason"], "outside_x_api_daily_window")
         self.assertEqual(session.calls, 0)
+
+    def test_x_api_runs_four_times_during_beijing_day(self):
+        env = {
+            "X_BEARER_TOKEN": "test",
+            "X_API_RUN_UTC_HOURS": "22,2,6,10",
+            "X_API_RUN_UTC_MINUTE_MAX": "30",
+        }
+        with patch.dict("os.environ", env, clear=True):
+            for utc_hour in (22, 2, 6, 10):
+                now = __import__("datetime").datetime.fromisoformat(
+                    f"2026-05-03T{utc_hour:02d}:23:00+00:00"
+                )
+                self.assertTrue(x_api_should_run_now(now))
+            self.assertFalse(
+                x_api_should_run_now(
+                    __import__("datetime").datetime.fromisoformat("2026-05-03T02:31:00+00:00")
+                )
+            )
+            self.assertFalse(
+                x_api_should_run_now(
+                    __import__("datetime").datetime.fromisoformat("2026-05-03T14:23:00+00:00")
+                )
+            )
 
     def test_x_api_force_run_maps_recent_search_posts(self):
         class FakeResponse:

@@ -3656,13 +3656,34 @@ def maybe_fetch_agentmail_digest(
         return None, status
 
 
+def x_api_run_utc_hours() -> list[int]:
+    """Return paid X read hours in UTC, with a legacy single-hour fallback."""
+    raw = str(os.environ.get("X_API_RUN_UTC_HOURS") or "").strip()
+    if not raw and "X_API_RUN_UTC_HOUR" in os.environ:
+        raw = str(os.environ.get("X_API_RUN_UTC_HOUR") or "").strip()
+    if not raw:
+        raw = "22,2,6,10"
+    hours: list[int] = []
+    for value in re.split(r"[,\s]+", raw):
+        if not value:
+            continue
+        try:
+            hour = int(value)
+        except ValueError:
+            continue
+        if 0 <= hour <= 23 and hour not in hours:
+            hours.append(hour)
+    return hours or [22, 2, 6, 10]
+
+
 def x_api_should_run_now(now: datetime) -> bool:
-    """Gate paid X API reads so a 30-minute cron does not spend every run."""
+    """Gate paid X API reads to four half-hour windows each day."""
     if env_flag("X_API_FORCE_RUN"):
         return True
-    run_hour = max(0, min(env_int("X_API_RUN_UTC_HOUR", 0), 23))
-    minute_max = max(0, min(env_int("X_API_RUN_UTC_MINUTE_MAX", 10), 59))
-    return now.astimezone(UTC).hour == run_hour and now.astimezone(UTC).minute <= minute_max
+    run_hours = x_api_run_utc_hours()
+    minute_max = max(0, min(env_int("X_API_RUN_UTC_MINUTE_MAX", 30), 59))
+    utc_now = now.astimezone(UTC)
+    return utc_now.hour in run_hours and utc_now.minute <= minute_max
 
 
 def x_api_status_base(now: datetime) -> dict[str, Any]:
@@ -3687,7 +3708,9 @@ def x_api_status_base(now: datetime) -> dict[str, Any]:
         "max_results_per_run": max_results,
         "effective_result_cap": effective_cap,
         "estimated_max_cost_usd_per_run": round(effective_cap * X_API_POST_READ_COST_USD, 4),
-        "run_utc_hour": max(0, min(env_int("X_API_RUN_UTC_HOUR", 0), 23)),
+        "run_utc_hours": x_api_run_utc_hours(),
+        "run_beijing_hours": [((hour + 8) % 24) for hour in x_api_run_utc_hours()],
+        "run_utc_minute_max": max(0, min(env_int("X_API_RUN_UTC_MINUTE_MAX", 30), 59)),
         "generated_date_utc": now.astimezone(UTC).date().isoformat(),
     }
 
