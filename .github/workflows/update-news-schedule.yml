@@ -1,0 +1,16 @@
+name: Schedule AI News Snapshot
+
+on:
+  schedule:
+    # A new, dedicated workflow identity re-registers scheduling for this fork.
+    # :23 avoids the heavier queue at the top of each hour.
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    uses: ./.github/workflows/update-news.yml
+    secrets: inherit
