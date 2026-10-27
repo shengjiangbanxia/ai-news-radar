@@ -9,7 +9,9 @@ on:
         default: false
         type: boolean
   schedule:
-    - cron: "17 * * * *"
+    # Keep this minute away from the top-of-hour Actions queue, and change it
+    # whenever GitHub needs the scheduled workflow/actor to be re-registered.
+    - cron: "23 * * * *"
 
 concurrency:
   group: update-ai-news-${{ github.ref }}
