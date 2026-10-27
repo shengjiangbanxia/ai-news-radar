@@ -3,6 +3,11 @@ name: Update AI News Snapshot
 on:
   workflow_dispatch:
     inputs:
+      force_x_api:
+        description: "Force one paid X API refresh outside its normal time windows"
+        required: false
+        default: false
+        type: boolean
       force_tikhub:
         description: "Force a paid TikHub refresh even before its normal interval"
         required: false
@@ -76,6 +81,7 @@ jobs:
           # The hourly :23 workflow falls inside each half-hour paid-read window.
           X_API_RUN_UTC_HOURS: ${{ vars.X_API_RUN_UTC_HOURS || '22,2,6,10' }}
           X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX || 30 }}
+          X_API_FORCE_RUN: ${{ inputs.force_x_api && '1' || '' }}
           SOCIALDATA_ENABLED: ${{ secrets.SOCIALDATA_ENABLED || vars.SOCIALDATA_ENABLED }}
           SOCIALDATA_API_KEY: ${{ secrets.SOCIALDATA_API_KEY }}
           SOCIALDATA_QUERY: ${{ vars.SOCIALDATA_QUERY }}
