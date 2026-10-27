@@ -29709,5 +29709,7 @@
   "summary_zh|Professional Windows crusher NTDEV has showcased their next-generation tool for compressing Windows 11 with a video of an install that fits on a single CD-ROM.": "专业 Windows 粉碎者 NTDEV 展示了他们用于压缩 Windows 11 的下一代工具，并附有安装视频，该工具可安装在一张 CD-ROM 上。",
   "Windows 11’s ‘whole ISO’ squeezed into a CD-ROM": "Windows 11 的“完整 ISO”被压缩到 CD-ROM 中",
   "summary_zh|Cadence unveiled Maestro, domain-specialized AI models for its chip design agents, with early access for select customers in Q4 2026.": "Cadence 为其芯片设计代理推出了 Maestro，这是专门领域的 AI 模型，部分客户将于 2026 年第四季度抢先体验。",
-  "Stripe’s AI Shopping Lead Puts Card Giants on Edge": "Stripe 的人工智能购物领先优势让信用卡巨头陷入困境"
+  "Stripe’s AI Shopping Lead Puts Card Giants on Edge": "Stripe 的人工智能购物领先优势让信用卡巨头陷入困境",
+  "Can AI Help Ray Kurzweil Cheat Death?": "人工智能可以帮助雷·库兹韦尔（Ray Kurzweil）欺骗死亡吗？",
+  "Alibaba's Panjiu 128 is not a true rack scale up. Panjiu 128 is made up of two 64 scale up size systems with ALink switch cartridges in the back. Alibaba's own architecture write-up says a single 128 domain would need 1…": "阿里巴巴的盘九128并不是真正的机架扩展。 Panjiu 128由两个64放大尺寸系统组成，后面带有ALink开关盒。阿里巴巴自己的架构文章称，单个 128 个域将需要 1..."
 }
