@@ -3662,7 +3662,7 @@ def x_api_run_utc_hours() -> list[int]:
     if not raw and "X_API_RUN_UTC_HOUR" in os.environ:
         raw = str(os.environ.get("X_API_RUN_UTC_HOUR") or "").strip()
     if not raw:
-        raw = "22,2,6,10"
+        raw = "0"
     hours: list[int] = []
     for value in re.split(r"[,\s]+", raw):
         if not value:
@@ -3673,11 +3673,11 @@ def x_api_run_utc_hours() -> list[int]:
             continue
         if 0 <= hour <= 23 and hour not in hours:
             hours.append(hour)
-    return hours or [22, 2, 6, 10]
+    return hours or [0]
 
 
 def x_api_should_run_now(now: datetime) -> bool:
-    """Gate paid X API reads to four half-hour windows each day."""
+    """Gate paid X API reads to one half-hour window each day."""
     if env_flag("X_API_FORCE_RUN"):
         return True
     run_hours = x_api_run_utc_hours()

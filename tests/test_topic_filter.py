@@ -819,7 +819,7 @@ class TopicFilterTests(unittest.TestCase):
                 raise AssertionError("should wait for the daily window, not call now")
 
         session = NoNetworkSession()
-        env = {"X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOURS": "22,2,6,10"}
+        env = {"X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOURS": "0"}
         with patch.dict("os.environ", env, clear=True):
             items, status = maybe_fetch_x_api_updates(session, __import__("datetime").datetime.fromisoformat("2026-05-03T01:00:00+00:00"))
         self.assertEqual(items, [])
@@ -837,7 +837,7 @@ class TopicFilterTests(unittest.TestCase):
                 raise AssertionError("X API should wait for its daily run window")
 
         session = NoNetworkSession()
-        env = {"X_API_ENABLED": "1", "X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOURS": "22,2,6,10"}
+        env = {"X_API_ENABLED": "1", "X_BEARER_TOKEN": "test", "X_API_RUN_UTC_HOURS": "0"}
         with patch.dict("os.environ", env, clear=True):
             items, status = maybe_fetch_x_api_updates(session, __import__("datetime").datetime.fromisoformat("2026-05-03T01:00:00+00:00"))
         self.assertEqual(items, [])
@@ -846,26 +846,26 @@ class TopicFilterTests(unittest.TestCase):
         self.assertEqual(status["skip_reason"], "outside_x_api_daily_window")
         self.assertEqual(session.calls, 0)
 
-    def test_x_api_runs_four_times_during_beijing_day(self):
+    def test_x_api_runs_once_at_0823_beijing_time(self):
         env = {
             "X_BEARER_TOKEN": "test",
-            "X_API_RUN_UTC_HOURS": "22,2,6,10",
+            "X_API_RUN_UTC_HOURS": "0",
             "X_API_RUN_UTC_MINUTE_MAX": "30",
         }
         with patch.dict("os.environ", env, clear=True):
-            for utc_hour in (22, 2, 6, 10):
-                now = __import__("datetime").datetime.fromisoformat(
-                    f"2026-05-03T{utc_hour:02d}:23:00+00:00"
-                )
-                self.assertTrue(x_api_should_run_now(now))
-            self.assertFalse(
+            self.assertTrue(
                 x_api_should_run_now(
-                    __import__("datetime").datetime.fromisoformat("2026-05-03T02:31:00+00:00")
+                    __import__("datetime").datetime.fromisoformat("2026-05-03T00:23:00+00:00")
                 )
             )
             self.assertFalse(
                 x_api_should_run_now(
-                    __import__("datetime").datetime.fromisoformat("2026-05-03T14:23:00+00:00")
+                    __import__("datetime").datetime.fromisoformat("2026-05-03T00:31:00+00:00")
+                )
+            )
+            self.assertFalse(
+                x_api_should_run_now(
+                    __import__("datetime").datetime.fromisoformat("2026-05-03T02:23:00+00:00")
                 )
             )
 
