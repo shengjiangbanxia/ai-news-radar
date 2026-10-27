@@ -910,6 +910,7 @@ class TopicFilterTests(unittest.TestCase):
         url, kwargs = session.calls[0]
         self.assertEqual(url, "https://api.x.com/2/tweets/search/recent")
         self.assertEqual(kwargs["params"]["max_results"], 10)
+        self.assertEqual(kwargs["params"]["start_time"], "2026-05-02T01:00:00Z")
 
     def test_source_tiers_separate_discussion_signals_from_core_sources(self):
         self.assertEqual(source_tier_for_site("official_ai")["source_tier"], "official")

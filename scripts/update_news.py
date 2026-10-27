@@ -3711,6 +3711,7 @@ def x_api_status_base(now: datetime) -> dict[str, Any]:
         "run_utc_hours": x_api_run_utc_hours(),
         "run_beijing_hours": [((hour + 8) % 24) for hour in x_api_run_utc_hours()],
         "run_utc_minute_max": max(0, min(env_int("X_API_RUN_UTC_MINUTE_MAX", 30), 59)),
+        "query_window_hours": 24,
         "generated_date_utc": now.astimezone(UTC).date().isoformat(),
     }
 
@@ -3729,12 +3730,14 @@ def fetch_x_api_recent_search(
         raise ValueError("x_query_too_long")
     capped_max_results = max(10, min(int(max_results or X_API_DEFAULT_MAX_RESULTS), 100))
     url = f"{(base_url or X_API_BASE_DEFAULT).rstrip('/')}/2/tweets/search/recent"
+    start_time = (now.astimezone(UTC) - timedelta(hours=24)).replace(microsecond=0)
     response = session.get(
         url,
         headers={"Authorization": f"Bearer {bearer_token}"},
         params={
             "query": query,
             "max_results": capped_max_results,
+            "start_time": start_time.isoformat().replace("+00:00", "Z"),
             "tweet.fields": "created_at,author_id,public_metrics,lang",
             "expansions": "author_id",
             "user.fields": "username,name,verified",

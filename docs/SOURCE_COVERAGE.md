@@ -123,7 +123,8 @@ baseline, then let the aggregator layer add breadth.
   read quota. Use `X_API_MAX_RESULTS`, `X_API_DAILY_POST_LIMIT`, and
   `X_API_RUN_UTC_HOURS` to cap usage. The personal deployment defaults to
   half-hour windows at 22,02,06,10 UTC, corresponding to 06:00, 10:00, 14:00,
-  and 18:00 in Asia/Shanghai.
+  and 18:00 in Asia/Shanghai. Each recent-search request sends a 24-hour
+  `start_time`, so the paid result cap is not filled with older posts.
 - **SocialData.tools X search**: supported as an advanced, secret-backed adapter
   through `SOCIALDATA_ENABLED=1` and `SOCIALDATA_API_KEY`, but disabled by
   default. It reads public X/Twitter search results from the third-party
