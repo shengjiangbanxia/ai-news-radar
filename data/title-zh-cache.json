@@ -29833,5 +29833,19 @@
   "summary_zh|Intel's gloomy outlook for its PC business wipes out $1 trillion of semiconductor market capitalization in a day, barely affects Apple.": "英特尔PC业务前景黯淡，一天之内就蒸发了1万亿美元的半导体市值，对苹果几乎没有影响。",
   "Intel’s woes wipe out $1 trillion of semiconductor market cap in one day": "英特尔的困境一天之内蒸发了 1 万亿美元的半导体市值",
   "summary_zh|OpenAI CEO Sam Altman said in a podcast interview that \"it's quite terrible\" for people to have RAM in their own PCs when it could go into AI data centers.": "OpenAI 首席执行官 Sam Altman 在播客采访中表示，当 RAM 可以进入 AI 数据中心时，人们在自己的 PC 中使用 RAM “这是非常可怕的”。",
-  "OpenAI CEO says it's 'quite terrible' for your PC to have RAM": "OpenAI 首席执行官表示 PC 拥有 RAM“非常糟糕”"
+  "OpenAI CEO says it's 'quite terrible' for your PC to have RAM": "OpenAI 首席执行官表示 PC 拥有 RAM“非常糟糕”",
+  "summary_zh|In case you're not yet subscribed to our Tom's Hardware Premium subscription service, here's what you've been missing out on this week": "如果您尚未订阅我们的 Tom's Hardware Premium 订阅服务，那么您本周错过了以下服务",
+  "summary_zh|Intel is expanding chipmaking and advanced packaging capacity across the U.S., Ireland, and Malaysia to meet surging AI-driven demand for data center CPUs amid shrinking PC market and persistent supply constraints.": "英特尔正在美国、爱尔兰和马来西亚扩大芯片制造和先进封装产能，以满足个人电脑市场萎缩和供应持续紧张的情况下人工智能驱动的数据中心 CPU 需求激增。",
+  "Intel shifts production capacity from consumer to server CPUs in face of 'unprecedented' AI demand": "面对“前所未有的”人工智能需求，英特尔将产能从消费级 CPU 转向服务器 CPU",
+  "summary_zh|A developer has created a full Intel 486 PC system, using 100% pure-JavaScript, in a browser.": "开发人员在浏览器中使用 100% 纯 JavaScript 创建了完整的 Intel 486 PC 系统。",
+  "Developer builds a complete Intel 486 PC emulator in a browser": "开发人员在浏览器中构建完整的 Intel 486 PC 模拟器",
+  "summary_zh|Anthropic's Opus 5.5 model blocking attempts at videogame recreation — users also claim their non-malicious generic reverse-engineering tasks are block": "Anthropic 的 Opus 5.5 模型阻止了视频游戏娱乐的尝试 - 用户还声称他们的非恶意通用逆向工程任务被阻止",
+  "Anthropic's Claude AI blocks video game cloning and reverse-engineering": "Anthropic 的 Claude AI 阻止视频游戏克隆和逆向工程",
+  "summary_zh|The team had to use Sonnet after Opus 5.5 outright refused to run the experiment, while Opus 5 warned that it could stop working in the midst of the operation.": "在 Opus 5.5 彻底拒绝运行实验后，该团队不得不使用 Sonnet，而 Opus 5 警告它可能会在运行过程中停止工作。",
+  "AI agent used to perform controversial brain surgery on a mouse, Anthropic Sonnet controlled motorized surgery rig": "AI 代理用于对小鼠进行有争议的脑部手术，由 Anthropic Sonnet 控制的机动手术装置",
+  "summary_zh|Expensive memory forces former Microsoft engineer to make his own — Dave Plummer makes PDP-11 RAM from scratch": "昂贵的内存迫使前微软工程师自己制造——Dave Plummer 从头开始​​制造 PDP-11 RAM",
+  "Veteran Microsoft engineer makes his own RAM from scratch using AI": "微软资深工程师利用 AI 从头开始​​制作自己的 RAM",
+  "summary_zh|TrashBench repurposes a trash AC radiator for his test bench to see how well it can cool a PC — RTX 3080 didn't run much above ambient temperature": "TrashBench 在他的测试台上重新利用了一个垃圾交流散热器，以了解它对 PC 的冷却效果如何 - RTX 3080 的运行温度并没有高于环境温度多少",
+  "summary_zh|A technology enthusiast claims that the oldest GUI application that still runs on Windows 11 is CDPLAYER.EXE from November 1992.": "一位技术爱好者声称，仍在 Windows 11 上运行的最古老的 GUI 应用程序是 1992 年 11 月的 CDPLAYER.EXE。",
+  "Tech sleuth claims to have found the oldest GUI application that still works with Windows 11": "技术侦探声称已经找到了仍然可以在 Windows 11 上运行的最古老的 GUI 应用程序"
 }
