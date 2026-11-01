@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T22:34:42.351099Z",
+  "generated_at": "2026-11-01T02:19:07.236969Z",
   "source_mode": "opml_only",
   "sites": [
     {
@@ -18,7 +18,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 97,
-      "duration_ms": 4122,
+      "duration_ms": 3128,
       "error": null,
       "feed_count": 4,
       "effective_feed_count": 4,
@@ -54,7 +54,7 @@
         "effective_feed_url": "https://newsletter.semianalysis.com/feed",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 854,
+        "duration_ms": 618,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -69,7 +69,7 @@
         "effective_feed_url": "https://www.theinformation.com/articles",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 981,
+        "duration_ms": 748,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -84,7 +84,7 @@
         "effective_feed_url": "https://www.tomshardware.com/feeds/all",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 1311,
+        "duration_ms": 996,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -99,7 +99,7 @@
         "effective_feed_url": "https://www.trendforce.com/news/",
         "ok": true,
         "item_count": 7,
-        "duration_ms": 976,
+        "duration_ms": 766,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -137,7 +137,7 @@
     ],
     "run_utc_minute_max": 30,
     "query_window_hours": 24,
-    "generated_date_utc": "2026-10-31",
+    "generated_date_utc": "2026-11-01",
     "skipped": true,
     "skip_reason": "outside_x_api_daily_window"
   },
@@ -163,7 +163,7 @@
     "run_utc_minute_max": 10,
     "last_run_at": "2026-07-18T03:32:51.156475Z",
     "last_success_at": "2026-07-18T03:32:51.156475Z",
-    "generated_date_utc": "2026-10-31",
+    "generated_date_utc": "2026-11-01",
     "disabled_reason": "no_api_key"
   },
   "tikhub": {
@@ -188,7 +188,7 @@
     "run_utc_minute_max": 10,
     "last_run_at": "2026-07-18T03:32:51.156475Z",
     "last_success_at": "2026-07-18T03:32:51.156475Z",
-    "generated_date_utc": "2026-10-31",
+    "generated_date_utc": "2026-11-01",
     "disabled_reason": "no_api_key"
   }
 }
